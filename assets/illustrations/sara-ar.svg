@@ -74,4 +74,4 @@
 <path d="m121 880 115 57" stroke="#ee562a" stroke-width="7"/>
 <path d="m590 945 97-59 16 28-112 63Z" fill="#fff1d9"/>
 <path d="m590 945 97-59" stroke="#ee562a" stroke-width="7"/>
-</g><g id="ar-glasses" fill="#b9dccc" fill-opacity=".12" stroke="#337c87" stroke-width="3" stroke-linejoin="round"><path d="M312 501 368 502 367 535 317 528ZM374 504 414 514 406 541 372 536Z"/><path d="m368 510 6 1M414 518C429 520 443 525 457 534" fill="none"/></g></svg>
+</g><g id="ar-glasses" fill="#c5dfd3" fill-opacity=".08" stroke="#202723" stroke-width="5" stroke-linejoin="round"><path d="M312 501 368 502 367 535 317 528ZM374 504 414 514 406 541 372 536Z"/><path d="m368 510 6 1M414 518C429 520 443 525 457 534" fill="none"/><path d="M410 514c-3-1-5 3-3 5 3 2 6-2 3-5Z" fill="#101716" stroke-width="1"/></g></svg>

@@ -4,7 +4,7 @@
     { id: 'title', beats: 1, name: 'COOK' },
     { id: 'sara', beats: 1, name: 'Meet Sara' },
     { id: 'passion', beats: 2, name: 'Her passion never disappeared.' },
-    { id: 'barriers', beats: 5, name: 'Barriers to education' },
+    { id: 'barriers', beats: 6, name: 'Barriers to education' },
     { id: 'population', beats: 3, name: "Sara isn't alone." },
     { id: 'school', beats: 3, name: 'World-class culinary education' },
     { id: 'reveal', beats: 2, name: 'COOK' },
@@ -55,7 +55,7 @@
     intro.inert = current.sceneIndex >= 2;
     profile.setAttribute('aria-hidden', String(current.scene !== 'sara'));
     profile.inert = current.scene !== 'sara';
-    document.querySelector('.sara').classList.toggle('wearing-ar', ['reveal', 'features'].includes(current.scene));
+    document.querySelector('.sara').classList.toggle('wearing-ar', current.scene === 'features' || (current.scene === 'reveal' && current.beat === 1));
 
     panels.forEach(panel => {
       const active = panel.dataset.scenePanel === current.scene;

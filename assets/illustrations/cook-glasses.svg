@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 450" fill="none" role="img" aria-labelledby="glasses-title">
+  <title id="glasses-title">COOK matte black AR glasses with a discreet built-in camera</title>
+  <defs>
+    <linearGradient id="frame" x1="485" y1="159" x2="522" y2="375" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#272b29"/><stop offset=".38" stop-color="#111514"/><stop offset="1" stop-color="#080b0b"/>
+    </linearGradient>
+    <linearGradient id="temple" x1="520" y1="69" x2="510" y2="233" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#303431"/><stop offset=".48" stop-color="#151917"/><stop offset="1" stop-color="#070a09"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="430" y1="191" x2="530" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7baba1" stop-opacity=".19"/><stop offset=".45" stop-color="#d6e4da" stop-opacity=".07"/><stop offset="1" stop-color="#5f8e87" stop-opacity=".21"/>
+    </linearGradient>
+    <linearGradient id="lens-light" x1="286" y1="224" x2="386" y2="349" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".31"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="camera">
+      <stop stop-color="#182a33"/><stop offset=".32" stop-color="#536c72"/><stop offset=".55" stop-color="#0b1419"/><stop offset=".8" stop-color="#253a40"/><stop offset="1" stop-color="#060b0d"/>
+    </radialGradient>
+    <filter id="product-shadow" x="-15%" y="-100%" width="130%" height="300%"><feGaussianBlur stdDeviation="11"/></filter>
+  </defs>
+  <!-- Transparent studio shadow, with no backdrop or surrounding card. -->
+  <path d="M236 392C315 378 664 371 799 381 827 384 824 390 788 395 642 410 326 413 236 402 212 400 213 396 236 392Z" fill="#17201c" opacity=".13" filter="url(#product-shadow)"/>
+  <!-- Both temples recede from their own frame hinges. Their rounded ear tips are continuous. -->
+  <path d="M151 207 241 105C252 92 268 87 284 88L367 91C382 92 389 99 388 108 387 119 379 125 367 125L285 119C278 119 272 122 267 128L176 231Z" fill="url(#temple)"/>
+  <path d="M162 209 250 111C260 101 269 98 284 99L365 101" stroke="#858c85" stroke-opacity=".27" stroke-width="2" stroke-linecap="round"/>
+  <path d="M800 181 881 108C889 100 890 96 883 94L819 86C806 84 799 79 801 71 803 62 814 58 827 60L895 69C915 72 923 87 914 101 910 109 903 116 894 123L827 199Z" fill="url(#temple)"/>
+  <path d="M815 72 886 81C901 83 908 89 901 99L821 181" stroke="#818a83" stroke-opacity=".24" stroke-width="2" stroke-linecap="round"/>
+  <!-- A single sculpted front, cut through for the two lenses. -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M174 193C224 174 345 173 408 179 438 181 459 190 480 199 493 205 510 203 526 195 546 183 555 176 581 172L735 158C771 155 805 159 827 176 839 186 844 200 841 221L829 291C826 316 806 337 779 343L640 364C600 370 570 356 552 326 542 309 536 280 529 254 524 236 514 228 501 230 488 231 482 241 477 258L459 320C452 348 430 365 400 371L284 389C246 393 210 382 188 359 166 335 156 299 151 269L144 221C142 208 153 201 174 193ZM196 220C212 210 244 206 274 205L397 205C417 205 435 212 445 223 456 236 458 251 452 274L442 310C438 327 425 338 407 342L286 361C257 365 231 357 217 342 203 326 197 302 191 275L186 242C184 232 187 226 196 220ZM565 215C575 204 590 199 610 197L738 185C762 183 782 187 792 198 804 210 805 224 801 243L793 281C790 300 780 313 759 317L641 337C614 341 595 330 583 311 572 294 567 270 560 244 557 231 558 223 565 215Z" fill="url(#frame)"/>
+  <!-- The clear lenses sit within the rim, allowing the presentation background through. -->
+  <path d="M196 220C212 210 244 206 274 205L397 205C417 205 435 212 445 223 456 236 458 251 452 274L442 310C438 327 425 338 407 342L286 361C257 365 231 357 217 342 203 326 197 302 191 275L186 242C184 232 187 226 196 220Z" fill="url(#lens)"/>
+  <path d="M565 215C575 204 590 199 610 197L738 185C762 183 782 187 792 198 804 210 805 224 801 243L793 281C790 300 780 313 759 317L641 337C614 341 595 330 583 311 572 294 567 270 560 244 557 231 558 223 565 215Z" fill="url(#lens)"/>
+  <path d="m206 231 192-13-129 134c-21-1-39-7-49-19l-16-63c-5-19-8-31 2-39Z" fill="url(#lens-light)"/>
+  <path d="m580 220 156-23-96 130c-22 5-40-5-50-20l-20-63c-4-12 1-19 10-24Z" fill="url(#lens-light)" opacity=".45"/>
+  <!-- Economical soft highlights explain the real frame thickness without outlining every edge. -->
+  <path d="M173 202C228 184 352 184 409 190 439 193 459 202 478 211M543 196C557 188 568 184 586 183L735 169C774 165 802 173 817 186" stroke="#6e7771" stroke-width="2.7" stroke-linecap="round" opacity=".55"/>
+  <path d="M213 346C229 364 255 372 285 369L400 351M595 323C608 338 623 345 642 343L759 325" stroke="#6e7771" stroke-width="1.6" stroke-linecap="round" opacity=".33"/>
+  <path d="M184 225C181 231 181 238 183 248L193 292M799 203C806 213 807 222 804 236" stroke="#d6e0d9" stroke-width="1.3" stroke-linecap="round" opacity=".23"/>
+  <!-- Small inner nose supports share the front frame material and stay behind the bridge. -->
+  <path d="M478 243C474 255 471 270 467 280 465 285 461 284 462 279L467 254C469 247 473 242 478 243ZM534 242C539 250 542 263 545 276 546 281 542 283 540 278L533 255C531 249 531 245 534 242Z" fill="#303632"/>
+  <!-- The discreet camera is flush with the outside corner; there is no display or ornament. -->
+  <path d="M810 189C815 186 822 187 826 191 831 196 830 204 826 208 821 213 813 211 809 206 806 200 806 193 810 189Z" fill="#0a0e0d"/>
+  <path d="M813 192C817 189 823 192 825 196 827 201 824 206 820 207 815 208 811 204 811 200 810 196 811 194 813 192Z" fill="url(#camera)"/>
+  <path d="m815 194 3-1" stroke="#b0d6ce" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
+  <path d="m158 226 12-4m659-5 6-1" stroke="#78837c" stroke-width="1.8" stroke-linecap="round" opacity=".45"/>
+</svg>

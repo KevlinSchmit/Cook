@@ -116,22 +116,35 @@
 .home-question { position:absolute; left:13%; top:82%; width:74%; font-family:Fraunces,Georgia,serif; font-size:2.55cqw; letter-spacing:-.06cqw; text-wrap:balance; text-align:center; }
 [data-scene="school"][data-beat="2"] .kitchen { box-shadow:0 0 0 .4cqw #e5bc4c24,.5cqw .7cqw 0 #263f6212; }
 
-/* Reveal: the familiar kitchen opens into a generous AR field of view. */
-[data-scene="reveal"] .scene-wash { opacity:.09; background:#eef2db; }
-[data-scene="reveal"] .kitchen { opacity:1; }
-[data-scene="reveal"] .world { transform:translate(-25px,10px) scale(1.07); }
-[data-scene="reveal"] .sara { left:10%; top:22%; width:27.4%; opacity:1; }
-.ar-environment { position:absolute; inset:0; pointer-events:none; }
-.target-one { position:absolute; left:20%; top:52%; width:22%; height:25%; }
-.ar-float { position:absolute; }
-.ar-float-one { left:35%; top:27%; width:12%; min-height:9%; }
-.ar-float-two { left:5.5%; top:50%; width:12%; min-height:7%; }
-.ar-float-three { left:39%; top:72%; width:6%; min-height:7%; }
-.product-reveal { position:absolute; left:52%; top:29%; width:41%; }
-.product-reveal h2 { color:#e74829; font-family:Fraunces,Georgia,serif; font-weight:850; letter-spacing:-.7cqw; font-size:9.8cqw; line-height:1; transform-origin:50% 100%; }
-.product-promise { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:2.35cqw; letter-spacing:-.07cqw; margin-top:1.25cqw!important; line-height:1.28!important; }
-.product-description { font-size:1.2cqw; max-width:36cqw; margin-top:2cqw!important; line-height:1.5!important; }
-.reveal-scene.is-active .product-reveal h2 { animation:product-letterpress 1.7s var(--ease) both; }
+/* Product reveal: a quiet glasses portrait opens into Sara's kitchen. */
+[data-scene="reveal"] .scene-wash { opacity:1; background:#f8f0dc; }
+[data-scene="reveal"] .kitchen,[data-scene="reveal"] .sara { opacity:0; }
+.reveal-scene { overflow:hidden; }
+.reveal-cooking { position:absolute; z-index:0; inset:0; opacity:0; transform:scale(1.06); clip-path:circle(0% at 35.3% 30.7%); transition:opacity .8s ease,clip-path 1.8s var(--ease),transform 2s var(--ease); }
+.reveal-cooking img { display:block; width:100%; height:100%; object-fit:cover; }
+.product-reveal { position:absolute; z-index:3; left:50%; top:12%; width:76%; text-align:center; transform:translateX(-50%); transition:left 1.6s var(--ease),top 1.6s var(--ease),width 1.6s var(--ease); }
+.product-reveal h2 { color:#e74829; font-family:Fraunces,Georgia,serif; font-weight:850; letter-spacing:-.6cqw; font-size:8.7cqw; line-height:1; transition:font-size 1.6s var(--ease),letter-spacing 1.6s var(--ease); }
+.product-promise { font-family:Fraunces,Georgia,serif; font-weight:450; font-size:2.05cqw; letter-spacing:-.045cqw; margin-top:1.3cqw!important; line-height:1.35!important; text-wrap:balance; transition:font-size 1.6s var(--ease); }
+.glasses-hero { position:absolute; z-index:4; left:50%; top:60%; width:72%; opacity:1; transform:translate(-50%,-50%) rotate(-3deg); transition:left 1.5s var(--ease),top 1.5s var(--ease),width 1.5s var(--ease),transform 1.5s var(--ease),opacity .55s ease; }
+.glasses-hero img { display:block; width:100%; height:auto; }
+[data-scene="reveal"][data-beat="1"] .reveal-cooking { opacity:1; clip-path:circle(130% at 35.3% 30.7%); transform:scale(1); transition-delay:.12s,.12s,.12s; }
+[data-scene="reveal"][data-beat="1"] .glasses-hero { left:35.3%; top:30.7%; width:12%; opacity:0; transform:translate(-50%,-50%); transition-delay:0s,0s,0s,0s,.55s; }
+[data-scene="reveal"][data-beat="1"] .product-reveal { left:77%; top:16%; width:35%; }
+[data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:6.6cqw; letter-spacing:-.4cqw; }
+[data-scene="reveal"][data-beat="1"] .product-promise { font-size:1.8cqw; }
+.reveal-guidance { position:absolute; z-index:2; inset:0; pointer-events:none; }
+.ar-hint { position:absolute; display:flex; align-items:center; gap:.8cqw; padding:1.15cqw 1.4cqw; color:#234f45; border:1px solid #9cb9a4; background:#fffcefdf; box-shadow:0 .5cqw 2cqw #244d3b0d; border-radius:.85cqw; backdrop-filter:blur(6px); opacity:0; transform:translateY(12px); transition:opacity .8s ease,transform 1s var(--ease); }
+.ar-hint svg { width:2.1cqw; height:2.1cqw; flex-shrink:0; fill:none; }
+.ar-hint p { font-size:1.15cqw; line-height:1.4; }
+.reveal-lesson { left:63%; top:48%; }
+.reveal-feedback { left:65%; top:61%; }
+.reveal-tomato-target { position:absolute; left:55.6%; top:75.6%; width:8.6%; height:14%; stroke:#d8f8c6; stroke-width:1.9; opacity:0; transition:opacity .7s ease; filter:drop-shadow(0 1px 2px #25403155); }
+.target-scan { stroke-width:1; opacity:.55; animation:reveal-scan 4s ease-in-out infinite; }
+.reveal-guidance.is-revealed .reveal-lesson { opacity:1; transform:translateY(0); transition-delay:1.25s; }
+.reveal-guidance.is-revealed .reveal-feedback { opacity:1; transform:translateY(0); transition-delay:1.8s; }
+.reveal-guidance.is-revealed .reveal-tomato-target { opacity:1; transition-delay:1.55s; }
+@keyframes reveal-scan { 0%,100% { transform:translateY(-22px); } 50% { transform:translateY(22px); } }
+.motion-paused .target-scan { animation-play-state:paused!important; }
 
 /* Capabilities share one field of view. The artwork remains at the counter. */
 [data-scene="features"] .scene-wash { opacity:.9; background:#eff0d9; }
@@ -142,22 +155,8 @@
 
 @keyframes ingredient-drift { 0%,100% { transform:translateY(0) rotate(-4deg); } 50% { transform:translateY(-9px) rotate(5deg); } }
 @keyframes path-travel { to { stroke-dashoffset:-270; } }
-@keyframes product-letterpress { 0% { opacity:0; transform:translateY(20px) scale(.82) rotate(-5deg); } 55% { opacity:1; transform:translateY(0) scale(1.025) rotate(.5deg); } 100% { opacity:1; transform:scale(1) rotate(0); } }
 .motion-paused :is(.sara-ar-art,.ingredient,.path-dashes) { animation-play-state:paused!important; }
 @media(prefers-reduced-motion:reduce) { .film-scene,.film-scene *, .sara,.kitchen,.world,.scene-wash { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }
-/* AR overlays share a quiet material language with the paper illustrations. */
-.ar-orbits { position:absolute; inset:0; width:100%; height:100%; overflow:visible; fill:none; stroke:#79a797; stroke-width:1.5; stroke-dasharray:8 13; opacity:.65; }
-.ar-orbits path { vector-effect:non-scaling-stroke; animation:feature-orbit 28s linear infinite; }
-.ar-orbits path:nth-child(2) { stroke:#b9d6c4; stroke-dasharray:2 9; animation-direction:reverse; }
-.ar-target { color:#77a38d; }
-.ar-target svg { display:block; width:100%; height:100%; fill:none; stroke:currentColor; stroke-width:1.2; }
-.ar-float { display:flex; align-items:center; flex-wrap:wrap; gap:.65cqw; padding:1cqw 1.2cqw; border:1px solid #edf6e7c9; border-radius:1.1cqw; background:#fff9e6d9; box-shadow:0 .9cqw 2.8cqw #28473b12; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); color:#304c98; animation:feature-interface-drift 7s ease-in-out infinite; }
-.ar-float > svg { width:2.4cqw; height:2.4cqw; flex:0 0 auto; fill:none; }
-.ar-float .interface-line { width:4.3cqw; height:.28cqw; background:#7ca18b; border-radius:1cqw; }
-.ar-float .interface-line.short { width:2.3cqw; margin-left:3.05cqw; background:#b5c9ae; }
-.ar-float-two { animation-delay:-2s; }
-.ar-float-three { animation-delay:-4s; }
-
 /* One transparent instrument changes its contents, rather than opening five pages. */
 .feature-system {
   position:absolute; left:48%; top:29%; width:43%; height:45%;
@@ -250,8 +249,6 @@
 .personalized-visual.is-current .signal-two { animation-delay:1.1s; }
 .personalized-visual.is-current .equipment-match { animation:feature-confirm 5.2s ease-in-out infinite; }
 
-@keyframes feature-interface-drift { 0%,100% { translate:0 0; } 50% { translate:0 -.5cqw; } }
-@keyframes feature-orbit { to { stroke-dashoffset:-210; } }
 @keyframes feature-scan { 0%,10% { opacity:0; transform:translateY(0); } 18% { opacity:.9; } 65% { opacity:.9; transform:translateY(13cqw); } 78%,100% { opacity:0; transform:translateY(13cqw); } }
 @keyframes feature-lock { 0%,15% { opacity:.25; } 35%,80% { opacity:1; } 100% { opacity:.25; } }
 @keyframes feature-technique { 0%,100% { transform:translateY(0) rotate(-5deg); } 24% { transform:translateY(-.7cqw) rotate(4deg); } 32% { transform:translateY(.4cqw) rotate(-8deg); } 46%,83% { transform:translateY(0) rotate(-5deg); } }
@@ -259,10 +256,10 @@
 @keyframes feature-confirm { 0%,28% { opacity:.1; transform:scale(.8); } 48%,85% { opacity:1; transform:scale(1); } 100% { opacity:.1; transform:scale(.8); } }
 @keyframes feature-progress { 0%,18% { background:#adc2a86b; } 38%,75% { background:#78a98d; } 100% { background:#adc2a86b; } }
 @keyframes feature-equipment { 0%,100% { box-shadow:0 0 0 0 #91bca000; } 45% { box-shadow:0 0 0 .6cqw #91bca026; border-color:#76a78b; } }
-.motion-paused :is(.ar-orbits path,.ar-float,.recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match) { animation-play-state:paused!important; }
+.motion-paused :is(.recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match) { animation-play-state:paused!important; }
 @media(prefers-reduced-motion:reduce) {
   .feature-visual { transition:none; filter:none; }
-  .ar-orbits path,.ar-float,.recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match { animation:none!important; }
+  .recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match { animation:none!important; }
   .technique-check,.equipment-match { opacity:1; transform:none; }
 }
 @media(max-aspect-ratio:1/1) {
@@ -322,19 +319,6 @@
   .accessibility-divide { left:calc(50% - 30px); top:49%; width:55px; height:160px; }
   .accessibility-copy { left:calc(50% - 110px); top:66%; width:220px; font-size:16px; }
   .home-question { left:calc(50% - 164px); top:77%; width:328px; font-size:25px; }
-  [data-scene="reveal"] .sara { left:calc(50% - 117px); top:41%; width:194px; }
-  .product-reveal { left:calc(50% - 164px); top:17%; width:328px; text-align:center; }
-  .product-reveal h2 { font-size:82px; letter-spacing:-7px; }
-  .product-promise { font-size:24px; margin-top:9px!important; letter-spacing:-.6px; }
-  .product-description { font-size:13px; max-width:none; margin-top:17px!important; }
-  .target-one { left:calc(50% - 105px); top:61%; width:180px; height:145px; }
-  .ar-float-one { left:calc(50% + 57px); top:48%; width:90px; min-height:50px; }
-  .ar-float-two { left:calc(50% - 173px); top:58%; width:85px; min-height:45px; }
-  .ar-float-three { display:none; }
-  .ar-float > svg { width:27px; height:27px; }
-  .ar-float .interface-line { width:27px; height:3px; }
-  .ar-float .interface-line.short { width:19px; margin-left:32px; }
-  .ar-orbits { display:none; }
   .feature-title { left:calc(50% - 164px); top:16%; width:328px; font-size:31px!important; text-align:center; }
   [data-scene="features"] .sara { left:calc(50% - 47.5px); top:73%; width:95px; }
 }
@@ -345,29 +329,44 @@
 .passion-copy p { font-size:1.45cqw; }
 .obstacle-1 { left:42%; top:43%; width:17%; }
 .community-art { left:12%; top:54%; width:76%; }
-.product-reveal { left:49%; top:27%; width:37%; }
-.product-reveal h2 { font-size:8cqw; letter-spacing:-.55cqw; }
-.product-promise { font-size:2cqw; max-width:31cqw; }
-.product-description { font-size:1.1cqw; max-width:31cqw; }
 @media(max-aspect-ratio:1/1) {
   .passion-copy { left:calc(50% - 164px); top:16%; width:328px; }
   .passion-copy h2 { font-size:34px; max-width:none; }
   .passion-copy p { font-size:16px; }
   .obstacle-1 { left:calc(50% + 30px); top:41%; width:120px; }
   .community-art { left:calc(50% - 245px); top:58%; width:490px; }
-  .product-reveal { left:calc(50% - 164px); top:17%; width:328px; }
-  .product-reveal h2 { font-size:82px; letter-spacing:-7px; }
-  .product-promise { font-size:24px; max-width:none; }
-  .product-description { font-size:13px; max-width:none; }
 }
 .passion-copy { left:35%; }
 .obstacle-2 { top:22%; }
-.product-promise { max-width:29cqw; text-wrap:balance; }
 .sara { clip-path:inset(0 0 0 0); transition:left 2.1s var(--ease),top 2.1s var(--ease),width 2.1s var(--ease),opacity 1.5s ease,transform 2s var(--ease),clip-path 2s var(--ease); }
 [data-scene="school"] .sara { top:42%; clip-path:inset(0 0 26.5% 0); }
 @media(max-aspect-ratio:1/1) {
   .passion-copy { left:calc(50% - 164px); }
   .obstacle-2 { top:57%; }
-  .product-promise { max-width:none; }
   [data-scene="school"] .sara { top:52%; }
+}
+
+/* Portrait framing keeps the product and both cooking hints legible. */
+@media(max-aspect-ratio:1/1) {
+  .product-reveal { left:50%; top:19%; width:340px; }
+  .product-reveal h2 { font-size:92px; letter-spacing:-7px; }
+  .product-promise { font-size:23px; margin-top:17px!important; letter-spacing:-.5px; }
+  .glasses-hero { width:470px; top:55%; }
+  .reveal-cooking { left:calc(50% - 195px); top:27%; right:auto; bottom:auto; width:390px; height:50%; border-radius:18px; overflow:hidden; clip-path:circle(0% at 40% 38%); }
+  .reveal-cooking img { object-position:38% center; }
+  [data-scene="reveal"][data-beat="1"] .reveal-cooking { clip-path:circle(130% at 40% 38%); }
+  [data-scene="reveal"][data-beat="1"] .glasses-hero { left:50%; top:31%; width:65px; }
+  [data-scene="reveal"][data-beat="1"] .product-reveal { left:50%; top:9%; width:340px; padding:12px 0; background:#fff3dcde; border-radius:14px; }
+  [data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:52px; letter-spacing:-3px; }
+  [data-scene="reveal"][data-beat="1"] .product-promise { font-size:17px; margin-top:9px!important; }
+  .ar-hint { gap:9px; padding:11px 13px; border-radius:9px; }
+  .ar-hint svg { width:23px; height:23px; }
+  .ar-hint p { font-size:12px; }
+  .reveal-lesson { left:calc(50% - 169px); top:75%; }
+  .reveal-feedback { left:calc(50% - 89px); top:83%; }
+  .reveal-tomato-target { left:calc(50% + 87px); top:64%; width:70px; height:65px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .reveal-cooking,.glasses-hero,.product-reveal,.product-reveal h2,.product-promise,.ar-hint,.reveal-tomato-target { transition:none!important; }
+  .target-scan { animation:none!important; }
 }

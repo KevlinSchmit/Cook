@@ -16,7 +16,7 @@ Open `index.html` in a browser, or run this from the repository directory:
 python -m http.server 3000 --bind 0.0.0.0
 ```
 
-No build, dependencies, external fonts, or credentials are needed. The kitchen, Sara, and food still life are custom SVG vector drawings with procedural print grain. No generated raster artwork is used. All assets, textures, and animations run locally.
+No build, dependencies, external fonts, or credentials are needed. The presentation combines editable SVG drawings with generated illustrations for the caregiver group and Sara's AR cooking scene. All assets, textures, and animations run locally.
 
 ## Present
 
@@ -26,20 +26,20 @@ No build, dependencies, external fonts, or credentials are needed. The kitchen, 
 - The motion control pauses ambient movement. The experience respects reduced-motion preferences.
 - The curriculum tiles are interactive; selecting a tile highlights its lesson state without adding extra on-screen copy.
 
-The composition is optimized for 16:9 presentation. All 22 beats are reversible and remain within one document:
+The composition is optimized for 16:9 presentation. All 23 beats are reversible and remain within one document:
 
 | Scene | Manual beats |
 | --- | --- |
 | COOK title | 1 |
 | Meet Sara | 1, with staggered profile details |
 | Sara's passion | 2, including the restaurant bill |
-| Barriers to education | 5, accumulating four obstacles and the question |
+| Barriers to education | 6, starting with a clear route before four obstacles and the question |
 | The bigger problem | 3, including proportional 50% and 70% illustrations |
 | Traditional culinary education | 3, from school to home |
-| Introducing COOK | 2, including the AR product reveal |
+| Introducing COOK | 2, from black AR glasses alone to Sara cooking with light AR guidance |
 | COOK features | 5, one capability per beat |
 
-Scenes 3–8 use only the specified presentation copy. Controls and AR interface artwork are icon-based; additional labels are accessible names rather than visible text. The figures and percentages are supplied presentation content, not a live data feed.
+Scenes 3–8 use only the specified presentation copy, including the latest scene-7 lesson and fingertip guidance. Other controls and interface artwork use icons; additional labels are accessible names rather than visible text. The figures and percentages are supplied presentation content, not a live data feed. Scene 4's tuition icon and text appear only after the first click.
 
 Future changes belong on `main` and should be committed and pushed after validation, as requested by the project owner.
 
@@ -49,12 +49,12 @@ Fraunces by Undercase Type is bundled under the SIL Open Font License; see `asse
 
 ## Illustration assets
 
-The editable SVG drawings live in `assets/illustrations/`. The kitchen, Sara, and five-person caregiver group now closely follow the latest supplied reference compositions. The 1672 × 941 kitchen includes the arched navy window, vine, hanging pans, shelf, produce, blue bowl, orange counter, and cabinets in their reference positions. Sara preserves the supplied left-facing cooking pose, cream blouse, red apron, continuous supporting arm, and stirring grip; her AR variant uses identical base geometry. The 2048 × 683 caregiver group preserves all five standing adults, the infant and child, striped bag, and cane.
+The artwork lives in `assets/illustrations/`. The 1672 × 941 kitchen SVG includes the arched navy window, vine, hanging pans, shelf, produce, blue bowl, orange counter, and cabinets in their reference positions. The opening scene lightly blurs this background to keep the title readable. Sara's SVG preserves the supplied left-facing cooking pose, cream blouse, red apron, continuous supporting arm, and stirring grip; her AR variant uses identical base geometry with black frames.
 
-All illustration shapes are authored SVG paths; there are no embedded bitmap illustrations or image-generation assets. A clipped procedural SVG grain filter and sparse vector scumble add print texture. The drawing geometry remains directly editable at any scale.
+The five-person group is now a generated 2172 × 724 transparent PNG closely following the supplied reference, with smooth unified figures and no baked background. It replaces the rejected manual SVG. The new 1672 × 941 generated cooking scene shows Sara wearing black camera glasses while slicing a tomato, with open space for the HTML lesson and technique feedback. These are close reference-derived illustrations, rather than pixel-identical copies.
 
 The presentation retains the same kitchen between scenes. Cohesive vector layers move gently; title transformation, progressive profile reveals, keyboard navigation, replay, and reduced motion are preserved.
 
-All recurring instances use the shared replacement assets, including the school comparison and personalized-learning kitchen. The separate opening bowl overlay has been removed because the kitchen reference already includes a bowl. Layouts account for the new portrait and group proportions while retaining the original narrative and controls. These are close vector redraws; procedural grain is not pixel-identical to the supplied painted images.
+All recurring instances use the shared assets, including the school comparison and personalized-learning kitchen. The separate opening bowl overlay has been removed because the kitchen already includes a bowl. Scene 7 first presents the 1040 × 450 black glasses product SVG on a quiet cream background, then opens into Sara's kitchen before introducing light AR hints. Its two states remain controlled by the presenter.
 
 The culinary-school illustration in scenes 4 and 6 now shares a single 1443 × 1090 SVG drawn against the supplied two-chef reference. Its geometry is editable vector artwork; the painted grain is procedural rather than an embedded image. The scene-4 Sara overlay has been removed, and the scene-6 artwork is fitted without cropping while keeping the question readable.
