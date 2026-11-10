@@ -62,7 +62,7 @@
 .school-path { position:absolute; inset:0; width:100%; height:100%; fill:none; }
 .path-underlay { stroke:#ded1ad; stroke-width:26; stroke-linecap:round; }
 .path-dashes { stroke:#b9a57c; stroke-width:3; stroke-dasharray:12 15; animation:path-travel 22s linear infinite; }
-.school-dream { position:absolute; left:66%; top:16%; width:29%; transform:rotate(2deg); }
+.school-dream { position:absolute; left:66%; top:16%; width:29%; transform:none; }
 .school-dream img { display:block; width:100%; }
 .obstacle { position:absolute; text-align:center; transform-origin:50% 65%; }
 .obstacle img { display:block; width:100%; height:auto; }
@@ -109,7 +109,7 @@
 [data-scene="school"] .world { transform:none; }
 [data-scene="school"] .sara { left:74%; top:46%; width:14%; opacity:1; }
 .school-scene > h2 { position:absolute; top:14%; left:6%; width:49%; font-size:3.3cqw; }
-.professional-kitchen { position:absolute; left:5%; top:28%; width:48%; height:auto; }
+.professional-kitchen { position:absolute; left:5%; top:24%; width:46%; height:auto; }
 .accessibility-divide { position:absolute; left:55.5%; top:36%; width:8%; height:34%; }
 .accessibility-divide svg { width:100%; height:100%; fill:none; stroke:#c9bda0; stroke-width:3; stroke-dasharray:5 10; }
 .accessibility-copy { position:absolute; left:65%; top:31%; width:30%; font-family:Fraunces,Georgia,serif; font-size:1.75cqw; text-align:center; color:#b5472f; }
@@ -338,14 +338,12 @@
   .feature-title { left:calc(50% - 164px); top:16%; width:328px; font-size:31px!important; text-align:center; }
   [data-scene="features"] .sara { left:calc(50% - 95px); top:61%; width:190px; }
 }
-.dream-sara { position:absolute; left:32%; bottom:9%; width:23%; height:auto; filter:drop-shadow(0 .2cqw .2cqw #191f2214); }
 .dream-school-art { display:block; width:100%; }
 /* Final safe-area refinements from the 16:9 composition review. */
 .passion-copy { left:49%; top:20%; width:37%; }
 .passion-copy h2 { font-size:3.2cqw; max-width:32cqw; }
 .passion-copy p { font-size:1.45cqw; }
 .obstacle-1 { left:42%; top:43%; width:17%; }
-.school-dream .dream-sara { position:absolute; left:32%; bottom:9%; width:23%; height:auto; }
 .community-art { left:12%; top:50%; width:76%; }
 .product-reveal { left:49%; top:27%; width:37%; }
 .product-reveal h2 { font-size:8cqw; letter-spacing:-.55cqw; }

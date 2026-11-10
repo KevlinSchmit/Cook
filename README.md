@@ -56,3 +56,5 @@ All illustration shapes are authored SVG paths; there are no embedded bitmap ill
 The presentation retains the same kitchen between scenes. Cohesive vector layers move gently; title transformation, progressive profile reveals, keyboard navigation, replay, and reduced motion are preserved.
 
 The population and culinary-school figures are also redrawn as complete, interacting poses. Clothing follows shoulder, ribcage, elbow, and hip contours; integrated wrists/palms make infant, cane, blanket, knife, spoon, and pot contact explicit. The kitchen, food, and barrier illustrations share softer object contours, consistent vessel perspective, and the same limited print palette.
+
+The culinary-school illustration in scenes 4 and 6 now shares a single 1443 × 1090 SVG drawn against the supplied two-chef reference. Its geometry is editable vector artwork; the painted grain is procedural rather than an embedded image. The scene-4 Sara overlay has been removed, and the scene-6 artwork is fitted without cropping while keeping the question readable.

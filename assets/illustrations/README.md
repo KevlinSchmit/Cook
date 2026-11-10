@@ -25,7 +25,7 @@ Texture uses clipped SVG turbulence with soft-light blending plus a sparse vecto
 ## Narrative assets
 
 - `sara-ar.svg`: the same Sara portrait with translucent AR glasses; matching bounds allow a clean crossfade.
-- `culinary-school.svg`: 1000 × 700; professional teaching kitchen with chef and student, commercial station, enamel cookware, and an arched architectural frame.
+- `culinary-school.svg`: 1443 × 1090; reference-coordinate reconstruction of the supplied two-chef kitchen composition, shared unchanged by scenes 4 and 6. The cobalt arch, tilted tall toque, smaller right cap, center hood/red pan, board, yellow stockpot, hands and commercial station follow the supplied layout. No Sara overlay, rotation, cropping, or embedded bitmap is used.
 - `caregivers.svg`: 1400 × 600; five adults with varied backgrounds and family/caregiving roles.
 - `barrier-tuition.svg`, `barrier-commute.svg`, `barrier-time.svg`, `barrier-childcare.svg`: 300 × 300; independent obstacles for accumulating narrative beats.
 - `ingredient-tomato.svg`, `ingredient-carrot.svg`, `ingredient-onion.svg`: reusable contours from the original food illustration, used for parallax and AR recognition.
