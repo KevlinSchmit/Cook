@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" fill="none" role="img" aria-labelledby="title"><title id="title">Sara, an editorial vector portrait with expressive hands and a generous blue cooking bowl</title>
+<defs>
+  <filter id="print" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" stitchTiles="stitch" seed="19" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale=".8" xChannelSelector="R" yChannelSelector="G" result="paint"/>
+    <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+    <feComponentTransfer in="mono" result="faint"><feFuncA type="linear" slope=".21"/></feComponentTransfer>
+    <feComposite in="faint" in2="paint" operator="in" result="ink"/>
+    <feBlend in="paint" in2="ink" mode="soft-light"/>
+  </filter>
+  <pattern id="scumble" width="71" height="67" patternUnits="userSpaceOnUse">
+    <path d="m8 12 3-1m25 28 2-2m18 20 3 1M15 54l2-1m44-46 1 2M32 8l1 1M6 35h2m46-12 2 1" stroke="#f6efda" stroke-width="1.3" opacity=".10"/>
+    <path d="m22 20 2 1m42 25 1-2M42 58l2 1M25 63h1" stroke="#17211e" stroke-width="1" opacity=".07"/>
+  </pattern>
+</defs>
+<g filter="url(#print)">
+
+<g transform="translate(0 -65)">
+<!-- Her posture is an enclosing gesture, with the food as its center of gravity. -->
+<!-- Ink underpainting creates one strong adult silhouette. -->
+<path d="M316 460c93-29 215-40 281 12l69 102-66 92 15 604-480-1 50-651-39-28 69-101Z" fill="#191e21"/>
+<!-- A roomy cream blouse, cut with long angular folds. -->
+<path d="M320 449c59-21 98-12 128 5 58-39 113-30 157 10l68 101-74 74-26-57 14 214-367 8 27-225-24 39-80-46 60-84c30-31 74-45 117-39Z" fill="#f3ead1"/>
+<path d="m241 471-47 101 41 14 71-126Zm331-8 27 124 45-35-42-73Z" fill="#ded4b7"/>
+<path d="m236 562 33-49m303-22 34 72m-342 55-14 110" stroke="#b7af94" stroke-width="3" stroke-linecap="round"/>
+<!-- Vermilion apron straps and an angular, deliberately oversized apron. -->
+<path d="m348 446 24-3 20 125 148-10 1-110 24 11 3 124 27 18 37 668-435 1 37-663 31-19Z" fill="#e94728"/>
+<path d="m379 468 14 91-12 1-12-88Zm175 10-1 93-10 6 1-104Z" fill="#f27a52"/>
+<path d="m245 824 72 27-15 281-90 51Zm335-35 20 231-55-79Z" fill="#c83624"/>
+<path d="m359 1004 125-2-10 91c-49 14-86 10-119-7Z" fill="#f2e8ce"/>
+<path d="m365 1021 110-1m-109 10 107-1" stroke="#e64b2b" stroke-width="4"/>
+<path d="m419 1079 1-29m0 14-15-11m15 7 15-14" stroke="#325945" stroke-width="3" stroke-linecap="round"/>
+<!-- The supporting upper arm goes behind the bowl, emerging through the cuff. -->
+<path d="M596 584c53 36 79 86 86 139 14 108-125 172-323 216l-28-54c149-36 235-82 254-129 10-29-19-65-44-86Z" fill="#eea383"/>
+<path d="M657 713c9 58-77 120-189 154l-18 18c160-43 226-94 207-172Z" fill="#db775e"/>
+<!-- Raised forearm: a continuous tapered contour from elbow to the hand. -->
+<path d="M171 586c-47 2-76-27-61-74l77-196 40 11-29 185 44 39Z" fill="#efa786"/>
+<path d="M118 526c0 29 13 43 34 45l12-11c-24-9-35-22-30-44l64-184-10-15Z" fill="#d9785d"/>
+<!-- Her spoon is long, simple and visibly made of wood. -->
+<path d="M183 167c-17-35-7-62 17-59 31 5 51 61 36 86-8 12-22 8-32-8l174 446-14 7-181-451Z" fill="#be914b"/>
+<path d="M195 132c-5 13 3 37 17 47" stroke="#e9c47e" stroke-width="5" stroke-linecap="round"/>
+<!-- The hand wraps around the shaft; red anatomical accents echo the references. -->
+<path d="M184 331c-10-16-7-31 6-39l14-6c-20-10-34-22-31-32 3-9 11-9 19-2l23 19c-15-17-20-29-12-34 7-5 14 1 21 10l21 27c-8-19-8-29 1-30 8-1 10 10 14 23l12 31c3 18-17 36-45 47Z" fill="#efa786"/>
+<path d="M192 269c18 17 34 24 51 25m-26-24c13 18 24 24 36 25m-57 0c17 9 25 17 26 27m24-47 10 17" stroke="#ce563b" stroke-width="3" stroke-linecap="round"/>
+<path d="m181 255 7 7m21-18 5 7m32 3 3 8" stroke="#ce563b" stroke-width="2.5" stroke-linecap="round"/>
+<!-- A crisp cuff separates skin and cloth without concealing the elbow. -->
+<path d="m146 565 22-37 76 38-17 45Z" fill="#f6ecd4"/>
+<path d="m155 565 76 34-4 12-81-43Z" fill="#d8cfb4"/>
+<path d="m162 547 71 36" stroke="#e84a2c" stroke-width="5"/>
+<!-- Hair is a sculptural ink shape, with a few decisive contour cuts. -->
+<path d="M429 260c-38-29-20-86 31-107-29-10-34-40-9-61 31-25 80-7 72 24-2 10-6 17-13 23 67-3 106 34 112 85 21 28 14 68-7 96 29 40 10 96-35 115l-28 15c-33 23-66 11-87-34l-52-90Z" fill="#191e21"/>
+<path d="M466 97c18-7 35 2 32 17m57 34c32 3 51 20 57 47" stroke="#4a4b40" stroke-width="4" stroke-linecap="round"/>
+<!-- Her neck inclines naturally toward the bowl. -->
+<path d="m480 379-10 65-24 10c8 34 34 61 70 69l27-73-30-34 8-60Z" fill="#eea080"/>
+<path d="m479 406-6 32 32 35-4-45Z" fill="#d96a52"/>
+<!-- An angular profile: small forehead, long nose, small mouth and adult chin. -->
+<path d="M453 232c31-12 65-3 83 25l10 45-20 45-4 33c-7 28-22 45-40 45l-22-11-17-31-30-11 18-33 7-42Z" fill="#f0aa87"/>
+<path d="m440 333-18 35 27 8Z" fill="#e36543"/>
+<path d="M527 304c17-17 34-9 25 11-4 11-15 17-26 19Z" fill="#f0aa87"/>
+<path d="m534 311 7-3-4 12" stroke="#cc6247" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M416 269c1-44 48-70 84-51 25 12 41 36 46 74-35 3-60-12-77-38-11 29-25 45-43 51Z" fill="#191e21"/>
+<path d="M434 256c9-19 22-26 35-27" stroke="#4e4d40" stroke-width="3" stroke-linecap="round"/>
+<path d="M438 317c6-7 12-7 18-2" stroke="#191e21" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M439 331c6 5 11 6 16 1m-2 1 4 4" stroke="#191e21" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M454 392c7 4 13 2 18-3" stroke="#bf432f" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M484 355c-6-8-2-19 7-21 13 0 16 10 11 18-5 8-13 9-18 3Z" fill="#e68064"/>
+<path d="M534 336c-4 6-3 13 3 16 7 3 14-3 10-9-2-5-7-8-13-7Z" fill="#e7bd43"/>
+<!-- Blouse collar follows the long neck, not an isolated triangle. -->
+<path d="m467 440 45 76-44-18-34-40Zm68 6-23 70 41-35 7-26Z" fill="#fbf1d8"/>
+<path d="m477 481 34 37 29-28" stroke="#d6c8a5" stroke-width="3" stroke-linecap="round"/>
+<!-- Food is the composition's large central mass, like the source posters. -->
+<g transform="translate(104 253) scale(.89)">
+
+<!-- Dark interior is deliberately visible between the cut-paper ingredients. -->
+<path d="M92 431C112 345 507 318 637 410 672 438 627 499 576 510L157 513Z" fill="#191f22"/>
+<!-- Broad leaf with a pale, slightly bent center vein. -->
+<path d="M183 457C128 442 81 408 93 371 51 343 67 302 100 301 79 258 104 228 132 235 140 190 190 184 205 216 242 196 274 221 257 257 299 259 305 299 276 318 314 350 299 392 265 392 279 437 233 456 183 457Z" fill="#20764e"/>
+<path d="M193 437c-40-56-50-134-41-205" stroke="#f4eacb" stroke-width="9" stroke-linecap="round"/>
+<path d="M182 392c-19-10-39-25-55-46m43-14c21-18 40-34 57-63" stroke="#91ab65" stroke-width="5" stroke-linecap="round"/>
+<!-- Long diagonal carrot, with intentional notches and gaps. -->
+<path d="m359 463 77-229 79 23-126 225Z" fill="#ee5429"/>
+<path d="m435 239-12-72 30 30 12-73 25 67 52-45-17 61 43-7-58 59Z" fill="#819238"/>
+<path d="m448 281 33 9m-45 24 29 11m-41 21 24 11m-37 20 22 10m-35 18 18 8" stroke="#191f22" stroke-width="5" stroke-linecap="round"/>
+<path d="m464 267 11 5m-40 82 10 4" stroke="#f7e7c6" stroke-width="10" stroke-linecap="round"/>
+<!-- Mushroom cap and stem have an asymmetric, weighted silhouette. -->
+<path d="M243 303c-10-19-10-34 2-48 20-22 62-18 79 9 7 12 10 22 4 31Z" fill="#e7bc36"/>
+<path d="M244 300c13-24 72-25 84-5-14 20-62 31-84 5Z" fill="#f3e7c9"/>
+<path d="m280 304-7 45c-3 12 15 15 23 4 3-5 0-29-1-49Z" fill="#eee4c9"/>
+<path d="m269 296-6 12m20-14-3 13m18-15 3 10m11-13 5 7" stroke="#d65436" stroke-width="3" stroke-linecap="round"/>
+<!-- Tomato nestles into the dark negative spaces. -->
+<path d="M274 424c-9-33 10-60 43-64 28-3 58 28 48 56-9 31-72 40-91 8Z" fill="#ee4626"/>
+<path d="m307 369-20-20 29 8 17-23 1 25 28 8-29 6-13 25-6-23Z" fill="#238054"/>
+<path d="m291 394-2 11" stroke="#f7ecd0" stroke-width="7" stroke-linecap="round"/>
+<!-- Pale onion rings are irregular, never concentric ellipses. -->
+<path d="M454 469c-41-39-18-86 42-132 36 50 99 82 67 126-26 27-65 25-109 6Z" fill="#d5a0c2"/>
+<path d="M492 349c-62 44-63 86-23 113m23-101c-47 41-44 76-17 94m17-81c-31 34-25 59-11 73m11-58c-15 25-12 39-6 49m15-86c68 47 80 82 28 110m-22-95c49 39 59 68 22 88m-16-71c34 30 40 52 13 65m-8-49c20 24 21 37 5 45" stroke="#f7ebd6" stroke-width="6" stroke-linecap="round"/>
+<!-- A few scattered salt grains and onion crescents. -->
+<path d="m337 301 4 9m-12 27 3 6m-64 21 3 7m108-42 4 8m14 104 3 7m-146-55 4 7m130-81 5 4" stroke="#f6ecd5" stroke-width="6" stroke-linecap="round"/>
+<path d="M225 394c-16-22-40-11-30 12 8 19 27 9 30-12Zm158-90c-20-9-28 12-14 19 14 7 24-7 14-19Z" stroke="#f4ebd1" stroke-width="6"/>
+<!-- Painted pottery: broad blue shape, ink rim, dry white scumble. -->
+<path d="M87 447c36 28 88 48 152 57 137 19 290-3 410-66-3 131-85 222-237 238C244 694 121 621 87 447Z" fill="#338aa4"/>
+<path d="M87 447c129 88 383 82 562-9l-5 23C461 553 213 553 92 472Z" fill="#181e21"/>
+<path d="M112 489c21 90 95 149 186 162" stroke="#1f617c" stroke-width="9" stroke-linecap="round"/>
+<path d="M152 509c18 65 49 96 86 112m18 8 14 5m-92-72 6 12m22 14 6 7" stroke="#e8e4c8" stroke-width="4" stroke-linecap="round"/>
+<path d="M87 447c36 28 88 48 152 57 137 19 290-3 410-66-3 131-85 222-237 238C244 694 121 621 87 447Z" fill="url(#scumble)"/>
+
+</g>
+<!-- Supporting fingers lie in front of the bowl, with a clear thumb and palm. -->
+<path d="M378 886c-29-12-42-24-61-41l-18-20c-12-9-24 2-14 12l14 18-42-20c-15-8-25 5-10 14l42 25-63-20c-15-4-21 10-6 17l64 28-54-11c-18-4-23 10-6 17l74 29c23 9 47 6 70-7Z" fill="#efa786"/>
+<path d="m253 850 44 24m-69-7 69 28m-62-2 71 23m-11-79 18 20m-57-16c-12-4-19 4-10 9" stroke="#cc533c" stroke-width="3" stroke-linecap="round"/>
+<!-- A single ink fold keeps the large cream sleeve from becoming featureless. -->
+<path d="m618 587-20 26 17 15-7-17 23-9Z" fill="#191e21"/>
+</g>
+
+</g></svg>
