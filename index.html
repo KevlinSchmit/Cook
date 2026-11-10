@@ -9,6 +9,7 @@
   <link rel="preload" as="image" href="assets/illustrations/kitchen.svg">
   <link rel="preload" as="image" href="assets/illustrations/sara.svg">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="film.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -22,6 +23,16 @@
 
     <div class="canvas-wrap">
       <div class="canvas">
+        <svg class="icon-library" aria-hidden="true" width="0" height="0"><defs>
+<symbol id="i-pan" viewBox="0 0 100 100"><path d="M14 45c7-14 55-17 65-1l-6 30-49 2Z" fill="currentColor"/><path d="m76 49 18-8" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><path d="M24 43c15-7 33-8 44-2" stroke="#f5ecd6" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="i-knife" viewBox="0 0 100 100"><path d="m10 68 48-45 16 16-45 34-18 2Z" fill="currentColor"/><path d="m59 23 13-13q5-5 10-1l9 8q5 6-1 12L74 42Z" fill="#e74829"/><path d="m22 66 34-31" stroke="#f5ecd6" stroke-width="2"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 100 100"><path d="M20 80C2 35 39 6 82 17c7 43-19 73-62 63Z" fill="currentColor"/><path d="m18 83 50-51m-31 32 2-26m13 12 19-1" stroke="#f5ecd6" stroke-width="3" stroke-linecap="round"/></symbol>
+<symbol id="i-whisk" viewBox="0 0 100 100"><path d="m26 78 28-31" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><path d="M52 49C19 24 61 4 78 14c23 19-4 49-26 35Zm0 0c-9-29 19-40 26-35M52 49c26-1 33-24 26-35" stroke="currentColor" stroke-width="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 100 100"><path d="M50 14c49-2 48 73 1 73-47 2-47-72-1-73Z" stroke="currentColor" stroke-width="5"/><path d="m50 30-1 25 20 9" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></symbol>
+<symbol id="i-check" viewBox="0 0 100 100"><path d="m20 52 20 20 42-45" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-glasses" viewBox="0 0 100 100"><path d="m7 32 37 1-5 31-28-2Zm49 1 37-1-4 30-28 2ZM44 42h12" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></symbol>
+</defs></svg>
+        <div class="scene-wash" aria-hidden="true"></div>
         <div class="kitchen" aria-hidden="true">
           <div class="world">
             <img class="kitchen-art" src="assets/illustrations/kitchen.svg" alt="" width="1600" height="1000" fetchpriority="high" decoding="sync">
@@ -45,6 +56,7 @@
         <div class="sara" aria-hidden="true">
           <div class="sara-enter">
             <img class="sara-art" src="assets/illustrations/sara.svg" alt="" width="800" height="1200" decoding="async">
+            <img class="sara-ar-art" src="assets/illustrations/sara-ar.svg" alt="" width="800" height="1200" decoding="async">
           </div>
         </div>
 
@@ -62,15 +74,57 @@
           <div class="profile-footer"><svg viewBox="0 0 32 28" fill="none" aria-hidden="true"><path d="M16 25C-9 10 4-5 16 7 28-5 41 10 16 25Z" stroke="currentColor" stroke-width="2"/></svg><span>Good food starts with everyday people.</span></div>
         </section>
 
+
+        <section class="film-scene passion-scene" data-scene-panel="passion" aria-hidden="true" inert>
+          <div class="passion-copy"><h2>Her passion never disappeared.</h2><p>Healthier meals for her family.</p></div>
+          <div class="ingredient-dance" aria-hidden="true"><img class="ingredient tomato" src="assets/illustrations/ingredient-tomato.svg" alt=""><img class="ingredient carrot" src="assets/illustrations/ingredient-carrot.svg" alt=""><img class="ingredient onion" src="assets/illustrations/ingredient-onion.svg" alt=""></div>
+          <img class="family-detail" src="assets/illustrations/barrier-childcare.svg" alt="" aria-hidden="true">
+          <div class="restaurant-bill" data-reveal="1"><img src="assets/illustrations/receipt.svg" alt="" aria-hidden="true"><p><strong>+36%</strong><span> Dining-out costs since 2019</span></p></div>
+        </section>
+        <section class="film-scene barriers-scene" data-scene-panel="barriers" aria-hidden="true" inert>
+          <svg class="school-path" viewBox="0 0 1600 1000" aria-hidden="true"><path class="path-underlay" d="M310 780C410 690 485 780 620 640S810 480 960 545 1080 370 1260 355"/><path class="path-dashes" d="M310 780C410 690 485 780 620 640S810 480 960 545 1080 370 1260 355"/></svg>
+          <div class="school-dream"><img class="dream-school-art" src="assets/illustrations/culinary-school.svg" alt="" aria-hidden="true"><img class="dream-sara" src="assets/illustrations/sara.svg" alt="" aria-hidden="true"></div>
+          <div class="obstacle obstacle-0" data-reveal="0"><img src="assets/illustrations/barrier-tuition.svg" alt="" aria-hidden="true"><p>Thousands in tuition</p></div><div class="obstacle obstacle-1" data-reveal="1"><img src="assets/illustrations/barrier-commute.svg" alt="" aria-hidden="true"><p>Long commutes</p></div><div class="obstacle obstacle-2" data-reveal="2"><img src="assets/illustrations/barrier-time.svg" alt="" aria-hidden="true"><p>Hours in class</p></div><div class="obstacle obstacle-3" data-reveal="3"><img src="assets/illustrations/barrier-childcare.svg" alt="" aria-hidden="true"><p>Childcare</p></div>
+          <p class="barriers-question" data-reveal="4">Why should becoming a parent mean giving up on an education you're passionate about?</p>
+        </section>
+        <section class="film-scene population-scene" data-scene-panel="population" aria-hidden="true" inert>
+          <h2>Sara isn't alone.</h2>
+          <div class="stat-block stat-care" data-reveal="1"><strong class="stat-value">50%</strong><div class="stat-garden" aria-hidden="true"><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg></div><p>Childcare or caregiving: a barrier to further education</p></div>
+          <div class="stat-block stat-remote" data-reveal="2"><strong class="stat-value">70%</strong><div class="stat-garden" aria-hidden="true"><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="filled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg><svg viewBox="0 0 40 60" class="unfilled"><path d="M10 54C-4 27 9 7 33 4c12 22 3 48-23 50Z"/><path class="seed-vein" d="m10 53 17-36"/></svg></div><p>Remote-learning limitations and in-person attendance requirements</p></div>
+          <img class="community-art" src="assets/illustrations/caregivers.svg" alt="" aria-hidden="true">
+        </section>
+        <section class="film-scene school-scene" data-scene-panel="school" aria-hidden="true" inert>
+          <h2>World-class culinary education</h2>
+          <img class="professional-kitchen" src="assets/illustrations/culinary-school.svg" alt="" aria-hidden="true">
+          <div class="accessibility-divide" data-reveal="1" aria-hidden="true"><svg viewBox="0 0 140 300"><path d="m70 10 3 100-23 24 42 31-23 27 5 96"/></svg></div>
+          <p class="accessibility-copy" data-reveal="1">Limited accessibility</p>
+          <p class="home-question" data-reveal="2">What if culinary school could come to your home?</p>
+        </section>
+        <section class="film-scene reveal-scene" data-scene-panel="reveal" aria-hidden="true" inert>
+          <div class="ar-environment" aria-hidden="true"><svg class="ar-orbits" viewBox="0 0 1600 1000"><path d="M320 740C390 350 1075 339 1140 650S725 954 415 769"/><path d="M348 745C440 429 987 395 1074 634"/></svg><div class="ar-target target-one"><svg viewBox="0 0 100 100"><path d="M5 30V5h25m40 0h25v25m0 40v25H70m-40 0H5V70"/></svg></div><div class="ar-float ar-float-one"><svg viewBox="0 0 100 100"><use href="#i-leaf"/></svg><span class="interface-line"></span><span class="interface-line short"></span></div><div class="ar-float ar-float-two"><svg viewBox="0 0 100 100"><use href="#i-check"/></svg><span class="interface-line"></span></div><div class="ar-float ar-float-three"><svg viewBox="0 0 100 100"><use href="#i-clock"/></svg></div></div>
+          <div class="product-reveal"><h2>COOK</h2><p class="product-promise">Your kitchen. Your culinary school.</p><p class="product-description" data-reveal="1">Professional culinary education, powered by AR and AI.</p></div>
+        </section>
+        <section class="film-scene features-scene" data-scene-panel="features" aria-hidden="true" inert>
+          <h2 class="feature-title">Structured Culinary Curriculum</h2>
+          <div class="feature-system" data-feature="0">
+            <div class="feature-viewport" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div class="curriculum-visual feature-visual" data-visual="0"><button class="lesson-tile lesson-0" type="button" aria-label="Culinary lesson 1" aria-pressed="false"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-knife"/></svg><span class="lesson-progress" aria-hidden="true"></span></button><button class="lesson-tile lesson-1" type="button" aria-label="Culinary lesson 2" aria-pressed="false"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-pan"/></svg><span class="lesson-progress" aria-hidden="true"></span></button><button class="lesson-tile lesson-2" type="button" aria-label="Culinary lesson 3" aria-pressed="false"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-leaf"/></svg><span class="lesson-progress" aria-hidden="true"></span></button><button class="lesson-tile lesson-3" type="button" aria-label="Culinary lesson 4" aria-pressed="false"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-whisk"/></svg><span class="lesson-progress" aria-hidden="true"></span></button><button class="lesson-tile lesson-4" type="button" aria-label="Culinary lesson 5" aria-pressed="false"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-clock"/></svg><span class="lesson-progress" aria-hidden="true"></span></button><button class="lesson-tile lesson-5" type="button" aria-label="Culinary lesson 6" aria-pressed="false"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-glasses"/></svg><span class="lesson-progress" aria-hidden="true"></span></button></div>
+            <div class="recognition-visual feature-visual" data-visual="1"><div class="recognized ingredient-one"><img src="assets/illustrations/ingredient-tomato.svg" alt="" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M4 28V4h24m44 0h24v24m0 44v24H72m-44 0H4V72"/></svg></div><div class="recognized ingredient-two"><img src="assets/illustrations/ingredient-carrot.svg" alt="" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M4 28V4h24m44 0h24v24m0 44v24H72m-44 0H4V72"/></svg></div><div class="recognized ingredient-three"><img src="assets/illustrations/ingredient-onion.svg" alt="" aria-hidden="true"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M4 28V4h24m44 0h24v24m0 44v24H72m-44 0H4V72"/></svg></div><span class="recognition-scan" aria-hidden="true"></span></div>
+            <div class="technique-visual feature-visual" data-visual="2" aria-hidden="true"><div class="technique-board"><img src="assets/illustrations/ingredient-carrot.svg" alt=""><svg class="technique-knife" viewBox="0 0 100 100"><use href="#i-knife"/></svg><svg class="technique-trace" viewBox="0 0 300 180"><path d="M30 145C70 140 87 70 147 76S226 135 267 36"/></svg><svg class="technique-check" viewBox="0 0 100 100"><use href="#i-check"/></svg></div></div>
+            <div class="handsfree-visual feature-visual" data-visual="3" aria-hidden="true"><svg class="guidance-glasses" viewBox="0 0 100 100"><use href="#i-glasses"/></svg><div class="guidance-step"><svg viewBox="0 0 100 100"><use href="#i-leaf"/></svg><i></i><svg viewBox="0 0 100 100"><use href="#i-pan"/></svg><i></i><svg viewBox="0 0 100 100"><use href="#i-check"/></svg></div><div class="guidance-progress"><span></span><span></span><span></span><span></span></div></div>
+            <div class="personalized-visual feature-visual" data-visual="4" aria-hidden="true"><img class="personal-home" src="assets/illustrations/kitchen.svg" alt=""><div class="equipment-signal signal-one"><svg viewBox="0 0 100 100"><use href="#i-pan"/></svg></div><div class="equipment-signal signal-two"><svg viewBox="0 0 100 100"><use href="#i-knife"/></svg></div><svg class="equipment-match" viewBox="0 0 100 100"><use href="#i-check"/></svg></div>
+          </div>
+        </section>
       </div>
     </div>
 
     <footer class="presentation-controls">
+      <button class="previous-scene" type="button" aria-label="Previous narrative beat"><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M30 10H4m8-7-8 7 8 7"/></svg></button>
       <div class="chapter"><span class="chapter-number">01</span><span class="chapter-line"></span><span class="chapter-name">A new recipe for learning</span></div>
-      <div class="scene-dots" role="group" aria-label="Choose scene"><button type="button" class="scene-dot active" data-go="title" aria-label="Scene 1: COOK title" aria-pressed="true"></button><button type="button" class="scene-dot" data-go="sara" aria-label="Scene 2: Meet Sara" aria-pressed="false"></button></div>
+      <div class="scene-dots" role="group" aria-label="Choose scene"><button type="button" class="scene-dot active" data-go="title" aria-label="Scene 1" aria-pressed="true"></button><button type="button" class="scene-dot" data-go="sara" aria-label="Scene 2" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="passion" aria-label="Scene 3" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="barriers" aria-label="Scene 4" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="population" aria-label="Scene 5" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="school" aria-label="Scene 6" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="reveal" aria-label="Scene 7" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="features" aria-label="Scene 8" aria-pressed="false"></button></div>
       <button class="next-scene" type="button"><span class="next-label">Meet Sara</span><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M2 10h26m-8-7 8 7-8 7"/></svg></button>
     </footer>
-    <p class="sr-only" role="status" aria-live="polite" id="scene-status">Scene 1 of 2. COOK. Use the Meet Sara button or right arrow key to continue.</p>
+    <p class="sr-only" role="status" aria-live="polite" id="scene-status">Scene 1 of 8. COOK. Use the right arrow key to advance and the left arrow key to reverse.</p>
   </main>
 </body>
 </html>

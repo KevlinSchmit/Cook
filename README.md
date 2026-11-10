@@ -1,6 +1,6 @@
 # COOK
 
-A continuous, illustrated presentation for **Augmented Reality Culinary Education at Home**. The first two scenes share one animated kitchen: the title transforms into Sara's introduction, with her profile revealed progressively.
+A continuous, illustrated presentation for **Augmented Reality Culinary Education at Home**. Eight scenes unfold in the same illustrated world, from Sara's kitchen and educational barriers to the COOK AR learning experience. The title and Sara introduction are retained, with a refined two-handed bowl pose.
 
 ## Download the complete presentation
 
@@ -20,12 +20,28 @@ No build, dependencies, external fonts, or credentials are needed. The kitchen, 
 
 ## Present
 
-- Select **Meet Sara** to move into the second scene. Her five details appear in sequence.
-- Use the scene indicators, **← / →**, **Page Up / Page Down**, or **Space** to navigate.
-- Select **Back to the beginning** to replay the title and transition.
-- **Pause motion** pauses the ambient movement of the finished artwork layers. The experience also respects your system's reduced-motion setting.
+- Use **← / →**, **Page Up / Page Down**, or **Space** to navigate individual story beats.
+- **Home** returns to the title; **End** jumps to the final capability.
+- Eight scene indicators jump to the start of each scene. The icon buttons reverse/advance one beat; the final next button replays the presentation.
+- The motion control pauses ambient movement. The experience respects reduced-motion preferences.
+- The curriculum tiles are interactive; selecting a tile highlights its lesson state without adding extra on-screen copy.
 
-The presentation adapts to landscape and portrait screens. Future changes belong on the `main` branch and should be committed and pushed after validation, as requested by the project owner.
+The composition is optimized for 16:9 presentation. All 22 beats are reversible and remain within one document:
+
+| Scene | Manual beats |
+| --- | --- |
+| COOK title | 1 |
+| Meet Sara | 1, with staggered profile details |
+| Sara's passion | 2, including the restaurant bill |
+| Barriers to education | 5, accumulating four obstacles and the question |
+| The bigger problem | 3, including proportional 50% and 70% illustrations |
+| Traditional culinary education | 3, from school to home |
+| Introducing COOK | 2, including the AR product reveal |
+| COOK features | 5, one capability per beat |
+
+Scenes 3–8 use only the specified presentation copy. Controls and AR interface artwork are icon-based; additional labels are accessible names rather than visible text. The figures and percentages are supplied presentation content, not a live data feed.
+
+Future changes belong on `main` and should be committed and pushed after validation, as requested by the project owner.
 
 ## Typography
 
@@ -33,7 +49,7 @@ Fraunces by Undercase Type is bundled under the SIL Open Font License; see `asse
 
 ## Illustration assets
 
-The editable SVG drawings live in `assets/illustrations/`. Their art direction follows the supplied mid-century culinary posters: bold flat vermilion and cobalt, cream paper, herb greens, long vegetables, expressive hands, small angular faces, asymmetric silhouettes, and sparse ink marks. The kitchen frames the central type with simple, distinctive enamel cookware and a loose organic herb plant. Sara's composition encloses an oversized blue bowl, with a continuous raised forearm and a supporting hand beneath it.
+The editable SVG drawings live in `assets/illustrations/`. Their art direction follows the supplied mid-century culinary posters: bold flat vermilion and cobalt, cream paper, herb greens, long vegetables, expressive hands, small angular faces, asymmetric silhouettes, and sparse ink marks. The kitchen frames the central type with simple, distinctive enamel cookware and a loose organic herb plant. Sara holds a smaller blue bowl close to her waist with relaxed bent elbows and two cupping hands; her AR variant uses the same drawing and silhouette. Additional original SVGs show the professional kitchen, a diverse group of caregivers, tuition, commuting, time, and childcare.
 
 All illustration shapes are authored SVG paths; there are no embedded bitmap illustrations or image-generation assets. A clipped procedural SVG grain filter and sparse vector scumble add print texture. The drawing geometry remains directly editable at any scale.
 

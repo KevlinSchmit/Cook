@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">Tuition papers and a mustard-colored coin</title>
+<defs><filter id="grain" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="23" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer result="faint"><feFuncA type="linear" slope=".19"/></feComponentTransfer><feComposite in="faint" in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
+<g filter="url(#grain)">
+<!-- The folios are deliberately offset like sheets in a printed collage. -->
+<path d="m60 47 147-16 29 204-150 18Z" fill="#304c98"/>
+<path d="m72 48 137-9 22 191-143 17Z" fill="#f5ecd6"/>
+<path d="m49 69 153-5 28 188-168 8Z" fill="#e74829"/>
+<path d="m57 71 143-3 23 178-156 7Z" fill="#f4e8cb"/>
+<!-- A soft fold, not a synthetic drop shadow. -->
+<path d="m57 71 28 1-15 179-3 2Z" fill="#e2d2aa"/>
+<path d="m61 79 122-5 8 22-126 7Z" fill="#304c98"/>
+<path d="m87 122 90-3m-88 13 66-2m-63 16 84-1m-82 13 76-1m-73 16 47-1" stroke="#d45435" stroke-width="5" stroke-linecap="round"/>
+<path d="m102 207 78-1m-77 9 46-1" stroke="#304c98" stroke-width="3.5" stroke-linecap="round"/>
+<!-- The right lower corner curls upward; its shape breaks the paper's hard edge. -->
+<path d="m193 216 30 30-46 4c16-4 21-15 16-34Z" fill="#d7c49d"/>
+<path d="m193 216 30 30c-17-1-23-12-30-30Z" fill="#fff2d6"/>
+<!-- A milled coin overlaps both folios. No currency text or numerical marks. -->
+<path d="M215 156c38-3 58 38 44 67-12 29-57 31-76 6-19-29-6-69 32-73Z" fill="#bd8833"/>
+<path d="M211 154c36-1 54 36 42 63-12 28-51 31-68 7-20-26-10-67 26-70Z" fill="#e5b739"/>
+<path d="M213 165c27-2 43 28 33 50-9 22-40 25-55 6-15-22-8-54 22-56Z" stroke="#f7dfa1" stroke-width="3"/>
+<path d="m221 171-8 47m-10-36c10-9 26-1 20 7-5 7-23 2-22 12 2 9 17 14 25 5" stroke="#aa7729" stroke-width="4" stroke-linecap="round"/>
+</g></svg>

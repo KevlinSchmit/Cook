@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" fill="none" role="img" aria-labelledby="title"><title id="title">Sara wearing AR glasses while preparing a family meal</title>
+<defs>
+  <filter id="print" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" stitchTiles="stitch" seed="19" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale=".8" xChannelSelector="R" yChannelSelector="G" result="paint"/>
+    <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+    <feComponentTransfer in="mono" result="faint"><feFuncA type="linear" slope=".21"/></feComponentTransfer>
+    <feComposite in="faint" in2="paint" operator="in" result="ink"/>
+    <feBlend in="paint" in2="ink" mode="soft-light"/>
+  </filter>
+  <pattern id="scumble" width="71" height="67" patternUnits="userSpaceOnUse">
+    <path d="m8 12 3-1m25 28 2-2m18 20 3 1M15 54l2-1m44-46 1 2M32 8l1 1M6 35h2m46-12 2 1" stroke="#f6efda" stroke-width="1.3" opacity=".10"/>
+    <path d="m22 20 2 1m42 25 1-2M42 58l2 1M25 63h1" stroke="#17211e" stroke-width="1" opacity=".07"/>
+  </pattern>
+</defs>
+<g filter="url(#print)">
+
+<!-- The torso is a single calm silhouette. Sleeves are rounded where cloth turns. -->
+<path d="M291 449c49-23 90-14 125 3 36-17 80-27 126-8 41 17 63 56 72 103l-14 85-65 16-13-47 37 599H207l32-592-13 45-60-26c-4-47 7-94 31-130 22-31 54-44 94-48Z" fill="#f3ead1"/>
+<path d="M233 474c-34 29-48 72-48 119l24 16 26-82 34-53Z" fill="#e1d7bb"/>
+<path d="M552 469c30 32 43 74 43 124l-24 13-19-81-20-45Z" fill="#e1d7bb"/>
+<path d="m244 510-21 66m331-66 20 65" stroke="#c1b69b" stroke-width="3" stroke-linecap="round"/>
+<!-- Broad apron straps follow the shoulder and chest rather than crossing as spikes. -->
+<path d="m298 455 25-7 21 116 144-1 17-116 25 9-14 135c22 28 29 63 33 104l31 505H229l28-503c3-47 13-81 32-106Z" fill="#e74829"/>
+<path d="m309 468 19 97-10 9-19-100Zm205 1-15 103 11 7 16-105Z" fill="#f27850"/>
+<path d="M279 868c9 116 4 225-14 332h-36l20-356Z" fill="#cc3b27"/>
+<path d="M523 851c8 124 12 238 15 349h42l-23-359Z" fill="#cc3b27"/>
+<path d="M350 974c39 8 80 9 119 1l-4 96c-38 17-79 16-118 1Z" fill="#f4ead0"/>
+<path d="m356 992 105 1m-105 10 103 1" stroke="#e74829" stroke-width="4"/>
+<path d="m406 1058 1-29m0 15-13-12m13 7 14-13" stroke="#446947" stroke-width="3" stroke-linecap="round"/>
+<!-- Both elbows bend towards the waist. Forearms remain behind the bowl. -->
+<path d="M198 613c-11 44-12 91 5 125 20 37 55 61 104 77l22-37c-34-14-62-36-75-61-10-20-11-48-7-76Z" fill="#efa786"/>
+<path d="M201 649c-6 45 3 77 25 102l26 20c-24-32-32-61-28-107Z" fill="#dc7b60"/>
+<path d="M557 624c29 22 51 54 52 87 2 47-32 84-96 104l-21-37c43-21 65-42 67-65 2-17-9-36-26-58Z" fill="#efa786"/>
+<path d="M594 701c5 33-14 61-48 82l-21 9c43-16 70-44 72-72Z" fill="#dc7b60"/>
+<!-- Curved cuffs close every cloth-to-skin join cleanly. -->
+<path d="m179 594 73 24-7 34c-26-2-49-10-70-23Z" fill="#f6ecd4"/>
+<path d="m178 611 71 25-3 11-70-24Z" fill="#d8cdb1"/>
+<path d="m185 602 60 21" stroke="#e74829" stroke-width="4"/>
+<path d="m549 608 58-17 8 35c-15 13-33 22-54 26Z" fill="#f6ecd4"/>
+<path d="m555 630 57-20 2 11-56 23Z" fill="#d8cdb1"/>
+<path d="m555 617 49-17" stroke="#e74829" stroke-width="4"/>
+
+
+<!-- One sculptural hair silhouette and a compact bun, with no detached wedges. -->
+<g transform="translate(-58 -22)">
+<path d="M429 260C399 238 407 185 451 158 420 148 419 117 443 95 471 72 516 81 521 108 526 125 518 137 507 146 568 144 609 177 617 224 641 258 635 296 613 323 636 362 619 406 584 429 552 450 513 455 486 432L451 401 419 326Z" fill="#191e21"/>
+<path d="M453 110c15-11 38-7 46 6m55 50c22 5 39 22 45 43" stroke="#4a4b40" stroke-width="3.5" stroke-linecap="round"/>
+<!-- The neck settles into the collar instead of ending in a pointed patch. -->
+<path d="M479 377 473 429C468 448 458 455 445 461 458 477 476 488 484 495L533 454 518 426 519 364Z" fill="#efa786"/>
+<path d="m480 408-5 26 26 35-1-40Z" fill="#dc7b60"/>
+<!-- A gently angular profile, with a quiet smile turned towards the meal. -->
+<path d="M451 239c29-13 62-6 79 19l11 43-16 41-4 32c-3 22-13 40-28 45-13 3-26-7-35-22l-13-24-28-10 15-25 7-45Z" fill="#f0aa87"/>
+<path d="m438 337-13 23 22 7Z" fill="#e36e4b"/>
+<path d="M526 306c16-15 30-8 23 10-4 10-13 15-23 18Z" fill="#f0aa87"/>
+<path d="m532 313 7-2-3 9" stroke="#ca654b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M417 272c0-41 42-67 77-52 26 11 43 35 48 67-32 4-59-10-76-32-10 24-23 40-42 48Z" fill="#191e21"/>
+<path d="M435 255c9-14 21-22 33-24" stroke="#4e4d40" stroke-width="3" stroke-linecap="round"/>
+<path d="M439 318c5-6 11-7 16-2m-15 15c5 4 10 4 15 0" stroke="#191e21" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M455 389c6 4 12 3 17-1" stroke="#b84b36" stroke-width="3" stroke-linecap="round"/>
+<path d="M483 351c-5-8-1-16 7-18 10-1 16 7 12 15-4 8-14 10-19 3Z" fill="#e98669"/>
+<path d="M533 337c-4 5-3 11 3 14 6 2 11-2 9-8-2-5-7-8-12-6Z" fill="#e4b944"/>
+</g>
+<!-- Lightweight AR eyewear follows the profile with a thin temple and two lenses. -->
+<g transform="translate(-58 -22)">
+<path d="m430 321 31-5 10 2 38-7 24-2" stroke="#263d64" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m430 321 4 24 27-3 1-24m10-1 3 23 28-4 5-24" fill="#9bd6cb" fill-opacity=".33" stroke="#263d64" stroke-width="3.4" stroke-linejoin="round"/>
+<path d="m437 325 12-2m32-2 15-3" stroke="#d7fff0" stroke-width="2" stroke-linecap="round"/>
+<path d="m510 314 23-5" stroke="#263d64" stroke-width="5" stroke-linecap="round"/>
+</g>
+
+<!-- A soft folded collar grows out of the neckline. -->
+<path d="M383 430c10 18 26 35 43 47l-32 14-28-43Zm95 2c-13 15-30 30-52 45l35 12 31-40Z" fill="#fbf1d8"/>
+<path d="m383 451 41 28 40-24" stroke="#d7c9a8" stroke-width="2.5" stroke-linecap="round"/>
+
+
+<!-- A modest mixing bowl sits close to the body, below the elbows. -->
+<!-- The spoon rests inside it; neither arm needs an exaggerated overhead gesture. -->
+<path d="m306 665-45-120c-12-7-17-23-11-35 7-12 21-7 26 8 4 12 3 22-4 29l47 114Z" fill="#b58a49"/>
+<path d="M244 662c50-27 258-29 313-4 18 9 19 24 6 35l-313 4c-18-7-21-24-6-35Z" fill="#20272a"/>
+<!-- Ingredients nestle into the bowl rather than forming a floating landscape. -->
+<path d="M293 670c-29-9-42-26-29-42-15-19-1-38 16-35-2-23 24-36 37-19 22-12 43 5 32 24 25 8 25 29 7 40 15 17-5 34-28 35Z" fill="#25734e"/>
+<path d="M302 663c-3-31-3-53 5-76m-4 55-21-17m21 8 25-22" stroke="#c9cf97" stroke-width="4" stroke-linecap="round"/>
+<path d="m423 674 48-103 38 15-65 103Z" fill="#ee5b2b"/>
+<path d="m474 577-10-33 16 12 5-36 14 31 25-19-8 34 19 1-30 22Z" fill="#84933e"/>
+<path d="m468 609 20 7m-31 14 18 7m-29 14 14 6" stroke="#8f3f2b" stroke-width="3" stroke-linecap="round"/>
+<path d="M350 668c-8-21 7-43 29-44 26-2 43 19 34 40-9 18-50 22-63 4Z" fill="#e9482a"/>
+<path d="m376 629-13-13 18 4 13-13 1 17 18 6-23 3-10 13Z" fill="#25734e"/>
+<path d="m362 650-1 7" stroke="#f6e8cc" stroke-width="5" stroke-linecap="round"/>
+<path d="M475 677c-20-23-9-47 21-70 23 30 52 43 36 64-14 16-31 18-57 6Z" fill="#d5a0c2"/>
+<path d="M496 615c-28 25-31 43-11 59m10-49c-19 21-18 34-6 46m9-53c32 23 37 40 13 57m-10-48c23 18 26 31 12 44" stroke="#f5ead3" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M329 678c-4-26 15-44 35-42l9 15Z" fill="#e8c447"/>
+<path d="m333 675 27-32 7 7Z" fill="#f7edce"/>
+<!-- The bowl's outer curve is comfortable to cradle at the waist. -->
+<path d="M231 673c24 92 77 146 173 151 91 4 145-46 170-152-92 39-248 42-343 1Z" fill="#338aa4"/>
+<path d="M232 671c92 40 249 39 342-1l-5 20c-91 38-240 39-331 1Z" fill="#1d3039"/>
+<path d="M252 704c21 57 57 87 104 99" stroke="#236980" stroke-width="7" stroke-linecap="round"/>
+<path d="M270 711c12 26 28 44 45 56m17 11 9 4" stroke="#e3e6c9" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M231 673c24 92 77 146 173 151 91 4 145-46 170-152-92 39-248 42-343 1Z" fill="url(#scumble)"/>
+<!-- Palms cup the underside; relaxed fingers curl along the visible lower rim. -->
+<path d="M307 778c11-6 22-3 31 8l15 13 34 6c12 2 13 13 1 14l-29-3 28 13c12 5 7 16-5 12l-28-10 17 14c10 8 2 17-8 11l-38-19c-18-8-29-24-26-39Z" fill="#efa786"/>
+<path d="m330 807 46 13m-43-3 41 18m-45-8 30 19" stroke="#c9694e" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M511 778c-11-6-23-2-32 9l-14 13-36 7c-12 2-12 13 0 14l28-4-28 14c-12 6-6 16 6 12l27-11-16 15c-10 9-2 17 8 10l38-20c18-8 30-25 27-40Z" fill="#efa786"/>
+<path d="m487 807-47 15m44-4-39 19m44-9-29 20" stroke="#c9694e" stroke-width="2.8" stroke-linecap="round"/>
+
+</g></svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">A soft rabbit and a little knitted baby shoe</title>
+<defs><filter id="grain" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="23" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer result="faint"><feFuncA type="linear" slope=".19"/></feComponentTransfer><feComposite in="faint" in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
+<g filter="url(#grain)">
+<!-- One ear bends over itself: an organic silhouette rather than a row of circles. -->
+<path d="M101 132C77 95 65 50 85 35c18-15 40 28 43 66 12-37 40-64 57-48 13 15-10 51-35 76 31 15 38 54 17 77 13 14 22 33 15 50-12 24-89 26-117 6-19-14-15-33 2-49-31-26-13-73 34-81Z" fill="#e5b83f"/>
+<path d="M91 48c-7 8 0 41 16 65-3-32-8-61-16-65Zm78 14c-10-2-27 22-32 43 18-16 34-35 32-43Z" fill="#e79e58"/>
+<path d="M123 136c-29-4-50 17-46 43 4 27 33 40 57 27 29 12 52-5 48-30-3-24-31-43-59-40Z" fill="#edc96c"/>
+<path d="M110 164c-4-1-6 4-4 7 3 4 7 2 7-2 0-3-1-5-3-5Zm37-1c-4-1-6 4-4 7 2 4 7 2 7-2-1-3-1-4-3-5Z" fill="#191f22"/>
+<path d="m120 179 13-1-5 8Z" fill="#8d5739"/>
+<path d="m128 185-1 9m0-3c-7 7-14 6-18 1m19-1c5 6 11 6 16 0" stroke="#8d5739" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M84 206c15 7 66 9 85-3l5 16-26 10-44-1-23-9Z" fill="#e74829"/>
+<path d="m116 226 30 1 6 27-33-5Z" fill="#cf3c29"/>
+<path d="M86 231c-10-12-22-9-23 3-2 14 13 21 23 19m68-22c9-10 22-8 24 5 1 12-13 20-24 17" fill="#d29d38"/>
+<!-- A little shoe overlaps the toy: soft cuff, rounded toe, and a stitched sole. -->
+<path d="m190 162 44 1 4 44c28 0 46 17 43 34-3 22-67 29-101 14-15-6-17-21-8-38l12-26Z" fill="#304c98"/>
+<path d="m183 161 54-1 2 22-57 2Z" fill="#f4eacf"/>
+<path d="m192 165 1 14m10-14 1 14m10-14 1 14m10-14 1 14" stroke="#d6c8a5" stroke-width="2"/>
+<path d="m184 198 41 1-2 15-43-1Z" fill="#4069a2"/>
+<path d="M175 245c25 14 73 13 100-2l-2 12c-27 13-69 16-96 2Z" fill="#f4eacf"/>
+<path d="m187 254 4 2m9 1 4 1m10 1h4m10-1h4m10-2 4-1m9-2 4-1" stroke="#b2baaa" stroke-width="2" stroke-linecap="round"/>
+<path d="m199 195 15 1m-18 10 17 1" stroke="#f3e8cd" stroke-width="3" stroke-linecap="round"/>
+</g></svg>

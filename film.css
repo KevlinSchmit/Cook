@@ -1,0 +1,375 @@
+/* The film is one persistent stage. The kitchen and Sara travel between scenes. */
+.icon-library { position:absolute; pointer-events:none; }
+.scene-wash { position:absolute; z-index:1; inset:0; opacity:0; background:#f5ecd6; transition:background 1.7s ease,opacity 1.7s ease; pointer-events:none; }
+.kitchen { z-index:0; left:0; top:0; right:auto; bottom:auto; width:100%; height:100%; overflow:hidden; transition:left 2.2s var(--ease),top 2.2s var(--ease),width 2.2s var(--ease),height 2.2s var(--ease),border-radius 2s var(--ease),opacity 1.6s ease; }
+.sara { transition:left 2.1s var(--ease),top 2.1s var(--ease),width 2.1s var(--ease),opacity 1.5s ease,transform 2s var(--ease); }
+.sara-ar-art { position:absolute; inset:0; display:block; width:100%; height:auto; opacity:0; transform-origin:50% 85%; animation:sara-breathe 7s ease-in-out infinite; transition:opacity 1.2s ease; }
+.sara-art { transition:opacity 1.2s ease; }
+.sara.wearing-ar .sara-art { opacity:0; }
+.sara.wearing-ar .sara-ar-art { opacity:1; }
+.film-active .intro,.film-active .profile { opacity:0!important; visibility:hidden; pointer-events:none; }
+.film-active .food-layer { opacity:0; transform:translate(50px,20px) scale(.9); }
+.film-active .wordmark,.film-active .masthead-note,.film-active .chapter { visibility:hidden; pointer-events:none; }
+.film-active .motion-control span,.film-active .next-label { display:none; }
+.film-active .masthead { border-color:transparent; }
+.film-active .masthead::before { opacity:0; }
+.film-active .masthead { color:#304c98; }
+.film-active .sara-enter { opacity:1; transform:translate(0,0); transition-delay:0s; }
+.film-active .presentation-controls { background:none; color:#304c98; }
+.previous-scene { display:none; }
+.film-active .previous-scene { position:absolute; display:grid; place-items:center; left:4%; bottom:23px; width:48px; height:48px; border:1px solid #304c9855; border-radius:50%; background:#f5ecd6e3; color:#304c98; transition:transform .3s,background .3s; }
+.previous-scene svg { width:25px; height:18px; }
+.film-active .next-scene { width:48px; height:48px; padding:0; justify-content:center; border:1px solid #304c9855; background:#f5ecd6e3; }
+.film-active .next-scene svg { width:25px; }
+.next-scene svg,[data-scene="sara"] .next-scene svg { transform:none; }
+.film-active .previous-scene:hover { transform:translateX(-3px); background:#fffae9; }
+.film-active .scene-dot:after { border-color:#304c9877; }
+.film-active .scene-dot.active:after { background:#304c98; }
+.film-scene { position:absolute; z-index:5; inset:0; opacity:0; visibility:hidden; pointer-events:none; transform:scale(1.035); transform-origin:50% 60%; transition:opacity .9s ease,transform 1.8s var(--ease),visibility 0s .9s; }
+.film-scene.is-active { opacity:1; visibility:visible; pointer-events:auto; transform:scale(1); transition-delay:.15s,0s,0s; }
+.film-scene h2 { font-family:Fraunces,Georgia,serif; font-size:3.8cqw; font-weight:650; letter-spacing:-.12cqw; line-height:1.13; margin:0; text-wrap:balance; }
+.film-scene p { margin:0; line-height:1.4; }
+.film-scene [data-reveal] { opacity:0; transform:translateY(24px) scale(.97); transition:opacity .85s ease,transform 1.1s var(--ease); }
+.film-scene [data-reveal].is-revealed { opacity:1; transform:translateY(0) scale(1); }
+.film-active .scene-wash { opacity:.97; }
+.film-active .kitchen { opacity:.15; }
+
+/* Passion: the price arrives inside the same warm, living kitchen. */
+[data-scene="passion"] .scene-wash { opacity:.02; }
+[data-scene="passion"] .kitchen { opacity:1; }
+[data-scene="passion"] .world { transform:translate(-28px,0) scale(1.055); }
+[data-scene="passion"] .sara { left:12%; top:22%; width:32%; opacity:1; }
+.passion-copy { position:absolute; left:51%; top:20%; width:40%; }
+.passion-copy h2 { font-size:3.8cqw; color:#e74829; max-width:36cqw; }
+.passion-copy p { margin-top:1.5cqw; font-family:Fraunces,Georgia,serif; font-style:italic; font-size:1.65cqw; }
+.family-detail { position:absolute; width:11%; left:3%; top:62%; transform:rotate(-7deg); }
+.restaurant-bill { position:absolute; left:61%; top:44%; width:24%; transform-origin:50% 5%; }
+.restaurant-bill img { display:block; width:100%; height:auto; filter:drop-shadow(.3cqw .5cqw 0 #b0986b18); }
+.restaurant-bill p { position:absolute; top:27%; left:18%; width:66%; padding:.7cqw .25cqw 1.2cqw; background:#f9efda; text-align:center; }
+.restaurant-bill strong { display:block; font-family:Fraunces,Georgia,serif; font-weight:700; letter-spacing:-.25cqw; font-size:4.6cqw; line-height:1.1; color:#e74829; }
+.restaurant-bill span { display:block; font-size:1.03cqw; line-height:1.45; padding-top:.8cqw; }
+.restaurant-bill[data-reveal] { transform:translateY(-55px) rotate(9deg); }
+.restaurant-bill.is-revealed { transform:translateY(0) rotate(-4deg); }
+.ingredient-dance { position:absolute; inset:0; pointer-events:none; }
+.ingredient { position:absolute; object-fit:contain; animation:ingredient-drift 7s ease-in-out infinite; }
+.ingredient.tomato { left:43%; top:55%; width:5.5%; height:10%; }
+.ingredient.carrot { left:46%; top:43%; width:6%; height:14%; animation-delay:-2s; }
+.ingredient.onion { left:44%; top:68%; width:4.5%; height:8%; animation-delay:-4s; }
+
+/* The home recedes and the school remains just beyond the winding route. */
+[data-scene="barriers"] .scene-wash { opacity:.99; background:#eee5ce; }
+[data-scene="barriers"] .sara { left:5%; top:41%; width:23%; opacity:1; }
+.school-path { position:absolute; inset:0; width:100%; height:100%; fill:none; }
+.path-underlay { stroke:#ded1ad; stroke-width:26; stroke-linecap:round; }
+.path-dashes { stroke:#b9a57c; stroke-width:3; stroke-dasharray:12 15; animation:path-travel 22s linear infinite; }
+.school-dream { position:absolute; left:66%; top:16%; width:29%; transform:rotate(2deg); }
+.school-dream img { display:block; width:100%; }
+.obstacle { position:absolute; text-align:center; transform-origin:50% 65%; }
+.obstacle img { display:block; width:100%; height:auto; }
+.obstacle p { font-family:Fraunces,Georgia,serif; font-weight:550; font-size:1.28cqw; line-height:1.25; color:#293c48; }
+.obstacle-0 { left:26%; top:36%; width:15%; --tilt:-5deg; }
+.obstacle-1 { left:41%; top:49%; width:18%; --tilt:3deg; }
+.obstacle-2 { left:51%; top:28%; width:14%; --tilt:-4deg; }
+.obstacle-3 { left:68%; top:49%; width:16%; --tilt:5deg; }
+.obstacle[data-reveal] { transform:translateY(-35px) rotate(calc(var(--tilt) * -1)) scale(.85); }
+.obstacle.is-revealed { transform:translateY(0) rotate(var(--tilt)) scale(1); }
+.barriers-question { position:absolute; top:79%; left:23%; width:67%; font-family:Fraunces,Georgia,serif; font-size:2cqw; line-height:1.3!important; letter-spacing:-.03cqw; text-wrap:balance; text-align:center; padding:1cqw; background:#eee5cedb; border-radius:1cqw; }
+
+/* A wider population, rendered as people and a garden of ten proportional seeds. */
+[data-scene="population"] .scene-wash { opacity:1; background:#304c98; }
+[data-scene="population"] .kitchen { opacity:0; }
+[data-scene="population"] .sara { left:8%; top:43%; width:20%; opacity:0; transform:scale(.85); }
+[data-scene="population"] .masthead { color:#f5ecd6; }
+[data-scene="population"] .scene-dot:after { border-color:#f5ecd688; }
+[data-scene="population"] .scene-dot.active:after { background:#f5ecd6; }
+.population-scene { color:#f5ecd6; }
+.population-scene > h2 { position:absolute; left:10%; top:13%; width:80%; text-align:center; font-size:4.6cqw; }
+.stat-block { position:absolute; top:28%; width:32%; }
+.stat-care { left:12%; }
+.stat-remote { left:56%; }
+.stat-value { display:block; font-family:Fraunces,Georgia,serif; font-size:6.3cqw; font-weight:650; line-height:1; letter-spacing:-.35cqw; color:#edc455; }
+.stat-block p { font-size:1.35cqw; max-width:31cqw; line-height:1.38; margin-top:1.2cqw; }
+.stat-garden { display:flex; gap:.35cqw; width:100%; margin-top:.8cqw; height:3cqw; align-items:flex-end; }
+.stat-garden svg { width:2.4cqw; height:3cqw; flex:0 0 auto; overflow:visible; }
+.stat-garden .filled { fill:#efc94e; stroke:#efc94e; stroke-width:1; }
+.stat-garden .unfilled { fill:transparent; stroke:#f5ecd66b; stroke-width:1.5; }
+.stat-garden .seed-vein { fill:none; stroke:#304c98; stroke-width:1.5; }
+.stat-garden .unfilled .seed-vein { stroke:#f5ecd655; }
+.stat-block .stat-garden svg { transform-origin:50% 100%; transform:scaleY(.2) rotate(-10deg); transition:transform 1s var(--ease); }
+.stat-block.is-revealed .stat-garden svg { transform:scaleY(1) rotate(0); }
+.stat-block.is-revealed .stat-garden svg:nth-child(2n) { transition-delay:.12s; }
+.stat-block.is-revealed .stat-garden svg:nth-child(3n) { transition-delay:.25s; }
+.stat-block.is-revealed .stat-garden svg:nth-child(4n) { transition-delay:.36s; }
+.community-art { position:absolute; left:6%; top:57%; width:88%; height:auto; transform:translateX(6%) scale(.94); opacity:0; transition:transform 2.3s var(--ease),opacity 1.5s; }
+.population-scene.is-active .community-art { opacity:1; transform:translateX(0) scale(1); transition-delay:.25s; }
+
+/* The large institution and the modest home occupy the same world at different scales. */
+[data-scene="school"] .scene-wash { opacity:1; background:#f5ecd6; }
+[data-scene="school"] .kitchen { left:66%; top:42%; width:29%; height:29%; border-radius:1.1cqw; opacity:1; z-index:2; box-shadow:.5cqw .7cqw 0 #263f6212; }
+[data-scene="school"] .world { transform:none; }
+[data-scene="school"] .sara { left:74%; top:46%; width:14%; opacity:1; }
+.school-scene > h2 { position:absolute; top:14%; left:6%; width:49%; font-size:3.3cqw; }
+.professional-kitchen { position:absolute; left:5%; top:28%; width:48%; height:auto; }
+.accessibility-divide { position:absolute; left:55.5%; top:36%; width:8%; height:34%; }
+.accessibility-divide svg { width:100%; height:100%; fill:none; stroke:#c9bda0; stroke-width:3; stroke-dasharray:5 10; }
+.accessibility-copy { position:absolute; left:65%; top:31%; width:30%; font-family:Fraunces,Georgia,serif; font-size:1.75cqw; text-align:center; color:#b5472f; }
+.home-question { position:absolute; left:13%; top:82%; width:74%; font-family:Fraunces,Georgia,serif; font-size:2.55cqw; letter-spacing:-.06cqw; text-wrap:balance; text-align:center; }
+[data-scene="school"][data-beat="2"] .kitchen { box-shadow:0 0 0 .4cqw #e5bc4c24,.5cqw .7cqw 0 #263f6212; }
+
+/* Reveal: the familiar kitchen opens into a generous AR field of view. */
+[data-scene="reveal"] .scene-wash { opacity:.09; background:#eef2db; }
+[data-scene="reveal"] .kitchen { opacity:1; }
+[data-scene="reveal"] .world { transform:translate(-25px,10px) scale(1.07); }
+[data-scene="reveal"] .sara { left:10%; top:22%; width:34%; opacity:1; }
+.ar-environment { position:absolute; inset:0; pointer-events:none; }
+.target-one { position:absolute; left:20%; top:52%; width:22%; height:25%; }
+.ar-float { position:absolute; }
+.ar-float-one { left:35%; top:27%; width:12%; min-height:9%; }
+.ar-float-two { left:5.5%; top:50%; width:12%; min-height:7%; }
+.ar-float-three { left:39%; top:72%; width:6%; min-height:7%; }
+.product-reveal { position:absolute; left:52%; top:29%; width:41%; }
+.product-reveal h2 { color:#e74829; font-family:Fraunces,Georgia,serif; font-weight:850; letter-spacing:-.7cqw; font-size:9.8cqw; line-height:1; transform-origin:50% 100%; }
+.product-promise { font-family:Fraunces,Georgia,serif; font-weight:500; font-size:2.35cqw; letter-spacing:-.07cqw; margin-top:1.25cqw!important; line-height:1.28!important; }
+.product-description { font-size:1.2cqw; max-width:36cqw; margin-top:2cqw!important; line-height:1.5!important; }
+.reveal-scene.is-active .product-reveal h2 { animation:product-letterpress 1.7s var(--ease) both; }
+
+/* Capabilities share one field of view. The artwork remains at the counter. */
+[data-scene="features"] .scene-wash { opacity:.9; background:#eff0d9; }
+[data-scene="features"] .kitchen { opacity:.52; }
+[data-scene="features"] .world { transform:translate(-35px,0) scale(1.045); }
+[data-scene="features"] .sara { left:8%; top:27%; width:29%; opacity:1; }
+.feature-title { position:absolute; top:16%; left:48%; width:43%; min-height:2.2em; font-size:3.2cqw!important; line-height:1.1!important; }
+
+@keyframes ingredient-drift { 0%,100% { transform:translateY(0) rotate(-4deg); } 50% { transform:translateY(-9px) rotate(5deg); } }
+@keyframes path-travel { to { stroke-dashoffset:-270; } }
+@keyframes product-letterpress { 0% { opacity:0; transform:translateY(20px) scale(.82) rotate(-5deg); } 55% { opacity:1; transform:translateY(0) scale(1.025) rotate(.5deg); } 100% { opacity:1; transform:scale(1) rotate(0); } }
+.motion-paused :is(.sara-ar-art,.ingredient,.path-dashes) { animation-play-state:paused!important; }
+@media(prefers-reduced-motion:reduce) { .film-scene,.film-scene *, .sara,.kitchen,.world,.scene-wash { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }
+/* AR overlays share a quiet material language with the paper illustrations. */
+.ar-orbits { position:absolute; inset:0; width:100%; height:100%; overflow:visible; fill:none; stroke:#79a797; stroke-width:1.5; stroke-dasharray:8 13; opacity:.65; }
+.ar-orbits path { vector-effect:non-scaling-stroke; animation:feature-orbit 28s linear infinite; }
+.ar-orbits path:nth-child(2) { stroke:#b9d6c4; stroke-dasharray:2 9; animation-direction:reverse; }
+.ar-target { color:#77a38d; }
+.ar-target svg { display:block; width:100%; height:100%; fill:none; stroke:currentColor; stroke-width:1.2; }
+.ar-float { display:flex; align-items:center; flex-wrap:wrap; gap:.65cqw; padding:1cqw 1.2cqw; border:1px solid #edf6e7c9; border-radius:1.1cqw; background:#fff9e6d9; box-shadow:0 .9cqw 2.8cqw #28473b12; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); color:#304c98; animation:feature-interface-drift 7s ease-in-out infinite; }
+.ar-float > svg { width:2.4cqw; height:2.4cqw; flex:0 0 auto; fill:none; }
+.ar-float .interface-line { width:4.3cqw; height:.28cqw; background:#7ca18b; border-radius:1cqw; }
+.ar-float .interface-line.short { width:2.3cqw; margin-left:3.05cqw; background:#b5c9ae; }
+.ar-float-two { animation-delay:-2s; }
+.ar-float-three { animation-delay:-4s; }
+
+/* One transparent instrument changes its contents, rather than opening five pages. */
+.feature-system {
+  position:absolute; left:48%; top:29%; width:43%; height:45%;
+  color:#304c98; isolation:isolate; border:1px solid #e0ead7c9;
+  border-radius:2.5cqw .9cqw 2.5cqw .9cqw;
+  background:linear-gradient(140deg,#fff9e8ed,#edf2dcdf 65%,#dcead7d9);
+  box-shadow:0 1.8cqw 4cqw #26463814,inset 0 0 0 1px #ffffff73;
+  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  transform-origin:40% 55%; transition:transform 1.2s var(--ease),border-radius 1.2s var(--ease),background 1.2s;
+}
+.feature-system[data-feature="1"] { border-radius:1cqw 2.7cqw 1cqw 2.7cqw; }
+.feature-system[data-feature="2"] { border-radius:2cqw; }
+.feature-system[data-feature="3"] { border-radius:3.5cqw 1cqw 3.5cqw 1cqw; }
+.feature-system[data-feature="4"] { border-radius:1cqw 1cqw 3cqw 1cqw; }
+.feature-viewport { position:absolute; z-index:4; inset:1.25cqw; pointer-events:none; }
+.feature-viewport span { position:absolute; width:1.25cqw; height:1.25cqw; border-color:#8aafa0; border-style:solid; border-width:0; opacity:.8; }
+.feature-viewport span:nth-child(1) { top:0; left:0; border-top-width:1px; border-left-width:1px; }
+.feature-viewport span:nth-child(2) { top:0; right:0; border-top-width:1px; border-right-width:1px; }
+.feature-viewport span:nth-child(3) { bottom:0; left:0; border-bottom-width:1px; border-left-width:1px; }
+.feature-viewport span:nth-child(4) { bottom:0; right:0; border-bottom-width:1px; border-right-width:1px; }
+.feature-visual { position:absolute; inset:12% 11%; opacity:0; visibility:hidden; pointer-events:none; transform:translate(1.8cqw,.7cqw) scale(.92) rotate(1.5deg); transform-origin:50% 60%; filter:blur(4px); transition:opacity .65s ease,transform 1.2s var(--ease),filter .8s ease,visibility 0s .8s; }
+.feature-visual.is-current { opacity:1; visibility:visible; pointer-events:auto; transform:translate(0,0) scale(1) rotate(0); filter:blur(0); transition-delay:.25s,.15s,.15s,0s; }
+
+/* Curriculum — tactile lesson cards with functional selection and progress. */
+.curriculum-visual { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:1.1cqw; }
+.lesson-tile { position:relative; appearance:none; display:grid; place-items:center; padding:.65cqw; border:1px solid #cedbc0; border-radius:.85cqw; background:#fff9e8cf; color:#304c98; box-shadow:0 .2cqw .6cqw #26463804; transition:transform .35s var(--ease),background .35s,color .35s,border-color .35s; }
+.lesson-tile svg { width:4.2cqw; height:4.2cqw; fill:none; pointer-events:none; }
+.lesson-tile:nth-child(2n) { background:#edf0dce8; }
+.lesson-tile:nth-child(3n) { color:#557c54; }
+.lesson-tile:hover { transform:translateY(-.3cqw); border-color:#7aab96; background:#fffff3; }
+.lesson-tile[aria-pressed="true"] { background:#304c98; color:#f5ecd6; border-color:#304c98; transform:translateY(-.2cqw); box-shadow:0 .4cqw 1cqw #304c9824; }
+.lesson-tile:focus-visible { outline:2px solid #e74829; outline-offset:4px; }
+.lesson-progress { position:absolute; bottom:11%; left:20%; width:60%; height:3px; background:#afc6b34d; border-radius:4px; overflow:hidden; }
+.lesson-progress::after { content:""; display:block; height:100%; width:0; background:#93bfa3; border-radius:inherit; transition:width .8s var(--ease); }
+.lesson-tile[aria-pressed="true"] .lesson-progress::after { width:100%; }
+.lesson-0 .lesson-progress::after { width:72%; }
+.lesson-1 .lesson-progress::after { width:38%; }
+.lesson-2 .lesson-progress::after { width:16%; }
+
+/* Recognition — objects stay organic; only their tracking brackets are precise. */
+.recognition-visual { inset:14% 9%; overflow:hidden; }
+.recognized { position:absolute; top:16%; width:30%; height:69%; }
+.recognized img { display:block; width:100%; height:100%; object-fit:contain; }
+.recognized > svg { position:absolute; inset:0; width:100%; height:100%; fill:none; stroke:#6f9b82; stroke-width:1; opacity:.8; }
+.ingredient-one { left:0; transform:rotate(-5deg); }
+.ingredient-two { left:35%; top:7%; height:79%; transform:rotate(7deg); }
+.ingredient-three { right:0; transform:rotate(-4deg); }
+.recognition-scan { position:absolute; z-index:2; top:18%; left:0; width:100%; height:1px; background:#7cb99f; box-shadow:0 0 .6cqw #7cb99f80,0 .7cqw 1.5cqw #a2d2ae4d; opacity:0; }
+.recognition-scan::before { content:""; position:absolute; left:0; right:0; bottom:1px; height:2cqw; background:linear-gradient(transparent,#9bc7aa24); }
+.recognition-visual.is-current .recognition-scan { animation:feature-scan 5.6s ease-in-out infinite; }
+.recognition-visual.is-current .recognized > svg { animation:feature-lock 5.6s ease-in-out infinite; }
+.recognition-visual.is-current .ingredient-two > svg { animation-delay:.35s; }
+.recognition-visual.is-current .ingredient-three > svg { animation-delay:.65s; }
+
+/* Technique — the measured path, the cutting motion, then a quiet confirmation. */
+.technique-visual { inset:12% 9%; }
+.technique-board { position:absolute; inset:0; overflow:hidden; border:1px solid #d7dfc7; border-radius:1.5cqw; background:#f8eed9a6; }
+.technique-board::before { content:""; position:absolute; left:13%; bottom:15%; width:53%; height:1px; background:#c6b98a; transform:rotate(-8deg); }
+.technique-board > img { position:absolute; left:8%; top:13%; width:38%; height:74%; object-fit:contain; transform:rotate(35deg); }
+.technique-knife { position:absolute; left:43%; top:5%; width:31%; height:55%; color:#304c98; fill:none; transform-origin:35% 80%; }
+.technique-trace { position:absolute; left:17%; bottom:11%; width:68%; height:61%; fill:none; stroke:#6fa384; stroke-width:1.8; stroke-dasharray:4 5; opacity:.8; }
+.technique-check { position:absolute; right:8%; bottom:12%; width:15%; height:25%; padding:.55cqw; border:1px solid #9abc9a; border-radius:50%; background:#f7fae9e8; color:#4c855e; fill:none; }
+.technique-visual.is-current .technique-knife { animation:feature-technique 5.8s ease-in-out infinite; }
+.technique-visual.is-current .technique-trace { animation:feature-trace 5.8s ease-in-out infinite; }
+.technique-visual.is-current .technique-check { animation:feature-confirm 5.8s ease-in-out infinite; }
+
+/* Hands-free — a generous field of view and a compact sequence of picture cues. */
+.handsfree-visual { display:flex; align-items:center; flex-direction:column; justify-content:center; }
+.guidance-glasses { width:49%; height:42%; margin-top:-4%; margin-bottom:1%; color:#304c98; fill:none; overflow:visible; }
+.guidance-step { display:flex; align-items:center; justify-content:space-between; width:84%; height:28%; padding:0 1cqw; }
+.guidance-step svg { width:3.3cqw; height:3.3cqw; fill:none; color:#5b8866; }
+.guidance-step i { display:block; flex:1; height:1px; background:#a6b99a; margin:0 .85cqw; }
+.guidance-progress { display:flex; width:48%; height:3px; gap:.4cqw; margin-top:6%; }
+.guidance-progress span { display:block; flex:1; height:100%; background:#afc4aa66; border-radius:2px; }
+.guidance-progress span:first-child { background:#78a98d; }
+.handsfree-visual.is-current .guidance-progress span { animation:feature-progress 8s ease-in-out infinite; }
+.handsfree-visual.is-current .guidance-progress span:nth-child(2) { animation-delay:1s; }
+.handsfree-visual.is-current .guidance-progress span:nth-child(3) { animation-delay:2s; }
+.handsfree-visual.is-current .guidance-progress span:nth-child(4) { animation-delay:3s; }
+
+/* Personalization — the actual recurring kitchen, overlaid with matched equipment. */
+.personalized-visual { inset:13% 10%; overflow:hidden; border-radius:1.3cqw; background:#f5ecd6; border:1px solid #d8dec5; }
+.personal-home { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.89; }
+.equipment-signal { position:absolute; display:grid; place-items:center; width:17%; height:26%; border:1px solid #91bca0; border-radius:1cqw; background:#f9f8e8de; box-shadow:0 .2cqw 1cqw #2e4c381a; color:#304c98; }
+.equipment-signal svg { width:74%; height:74%; fill:none; }
+.signal-one { left:59%; top:51%; }
+.signal-two { left:12%; top:53%; }
+.equipment-match { position:absolute; top:9%; right:7%; width:13%; height:22%; padding:.3cqw; border:1px solid #94bd96; border-radius:50%; color:#50845c; background:#ffffedeb; fill:none; }
+.personalized-visual.is-current .equipment-signal { animation:feature-equipment 5.2s ease-in-out infinite; }
+.personalized-visual.is-current .signal-two { animation-delay:1.1s; }
+.personalized-visual.is-current .equipment-match { animation:feature-confirm 5.2s ease-in-out infinite; }
+
+@keyframes feature-interface-drift { 0%,100% { translate:0 0; } 50% { translate:0 -.5cqw; } }
+@keyframes feature-orbit { to { stroke-dashoffset:-210; } }
+@keyframes feature-scan { 0%,10% { opacity:0; transform:translateY(0); } 18% { opacity:.9; } 65% { opacity:.9; transform:translateY(13cqw); } 78%,100% { opacity:0; transform:translateY(13cqw); } }
+@keyframes feature-lock { 0%,15% { opacity:.25; } 35%,80% { opacity:1; } 100% { opacity:.25; } }
+@keyframes feature-technique { 0%,100% { transform:translateY(0) rotate(-5deg); } 24% { transform:translateY(-.7cqw) rotate(4deg); } 32% { transform:translateY(.4cqw) rotate(-8deg); } 46%,83% { transform:translateY(0) rotate(-5deg); } }
+@keyframes feature-trace { 0%,16% { opacity:.15; stroke-dashoffset:24; } 48%,80% { opacity:.9; stroke-dashoffset:0; } 100% { opacity:.15; } }
+@keyframes feature-confirm { 0%,28% { opacity:.1; transform:scale(.8); } 48%,85% { opacity:1; transform:scale(1); } 100% { opacity:.1; transform:scale(.8); } }
+@keyframes feature-progress { 0%,18% { background:#adc2a86b; } 38%,75% { background:#78a98d; } 100% { background:#adc2a86b; } }
+@keyframes feature-equipment { 0%,100% { box-shadow:0 0 0 0 #91bca000; } 45% { box-shadow:0 0 0 .6cqw #91bca026; border-color:#76a78b; } }
+.motion-paused :is(.ar-orbits path,.ar-float,.recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match) { animation-play-state:paused!important; }
+@media(prefers-reduced-motion:reduce) {
+  .feature-visual { transition:none; filter:none; }
+  .ar-orbits path,.ar-float,.recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match { animation:none!important; }
+  .technique-check,.equipment-match { opacity:1; transform:none; }
+}
+@media(max-aspect-ratio:1/1) {
+  .feature-system { left:calc(50% - 164px); top:38%; width:328px; height:285px; border-radius:22px 10px 30px 10px; }
+  .feature-visual { inset:12% 10%; }
+  .curriculum-visual { gap:12px; }
+  .lesson-tile { border-radius:10px; }
+  .lesson-tile svg { width:46px; height:46px; }
+  .feature-viewport { inset:15px; }
+  .feature-viewport span { width:15px; height:15px; }
+  .technique-board { border-radius:17px; }
+  .technique-check { padding:5px; }
+  .guidance-step svg { width:35px; height:35px; }
+  .guidance-step i { margin:0 10px; }
+  .guidance-progress { gap:5px; }
+  .equipment-signal { border-radius:12px; }
+}
+/* Portrait remains usable; the presentation itself is composed for 16:9. */
+@media(max-aspect-ratio:1/1) {
+  .film-active .scene-dots { left:50%; gap:0; }
+  .scene-dot { width:27px; }
+  .film-active .previous-scene { left:6%; width:40px; height:40px; bottom:20px; }
+  .film-active .next-scene { width:40px; height:40px; }
+  .film-active .scene-dots { bottom:20px; }
+  .film-active .sara { left:calc(50% - 150px); top:38%; width:255px; }
+  .passion-copy { left:calc(50% - 164px); top:16%; width:328px; }
+  .passion-copy h2 { max-width:none; font-size:34px; }
+  .passion-copy p { font-size:16px; margin-top:17px; }
+  .restaurant-bill { left:calc(50% + 22px); top:45%; width:155px; }
+  .restaurant-bill p { padding:9px 2px 12px; }
+  .restaurant-bill strong { font-size:38px; letter-spacing:-2px; }
+  .restaurant-bill span { font-size:10px; padding-top:7px; }
+  .ingredient-dance,.family-detail { display:none; }
+  [data-scene="barriers"] .sara { left:calc(50% - 180px); top:42%; width:125px; }
+  .school-dream { left:calc(50% - 110px); top:15%; width:220px; }
+  .school-path { left:calc(50% - 180px); top:26%; width:360px; height:400px; }
+  .obstacle-0 { left:calc(50% - 95px); top:41%; width:100px; }
+  .obstacle-1 { left:calc(50% + 30px); top:41%; width:120px; }
+  .obstacle-2 { left:calc(50% - 90px); top:57%; width:95px; }
+  .obstacle-3 { left:calc(50% + 30px); top:56%; width:105px; }
+  .obstacle p { font-size:11px; }
+  .barriers-question { left:calc(50% - 164px); top:77%; width:328px; font-size:18px; padding:10px; }
+  .population-scene > h2 { left:calc(50% - 164px); top:15%; width:328px; font-size:36px; }
+  .stat-block { top:27%; width:150px; }
+  .stat-care { left:calc(50% - 160px); }
+  .stat-remote { left:calc(50% + 15px); }
+  .stat-value { font-size:61px; letter-spacing:-3px; }
+  .stat-block p { max-width:none; font-size:11px; margin-top:14px; }
+  .stat-garden { gap:3px; height:25px; margin-top:9px; }
+  .stat-garden svg { width:12px; height:24px; }
+  .community-art { left:calc(50% - 275px); top:60%; width:550px; }
+  [data-scene="population"] .sara { opacity:0; }
+  .school-scene > h2 { left:calc(50% - 164px); top:16%; width:328px; font-size:31px; text-align:center; }
+  .professional-kitchen { left:calc(50% - 180px); top:29%; width:255px; }
+  [data-scene="school"] .kitchen { left:calc(50% + 30px); top:52%; width:145px; height:112px; border-radius:9px; }
+  [data-scene="school"] .sara { left:calc(50% + 66px); top:52%; width:84px; }
+  .accessibility-divide { left:calc(50% - 30px); top:49%; width:55px; height:160px; }
+  .accessibility-copy { left:calc(50% - 110px); top:66%; width:220px; font-size:16px; }
+  .home-question { left:calc(50% - 164px); top:77%; width:328px; font-size:25px; }
+  [data-scene="reveal"] .sara { left:calc(50% - 145px); top:41%; width:240px; }
+  .product-reveal { left:calc(50% - 164px); top:17%; width:328px; text-align:center; }
+  .product-reveal h2 { font-size:82px; letter-spacing:-7px; }
+  .product-promise { font-size:24px; margin-top:9px!important; letter-spacing:-.6px; }
+  .product-description { font-size:13px; max-width:none; margin-top:17px!important; }
+  .target-one { left:calc(50% - 105px); top:61%; width:180px; height:145px; }
+  .ar-float-one { left:calc(50% + 57px); top:48%; width:90px; min-height:50px; }
+  .ar-float-two { left:calc(50% - 173px); top:58%; width:85px; min-height:45px; }
+  .ar-float-three { display:none; }
+  .ar-float > svg { width:27px; height:27px; }
+  .ar-float .interface-line { width:27px; height:3px; }
+  .ar-float .interface-line.short { width:19px; margin-left:32px; }
+  .ar-orbits { display:none; }
+  .feature-title { left:calc(50% - 164px); top:16%; width:328px; font-size:31px!important; text-align:center; }
+  [data-scene="features"] .sara { left:calc(50% - 95px); top:61%; width:190px; }
+}
+.dream-sara { position:absolute; left:32%; bottom:9%; width:23%; height:auto; filter:drop-shadow(0 .2cqw .2cqw #191f2214); }
+.dream-school-art { display:block; width:100%; }
+/* Final safe-area refinements from the 16:9 composition review. */
+.passion-copy { left:49%; top:20%; width:37%; }
+.passion-copy h2 { font-size:3.2cqw; max-width:32cqw; }
+.passion-copy p { font-size:1.45cqw; }
+.obstacle-1 { left:42%; top:43%; width:17%; }
+.school-dream .dream-sara { position:absolute; left:32%; bottom:9%; width:23%; height:auto; }
+.community-art { left:12%; top:50%; width:76%; }
+.product-reveal { left:49%; top:27%; width:37%; }
+.product-reveal h2 { font-size:8cqw; letter-spacing:-.55cqw; }
+.product-promise { font-size:2cqw; max-width:31cqw; }
+.product-description { font-size:1.1cqw; max-width:31cqw; }
+@media(max-aspect-ratio:1/1) {
+  .passion-copy { left:calc(50% - 164px); top:16%; width:328px; }
+  .passion-copy h2 { font-size:34px; max-width:none; }
+  .passion-copy p { font-size:16px; }
+  .obstacle-1 { left:calc(50% + 30px); top:41%; width:120px; }
+  .community-art { left:calc(50% - 245px); top:58%; width:490px; }
+  .product-reveal { left:calc(50% - 164px); top:17%; width:328px; }
+  .product-reveal h2 { font-size:82px; letter-spacing:-7px; }
+  .product-promise { font-size:24px; max-width:none; }
+  .product-description { font-size:13px; max-width:none; }
+}
+.passion-copy { left:43%; }
+.obstacle-2 { top:22%; }
+.product-promise { max-width:29cqw; text-wrap:balance; }
+.sara { clip-path:inset(0 0 0 0); transition:left 2.1s var(--ease),top 2.1s var(--ease),width 2.1s var(--ease),opacity 1.5s ease,transform 2s var(--ease),clip-path 2s var(--ease); }
+[data-scene="school"] .sara { top:42%; clip-path:inset(0 0 14% 0); }
+@media(max-aspect-ratio:1/1) {
+  .passion-copy { left:calc(50% - 164px); }
+  .obstacle-2 { top:57%; }
+  .product-promise { max-width:none; }
+  [data-scene="school"] .sara { top:52%; }
+}

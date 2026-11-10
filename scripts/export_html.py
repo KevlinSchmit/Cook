@@ -17,11 +17,12 @@ def data_uri(relative_path):
 
 def export():
     html = (ROOT / 'index.html').read_text()
-    css = (ROOT / 'style.css').read_text()
+    css = '\n'.join((ROOT / name).read_text() for name in ['style.css', 'film.css'])
     css = re.sub(r"url\(['\"]?(assets/[^)'\"]+)['\"]?\)",
                  lambda match: f'url("{data_uri(match[1])}")', css)
     html = re.sub(r'  <link rel="preload" as="image"[^>]+>\n', '', html)
     html = html.replace('<link rel="stylesheet" href="style.css">', '<style>\n' + css + '\n</style>')
+    html = html.replace('  <link rel="stylesheet" href="film.css">\n', '')
     html = html.replace('  <script src="script.js" defer></script>\n', '')
     html = re.sub(r'src="(assets/[^"]+)"',
                   lambda match: f'src="{data_uri(match[1])}"', html)
