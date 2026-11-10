@@ -2,6 +2,12 @@
 
 A continuous, illustrated presentation for **Augmented Reality Culinary Education at Home**. The first two scenes share one animated kitchen: the title transforms into Sara's introduction, with her profile revealed progressively.
 
+## Download the complete presentation
+
+[Download COOK.html](https://github.com/KevlinSchmit/Cook/raw/refs/heads/slide-deck/COOK.html), then open the downloaded file in Chrome, Edge, Firefox, or Safari. This single file includes all images, fonts, styles, and animations, so it works offline without a server or adjacent files.
+
+After changing the source files, regenerate the downloadable version with `python scripts/export_html.py`.
+
 ## View locally
 
 Open `index.html` in a browser, or run this from the repository directory:
