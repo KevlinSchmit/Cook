@@ -1,126 +1,119 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" fill="none" role="img" aria-labelledby="title">
-<title id="title">A professional culinary class in an arched teaching kitchen</title>
+<title id="title">Two cooks leaning into the shared work of a professional kitchen</title>
 <defs>
-  <filter id="ink" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
-    <feTurbulence type="fractalNoise" baseFrequency=".66" numOctaves="3" stitchTiles="stitch" seed="14" result="paper"/>
-    <feColorMatrix in="paper" type="saturate" values="0" result="grey"/>
-    <feComponentTransfer in="grey" result="grain"><feFuncA type="linear" slope=".17"/></feComponentTransfer>
-    <feComposite in="grain" in2="SourceGraphic" operator="in" result="paint"/>
-    <feBlend in="SourceGraphic" in2="paint" mode="soft-light"/>
+  <filter id="school-print" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="14" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer>
+    <feComposite in2="SourceGraphic" operator="in" result="ink"/>
+    <feBlend in="SourceGraphic" in2="ink" mode="soft-light"/>
   </filter>
 </defs>
-<g filter="url(#ink)">
-<!-- A monumental arch carries the whole school silhouette. -->
-<path d="M66 663 76 294C80 116 230 33 499 35 759 35 920 117 925 288L938 663Z" fill="#304c98"/>
-<path d="m101 646 6-345C111 142 258 68 501 70 744 71 884 143 891 301L902 646Z" fill="#f5ecd6"/>
-<path d="M168 478 170 294C173 190 287 125 498 125 711 125 827 193 831 295L840 479Z" fill="#ded6bb"/>
-<path d="M185 477V310C186 215 301 157 501 158 701 159 810 218 813 310L822 479Z" fill="#b8c2ab"/>
-<!-- The arch is slightly off-register, like a printed poster. -->
-<path d="M69 663h26l9-373C110 152 224 78 375 51 194 65 77 150 76 294Z" fill="#233c81"/>
-<path d="m129 550 22 1-1 80-22-1Zm719 1 23-1 3 80-23 1Z" fill="#e74829"/>
-<path d="m134 291 16-3 1 158-17 1Zm715-2 18 3 3 153-17 2Z" fill="#e74829"/>
-<!-- High industrial extractor: clear architecture, no written signage. -->
-<path d="m435 146 126 1 1 111-129-2Z" fill="#8b9c94"/>
-<path d="m421 245 156 1 51 63-260 1Z" fill="#e9e4d1"/>
-<path d="m368 310 261-1 1 13-261 2Z" fill="#657b78"/>
-<path d="m440 278 119-1m-136 12 153-2" stroke="#bdc8bd" stroke-width="4" stroke-linecap="round"/>
-<!-- The cookware rail and three hanging implements. -->
-<path d="m211 318 581-2" stroke="#263f62" stroke-width="7" stroke-linecap="round"/>
-<path d="m405 324-1 42m182-41v30m121-34 3 53" stroke="#263f62" stroke-width="4" stroke-linecap="round"/>
-<path d="M402 354c-33 0-41 42-16 56 28 15 56-15 39-42-6-9-13-14-23-14Z" fill="#e74829"/>
-<path d="M401 365c-19 1-23 26-7 33 16 8 31-10 20-25-3-5-8-8-13-8Z" fill="#b73727"/>
-<path d="M578 345c-30 8-35 40-11 54 29 15 55-15 38-38-6-10-16-15-27-16Z" fill="#304c98"/>
-<path d="m705 366-7 31 24 2-3-33Z" fill="#e6b937"/>
-<path d="m702 376 17 1m-18 7 18 1" stroke="#92784a" stroke-width="2.5"/>
-<!-- Chef one: cap, neck and torso form a readable adult posture. -->
-<path d="M198 463c-3-77 6-142 53-161 23-7 55-3 84 15l44 83-40 37-22-31 3 80Z" fill="#f7eed8"/>
-<path d="m232 316-21 94 13 52 24-5-9-79 16-48Z" fill="#ded4b8"/>
-<path d="m296 297-3 32 29 15 5-37Z" fill="#e89a79"/>
-<path d="m300 309-2 17 22 12 4-25Z" fill="#ca6b52"/>
-<path d="M276 222c20-13 53-8 61 13l1 30 14 16-17 7c-3 22-11 35-28 35l-22-16-8-37Z" fill="#efa786"/>
-<path d="m333 264 12 17-15 4Z" fill="#db755b"/>
-<path d="M280 227c13 8 34 10 49 6l10 20c5-25-6-43-22-47-19-6-35 3-37 21Z" fill="#191f22"/>
-<path d="M278 273c-16-12-23 7-8 15l10 2Z" fill="#efa786"/>
-<path d="M307 264q7-6 13 0m-10 10 4 1m9 24q7 3 10-2" stroke="#191f22" stroke-width="2.6" stroke-linecap="round"/>
-<!-- An irregular toque, with the cap sitting on the skull, not above it. -->
-<path d="M275 240 267 214c-21 0-27-25-9-37 8-6 17-4 24 0 3-22 34-25 44-7 23-12 44 8 33 27l-16 19-9 27Z" fill="#faf1d8"/>
-<path d="m276 223 63 2-5 18-59-3Z" fill="#e1d7bb"/>
-<path d="m285 205 3 17m28-20-2 20" stroke="#e5dbc0" stroke-width="3" stroke-linecap="round"/>
-<!-- Lapels and fastening are deliberately economical. -->
-<path d="m287 319 21 31-31 15-6-32Zm31 5-10 26 25 6 7-19Z" fill="#fff4da"/>
-<path d="m307 353 3 90" stroke="#c8bea3" stroke-width="2.5"/>
-<path d="m321 371 1 1m1 21 1 1m0 22 1 1" stroke="#263d53" stroke-width="5" stroke-linecap="round"/>
-<!-- Bent forearms overlap the table naturally, with clear cuffs. -->
-<path d="M225 374c-26 20-39 45-28 64 10 17 41 24 89 19l28-5-4-25-57 1c-11 0-14-3-13-9l16-23Z" fill="#f5ecd6"/>
-<path d="m249 419-3 23 14 8 16-23Z" fill="#ded4b8"/>
-<path d="m273 427 33-1 25 7c13 4 14 11 4 12l-18-1 20 10c9 6 5 13-4 9l-31-11-31-1Z" fill="#efa786"/>
-<path d="m304 435 22 8m-24-1 20 9" stroke="#cc6a50" stroke-width="2.2" stroke-linecap="round"/>
-<path d="m348 373 30 34-20 24-29-36Z" fill="#ded4b8"/>
-<path d="m363 415 17 12 26-1c13 0 16 8 4 11l-18 5-19 15-17-10-11-16Z" fill="#efa786"/>
-<path d="m383 437 14-3m-17 9 13-3" stroke="#cc6a50" stroke-width="2.2" stroke-linecap="round"/>
-<!-- Student two, turned inward toward the shared cooking work. -->
-<path d="M620 472c-7-65-3-121 28-153 28-29 86-28 113 5l42 75-37 31-26-33 12 90Z" fill="#20764e"/>
-<path d="m736 322 18-7 36 76-21 19-30-59Z" fill="#185c42"/>
-<path d="m680 289-5 38c10 16 24 21 39 10l-2-40Z" fill="#98593e"/>
-<path d="m681 307-3 16 22 15 12-5-2-24Z" fill="#6e3c2e"/>
-<path d="M663 220c-28 15-28 54-5 78l30 13 33-26 10-43-22-28Z" fill="#b9714b"/>
-<path d="M665 255 647 275l16 8 13-16Z" fill="#9c5339"/>
-<path d="M664 226c-18 21-13 34-6 41l15-25c20 16 40 14 54 7l-2 30c13-19 16-38 5-55-10-21-48-25-66 2Z" fill="#191f22"/>
-<path d="M722 265c14-11 23 6 7 16l-8 2Z" fill="#b9714b"/>
-<path d="M674 264q-6-5-11 0m8 7-3 1m6 20q-7 4-13 0" stroke="#191f22" stroke-width="2.6" stroke-linecap="round"/>
-<!-- A folded head cloth gives the second cook a distinct silhouette. -->
-<path d="M656 237c-9-39 25-67 62-50 21 9 28 28 19 51l-24-12-32-1Z" fill="#f5ecd6"/>
-<path d="m661 220 73 4 4 15-24-5-52-1Z" fill="#e4d8b9"/>
-<path d="m710 203 13 20m-32-26 4 24" stroke="#d5c9a9" stroke-width="3" stroke-linecap="round"/>
-<!-- The apron follows the torso, with straps sitting over shoulders. -->
-<path d="m650 319 16-6 6 61 52 2 7-58 14 5-7 69 15 90-126-1 9-93Z" fill="#f3e6c7"/>
-<path d="m645 425 84 2-2 31c-26 10-54 10-80-2Z" fill="#ddd0ae"/>
-<!-- One elbow rests near the station; the other hand controls the spoon. -->
-<path d="M645 358c-31 18-45 46-27 66l47 25 15-22-35-23 21-25Z" fill="#b9714b"/>
-<path d="m664 427 25 8 9 10c8 10 1 15-7 7l-9-7-16 2-10-10Z" fill="#b9714b"/>
-<path d="m674 436 12 5m-13 2 10 5" stroke="#79442f" stroke-width="2.2" stroke-linecap="round"/>
-<path d="M777 385c23 19 32 45 18 58-13 13-41-1-74-21l11-24 43 20-13-18Z" fill="#b9714b"/>
-<path d="m774 392-18 7 8 17 21-12Z" fill="#185c42"/>
-<path d="m728 399-16-15c-8-9-17-5-12 5l9 13-19-7c-12-4-17 5-4 10l30 18 17-7Z" fill="#b9714b"/>
-<path d="m707 398 12 10m-18-5 12 10" stroke="#79442f" stroke-width="2.2" stroke-linecap="round"/>
-<!-- The stirring spoon enters the pot behind the rim, never across its front. -->
-<path d="m717 404-93 44" stroke="#bc8845" stroke-width="7" stroke-linecap="round"/>
-<path d="M625 439c-15-1-23 9-17 17 7 8 28 0 29-8 0-5-5-8-12-9Z" fill="#bc8845"/>
-<!-- Commercial island: heavy, broad, and recognizably different from home. -->
-<path d="m151 468 698-2 31 39-751 3Z" fill="#d4ddd1"/>
-<path d="m129 506 751-3 1 18-752 5Z" fill="#5c797b"/>
-<path d="m152 522 703-3-9 115-686 3Z" fill="#a5b6af"/>
-<path d="m160 620 685-2v23l-686 2Z" fill="#6b8584"/>
-<path d="m176 638 25-1-4 45-20 1Zm618-1 24-1 1 45-22 1Z" fill="#263f62"/>
-<path d="m489 530 2 87" stroke="#7e9692" stroke-width="3"/>
-<path d="m521 546 302-2-1 45-301 3Z" fill="#607b7b"/>
-<path d="m535 552 273-2-1 30-273 3Z" fill="#263f62"/>
-<path d="m548 559 31-1m13 0 31-1m13 0 31-1m14 0 31-1m14 0 31-1m13 0 31-1" stroke="#8fa6a0" stroke-width="3" stroke-linecap="round"/>
-<path d="m214 557 26 1m52-1 26 1m51-1 27 1m52-1 26 1" stroke="#263f62" stroke-width="8" stroke-linecap="round"/>
-<!-- Gas rings and a large shared stockpot. -->
-<path d="M489 478c-2-20 75-27 89-6l-5 11-75 7Zm110-4c-2-22 87-27 99-5l-8 13-78 5Z" fill="#263f62"/>
-<path d="m525 427 143-2-8 53c-40 13-88 12-128 1Z" fill="#e6b937"/>
-<path d="M524 426c28-17 114-20 146-3l-3 12-140 3Z" fill="#191f22"/>
-<path d="m536 421 122-2-18-15-86 2Z" fill="#e3e6d5"/>
-<path d="m590 405-1-12 24-1 2 12Z" fill="#263f62"/>
-<path d="m527 437-27-6q-17 0-12 15l39 9Zm139-1 31-7q17-1 13 14l-45 10Z" fill="#263f62"/>
-<path d="m545 445 3 19" stroke="#faf1d8" stroke-width="5" stroke-linecap="round"/>
+<g filter="url(#school-print)">
+<!-- A single painted architectural frame, with a quiet wall behind the cooks. -->
+<path d="M64 661C68 537 67 414 73 289 81 111 256 34 497 35 741 34 914 109 926 281 934 406 932 536 940 659 681 668 353 664 64 661Z" fill="#304c98"/>
+<path d="M102 642C106 526 103 410 110 293 121 141 270 73 499 73 726 73 877 139 889 291 897 410 894 525 901 642 640 646 365 645 102 642Z" fill="#f5ecd6"/>
+<path d="M164 489C168 430 165 367 173 302 187 204 317 156 499 156 680 156 806 207 822 302 831 365 826 428 836 489Z" fill="#c6cebb"/>
+<path d="M109 293C119 158 242 86 421 57 210 73 80 148 73 289 67 410 68 537 64 661l24 1C88 545 102 410 109 293Z" fill="#263f83"/>
+<!-- The extractor is a folded steel volume, rather than stacked flat panels. -->
+<path d="M445 147c34-1 70 0 105 2l-2 100c14 13 41 28 61 47 5 5 5 11-2 13-73 6-151 5-225 1-9 0-10-7-3-13 20-19 45-34 65-49Z" fill="#a8b8ae"/>
+<path d="M444 249c-19 15-44 30-65 48 70 5 146 5 230-1-23-20-46-35-61-47Z" fill="#e4e7d7"/>
+<path d="M380 300c72 5 151 5 227-1l-1 12c-76 5-154 5-225 1Z" fill="#728b86"/>
+<path d="m438 278 112-1m-126 11 139-1" stroke="#b4c3b7" stroke-width="3.5" stroke-linecap="round"/>
+<!-- A spare rail; the pans hang by their own handles and have real rims. -->
+<path d="M203 325c183-3 396-3 591-2" stroke="#536c68" stroke-width="5" stroke-linecap="round"/>
+<path d="M442 327c1 16 0 30-1 44-24 4-37 22-29 43 7 22 35 28 52 12 17-16 11-45-12-54l1-43Z" fill="#e74829"/>
+<path d="M442 383c-14 1-21 11-17 23 3 12 18 15 27 6 11-10 5-28-10-29Z" fill="#c43d29"/>
+<path d="M776 326c-1 15 0 29 0 42-24 2-40 22-32 44 7 23 37 29 54 11 16-17 8-45-13-52l1-45Z" fill="#304c98"/>
+<path d="M763 385c8-9 19-10 28-3" stroke="#a6b9bf" stroke-width="3" stroke-linecap="round"/>
 
-<!-- Chef's board: blade faces down onto the ingredients. -->
-<path d="m226 465 195-2 9 13-210 4Z" fill="#bc8f50"/>
-<path d="m308 441 61-19-29 37-30 2Z" fill="#dce5d6"/>
-<path d="m367 422 20-9q11 4 3 13l-24 8Z" fill="#191f22"/>
-<path d="M260 459c-6-15 17-28 29-14 15 0 18 16 4 23l-24 1Z" fill="#e74829"/>
-<path d="m278 446-9-10 12 3 8-8-1 12 10 3-14 3Z" fill="#20764e"/>
-<path d="m330 464 30-19 16 10-19 15Z" fill="#ecb73d"/>
-<path d="m368 451 17-30 12 6-19 31Z" fill="#e74829"/>
-<path d="m384 425 1-17 7 8 7-8-1 17Z" fill="#20764e"/>
-<!-- Quiet copper accents anchor the otherwise cool teaching kitchen. -->
-<path d="m764 446 43-1-4 36-33 1Z" fill="#e74829"/>
-<path d="m774 450 2 22m9-22 1 22m9-23-1 23" stroke="#bd3927" stroke-width="2.5"/>
-<path d="m773 448-9-38m21 37 1-45m10 44 10-40" stroke="#bc8845" stroke-width="4" stroke-linecap="round"/>
-<path d="M762 410c-11-9-14-25-5-28 12-1 18 21 9 28Zm22-9c-10-9-8-26 1-26 11 4 13 24 3 26Z" fill="#bc8845"/>
-<!-- A repeated border is confined to the architecture, never the faces. -->
-<path d="m357 93 8-2m44-6 8-1m44-3h8m44 0h8m44 4 8 1m44 7 8 2" stroke="#f5ecd6" stroke-width="6" stroke-linecap="round" opacity=".6"/>
+<!-- The left cook's whole bearing is a gentle forward curve: skull, neck,
+     sloping shoulders and jacket follow one underlying line of action. -->
+<g id="chef-at-board">
+  <!-- One skin contour joins the head to a short neck; the nose belongs to its edge. -->
+  <path d="M285 218c-8-22 1-45 22-50 23-6 47 12 47 34 0 12-4 19-2 29 1 5 7 10 10 13 3 4 2 8-4 9l-10 2c-1 18-9 33-23 36l-1 22c-5 15-24 20-39 12l9-36c-12-14-14-27-14-39-13 0-17-17-9-23 5-3 10 0 14 5Z" fill="#eca989"/>
+  <!-- The coat is one uninterrupted silhouette, sleeves included. -->
+  <path d="M287 306c-32 3-61 17-77 43-12 21-20 48-17 74 2 23 27 33 51 35l-5 29c35 12 85 12 125 0l-3-59c18-5 30-19 28-36-3-30-26-60-52-74-4 14-18 22-31 21-11-2-15-17-19-33Z" fill="#f8efd8"/>
+  <!-- Only a low-value curved fold describes the turning sleeve and ribcage. -->
+  <path d="M250 330c-24 24-39 59-37 82 1 19 13 28 31 31l-2 12c-29-1-46-12-49-31-3-27 6-53 18-75 11-17 25-24 39-19Zm93-7c27 24 43 47 45 68 1 17-10 32-27 37l-1-16c12-9 10-18 4-30-10-21-18-37-21-59Z" fill="#e5dcc1"/>
+  <path d="M281 313c9 20 22 31 34 29 10-1 20-9 23-20m-24 25c-1 31-1 62 3 91m-78-89c-11 18-17 36-17 54" stroke="#bcb39a" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="m328 366 1 1m1 22 1 1m0 22 1 1" stroke="#304c98" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Short hair follows the skull instead of forming separate discs. -->
+  <path d="M282 225c-8-23 3-49 25-55 20-5 41 6 47 26-17 6-34 3-48-7-1 18-7 29-18 37l-1 14-7-5Z" fill="#29302a"/>
+  <path d="M320 225c7-3 12-1 15 3m-12 9 5 2m8 29c-5 3-9 3-13 0" stroke="#29302a" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M283 239c-5-4-8 0-5 5" stroke="#cc8064" stroke-width="2" stroke-linecap="round"/>
+  <!-- The fabric cap has a gathered crown and rests along the head's tilt. -->
+  <path d="M280 211c-1-8-6-16-8-22-15-10-17-27-5-37 8-7 20-6 28-1 5-15 24-19 35-9 12-8 27-3 32 8 6 12 0 24-9 31l-4 33c-25 4-45 3-69-3Z" fill="#faf2dd"/>
+  <path d="M280 203c22 5 47 6 70 1l-1 11c-22 3-46 1-69-3Z" fill="#ded4b8"/>
+  <path d="M291 168c5 9 6 20 6 32m30-38c-3 11-3 23-2 39" stroke="#e5dbc2" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Stabilizing forearm and fingers are a single continuous skin shape. -->
+  <path d="M225 412c-7 12-3 23 11 28 16 6 39 8 59 8 12-3 20-7 31-5l15 4c6 3 6 8-1 9l-18-1 10 7c5 4 3 8-3 6-9-3-15-7-24-8-30 2-64 1-86-11-18-10-18-26-9-42Z" fill="#eca989"/>
+  <path d="m303 451 18 2m-17 3 15 4" stroke="#ca7c61" stroke-width="2" stroke-linecap="round"/>
+  <!-- The second arm bends from the sleeve into a compact knife grip. -->
+  <path d="M367 391c7 10 10 17 7 25-3 9-11 13-17 18l-3 9c-2 6-7 7-10 2l-1-10c-8-3-9-8-4-11l15-11c4-3 3-7-1-12Z" fill="#eca989"/>
+  <path d="m343 428 10 4m-10 3 9 2" stroke="#ca7c61" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- The student turns toward the pot. The asymmetric shoulder line, ribcage,
+     and lower apron are a single clothed contour; elbows follow the task. -->
+<g id="student-at-pot">
+  <path d="M660 211c-8-18 0-39 18-47 24-10 50 3 54 25 2 12-3 24-11 32l-5 26c-1 12-7 21-17 26l1 25c-7 13-24 13-36 3l8-32c-9-5-15-12-18-22-7-1-14-3-13-8 0-4 10-10 13-15Z" fill="#b77954"/>
+  <path d="M664 287c-26 1-47 11-63 34-17 24-25 50-20 73 4 20 23 29 45 31l-6 64c42 15 95 12 142-1l-8-54c26-1 44-15 43-37-1-31-23-69-47-89-13-11-27-17-44-20-5 15-17 22-28 20-6-1-11-9-14-21Z" fill="#20764e"/>
+  <path d="M622 313c-21 23-30 50-27 72 2 16 12 26 28 28l-1 12c-23-3-38-13-41-32-4-23 7-54 22-74 6-7 12-9 19-6Zm121-7c28 24 49 56 53 83 4 24-12 41-40 45l-2-14c19-4 26-13 22-28-8-30-23-50-33-86Z" fill="#196445"/>
+  <!-- A rounded neckline and long apron continue the torso's slight turn. -->
+  <path d="M644 302c3 16 5 34 6 53 23 7 48 9 73 4l12-53 12 6c-4 20-6 43-6 60l13 115c-39 13-88 14-128 2l10-112c1-26-1-49-4-69Z" fill="#f2e6ca"/>
+  <path d="M647 360c24 8 47 11 77 6m-77 35c13 8 24 11 35 13m31-28c-2 23 0 47 5 70" stroke="#cec3a5" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M660 212c-14-19-9-41 8-52 22-16 51-8 63 12 9 15 6 29-2 42l-10 10 1-24c-18 1-32-5-41-14-1 12-6 22-15 29Z" fill="#252c26"/>
+  <path d="M662 193c-11-12-11-29 1-39 11-10 28-12 42-7 18 6 31 19 33 36l-19-4c-19-5-38 1-57 14Z" fill="#f6ecd5"/>
+  <path d="M664 181c17-6 35-9 58-5m-31-19 2 17m17-14 6 15" stroke="#daceb2" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M661 228c5-4 10-4 14-1m-12 10-5 2m14 20c7 3 12 1 15-3" stroke="#382c25" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M719 220c5-4 9-1 7 4l-5 5" stroke="#895338" stroke-width="2" stroke-linecap="round"/>
+  <!-- The inward elbow, wrist and curled spoon hand share a flowing contour. -->
+  <path d="M605 376c-9 10-11 21-3 29 8 9 20 13 29 12l8-7c4-4 9-4 12-1l2 7c1 6 6 6 8 1l1-12c-1-8-9-15-17-13l-15 6c-7 2-10-2-8-8l2-5Z" fill="#b77954"/>
+  <path d="m639 399 12 5m-13 0 13 5" stroke="#825038" stroke-width="2" stroke-linecap="round"/>
+  <!-- A relaxed outer elbow brings the other hand back to the pot handle. -->
+  <path d="M773 389c10 13 12 25 1 33-12 8-31 12-51 12l-13-5c-8-4-17-1-22 5-4 5-1 9 4 7l8-3-6 9c-3 6 2 9 6 5l10-9c25 4 53 1 70-10 19-13 17-31 4-50Z" fill="#b77954"/>
+  <path d="m704 434 10 3m-12 2 10 3" stroke="#825038" stroke-width="2" stroke-linecap="round"/>
+</g>
+
+<!-- The work station is one softly folded volume with a consistent top plane. -->
+<path d="M151 470c209-4 466-4 696-1l32 27c5 5 1 11-7 12-237 5-503 6-742 3-8 0-10-7-3-13Z" fill="#e0e6d8"/>
+<path d="M130 505c234 3 503 2 742-3l-6 127c-2 10-9 15-19 15-225 5-450 4-677 3-12-1-17-6-18-17Z" fill="#9fb4ad"/>
+<path d="M130 505c244 3 502 1 742-3l-1 15c-240 4-499 6-719 2Z" fill="#5e7d79"/>
+<path d="m176 646-3 35q0 9 12 9t13-9l4-35m595-2 4 36q1 9 13 8t11-10l-3-35" fill="#304c98"/>
+<path d="M488 529c0 29 0 67 2 104m-291-66 48 1m45-1 48 1m47-1 48 1" stroke="#718f87" stroke-width="3" stroke-linecap="round"/>
+<path d="M541 542c77-1 162-2 243-3 13 0 19 6 19 16l-1 39c-1 10-6 15-17 15-82 2-168 3-245 2-11 0-16-5-16-15v-37c0-10 6-17 17-17Z" fill="#5c7874"/>
+<path d="M546 554c76 0 151-2 227-2l-1 41c-76 2-151 3-226 2Z" fill="#304c98"/>
+<path d="m563 563 33-1m15 0 34-1m16 0 33-1m15 0 33-1" stroke="#a1b5b2" stroke-width="3" stroke-linecap="round"/>
+<path d="m210 548 27 0m65-1 28 0m64-1 28 0" stroke="#304c98" stroke-width="6" stroke-linecap="round"/>
+
+<!-- The tools sit on the counter's plane and connect to the cooks' hands. -->
+<path d="M222 456c57-4 140-5 204-1 10 1 17 5 17 11s-5 11-16 12c-66 5-143 5-210 0-10-1-16-7-12-13 3-5 9-8 17-9Z" fill="#c29b59"/>
+<path d="m223 466 197-1" stroke="#e3c18b" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M286 459c-2-14 13-23 24-16 10-4 22 5 19 17-13 7-27 8-43-1Z" fill="#e74829"/>
+<path d="m305 445-7-8 9 2 7-7-1 10 10 1-13 5Z" fill="#20764e"/>
+<path d="M350 446c17-5 34-6 47-2l-29 20c-15 3-26 2-35-2Z" fill="#e8bf4f"/>
+<!-- Blade under the gripping fingers, with the cutting edge aimed at the board. -->
+<path d="M343 431c5-4 9 0 11 4l-18 24c-9 5-20 7-30 5 13-12 26-25 37-33Z" fill="#e8e9d8"/>
+<path d="m343 430 25-13c6-3 11 2 8 7l-22 15Z" fill="#29302a"/>
+<!-- A long spoon passes through the student's fingers and into the open soup. -->
+<path d="M652 403c3-4 8-2 6 2l-54 47-6-4Z" fill="#bd8d49"/>
+<path d="M601 444c-9 0-14 9-9 14 6 4 18-2 18-8 0-4-4-6-9-6Z" fill="#bd8d49"/>
+<!-- One broad, rounded stockpot rather than a stack of discs. -->
+<path d="M536 439c-14-2-31 0-32 7-1 8 16 12 33 11m140-18c16-2 32 1 32 8-1 7-17 11-33 10" stroke="#304c98" stroke-width="7" stroke-linecap="round"/>
+<path d="M532 441c42-9 101-11 146-1l-7 37c-1 7-8 10-17 11-35 5-74 5-107-2-8-2-11-5-12-12Z" fill="#e5b942"/>
+<path d="M532 441c33-13 111-15 146-1 1 7-16 13-37 15-40 5-93 2-109-7Z" fill="#27302a"/>
+<path d="M549 441c32-7 73-7 105 0-25 8-79 8-105 0Z" fill="#9eaf6b"/>
+<path d="m549 458 3 15" stroke="#f8efd8" stroke-width="4" stroke-linecap="round"/>
+<!-- Fingers overlap the tools once, keeping the contact unambiguous. -->
+<path d="M274 441c12-3 25-3 33 1l8 5c5 3 5 7 0 7l-10-3 2 9c1 5-4 6-6 1l-4-10-2 9c-1 5-5 5-6 0l-2-9-3 5c-2 3-5 2-6-1l-5-7Z" fill="#eca989"/>
+<path d="m287 446 4 7m7-7 5 8" stroke="#ca7c61" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M344 425c5-3 12 0 15 4l-2 7c-2 5-6 6-8 2l-1-4-7-2c-4-1-2-5 3-7Z" fill="#eca989"/>
+<path d="M639 399c6-4 13-1 17 5l-1 9c-1 4-5 5-7 1l-2-6-7-2c-5-1-4-4 0-7Z" fill="#b77954"/>
+<path d="M695 435c4-6 12-7 18-2l2 7-7 3-7-3-5 6c-4 4-8 0-5-4Z" fill="#b77954"/>
+<!-- A small ceramic crock remains secondary to the paired human gesture. -->
+<path d="M798 448c13-3 28-3 41 0l-3 35c-10 4-22 4-32 0Z" fill="#e74829"/>
+<path d="M809 449c-1-17-5-35-11-49m22 48 2-47m8 47 10-35" stroke="#bd8d49" stroke-width="4" stroke-linecap="round"/>
+<path d="M798 402c-10-6-14-21-7-23 8-3 16 13 11 22m19 1c-8-8-6-21 1-21 8 3 10 17 3 21" fill="#bd8d49"/>
 </g>
 </svg>

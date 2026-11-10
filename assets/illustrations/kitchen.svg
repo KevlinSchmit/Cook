@@ -1,120 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none" role="img" aria-labelledby="title"><title id="title">A cut-paper kitchen in vermilion, cobalt, cream, and herb green</title>
-<defs>
-  <filter id="print" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
-    <feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" stitchTiles="stitch" seed="19" result="noise"/>
-    <feDisplacementMap in="SourceGraphic" in2="noise" scale=".8" xChannelSelector="R" yChannelSelector="G" result="paint"/>
-    <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
-    <feComponentTransfer in="mono" result="faint"><feFuncA type="linear" slope=".21"/></feComponentTransfer>
-    <feComposite in="faint" in2="paint" operator="in" result="ink"/>
-    <feBlend in="paint" in2="ink" mode="soft-light"/>
-  </filter>
-  <pattern id="scumble" width="71" height="67" patternUnits="userSpaceOnUse">
-    <path d="m8 12 3-1m25 28 2-2m18 20 3 1M15 54l2-1m44-46 1 2M32 8l1 1M6 35h2m46-12 2 1" stroke="#f6efda" stroke-width="1.3" opacity=".10"/>
-    <path d="m22 20 2 1m42 25 1-2M42 58l2 1M25 63h1" stroke="#17211e" stroke-width="1" opacity=".07"/>
-  </pattern>
-</defs>
-<g filter="url(#print)">
-
-<!-- Broad printed fields, with slightly off-register edges. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none" role="img" aria-labelledby="title"><title id="title">A softly drawn home kitchen with connected pottery, cookware and botanical contours</title>
+<defs><filter id="paper" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/><feColorMatrix in="grain" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
+<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round">
+<!-- The room is a quiet envelope, not a grid of independently stacked pieces. -->
 <path d="M0 0H1600V1000H0Z" fill="#f5ecd6"/>
-<path d="M0 0 348 0 328 699 0 727Z" fill="#ede2c6"/>
-<path d="m335 0 18 0-7 692-18 6Z" fill="#e6d7b7"/>
-<!-- A deliberately asymmetric arched opening: no synthetic perspective. -->
-<path d="M-34 638-19 290C-10 169 63 104 154 115 251 126 300 209 294 300L284 614Z" fill="#304c98"/>
-<path d="m-6 602 10-306C9 196 70 144 146 151 222 158 262 220 259 302L252 599Z" fill="#f6edcf"/>
-<path d="M12 524C75 438 112 491 154 424 196 364 245 393 262 357L252 600 1 610Z" fill="#c6c495"/>
-<path d="M-3 403C64 378 41 313 100 319 144 323 133 393 187 361L183 500C144 518 115 471 73 528 32 584 11 534-3 548Z" fill="#90a36a"/>
-<path d="M244 200C219 211 221 259 246 278L244 354C203 345 173 315 184 280 159 247 184 218 204 221 193 196 213 178 244 200Z" fill="#d4b74a"/>
-<path d="m126 152 18 1-5 448-17 1Z" fill="#304c98"/>
-<path d="m-1 337 263-4-1 15-263 8Zm-12 164 272-8-1 17-272 7Z" fill="#304c98"/>
-<path d="m-21 604 319-7 7 24-331 10Z" fill="#1d3574"/>
-<!-- Loose linen is a single expressive silhouette. -->
-<path d="M-1 15 82 10C61 141 41 250 36 374 32 450 13 508-13 528Z" fill="#f8f0da"/>
-<path d="M16 20 32 19C24 142 0 242 4 357-2 433-10 463-16 479V372C-5 227 12 116 16 20Z" fill="#e64c2d"/>
-<path d="m53 15 9-2C56 144 29 208 30 319 26 214 47 122 53 15Z" fill="#debca0"/>
-<!-- A basil plant: broad, rhythmic leaves, open spaces, dark underpainting. -->
-<path d="M110 674c-9-89-17-153-2-232m-4 151-56-68m59 23 61-65m-60 35-36-63m36 106 75-25m-70 69-73-25" stroke="#1c573f" stroke-width="6" stroke-linecap="round"/>
-<path d="M101 486C64 470 67 423 93 402 127 423 132 453 101 486Z" fill="#267651"/>
-<path d="M82 539C33 534 16 504 34 478 70 476 95 501 82 539Z" fill="#318159"/>
-<path d="M113 528C114 479 148 455 180 465 179 499 155 526 113 528Z" fill="#84983f"/>
-<path d="M111 581C139 544 182 550 195 572 170 603 138 604 111 581Z" fill="#22754e"/>
-<path d="M96 605C49 613 22 589 28 559 63 550 97 565 96 605Z" fill="#1d6246"/>
-<path d="M116 636C132 610 161 601 188 621 178 649 145 657 116 636Z" fill="#318159"/>
-<path d="M106 519 97 450m-21 70-29-26m92 18 24-33m-32 102 49-10m-93 30-43-23" stroke="#b8bf76" stroke-width="2.3" stroke-linecap="round"/>
-<path d="m65 642 94-6-7 81-72 4Z" fill="#e74829"/>
-<path d="m59 638 104-7 2 18-105 7Z" fill="#ef6341"/>
-<path d="m78 673 68-5-1 10-66 5Z" fill="#f7eed8"/>
-<!-- A wooden rail with two beautifully legible enamel silhouettes. -->
-<path d="m1242 156 365 3-1 10-365-1Z" fill="#191f22"/>
-<path d="M1302 169c-9-23 18-26 16-7l-4 99" stroke="#191f22" stroke-width="5" stroke-linecap="round"/>
-<path d="m1301 205 16 1-8 90-17-2Z" fill="#191f22"/>
-<path d="M1302 278C1210 274 1191 388 1247 427 1311 475 1377 405 1371 347 1366 306 1337 280 1302 278Z" fill="#191f22"/>
-<path d="M1300 298C1233 297 1218 380 1259 410 1302 440 1355 399 1352 350 1349 320 1328 300 1300 298Z" fill="#e64a28"/>
-<path d="M1264 324C1282 308 1303 306 1321 315" stroke="#f7eccd" stroke-width="6" stroke-linecap="round"/>
-<path d="M1464 166c-6-24 18-21 15-1l-2 104" stroke="#191f22" stroke-width="4" stroke-linecap="round"/>
-<path d="m1468 218 16-1 10 93-19 3Z" fill="#304c98"/>
-<path d="M1478 296C1400 306 1392 404 1449 437 1509 473 1581 408 1553 343 1539 309 1511 292 1478 296Z" fill="#304c98"/>
-<path d="M1482 314c-53 4-70 72-33 102 43 35 102-12 88-59-8-29-28-45-55-43Z" fill="#253c7b"/>
-<path d="M1462 331c14-10 27-12 38-8" stroke="#f5ecd6" stroke-width="5" stroke-linecap="round"/>
-<!-- Rosemary hangs in a loose inverted fan. -->
-<path d="m1177 168-3 54m0-13-43 75m43-78 24 88m-25-82-12 103" stroke="#526f3c" stroke-width="3"/>
-<path d="m1139 252-16-3 11 17-17 4 13 6-15 13 18-2 8-14 9-6-3-11 12-15-14 4 9-21-14 10-3-14-3 20Zm37-15-13 10 8 12-11 12 10 7-7 18 11-7 6 19 4-26 7-13-10-5 6-14-7-2 5-19Zm13 3 13 7-1 13 14 6-5 10 9 17-11-4-1 15-7-14-3-18-8-12Z" fill="#6d823f"/>
-<path d="m1165 183 18-1 1 12-20 1Z" fill="#c9994e"/>
-<!-- Glazed jars with a spare folk-art olive motif. -->
-<path d="m1247 498 316 3 7 17-326-4Z" fill="#d24b29"/>
-<path d="m1263 514 1 21 10 2 3-22m258 1 2 23 10-1 1-22" fill="#992f24"/>
-<path d="M1280 490 1278 431Q1308 420 1336 430L1337 491Z" fill="#ddd2ad"/>
-<path d="m1277 424 61 1 1 13-62-1Z" fill="#1d2724"/>
-<path d="m1305 449 3 34m-1-22c-19 1-23-9-22-14 13-1 19 6 22 14Zm2 14c17-1 22-11 19-17-11 2-16 8-19 17Z" fill="#4c733f"/>
-<path d="m1382 490-2-53q19-18 45-2l4 55Z" fill="#e6b937"/>
-<path d="m1388 427 28-1 2 14-32 1Z" fill="#304c98"/>
-<path d="m1390 453 27-1 1 24-27 1Z" fill="#f5ecd6"/>
-<path d="m1474 489 2-43 6-4 1-33 23-1 4 34 5 5 1 43Z" fill="#7e913e"/>
-<path d="m1480 401 28-1 1 12-28 1Z" fill="#191f22"/>
-<!-- The worktop cuts across the composition like a printed strip. -->
-<path d="m0 745 1600-19v84L0 834Z" fill="#e84a2a"/>
-<path d="m0 808 1600-22v214H0Z" fill="#304c98"/>
-<path d="m0 809 1600-22v13L0 824Z" fill="#172c61"/>
-<path d="m321 825-5 175m417-180 3 180m410-185 8 185" stroke="#1b3373" stroke-width="4"/>
-<path d="m101 867 89-2c10 0 10 9 0 10l-88 2c-10 0-11-10-1-10Zm374-7 91-1c11 0 11 10 0 10l-90 1c-11 0-12-10-1-10Zm415-6 92-2c12 0 11 9 0 10l-93 2c-10 0-10-10 1-10Zm396-6 95-2c12-1 13 10 0 10l-93 2c-13 0-14-10-2-10Z" fill="#e5bd65"/>
-<!-- An irregular striped tea towel, rather than a geometric grid. -->
-<path d="m1028 770 110-2 24 170-24-6-18 10-24-4-22 9-22-3Z" fill="#f4ecd4"/>
-<path d="m1040 785 6 1 22 150-7 3Zm23-1 6-1 24 154-8 2Zm25-2 7 1 23 153-6 3Zm25-1 6-1 26 149-7 4Z" fill="#db492d"/>
-<!-- A long chopping board and an editorial still life at the left edge. -->
-<path d="M25 743q60-18 104-13l302-4q38 2 40 19l-20 21-420 7-21-10Z" fill="#b58a4f"/>
-<path d="m16 748 434-6-8 10-418 12Z" fill="#d4ac68"/>
-<!-- Aubergine: one elongated shape, not an oval icon. -->
-<path d="M81 719C49 661 70 596 93 559 130 567 161 587 162 624 164 667 134 711 111 739Z" fill="#28232d"/>
-<path d="m88 576 6-43 15 22 18-24 1 34 28-5-23 29-26-12-18 16Z" fill="#287251"/>
-<path d="M104 608c-13 32-16 58-10 79" stroke="#a08aa4" stroke-width="5" stroke-linecap="round"/>
-<!-- Tilted carrot with a broad green crown. -->
-<path d="m210 606 42 18-64 118-15-2Z" fill="#f37b29"/>
-<path d="m212 610-19-49 26 25 5-47 13 45 24-31-9 44 28-5-25 31Z" fill="#7d923e"/>
-<path d="m214 641 16 8m-31 20 15 7m-26 17 12 5" stroke="#d94b25" stroke-width="4" stroke-linecap="round"/>
-<!-- Tomato, with its irregular calyx as the identifying gesture. -->
-<path d="M269 690c-2-32 49-43 66-18 31-1 39 34 14 53-25 25-78 12-80-35Z" fill="#e74629"/>
-<path d="m301 677-17-19 27 9 14-17-3 23 24 6-27 4-15 16Z" fill="#216d4a"/>
-<path d="m289 693-3 12" stroke="#f8dbc0" stroke-width="7" stroke-linecap="round"/>
-<!-- Onion cross-section: curved irregular parallel contours. -->
-<path d="M363 737C337 707 345 679 375 653 405 673 435 705 414 733Z" fill="#d3a2c7"/>
-<path d="M374 664c-31 29-29 52 1 66m4-60c-24 29-19 49 1 57m3-49c-14 24-9 38 1 46m-2-60c37 29 43 48 9 67m-4-59c27 24 32 42 6 55m-2-45c16 19 21 31 3 43" stroke="#f6ecd8" stroke-width="5" stroke-linecap="round"/>
-<!-- A mustard stockpot, with a graphic black rim and handle. -->
-<path d="M1276 683c15-27 98-36 119-4l-5 70-105 5Z" fill="#e3b73d"/>
-<path d="M1275 678c25-17 95-21 122-2l-2 14-116 5Z" fill="#191f22"/>
-<path d="m1287 675 93-2-12-14-68 2Z" fill="#f4edcf"/>
-<path d="m1323 659-1-11 17-1 2 11Z" fill="#191f22"/>
-<path d="m1390 692 49-6q15 3 5 15l-48 8Z" fill="#191f22"/>
-<path d="m1300 707 4 24" stroke="#f6edce" stroke-width="6" stroke-linecap="round"/>
-<!-- Airy, simple steam marks belong to the pot, not the whole wall. -->
-<path d="M1308 640c-18-26 10-27-6-50m28 47c-18-26 11-28-5-51" stroke="#bcae86" stroke-width="3" stroke-linecap="round"/>
-<!-- Spoons in a leaning glazed crock. -->
-<path d="m1500 692-39-115m58 119-4-122m16 120 32-119" stroke="#b48042" stroke-width="8" stroke-linecap="round"/>
-<path d="M1455 587c-25-6-36-48-19-58 19-10 46 27 31 52Z" fill="#c08c4c"/>
-<path d="M1510 579c-20-19-21-49-4-52 21-4 32 36 14 52Z" fill="#bd8946"/>
-<path d="m1547 577 8-42 34 9-10 42Z" fill="#b7874c"/>
-<path d="m1562 545-5 20m15-17-6 21" stroke="#75542f" stroke-width="3"/>
-<path d="m1481 678 73-3-8 73-57 3Z" fill="#e4dfc6"/>
-<path d="m1494 697 41-1m-39 12 37-1m-35 12 33-1m-31 12 29-1" stroke="#e44b2b" stroke-width="5"/>
-<path d="M0 0H1600V1000H0Z" fill="url(#scumble)"/>
-
+<path d="M0 0h332c-2 161-1 342-8 512-3 80-5 158-5 242H0Z" fill="#eee3c9"/>
+<!-- A continuous arched frame, with a soft sill and uninterrupted sight lines. -->
+<path d="M-21 633c4-111 2-239 10-344 7-113 74-177 161-178 94-1 158 70 162 180 5 102-5 211-9 332Z" fill="#304c98"/>
+<path d="M8 605c2-112 1-221 8-316 6-91 62-149 133-150 76-2 129 58 133 151 4 104-3 208-8 312Z" fill="#d5dcc0"/>
+<path d="M17 469c56-57 90-49 129-22 40 28 76 21 132-11l-4 166-266 3Z" fill="#acbd91"/>
+<path d="M25 365c36-31 69-68 93-111m-40 58c-23-5-41-21-47-42m69 18c29-1 49-17 55-38m-61 102c31-1 47-13 58-30" stroke="#819c6c" stroke-width="5"/>
+<path d="M40 284c-20-6-35-25-34-43 23 1 41 16 43 37Zm58-16c-1-27 12-49 34-56 5 23-5 45-26 58Zm28 59c26-23 52-26 74-12-17 20-43 27-67 20Z" fill="#8aa66e"/>
+<path d="M135 142c-2 150-5 304-8 461m-112-257c80-3 165-3 264-2" stroke="#304c98" stroke-width="13"/>
+<path d="M-16 606c91-3 208-5 318-5 9 0 13 7 12 14-1 8-7 11-16 11-106-1-223 3-315 5Z" fill="#273f7e"/>
+<!-- One hanging cloth contour and a restrained folded stripe. -->
+<path d="M-8 0h62c-3 95-14 183-25 273-8 65-12 123-11 190-4 33-13 65-26 85Z" fill="#f9f1dc"/>
+<path d="M19 0h11c-2 103-18 196-26 291-4 49-7 100-7 146L-7 470c-1-62 0-114 6-180C7 186 17 98 19 0Z" fill="#d85a3a"/>
+<!-- Basil branches merge into a single, gestural plant silhouette. -->
+<path d="M159 554c-1-72-18-132-43-180m43 155c22-45 46-78 76-101m-82 68c-25-18-46-31-74-42m79 53c30-8 52-12 75-9" stroke="#396d49" stroke-width="4"/>
+<path d="M130 427c-27-5-48-25-48-50 29-3 54 15 60 41-11-31-9-62 12-80 24 25 26 55 8 83 28-34 55-45 81-30-12 28-36 45-66 44 26-13 51-11 65 11-24 17-51 16-77 1 15 22 10 47-12 60-22-17-29-40-15-65-20 21-46 28-70 13 14-24 36-33 62-28Z" fill="#20764e"/>
+<path d="M164 501c-1-39-4-78-11-113m17 60 38-37m-59 34-37-25" stroke="#98b77c" stroke-width="3"/>
+<path d="M114 540c1-10 24-17 49-18 30-1 55 4 58 14l-9 63c-3 12-21 19-44 20-24 0-44-5-48-16Z" fill="#d95e39"/>
+<path d="M114 540c24 11 77 10 107-4" stroke="#f3a071" stroke-width="5"/>
+<path d="M124 598c18 8 52 10 76 3" stroke="#bd472e" stroke-width="3"/>
+<!-- Hanging pans are each one silhouette from handle to bowl. -->
+<path d="M1201 154c105-1 237-2 386 0" stroke="#7d6245" stroke-width="8"/>
+<path d="M1278 160c-4-16 17-19 17-4v24" stroke="#5a5141" stroke-width="4"/>
+<path d="M1279 177c-3-9 13-10 14-1l6 111c51 4 87 39 89 82 3 50-36 90-85 91-52 1-92-37-92-87 0-44 28-77 68-85Z" fill="#304c98"/>
+<path d="M1289 308c-32 6-57 32-57 66 0 38 32 67 70 66 36-1 66-29 66-66-1-36-33-66-70-66Z" fill="#263c79"/>
+<path d="M1250 346c11-14 24-22 39-24" stroke="#d5dfc4" stroke-width="4"/>
+<path d="M1467 161c-4-16 17-20 18-5v22" stroke="#5a5141" stroke-width="4"/>
+<path d="M1466 179c0-8 13-9 14-1l12 119c42 9 69 42 68 83-1 46-36 81-81 81-46 0-82-34-83-80-2-39 26-72 65-83Z" fill="#b7643d"/>
+<path d="M1479 319c-33 1-60 27-60 61 0 33 27 59 60 60 32 0 59-26 60-59 1-34-27-62-60-62Z" fill="#ce8550"/>
+<path d="M1441 354c9-12 20-18 34-21" stroke="#eed2a0" stroke-width="4"/>
+<!-- Tied rosemary is supple and botanical, with no serrated triangle leaves. -->
+<path d="M1179 165c-1 18-4 42-8 68m2-24-26 57m28-57 13 62m-16-39-8 59" stroke="#687946" stroke-width="3"/>
+<path d="M1156 238c-13-7-19-18-16-29 14 2 22 12 20 25m-14 28c-12-3-17-11-17-20 12-1 20 7 21 15m21-3c-10-6-13-15-8-23 12 3 17 12 13 23m8-16c12-4 20 1 23 10-11 6-19 2-23-7m-7 22c13 0 20 7 19 17-13 1-20-6-19-17m-18 8c-10 2-16 10-14 18 11 0 17-6 14-18" fill="#6c864e"/>
+<path d="m1170 184 18 2" stroke="#b89554" stroke-width="7"/>
+<!-- Quiet glazed containers sit along one shared shelf plane. -->
+<path d="M1234 506c100-2 210-2 325 1l5 14c-120-3-231-3-332-1Z" fill="#b7653f"/>
+<path d="m1251 520 1 15m289-14 1 14" stroke="#81583c" stroke-width="7"/>
+<path d="M1270 497c-4-19-3-42-3-58 0-11 9-17 29-18 21-1 34 4 35 15 1 18 3 41-1 61-14 8-43 10-60 0Z" fill="#e2d7b9"/>
+<path d="M1267 432c9-7 46-9 64-2m-57-11c11-7 38-8 49-2" stroke="#7a8562" stroke-width="8"/>
+<path d="m1297 451-1 33m-1-19c-13-2-18-10-15-16 11 1 16 8 15 16m3 12c14-1 20-9 17-16-11 1-16 7-17 16Z" fill="#6e8a56"/>
+<path d="M1392 496c-5-18-4-40-3-54 1-8 10-13 25-13 17 0 27 6 28 14 2 16 1 36-1 54-14 6-36 7-49-1Z" fill="#dfb64b"/>
+<path d="M1391 434c11-6 32-6 46 0" stroke="#304c98" stroke-width="8"/>
+<path d="M1476 495c-1-19 0-40 1-52 0-9 8-13 11-20l1-26c0-5 5-8 12-8s12 2 12 8l1 25c4 8 12 11 12 20 1 15 2 37-1 53-15 6-34 7-49 0Z" fill="#7b944d"/>
+<path d="m1490 392 24-1" stroke="#6c6242" stroke-width="7"/>
+<path d="M1487 453c8-3 18-3 27 0l-1 25c-8 3-18 3-26-1Z" fill="#e8dec1"/>
+<!-- One generous worktop binds all foreground objects to a shared level. -->
+<path d="M0 744c382-5 947-6 1600-3v63c-601-4-1139-2-1600 5Z" fill="#e74829"/>
+<path d="M0 794c444-7 997-9 1600-5v211H0Z" fill="#304c98"/>
+<path d="M0 795c521-8 1061-8 1600-4" stroke="#243c7d" stroke-width="10"/>
+<path d="M326 817c-1 60-1 122 2 183m405-185c2 58 2 121 0 185m412-186c-1 62 0 125 2 186" stroke="#273f80" stroke-width="3"/>
+<path d="m115 858 83-1m306-2 84-1m312-1 83 1m321-1 82 1" stroke="#dfbc65" stroke-width="9"/>
+<!-- The hanging cloth follows its own weight, from folded lip to soft hem. -->
+<path d="M1034 772c34-5 73-3 105 1-5 55 5 111 15 168-10 7-21 8-31 2-12 7-26 7-38 2-14 8-28 8-43 2 3-58-4-116-8-175Z" fill="#f5ecd6"/>
+<path d="M1045 786c4 49 10 99 9 151m15-153c6 54 12 103 13 151m14-151c4 53 10 103 15 151m12-151c0 45 8 98 14 148" stroke="#d35738" stroke-width="5"/>
+<path d="M1036 780c36 2 70 3 101 0" stroke="#d9ceb2" stroke-width="3"/>
+<!-- Food and the board share a shallow, stable top-view perspective. -->
+<path d="M25 734c29-9 340-14 386-8 15 2 24 9 20 18-4 10-17 15-34 16-107 5-241 7-351 7-18-1-33-13-21-23Z" fill="#b98e54"/>
+<path d="M28 735c76-12 321-14 384-7 9 1 13 4 12 8-2 6-11 8-25 9-132 6-245 8-354 7-14 0-22-8-17-17Z" fill="#d8af6a"/>
+<!-- A glossy aubergine lies along the board, its calyx joining the curved body. -->
+<path d="M66 683c23-35 55-50 77-39 25 13 17 42-6 66-25 26-61 40-80 21-13-13-2-29 9-48Z" fill="#353443"/>
+<path d="M133 650c2-17 9-29 21-36 2 13 8 18 18 22-10 8-16 14-23 25-5-8-9-11-16-11Z" fill="#4f7d4f"/>
+<path d="M77 684c13-18 24-26 36-28" stroke="#8b829a" stroke-width="4"/>
+<g transform="translate(171 632) scale(.81)"><path d="M17 51C26 33 44 32 59 39 74 25 98 31 108 49 125 78 106 115 73 121 42 128 10 108 8 83 6 70 10 60 17 51Z" fill="#e74829"/>
+<path d="M18 85c2 17 16 27 31 30" stroke="#cf3c25" stroke-width="5"/>
+<path d="M61 41c-7-12-7-22-3-30m1 30c-14-9-26-7-31-3 13 0 16 8 24 8m8-4c14-15 26-15 33-11-13 3-15 12-25 16m-8-5c6 10 15 12 19 11-2-9-8-13-19-11m-4 2c-9 2-15 8-16 16 9-4 15-7 17-14" stroke="#20764e" stroke-width="5"/>
+<path d="M28 60c-5 7-7 13-6 20" stroke="#f5d4b6" stroke-width="5"/>
+<path d="M55 44c5 2 10 2 15 0" stroke="#a33723" stroke-width="2.5"/></g>
+<g transform="translate(283 600) rotate(14 82 87) scale(.75)"><path d="M53 24c4-7 7-13 8-21m0 17 10-9" stroke="#8a794c" stroke-width="3"/>
+<path d="M34 38C47 29 50 21 61 20c12 0 25 13 34 20 24 18 45 45 47 71 4 37-27 54-68 53-37 0-67-16-65-49 1-30 11-62 25-77Z" fill="#b67f9e"/>
+<path d="M39 45c11-7 15-14 23-14 9 0 18 12 28 19 21 15 40 39 41 63 1 29-23 42-56 41-31 0-55-12-54-39 1-27 6-55 18-70Z" fill="#f4e5cf"/>
+<path d="M56 42C38 64 28 93 31 116c3 19 20 28 43 29 27 1 45-11 45-30-1-29-24-56-47-77m-11 11c-15 25-24 43-20 65 3 14 14 21 33 21 21 1 34-8 34-23-1-25-21-46-38-63m-7 9c-12 25-16 42-11 53 4 9 11 15 22 15 15 0 23-6 22-17-2-20-13-34-24-50m-5 10c-7 18-8 29-4 34 3 5 8 7 14 5 6-4 4-16-4-29" stroke="#c49ab1" stroke-width="3"/>
+<path d="M28 151c12 15 40 21 66 15m-73-23-8 10" stroke="#8d617e" stroke-width="2.5"/></g>
+<!-- The lemon half is a cut face, not a floating coin. -->
+<path d="M377 711c-4-23 12-44 34-46 22-3 42 17 41 40-11 11-23 18-41 18-14 0-25-4-34-12Z" fill="#e8bd50"/>
+<path d="M385 706c-1-17 10-30 27-32 17-1 30 11 31 28-15 11-42 15-58 4Z" fill="#f5ecd6"/>
+<path d="m392 702 15-19 1 23m8-24 19 17-18 5" fill="#e8bd50"/>
+<!-- A squat saucepan sits on the same counter, with handles attached to its rim. -->
+<path d="M1285 689c16-13 82-16 108-3l-2 45c-1 13-23 20-52 19-26-1-46-7-49-18Z" fill="#e8bd50"/>
+<path d="M1285 689c18 13 83 13 108-3" stroke="#3d4642" stroke-width="8"/>
+<path d="M1292 683c10-12 77-15 96-2-20 10-77 11-96 2Z" fill="#dedec7"/>
+<path d="M1330 671c-2-4 0-10 6-11 7-1 13 2 12 8l-1 4Z" fill="#3d4642"/>
+<path d="M1290 699c-27-11-33-2-26 10l27 5m101-16c27-12 40-3 30 8l-30 9" stroke="#304c98" stroke-width="7"/>
+<path d="m1306 706 2 24" stroke="#f9e3aa" stroke-width="4"/>
+<path d="M1325 644c-12-17-6-24 0-33 5-9 1-17-6-23m29 54c-13-18-2-25 2-35" stroke="#b7ac8a" stroke-width="2.5"/>
+<!-- Wooden utensils settle through the elliptical mouth of one ceramic crock. -->
+<path d="m1489 679-27-105m43 108 17-121" stroke="#ad7e48" stroke-width="8"/>
+<path d="M1459 580c-21-3-36-34-28-48 8-14 26-9 36 8 11 19 10 39-8 40Z" fill="#bc8e55"/>
+<path d="M1519 570c-18-6-19-31-6-45 12-12 26-8 28 6 3 19-8 42-22 39Z" fill="#bc8e55"/>
+<path d="M1453 655c16-11 60-12 78-2 3 26 1 60-5 83-15 12-47 13-63 1-6-22-9-56-10-82Z" fill="#e9e0c4"/>
+<path d="M1453 655c20 11 57 11 78-2" stroke="#7b8a73" stroke-width="5"/>
+<path d="M1467 687c15 3 31 3 47-1m-44 16c13 3 27 3 40-1m-36 16c10 2 22 2 32 0" stroke="#d66140" stroke-width="4"/>
 </g></svg>

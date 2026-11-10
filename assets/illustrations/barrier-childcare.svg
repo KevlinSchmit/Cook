@@ -1,22 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">A soft rabbit and a little knitted baby shoe</title>
-<defs><filter id="grain" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="23" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer result="faint"><feFuncA type="linear" slope=".19"/></feComponentTransfer><feComposite in="faint" in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
-<g filter="url(#grain)">
-<!-- One ear bends over itself: an organic silhouette rather than a row of circles. -->
-<path d="M101 132C77 95 65 50 85 35c18-15 40 28 43 66 12-37 40-64 57-48 13 15-10 51-35 76 31 15 38 54 17 77 13 14 22 33 15 50-12 24-89 26-117 6-19-14-15-33 2-49-31-26-13-73 34-81Z" fill="#e5b83f"/>
-<path d="M91 48c-7 8 0 41 16 65-3-32-8-61-16-65Zm78 14c-10-2-27 22-32 43 18-16 34-35 32-43Z" fill="#e79e58"/>
-<path d="M123 136c-29-4-50 17-46 43 4 27 33 40 57 27 29 12 52-5 48-30-3-24-31-43-59-40Z" fill="#edc96c"/>
-<path d="M110 164c-4-1-6 4-4 7 3 4 7 2 7-2 0-3-1-5-3-5Zm37-1c-4-1-6 4-4 7 2 4 7 2 7-2-1-3-1-4-3-5Z" fill="#191f22"/>
-<path d="m120 179 13-1-5 8Z" fill="#8d5739"/>
-<path d="m128 185-1 9m0-3c-7 7-14 6-18 1m19-1c5 6 11 6 16 0" stroke="#8d5739" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M84 206c15 7 66 9 85-3l5 16-26 10-44-1-23-9Z" fill="#e74829"/>
-<path d="m116 226 30 1 6 27-33-5Z" fill="#cf3c29"/>
-<path d="M86 231c-10-12-22-9-23 3-2 14 13 21 23 19m68-22c9-10 22-8 24 5 1 12-13 20-24 17" fill="#d29d38"/>
-<!-- A little shoe overlaps the toy: soft cuff, rounded toe, and a stitched sole. -->
-<path d="m190 162 44 1 4 44c28 0 46 17 43 34-3 22-67 29-101 14-15-6-17-21-8-38l12-26Z" fill="#304c98"/>
-<path d="m183 161 54-1 2 22-57 2Z" fill="#f4eacf"/>
-<path d="m192 165 1 14m10-14 1 14m10-14 1 14m10-14 1 14" stroke="#d6c8a5" stroke-width="2"/>
-<path d="m184 198 41 1-2 15-43-1Z" fill="#4069a2"/>
-<path d="M175 245c25 14 73 13 100-2l-2 12c-27 13-69 16-96 2Z" fill="#f4eacf"/>
-<path d="m187 254 4 2m9 1 4 1m10 1h4m10-1h4m10-2 4-1m9-2 4-1" stroke="#b2baaa" stroke-width="2" stroke-linecap="round"/>
-<path d="m199 195 15 1m-18 10 17 1" stroke="#f3e8cd" stroke-width="3" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">A softly sewn rabbit beside a small nursery bag</title><defs><filter id="grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="27" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer result="g"><feFuncA type="linear" slope=".12"/></feComponentTransfer><feComposite in="g" in2="SourceGraphic" operator="in" result="p"/><feBlend in="SourceGraphic" in2="p" mode="soft-light"/></filter></defs><g filter="url(#grain)">
+<!-- The plush outer contour runs continuously through the bent ear, cheek, belly, and feet. -->
+<path d="M96 130c-19-30-24-72-9-89 8-9 17-3 23 10 8 17 11 39 13 57 4-23 17-56 33-55 20 2 9 39-13 72 20 8 33 25 31 45-1 16-10 28-21 35 23 18 30 41 17 53-8 8-25 8-37 3-17 6-35 6-51-1-11 7-27 4-32-4-8-13 1-31 20-48-16-10-25-24-22-41 4-19 23-32 48-37Z" fill="#e8bd50"/>
+<path d="M94 51c-5 12-2 40 10 66-1-29-4-53-10-66Zm59 13c-9 5-19 27-22 44 14-18 22-34 22-44Z" fill="#e2a467"/>
+<path d="M81 150c19-14 49-10 64 5 18 18 6 45-17 47-28 6-56-16-57-33 0-7 3-14 10-19Z" fill="#f0d07c"/>
+<path d="M91 166c-7-2-8 8-2 9 5 1 7-7 2-9Zm41 0c-6-2-8 7-3 9 5 1 8-7 3-9Z" fill="#222725"/>
+<path d="M105 180c5-4 10-4 14-1 2 4-2 8-7 8-4 0-7-3-7-7Z" fill="#a16841"/>
+<path d="m112 187v6m0 0c-6 6-12 6-17 1m17-1c5 6 11 5 15 0" stroke="#a16841" stroke-width="2.3" stroke-linecap="round"/>
+<!-- A loose scarf bends with the neck and falls naturally onto the belly. -->
+<path d="M70 202c22 11 59 15 84 2l5 12c-24 16-64 15-91-1Z" fill="#e74829"/>
+<path d="m108 224 21 2 8 25-23-4Z" fill="#c53e2a"/>
+<path d="M72 233c3-8 10-11 17-6m48 1c7-5 14-2 17 5" stroke="#d4a342" stroke-width="3" stroke-linecap="round"/>
+<!-- The nursery bag has a continuous gusseted body and properly attached handles. -->
+<path d="M188 172c-1-24 7-42 22-42 17 0 24 19 25 41" stroke="#304c98" stroke-width="8" stroke-linecap="round"/>
+<path d="M171 169c18-7 54-8 76-2l13 76c-14 16-72 17-96 3Z" fill="#304c98"/>
+<path d="M247 167c8 19 14 47 13 76l-11 6-10-75Z" fill="#233e7d"/>
+<path d="M177 179c16-4 41-5 57-1m-56 10c15-4 39-5 55-2" stroke="#8ca6bf" stroke-width="2" stroke-linecap="round"/>
+<path d="M182 204c13-3 34-2 45 1l2 28c-12 4-34 4-47 0Z" fill="#f5ecd6"/>
+<path d="m188 214 33 1m-31 8 27 1" stroke="#e74829" stroke-width="3" stroke-linecap="round"/>
 </g></svg>

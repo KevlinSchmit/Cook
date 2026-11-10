@@ -1,6 +1,6 @@
 # COOK
 
-A continuous, illustrated presentation for **Augmented Reality Culinary Education at Home**. Eight scenes unfold in the same illustrated world, from Sara's kitchen and educational barriers to the COOK AR learning experience. The title and Sara introduction are retained, with a refined two-handed bowl pose.
+A continuous, illustrated presentation for **Augmented Reality Culinary Education at Home**. Eight scenes unfold in the same illustrated world, from Sara's kitchen and educational barriers to the COOK AR learning experience. The title and Sara introduction are retained, with a redesigned cradling-and-stirring pose.
 
 ## Download the complete presentation
 
@@ -49,8 +49,10 @@ Fraunces by Undercase Type is bundled under the SIL Open Font License; see `asse
 
 ## Illustration assets
 
-The editable SVG drawings live in `assets/illustrations/`. Their art direction follows the supplied mid-century culinary posters: bold flat vermilion and cobalt, cream paper, herb greens, long vegetables, expressive hands, small angular faces, asymmetric silhouettes, and sparse ink marks. The kitchen frames the central type with simple, distinctive enamel cookware and a loose organic herb plant. Sara holds a smaller blue bowl close to her waist with relaxed bent elbows and two cupping hands; her AR variant uses the same drawing and silhouette. Additional original SVGs show the professional kitchen, a diverse group of caregivers, tuition, commuting, time, and childcare.
+The editable SVG drawings live in `assets/illustrations/`. Their art direction follows the supplied mid-century culinary posters: bold flat vermilion and cobalt, cream paper, herb greens, organic produce, expressive connected hands, rounded profiles, flowing silhouettes, and sparse ink marks. The kitchen frames the central type with simple, distinctive enamel cookware and a loose organic herb plant. Sara holds a blue bowl close to her waist along one supporting forearm while the other hand grips the stirring spoon. Her inclined head, short neck, sloping shoulders, bent arms, and draped apron follow one coherent posture; the AR variant uses identical geometry. Additional original SVGs show the professional kitchen, a diverse group of caregivers, tuition, commuting, time, and childcare.
 
 All illustration shapes are authored SVG paths; there are no embedded bitmap illustrations or image-generation assets. A clipped procedural SVG grain filter and sparse vector scumble add print texture. The drawing geometry remains directly editable at any scale.
 
 The presentation retains the same kitchen between scenes. Cohesive vector layers move gently; title transformation, progressive profile reveals, keyboard navigation, replay, and reduced motion are preserved.
+
+The population and culinary-school figures are also redrawn as complete, interacting poses. Clothing follows shoulder, ribcage, elbow, and hip contours; integrated wrists/palms make infant, cane, blanket, knife, spoon, and pot contact explicit. The kitchen, food, and barrier illustrations share softer object contours, consistent vessel perspective, and the same limited print palette.

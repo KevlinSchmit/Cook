@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="260 325 120 130" fill="none"><title>tomato</title>
-<path d="M274 424c-9-33 10-60 43-64 28-3 58 28 48 56-9 31-72 40-91 8Z" fill="#ee4626"/>
-<path d="m307 369-20-20 29 8 17-23 1 25 28 8-29 6-13 25-6-23Z" fill="#238054"/>
-<path d="m291 394-2 11" stroke="#f7ecd0" stroke-width="7" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="260 325 120 130" fill="none" role="img" aria-labelledby="title"><title id="title">A ripe tomato with a naturally curved stem</title>
+<defs><filter id="paper" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/><feColorMatrix in="grain" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
+<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(260 325)"><path d="M17 51C26 33 44 32 59 39 74 25 98 31 108 49 125 78 106 115 73 121 42 128 10 108 8 83 6 70 10 60 17 51Z" fill="#e74829"/>
+<path d="M18 85c2 17 16 27 31 30" stroke="#cf3c25" stroke-width="5"/>
+<path d="M61 41c-7-12-7-22-3-30m1 30c-14-9-26-7-31-3 13 0 16 8 24 8m8-4c14-15 26-15 33-11-13 3-15 12-25 16m-8-5c6 10 15 12 19 11-2-9-8-13-19-11m-4 2c-9 2-15 8-16 16 9-4 15-7 17-14" stroke="#20764e" stroke-width="5"/>
+<path d="M28 60c-5 7-7 13-6 20" stroke="#f5d4b6" stroke-width="5"/>
+<path d="M55 44c5 2 10 2 15 0" stroke="#a33723" stroke-width="2.5"/></g></g></svg>

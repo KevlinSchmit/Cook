@@ -3,7 +3,7 @@
 These are authored SVG drawings, not generated raster images or automatic image traces. Geometry and contour accents can be edited directly. Each file contains a descriptive title, grouped composition, and comments identifying the drawn objects.
 
 - `kitchen.svg`: 1600 × 1000. A quiet cream center framed by an asymmetric cobalt window, broad basil leaves, hanging enamel pans, terracotta worktop, and blue cabinets. The food and jars use the same palette and curved contours as the portrait.
-- `sara.svg`: 800 × 1200. A relaxed two-handed pose with bent elbows, continuous sleeve/skin joins, and a waist-size blue bowl. Cream blouse, vermilion apron, charcoal bun, angular profile, and vegetables retain the original identity.
+- `sara.svg`: 800 × 1200. A complete asymmetric cooking pose: one forearm cradles the waist-size bowl while the other hand stirs. The rounded face and short neck flow into sloping shoulders; sleeves wrap the same arm axes, and the hands continue through the wrists. Cream blouse, vermilion apron, charcoal bun, and print palette retain Sara’s identity.
 - `salad-bowl.svg`: 720 × 730. The matching standalone still life used in the opening scene.
 
 ## Palette
@@ -32,3 +32,9 @@ Texture uses clipped SVG turbulence with soft-light blending plus a sparse vecto
 - `receipt.svg`: wordless bill illustration carrying the exact HTML statistic.
 
 No text is embedded in the new illustration assets. On-screen narrative and AR capability titles remain HTML, and are constrained to the user's specified copy.
+
+## Revised construction
+
+Figures are authored from whole gestures rather than reused geometric body-part symbols. Face and neck share one contour; shoulders and sleeves follow a continuous clothing silhouette; hands continue the arm contour and meet the held objects. The caregiving group uses varied seated and standing poses with explicit infant, blanket, cane, elder-support, and hip-carry contact. The school cooks lean into chopping and stirring with coherent tool grip and countertop perspective.
+
+Kitchen vessels, produce, transport, papers, plush toy, and receipt use coherent organic silhouettes rather than primitive assemblies. The separate ingredient drawings match the still-life vocabulary. Grain remains procedural SVG; no bitmap illustrations or image generation were added.

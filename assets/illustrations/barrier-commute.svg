@@ -1,29 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">A cobalt commuter bus in three-quarter view</title>
-<defs><filter id="grain" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" seed="23" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer result="faint"><feFuncA type="linear" slope=".19"/></feComponentTransfer><feComposite in="faint" in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
-<g filter="url(#grain)">
-<!-- Long chassis and raked front make the vehicle readable at a glance. -->
-<path d="M33 114c2-18 15-28 34-30l132-8c17 0 33 8 43 21l24 37 5 79-21 11-211-2-14-19Z" fill="#191f22"/>
-<path d="M38 113c3-16 14-25 32-26l126-7c18-1 31 6 42 19l22 34 3 66-28 11-201-1Z" fill="#304c98"/>
-<path d="m198 80 37 16 26 37-40 3Z" fill="#244071"/>
-<!-- A cream roof cap, thin at the front and generous over the passenger windows. -->
-<path d="m48 103 18-14 131-8 38 15-35 2-143 9Z" fill="#f5ecd6"/>
-<path d="m47 116 39-2-1 43-40 2Zm48-3 39-2-1 43-39 2Zm48-3 40-2 1 43-41 2Z" fill="#b9c9bd"/>
-<path d="m192 107 25 1 28 31-51 5Z" fill="#f2e9ce"/>
-<path d="m198 112 15 1 18 23-32 2Z" fill="#a9c2bd"/>
-<path d="m48 120 5 28m46-32 6 26m43-30 6 26" stroke="#e5ead2" stroke-width="3" stroke-linecap="round"/>
-<!-- The tall door belongs to the front plane, with a real sill. -->
-<path d="m198 154 42-4 6 56-48 3Z" fill="#1a315e"/>
-<path d="m204 158 12-1 2 32-13 1Zm18-2 13-1 4 32-14 1Z" fill="#a7bdb8"/>
-<path d="m225 198 13-1" stroke="#f1d587" stroke-width="3" stroke-linecap="round"/>
-<path d="m40 172 150-5 1 13-153 5Z" fill="#f5ecd6"/>
-<path d="m40 181 151-5 1 6-154 6Z" fill="#e74829"/>
-<path d="m247 159 14 4 1 12-14-2Z" fill="#f4d584"/>
-<path d="m36 193 12 1-1 7-12-1Z" fill="#e74829"/>
-<path d="m247 194 15-3 1 8-15 3Z" fill="#e4b448"/>
-<!-- Wheel wells overlap the coachwork; their centers follow its perspective. -->
-<path d="M80 190c19-2 31 15 27 33-5 19-28 25-40 9-12-16-8-40 13-42Z" fill="#191f22"/>
-<path d="M80 201c12-1 17 10 15 20-4 11-16 14-22 4-6-9-5-22 7-24Z" fill="#e7d7ae"/>
-<path d="M217 189c17-1 27 13 24 30-3 16-23 23-34 9-10-14-8-37 10-39Z" fill="#191f22"/>
-<path d="M217 199c9-1 14 9 12 18-2 10-12 12-18 5-6-9-4-21 6-23Z" fill="#e7d7ae"/>
-<path d="m29 216 30 2m58 1 80-1m48-4 19-3" stroke="#7b9689" stroke-width="4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">A rounded cobalt commuter bus with an integrated passenger cabin</title><defs><filter id="grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="27" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer result="g"><feFuncA type="linear" slope=".12"/></feComponentTransfer><feComposite in="g" in2="SourceGraphic" operator="in" result="p"/><feBlend in="SourceGraphic" in2="p" mode="soft-light"/></filter></defs><g filter="url(#grain)">
+<!-- A single swept body contour gives the coach a continuous roof, nose, and sill. -->
+<path d="M40 206c-7-3-10-12-9-25l4-65c2-22 11-35 32-40 38-8 99-10 133-5 20 3 29 12 40 30l21 36c8 13 12 31 12 49 1 14-5 22-17 25l-26 3c-4-18-10-27-24-26-15 1-24 12-26 29l-67 1c-3-19-14-30-29-29-16 1-26 13-28 29Z" fill="#304c98"/>
+<!-- Passenger glass is one gently curved ribbon; the posts follow its rake. -->
+<path d="M49 113c1-13 8-20 22-23 32-5 86-7 119-4 9 1 14 4 19 13l15 28c-54 8-115 11-178 10Z" fill="#adc7bb"/>
+<path d="M190 86c8 1 14 6 18 13l16 28 21-1-16-28c-8-13-17-18-39-19Z" fill="#e8e7d0"/>
+<path d="M200 90c5 2 9 7 12 13l11 19 16-1-13-21c-5-8-11-11-26-13Z" fill="#8eaea7"/>
+<path d="m90 89-2 46m44-48 1 47m41-48 5 46" stroke="#304c98" stroke-width="5" stroke-linecap="round"/>
+<path d="M53 96c42-9 93-11 135-8" stroke="#f5ecd6" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+<!-- The front door belongs to the same rounded front plane, not an applied box. -->
+<path d="M227 137c9-1 17 0 20 5 7 10 10 30 9 47-1 4-4 6-10 7l-20 2-2-43c0-11-1-16 3-18Z" fill="#263d75"/>
+<path d="m230 144 8-1 3 26-10 1Zm12-1 6 1c3 6 5 14 6 24l-9 1Z" fill="#c2d4c5"/>
+<path d="m232 180 17-1" stroke="#e8bd50" stroke-width="2.6" stroke-linecap="round"/>
+<!-- A painted belt wraps the side and rounds the nose. -->
+<path d="M40 157c54 2 119-1 175-8l1 9c-55 7-120 11-177 8Z" fill="#f5ecd6"/>
+<path d="M39 169c62 1 119-3 177-9v5c-55 7-121 11-177 9Z" fill="#e74829"/>
+<path d="M259 151c5 5 8 12 9 20l-11 1-2-20Z" fill="#f5ecd6"/>
+<path d="m43 191 8 1-1 9-8-1" fill="#e74829"/>
+<path d="M254 195c5-1 9-2 12-4l-1 8-11 4Z" fill="#e8bd50"/>
+<!-- Tyres sit within wheel arches and share a common ground plane. -->
+<path d="M87 185c17 0 28 15 27 34-1 19-13 32-29 31-16-1-25-16-24-34 1-18 11-31 26-31Z" fill="#222725"/>
+<path d="M87 197c10 0 15 9 15 22-1 11-7 20-16 20-8-1-14-10-13-22 0-12 6-20 14-20Z" fill="#e5d7b5"/>
+<path d="M206 184c15-1 25 13 24 31-1 17-11 29-25 29-13 0-21-14-20-31 0-16 9-28 21-29Z" fill="#222725"/>
+<path d="M206 196c8 0 13 8 13 19-1 11-6 18-13 18-7 0-11-8-11-18 0-11 5-19 11-19Z" fill="#e5d7b5"/>
+<path d="m118 211 60-2m55-5 22-3" stroke="#182e5d" stroke-width="4" stroke-linecap="round"/>
 </g></svg>
