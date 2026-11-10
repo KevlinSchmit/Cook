@@ -38,7 +38,7 @@
 [data-scene="passion"] .scene-wash { opacity:.02; }
 [data-scene="passion"] .kitchen { opacity:1; }
 [data-scene="passion"] .world { transform:translate(-28px,0) scale(1.055); }
-[data-scene="passion"] .sara { left:12%; top:22%; width:32%; opacity:1; }
+[data-scene="passion"] .sara { left:12%; top:22%; width:25.8%; opacity:1; }
 .passion-copy { position:absolute; left:51%; top:20%; width:40%; }
 .passion-copy h2 { font-size:3.8cqw; color:#e74829; max-width:36cqw; }
 .passion-copy p { margin-top:1.5cqw; font-family:Fraunces,Georgia,serif; font-style:italic; font-size:1.65cqw; }
@@ -58,7 +58,7 @@
 
 /* The home recedes and the school remains just beyond the winding route. */
 [data-scene="barriers"] .scene-wash { opacity:.99; background:#eee5ce; }
-[data-scene="barriers"] .sara { left:5%; top:41%; width:23%; opacity:1; }
+[data-scene="barriers"] .sara { left:5%; top:41%; width:18.5%; opacity:1; }
 .school-path { position:absolute; inset:0; width:100%; height:100%; fill:none; }
 .path-underlay { stroke:#ded1ad; stroke-width:26; stroke-linecap:round; }
 .path-dashes { stroke:#b9a57c; stroke-width:3; stroke-dasharray:12 15; animation:path-travel 22s linear infinite; }
@@ -78,7 +78,7 @@
 /* A wider population, rendered as people and a garden of ten proportional seeds. */
 [data-scene="population"] .scene-wash { opacity:1; background:#304c98; }
 [data-scene="population"] .kitchen { opacity:0; }
-[data-scene="population"] .sara { left:8%; top:43%; width:20%; opacity:0; transform:scale(.85); }
+[data-scene="population"] .sara { left:8%; top:43%; width:16.1%; opacity:0; transform:scale(.85); }
 [data-scene="population"] .masthead { color:#f5ecd6; }
 [data-scene="population"] .scene-dot:after { border-color:#f5ecd688; }
 [data-scene="population"] .scene-dot.active:after { background:#f5ecd6; }
@@ -107,9 +107,9 @@
 [data-scene="school"] .scene-wash { opacity:1; background:#f5ecd6; }
 [data-scene="school"] .kitchen { left:66%; top:42%; width:29%; height:29%; border-radius:1.1cqw; opacity:1; z-index:2; box-shadow:.5cqw .7cqw 0 #263f6212; }
 [data-scene="school"] .world { transform:none; }
-[data-scene="school"] .sara { left:74%; top:46%; width:14%; opacity:1; }
+[data-scene="school"] .sara { left:74%; top:46%; width:11.3%; opacity:1; }
 .school-scene > h2 { position:absolute; top:14%; left:6%; width:49%; font-size:3.3cqw; }
-.professional-kitchen { position:absolute; left:5%; top:24%; width:46%; height:auto; }
+.professional-kitchen { position:absolute; left:5%; top:21%; width:43%; height:auto; }
 .accessibility-divide { position:absolute; left:55.5%; top:36%; width:8%; height:34%; }
 .accessibility-divide svg { width:100%; height:100%; fill:none; stroke:#c9bda0; stroke-width:3; stroke-dasharray:5 10; }
 .accessibility-copy { position:absolute; left:65%; top:31%; width:30%; font-family:Fraunces,Georgia,serif; font-size:1.75cqw; text-align:center; color:#b5472f; }
@@ -120,7 +120,7 @@
 [data-scene="reveal"] .scene-wash { opacity:.09; background:#eef2db; }
 [data-scene="reveal"] .kitchen { opacity:1; }
 [data-scene="reveal"] .world { transform:translate(-25px,10px) scale(1.07); }
-[data-scene="reveal"] .sara { left:10%; top:22%; width:34%; opacity:1; }
+[data-scene="reveal"] .sara { left:10%; top:22%; width:27.4%; opacity:1; }
 .ar-environment { position:absolute; inset:0; pointer-events:none; }
 .target-one { position:absolute; left:20%; top:52%; width:22%; height:25%; }
 .ar-float { position:absolute; }
@@ -137,7 +137,7 @@
 [data-scene="features"] .scene-wash { opacity:.9; background:#eff0d9; }
 [data-scene="features"] .kitchen { opacity:.52; }
 [data-scene="features"] .world { transform:translate(-35px,0) scale(1.045); }
-[data-scene="features"] .sara { left:8%; top:27%; width:29%; opacity:1; }
+[data-scene="features"] .sara { left:8%; top:27%; width:23.4%; opacity:1; }
 .feature-title { position:absolute; top:16%; left:48%; width:43%; min-height:2.2em; font-size:3.2cqw!important; line-height:1.1!important; }
 
 @keyframes ingredient-drift { 0%,100% { transform:translateY(0) rotate(-4deg); } 50% { transform:translateY(-9px) rotate(5deg); } }
@@ -240,7 +240,7 @@
 
 /* Personalization — the actual recurring kitchen, overlaid with matched equipment. */
 .personalized-visual { inset:13% 10%; overflow:hidden; border-radius:1.3cqw; background:#f5ecd6; border:1px solid #d8dec5; }
-.personal-home { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.89; }
+.personal-home { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:.89; }
 .equipment-signal { position:absolute; display:grid; place-items:center; width:17%; height:26%; border:1px solid #91bca0; border-radius:1cqw; background:#f9f8e8de; box-shadow:0 .2cqw 1cqw #2e4c381a; color:#304c98; }
 .equipment-signal svg { width:74%; height:74%; fill:none; }
 .signal-one { left:59%; top:51%; }
@@ -287,7 +287,7 @@
   .film-active .previous-scene { left:6%; width:40px; height:40px; bottom:20px; }
   .film-active .next-scene { width:40px; height:40px; }
   .film-active .scene-dots { bottom:20px; }
-  .film-active .sara { left:calc(50% - 150px); top:38%; width:255px; }
+  .film-active .sara { left:calc(50% - 121px); top:38%; width:206px; }
   .passion-copy { left:calc(50% - 164px); top:16%; width:328px; }
   .passion-copy h2 { max-width:none; font-size:34px; }
   .passion-copy p { font-size:16px; margin-top:17px; }
@@ -296,7 +296,7 @@
   .restaurant-bill strong { font-size:38px; letter-spacing:-2px; }
   .restaurant-bill span { font-size:10px; padding-top:7px; }
   .ingredient-dance,.family-detail { display:none; }
-  [data-scene="barriers"] .sara { left:calc(50% - 180px); top:42%; width:125px; }
+  [data-scene="barriers"] .sara { left:calc(50% - 180px); top:42%; width:101px; }
   .school-dream { left:calc(50% - 110px); top:15%; width:220px; }
   .school-path { left:calc(50% - 180px); top:26%; width:360px; height:400px; }
   .obstacle-0 { left:calc(50% - 95px); top:41%; width:100px; }
@@ -318,11 +318,11 @@
   .school-scene > h2 { left:calc(50% - 164px); top:16%; width:328px; font-size:31px; text-align:center; }
   .professional-kitchen { left:calc(50% - 180px); top:29%; width:255px; }
   [data-scene="school"] .kitchen { left:calc(50% + 30px); top:52%; width:145px; height:112px; border-radius:9px; }
-  [data-scene="school"] .sara { left:calc(50% + 66px); top:52%; width:84px; }
+  [data-scene="school"] .sara { left:calc(50% + 66px); top:52%; width:68px; }
   .accessibility-divide { left:calc(50% - 30px); top:49%; width:55px; height:160px; }
   .accessibility-copy { left:calc(50% - 110px); top:66%; width:220px; font-size:16px; }
   .home-question { left:calc(50% - 164px); top:77%; width:328px; font-size:25px; }
-  [data-scene="reveal"] .sara { left:calc(50% - 145px); top:41%; width:240px; }
+  [data-scene="reveal"] .sara { left:calc(50% - 117px); top:41%; width:194px; }
   .product-reveal { left:calc(50% - 164px); top:17%; width:328px; text-align:center; }
   .product-reveal h2 { font-size:82px; letter-spacing:-7px; }
   .product-promise { font-size:24px; margin-top:9px!important; letter-spacing:-.6px; }
@@ -336,7 +336,7 @@
   .ar-float .interface-line.short { width:19px; margin-left:32px; }
   .ar-orbits { display:none; }
   .feature-title { left:calc(50% - 164px); top:16%; width:328px; font-size:31px!important; text-align:center; }
-  [data-scene="features"] .sara { left:calc(50% - 95px); top:61%; width:190px; }
+  [data-scene="features"] .sara { left:calc(50% - 47.5px); top:73%; width:95px; }
 }
 .dream-school-art { display:block; width:100%; }
 /* Final safe-area refinements from the 16:9 composition review. */
@@ -344,7 +344,7 @@
 .passion-copy h2 { font-size:3.2cqw; max-width:32cqw; }
 .passion-copy p { font-size:1.45cqw; }
 .obstacle-1 { left:42%; top:43%; width:17%; }
-.community-art { left:12%; top:50%; width:76%; }
+.community-art { left:12%; top:54%; width:76%; }
 .product-reveal { left:49%; top:27%; width:37%; }
 .product-reveal h2 { font-size:8cqw; letter-spacing:-.55cqw; }
 .product-promise { font-size:2cqw; max-width:31cqw; }
@@ -360,11 +360,11 @@
   .product-promise { font-size:24px; max-width:none; }
   .product-description { font-size:13px; max-width:none; }
 }
-.passion-copy { left:43%; }
+.passion-copy { left:35%; }
 .obstacle-2 { top:22%; }
 .product-promise { max-width:29cqw; text-wrap:balance; }
 .sara { clip-path:inset(0 0 0 0); transition:left 2.1s var(--ease),top 2.1s var(--ease),width 2.1s var(--ease),opacity 1.5s ease,transform 2s var(--ease),clip-path 2s var(--ease); }
-[data-scene="school"] .sara { top:42%; clip-path:inset(0 0 14% 0); }
+[data-scene="school"] .sara { top:42%; clip-path:inset(0 0 26.5% 0); }
 @media(max-aspect-ratio:1/1) {
   .passion-copy { left:calc(50% - 164px); }
   .obstacle-2 { top:57%; }

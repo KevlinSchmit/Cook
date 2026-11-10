@@ -1,120 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" fill="none" role="img" aria-labelledby="care-title">
-<title id="care-title">An intergenerational group sharing everyday caregiving, drawn as relaxed, connected figures</title>
-<defs>
-  <filter id="care-grain" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB">
-    <feTurbulence type="fractalNoise" baseFrequency=".64" numOctaves="3" seed="19" stitchTiles="stitch" result="noise"/>
-    <feColorMatrix in="noise" type="saturate" values="0"/>
-    <feComponentTransfer><feFuncA type="linear" slope=".16"/></feComponentTransfer>
-    <feComposite in2="SourceGraphic" operator="in" result="grain"/>
-    <feBlend in="SourceGraphic" in2="grain" mode="soft-light"/>
-  </filter>
-</defs>
-<g filter="url(#care-grain)" stroke-linecap="round" stroke-linejoin="round">
-<!-- Poses share one low, flowing rhythm. Anatomy is established before garments. -->
-<g id="parent-with-infant">
-  <!-- One contour links the inclined face, neck, sloping shoulders and body. -->
-  <path d="M182 95c16-20 43-19 59-3 11 11 13 26 14 38 1 8 10 13 11 19 0 5-8 7-12 7-3 15-10 25-23 29l-3 20c27 11 45 28 53 53 14 45 8 96-1 146l7 62 18 134H66l20-140 6-72c-5-41 1-87 17-118 13-26 34-40 64-50l7-27c-17-12-24-26-24-43-9-8-8-20 1-23 4-1 8 1 10 4-2-15 3-27 15-36Z" fill="#dfa17f"/>
-  <!-- The shirt wraps the bent torso; its opening is a quiet curved neckline. -->
-  <path d="M174 211c12 14 35 19 54-6 30 11 48 29 56 58 8 28 7 60 2 87l-42-7c-1-21-4-35-11-46 0 33 10 70 47 102-49 22-112 26-172 8l13-110c-9 12-14 31-17 51l-42-12c3-33 11-62 27-85 17-23 38-33 65-40Z" fill="#5473b0"/>
-  <path d="M108 407c48 17 112 17 172-3l7 62 18 134H66l20-140Z" fill="#263b6d"/>
-  <path d="M127 266c-11 17-16 37-17 55m132-54c9 16 13 31 13 49m-135 72c30 7 61 7 89 1" stroke="#1f3778" stroke-width="3"/>
-  <!-- Close-cropped hair follows the head and turns behind the ear. -->
-  <path d="M158 135c-8-27 4-56 31-64 29-9 58 7 63 32 2 8 2 15 1 23-13-4-23-14-28-27-12 15-30 24-51 25l-4 25-9-3Z" fill="#222725"/>
-  <path d="M237 133c5 0 8 2 10 5m-19 22c6 3 12 2 16-2" stroke="#704b3a" stroke-width="2.6"/>
-  <path d="M231 145c2 4 2 7-1 10m-70-16c3-2 6-1 7 2" stroke="#b67658" stroke-width="2"/>
-  <path d="M183 208c8 8 20 11 31 6" stroke="#eed9be" stroke-width="3"/>
-  <!-- The far forearm supports the newborn's head and upper back. -->
-  <path d="M244 335c11 3 24 5 37 7 5 16 1 32-9 42-10 10-23 16-41 15l-23-4c-12-2-20-8-18-13 2-4 8-3 15-1l17 4c11 1 20-3 24-9 5-9 3-20-2-27Z" fill="#dfa17f"/>
-  <path d="M271 352c1 11-2 20-8 26m-41 12 14 1" stroke="#bc795c" stroke-width="2.1"/>
-  <!-- Swaddle sits against the sternum, with its weight along the carrying arm. -->
-  <path d="M224 267c-15-9-35-2-43 15-6 15-17 28-35 40-20 14-23 29-10 43 16 17 47 19 75 8 26-10 46-29 46-51 1-19-12-44-33-55Z" fill="#f6edd7"/>
-  <path d="M178 288c14 14 35 24 56 28m-73-10c18 18 40 28 65 33m-82-15c21 19 42 29 64 31" stroke="#e74829" stroke-width="7"/>
-  <path d="M222 260c9-13 29-11 36 3 4 7 4 13 3 18 5 5 6 8 2 10-3 1-6 1-9 0-8 11-22 9-31 1-10-9-12-23-1-32Z" fill="#efb492"/>
-  <path d="M217 271c-2-13 9-25 22-25 12 0 23 8 25 20-13-7-24-3-33 6Z" fill="#876346"/>
-  <path d="m243 281 6 2m-13 7c5 4 9 4 13 2" stroke="#b97a59" stroke-width="2"/>
-  <!-- Near elbow, wrist, palm and fingertips are one continuous skin contour. -->
-  <path d="M75 340c-9 23-8 49 7 63 19 18 61 18 102 5 19-6 37-13 50-24 6-5 9-10 6-13-4-4-10 1-18 6l-18 9c12-12 14-18 10-20-5-3-13 6-21 13-12 10-27 15-48 18-18 2-31 0-36-7-6-9-3-23 2-40Z" fill="#dfa17f"/>
-  <path d="M86 351c-4 19-2 32 5 40m101 0 23-11m-23 18 19-8" stroke="#bc795c" stroke-width="2.2"/>
-  <path d="M68 334c12 3 28 8 43 10l-3 12c-14-1-29-5-43-9Z" fill="#eee4cc"/>
-  <path d="M238 329c12 3 26 4 41 4l2 12c-16 2-29 0-43-3Z" fill="#eee4cc"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 683" fill="none" role="img" aria-labelledby="care-title"><title id="care-title">Five adults with an infant, a walking stick, a striped bag, and a child, reconstructed in the supplied reference composition</title><defs><filter id="care-print" x="-1%" y="-1%" width="102%" height="102%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".17"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="grain"/><feBlend in="SourceGraphic" in2="grain" mode="soft-light"/></filter></defs><path d="M0 0H2048V683H0Z" fill="#304c98"/><g filter="url(#care-print)"><g id="father-and-infant">
+<!-- Full blue shirt and rolled sleeves follow the enclosing carrying gesture. -->
+<path d="M248 277C192 291 144 321 117 366 99 398 91 441 95 485L113 526 166 536 166 600 155 683H468L451 600 455 546 493 521C501 483 488 414 465 373 441 332 395 303 346 282L329 265 304 289 267 260Z" fill="#547db9"/>
+<path d="M119 363C97 402 91 446 95 485L117 516 166 506 164 449C159 415 154 387 155 345Z" fill="#4269a6"/>
+<path d="M166 600c84 18 190 13 285-1l17 84H155Z" fill="#213e75"/>
+<path d="M142 399C140 434 148 460 159 482M220 567C255 574 291 572 320 565" stroke="#365c99" stroke-width="4" stroke-linecap="round"/>
+<!-- Inclined face and long neck are one original-reference contour. -->
+<path d="M296 106C317 102 347 111 373 99L377 145 395 175 376 179 362 207 349 217 329 204 331 266 305 288 266 260 285 195C271 176 263 159 270 141Z" fill="#f1a77b"/>
+<path d="m305 194 24 12-1 31-10-14Z" fill="#d88761"/>
+<path d="M289 175C267 165 256 152 251 140 238 149 220 136 224 121 215 109 226 97 250 92 244 69 267 60 291 55 303 52 314 57 322 59 332 32 351 23 355 27 377 27 400 45 399 73 403 95 384 109 360 108 347 112 335 108 325 104 328 126 315 144 299 149L300 165Z" fill="#262726"/>
+<path d="M237 116C251 97 276 111 287 103 302 95 321 111 335 104M253 84C276 77 296 86 316 83 344 80 365 65 382 46M275 144C266 129 273 117 290 115" stroke="#4b4c47" stroke-width="5" stroke-linecap="round" opacity=".72"/>
+<path d="M282 141c-12-8-23 4-17 16l13 13 13-12Z" fill="#f1a77b"/>
+<path d="M278 149c-6-5-8 2-4 6M341 130c9-5 16-5 23 1M341 145c7 8 14 8 20 2M347 177c4 7 8 10 14 10" stroke="#995e43" stroke-width="3.2" stroke-linecap="round"/>
+<path d="m266 260 38 29-39 29-17-41Zm38 29 29-25 17 21-12 34Z" fill="#f7edd8"/>
+<!-- Right forearm carries the infant's back before the front arm closes around it. -->
+<path d="M438 510 487 516C483 556 464 581 429 598 361 630 271 627 205 603L214 574C274 590 339 588 385 569 417 555 434 537 438 510Z" fill="#f2a97b"/>
+<!-- The baby's swaddle follows the diagonal torso under the supported head. -->
+<path d="M381 340C406 334 435 358 441 390L445 454C428 491 394 526 358 541 329 551 286 538 261 513 241 495 257 461 277 433L336 373Z" fill="#fff0d1"/>
+<path d="M325 384c30 18 69 32 108 44l9 23c-43-12-90-33-131-50Zm-38 54c39 26 79 44 121 54l-17 17c-39-9-80-30-118-53Zm-29 43c34 22 68 37 97 46l-18 13c-28-7-59-21-81-37Z" fill="#e44e2c"/>
+<!-- Sleeping head sits against the father's supporting upper forearm. -->
+<path d="M383 295c21-13 43-4 54 18 13 26 1 51-21 58-23 5-45-14-54-32-7-16 3-33 21-44Z" fill="#f5b489"/>
+<path d="M381 295c17-12 41-3 52 13-8 11-24 9-35 6-5 10-14 15-29 11 0-11 4-23 12-30Z" fill="#8a5733"/>
+<path d="M382 330c5 5 9 5 13 1m16 9c5 4 8 3 12 0m-26 13c7 8 15 10 22 5" stroke="#9c6548" stroke-width="2.8" stroke-linecap="round"/>
+<!-- Carrying palm and forearm are a continuous contour, with fingertip contact. -->
+<path d="M110 516C117 548 136 577 162 595 242 581 318 559 374 528 397 515 417 496 432 476L444 446C446 438 441 436 437 444L423 463 430 442C433 433 428 430 423 439L409 464 413 447C415 437 409 437 405 447L390 475 373 489C324 506 273 519 222 523L202 493Z" fill="#f4ad7e"/>
+<path d="M389 479 416 459M391 492 415 474" stroke="#db8b62" stroke-width="2.7" stroke-linecap="round"/>
+<!-- The cuffs wrap the same arm axes. -->
+<path d="m98 487 102-23 12 35-102 27Z" fill="#f7edd8"/>
+<path d="m438 485 58 2 1 33-59-1Z" fill="#f7edd8"/>
 </g>
 
-<g id="seated-woman">
-  <!-- The chair and skirt agree on the bent-knee posture. -->
-  <path d="M333 409c-8-44-3-99 29-130 16-15 34-16 50-2 19 17 21 53 11 89l-19 76 61 118-12 15-76-107Z" fill="#9a7c48"/>
-  <path d="M402 192c17-17 41-15 56 1 8 9 11 19 12 31 1 7 8 12 8 17 0 4-5 7-10 8-3 12-12 22-24 25l2 15c31 8 54 25 65 53 13 36 11 75-1 111l-49 31-84-26c-24-41-28-86-10-126 8-18 22-30 43-39l-1-22c-11-9-17-21-17-35-10-8-9-19 0-22 2-1 5 0 7 1-3-8-2-16 3-22Z" fill="#966142"/>
-  <path d="M410 294c12 11 26 13 37-5 32 9 55 28 65 58 6 18 8 37 7 57l-37 6c-2-24-6-42-13-54l-3 66c-24 11-52 11-78 0l1-69c-6 14-10 30-10 49l-37-2c-1-25 3-50 15-70 12-20 29-30 53-36Z" fill="#f5ecd6"/>
-  <path d="M387 419c30 11 58 11 85-1l39 39c18 20 22 44 15 71l-5 40 39 32H350c3-27 15-53 34-78l31-42c-16-8-28-26-28-61Z" fill="#c7d3b3"/>
-  <path d="M417 478c25 3 44 13 55 31m-84 44c13-9 24-22 34-38m48 42c-2 17 1 31 7 43" stroke="#8fa584" stroke-width="3"/>
-  <path d="M381 225c-13-21-6-48 16-59 22-11 51-6 63 13 12 20 10 42 5 55-12-6-23-17-27-32-11 15-28 25-46 26l-5 15-9-5Z" fill="#222725"/>
-  <path d="M447 226c5-1 9 1 12 4m-20 22c5 3 10 3 14 0" stroke="#593b2e" stroke-width="2.5"/>
-  <path d="m442 236 1 9" stroke="#71442e" stroke-width="2"/>
-  <!-- The blanket curves over two knees instead of floating across a flat chest. -->
-  <path d="M382 423c37-16 77-13 114 4 12 6 18 14 17 27l-4 51c-43 2-87-5-128-19l-9-38c-2-12 1-20 10-25Z" fill="#20764e"/>
-  <path d="M386 439c36-11 74-8 110 6m-109 9c36-8 72-5 108 8m-106 8c33-4 68-1 104 12" stroke="#b7c994" stroke-width="4"/>
-  <!-- Both hands terminate naturally in the forearm that holds each blanket edge. -->
-  <path d="M345 399c-2 25 4 43 20 54 13 8 28 11 40 9 8-2 11-7 8-10-3-3-10-1-17-2 11-3 14-7 11-10-3-3-12-1-21-1-9-1-13-5-14-13l1-26Z" fill="#966142"/>
-  <path d="M481 403c1 17 0 28-5 34-4 5-12 6-21 5-9-1-13 2-12 6 2 4 8 5 17 6-8 2-12 5-10 8 3 4 16 5 28 1 20-7 30-26 29-55Z" fill="#966142"/>
-  <path d="M352 405c8 2 15 3 22 2m113-1 17 4m-122 39 15 6m67-7 13-2" stroke="#6e442f" stroke-width="2"/>
+<g id="woman-with-striped-bag">
+<!-- Curly hair is one large asymmetric ink silhouette, including the neck curl. -->
+<path d="M672 333C640 351 614 341 604 330 577 342 552 326 550 303 546 277 563 252 577 241 560 221 568 188 591 180 587 155 606 135 622 132 609 110 621 93 643 92 665 89 683 100 690 111 714 92 740 103 750 126 760 147 749 169 734 181L724 270 704 311Z" fill="#262726"/>
+<!-- Rightward inclined face grows into the same long neckline as the reference. -->
+<path d="M733 174C739 192 740 211 754 225L775 245 758 251 752 274 738 293 720 283 705 269 699 327 686 345 698 367 650 369 639 358 669 336 681 285C669 273 661 257 663 242 665 218 688 193 708 184Z" fill="#c88c53"/>
+<path d="M706 269 722 283 717 309 698 327Z" fill="#ab6e3c"/>
+<path d="M674 258c-13 0-16-19-4-25 11-5 23 5 17 16Z" fill="#b9804a"/>
+<path d="M667 260c0-13 18-15 21-4 3 13-15 20-20 8Z" fill="#e7bd45"/>
+<path d="M718 213c8-6 15-6 22-1M721 226c6 7 13 8 20 2M730 256c4 5 10 7 16 7" stroke="#744b31" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M718 244c-3-8 1-16 9-17 9-1 13 8 9 15-5 7-14 9-18 2Z" fill="#da9658" opacity=".56"/>
+<!-- One blouse contour contains both sleeves and the quietly curved torso. -->
+<path d="M639 357C607 367 579 393 562 429 543 468 532 515 530 573L571 592 586 555 593 683H828L804 563 831 551C817 478 781 408 731 382L698 367C683 374 657 371 639 357Z" fill="#fff0d1"/>
+<path d="M583 433c-14 40-20 79-12 159l15-37 7-84Zm184 6c12 39 21 74 21 111l16 13-6-56Z" fill="#e1caa3"/>
+<!-- The long green strap disappears into the same angled bag mouth. -->
+<path d="m630 365 20-5 102 164-23 13Z" fill="#2d805b"/>
+<path d="M582 568C632 546 703 522 766 512 781 548 786 615 794 683H603Z" fill="#2c805a"/>
+<path d="M605 586 752 546M594 619 768 576M606 651 774 613M638 680 776 647" stroke="#d6dba8" stroke-width="7" stroke-linecap="round"/>
+<!-- Bent left arm carries the bottom of the bag, fingers held along its surface. -->
+<path d="M532 573C539 605 567 623 603 635L655 650C667 663 684 678 701 681 709 681 714 678 708 674L691 662 712 674C719 678 724 672 717 668L694 651 713 663C721 666 724 660 717 656L688 635C681 628 668 625 659 627 625 619 595 607 578 590L571 565Z" fill="#c88c53"/>
+<path d="M676 645 706 667M667 651 696 675" stroke="#a76b3e" stroke-width="2.5" stroke-linecap="round"/>
+<!-- Right wrist, palm and bag-contact fingers remain one continuous skin shape. -->
+<path d="M796 548c19 10 28 28 24 45-3 14-17 28-29 36-8 5-14 1-9-5l11-16-15 14c-7 6-12 2-7-5l13-17-18 17c-7 5-11 0-5-7l15-20-18 11c-9 4-13-2-5-8l26-25 3-24Z" fill="#c88c53"/>
+<path d="m782 587 15-15M783 602 799 582" stroke="#a76b3e" stroke-width="2.5" stroke-linecap="round"/>
 </g>
 
-<g id="older-adult">
-  <!-- The entire center of gravity inclines toward the cane and companion. -->
-  <path d="M653 156c18-18 46-18 64-2 10 9 15 24 15 39 0 7 7 13 7 17 0 5-7 8-12 8-5 13-16 21-29 23l-1 16c31 9 54 29 63 57 11 36 10 74-1 112l-6 44 13 130H574l17-133 3-55c-7-35-5-71 7-101 9-24 25-40 49-50l5-22c-14-10-22-23-22-38-8-6-9-17-2-21 3-2 7-1 10 1-1-10 3-21 12-28Z" fill="#d5a78c"/>
-  <path d="M649 269c14 10 33 11 49-12 29 10 50 28 60 55 8 22 10 47 9 70l-35 6-10-39 7 94c-35 12-71 11-107-1l8-90c-6 13-10 29-11 47l-36-4c0-28 5-54 18-76 12-21 28-35 48-50Z" fill="#e74829"/>
-  <path d="M658 279c10 14 21 16 32 8l10 145c-11 6-23 7-34 2Z" fill="#f5ecd6"/>
-  <path d="M622 439c36 14 72 15 131-13l0 44 13 130H574l17-132Z" fill="#b8442e"/>
-  <path d="M642 333c-6 23-8 48-6 76m82-79c7 20 9 41 7 64m-69-80 4 94" stroke="#ba3c29" stroke-width="2.8"/>
-  <path d="M638 187c-5-24 10-49 33-55 26-7 52 8 57 32 2 9 1 17-2 25-14-7-26-18-33-31-11 17-26 27-44 31l-4 13-9-3Z" fill="#d8d5c2"/>
-  <path d="M700 194c6-1 10 1 14 4m-25 22c6 3 12 3 17 0" stroke="#6b5b4e" stroke-width="2.5"/>
-  <path d="m695 205 1 9m16-28 6 3m-30-1-6 3" stroke="#aa7d65" stroke-width="2"/>
-  <!-- A softly curved cane is planted below the hands. -->
-  <path d="M690 461v-31c0-16 26-17 27-1l-4 171" stroke="#9a7348" stroke-width="10"/>
-  <path d="M586 389c-1 26 5 45 20 56 15 10 37 13 65 8 8-2 14-5 15-10 0-4-5-6-12-4l-18 3 13-7c6-4 6-8 2-10-4-1-12 3-21 5-14 3-24 1-29-5-5-7-6-18-4-33Z" fill="#d5a78c"/>
-  <path d="M732 380c6 20 6 33 0 41-5 7-14 9-24 6-9-2-14-1-15 3-1 4 5 8 13 10-7 0-11 3-10 6 2 4 14 5 24 3 25-4 37-26 37-62Z" fill="#d5a78c"/>
-  <path d="M642 441c11 2 21 0 28-3m35-5 13 4" stroke="#aa7d65" stroke-width="2"/>
-  <path d="m585 384 35 2-2 13-34-3m146-19 29 2-1 14-28-3" fill="#c9432e"/>
+<g id="elder-on-cane">
+<!-- White hair follows the exact high, swept, softly lobed reference contour. -->
+<path d="M991 112c25-11 48 5 53 26 19 3 29 20 21 36 17 18 9 45-9 52-4 24-25 45-49 48-21 12-47 7-55-1-25 16-51 2-53-20-24-4-28-30-15-46-12-22 2-51 23-58 2-21 25-31 44-19 10-18 24-23 40-18Z" fill="#f8e5c5"/>
+<!-- Face and neck are a single softly angular profile turned to the right. -->
+<path d="M1017 178c15 11 28 26 35 42l28 14-24 10-6 40-34-4-5 58 24 16-34 21-45-23 18-13 13-68c-17-10-23-21-25-32-18 3-25-15-15-24 7-6 13-3 20 0 20-9 34-20 50-37Z" fill="#efb083"/>
+<path d="M978 219c17-7 30-19 38-38 10-15 21-23 28-24-16-29-48-15-64 4-8 15-9 36-2 58Z" fill="#f8e5c5"/>
+<path d="M934 191c27-1 42-15 54-36m-59 73c16-29 40-34 62-46 12-7 18-23 23-35" stroke="#ddc299" stroke-width="4" stroke-linecap="round"/>
+<path d="M1021 213c7-4 14-3 19 0M1022 221c7 3 14 3 18-2M1037 249c6 5 12 7 18 5" stroke="#a56c4a" stroke-width="3" stroke-linecap="round"/>
+<path d="M1004 244c-6-9-2-18 8-19 11-1 18 10 12 18-6 8-16 8-20 1Z" fill="#ed9870" opacity=".8"/>
+<!-- The cardigan's large rounded sleeves and hem are one unified silhouette. -->
+<path d="M967 347C921 371 880 434 859 508L852 549C850 577 875 601 908 608L916 683H1166L1149 622C1173 606 1191 583 1184 554 1171 486 1133 414 1084 379L1035 354C1015 365 988 365 967 347Z" fill="#ee4f27"/>
+<path d="M968 349c29 9 56 7 80 0l29 193-91 8Z" fill="#fff0d2"/>
+<path d="M1010 365c-4 40 3 70 12 106m-14-83 1 52" stroke="#e6d4ae" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M930 447c-10 30-8 52 4 75l46 12-7 35-57 15-12-73Zm153-31c-1 44 7 77 24 107l38 5-20 24-27-19Z" fill="#ca3c23"/>
+<path d="M881 545c19-17 34-24 54-22l46 13m139-3c18-10 35-13 50-3" stroke="#ba3823" stroke-width="5" stroke-linecap="round"/>
+<!-- The walking stick is seated directly under both folded hands. -->
+<path d="M1027 575c-17 1-29 13-29 30v24h20v-24c0-14 27-16 28 2l1 76h18l-1-80c-1-20-14-29-37-28Z" fill="#805137"/>
+<!-- Skin follows the cuffs, then the overlapping fingers wrap the stick. -->
+<path d="M977 549c18-4 35-9 52-7l28 7c12 5 22 12 27 25l5 17c2 8-4 12-8 4l-7-19 2 16c1 8-6 10-9 2l-4-19-1 16c0 8-6 8-8 0l-2-15-4 10c-2 6-8 5-8-1l1-19-21 10-44 15Z" fill="#efae80"/>
+<path d="M1120 548c-18-7-37-12-55-15-16-3-29 0-37 9l-11 14c-5 7-4 15 1 13l8-12 12-7 12-2 18 4 12 14 28 19 21-6Z" fill="#efae80"/>
+<path d="M1034 552c11 4 19 11 23 21m-18-15 25 20m1-27 13 25" stroke="#cf8b64" stroke-width="2.8" stroke-linecap="round"/>
 </g>
 
-<g id="supporting-companion">
-  <!-- The shoulder and hip counterbalance the bent supporting arm. -->
-  <path d="M918 85c28-2 50 15 52 40 2 15-4 29-15 34-2 22-12 35-25 40l-3 18c30 11 53 32 61 62 13 43 8 89-1 132l-2 49 23 140H798l17-136 8-57c-4-34-2-69 7-99 10-34 29-58 56-76l4-25c-14-7-24-20-26-36-8-3-11-7-7-12l10-13c-2-21 5-41 21-54 9-6 19-9 30-10Z" fill="#ad7551"/>
-  <path d="M887 226c10 11 27 14 40-9 28 11 49 30 59 58 8 24 9 50 6 75l-36 4-8-39 4 99c-38 13-76 12-113-1l11-93c-8 12-16 23-26 33l-26-29c25-45 45-77 89-98Z" fill="#20764e"/>
-  <path d="M839 409c38 15 76 16 148 2l-2 49 23 140H798l17-136Z" fill="#1d4b3e"/>
-  <path d="M855 297c14-11 25-27 32-46m59 22c10 18 15 37 16 58m-108 53c27 4 54 4 81-2" stroke="#165b40" stroke-width="3"/>
-  <path d="M878 145c-10-24 2-49 25-60 27-12 55 2 63 27 4 12 3 26-3 35l-11 15-8-5 4-21c-22-2-35-12-43-26-4 15-13 27-27 35Z" fill="#222725"/>
-  <path d="M898 148c-5-1-10 0-14 4m0 24c6 4 12 4 18 0" stroke="#633e2e" stroke-width="2.5"/>
-  <path d="m890 158-3 10m62-13 5-3" stroke="#8d553b" stroke-width="2"/>
-  <!-- Palm, wrist and forearm form one contour as the companion steadies the elder. -->
-  <path d="M799 321c-11 18-23 31-39 40l-15 5c-9 2-14 6-12 10 2 4 9 3 16 1-9 7-11 12-8 14 4 3 13-1 22-7 26-15 44-32 57-43Z" fill="#ad7551"/>
-  <path d="m744 372 12-4m-8 17 14-9" stroke="#835039" stroke-width="2"/>
-  <path d="M958 349c5 25 4 46-1 63-2 8-5 16-4 23 1 6 6 7 8 1l5-14c-1 13-1 21 3 22 5 0 9-13 11-28 3-22 4-45 0-66Z" fill="#ad7551"/>
-  <path d="m954 342 36-1-1 13-34 2" fill="#c7d3b3"/>
+<g id="man-with-hand-in-pocket">
+<!-- Green shirt, tilted shoulder line, collar and relaxed posture trace the reference. -->
+<path d="M1307 284C1257 312 1229 369 1217 433L1211 498 1218 534 1277 562 1271 602C1339 605 1402 597 1478 586L1499 572 1534 540 1574 497C1554 411 1503 347 1405 307L1379 284C1352 307 1330 306 1307 284Z" fill="#2f8a5e"/>
+<path d="M1271 602c70 2 139-8 207-16l17 97h-251Z" fill="#1d4469"/>
+<path d="M1261 374c-14 35-20 70-20 120l37-1c-4-44-8-85-17-119Zm170 36c-8 38-8 93 1 134l39 42c9-56-1-116-40-176Z" fill="#1c704b"/>
+<path d="M1357 333c-1 17 0 33 1 51m3-39 .1 .1m0 22 .1 .1" stroke="#5a9b69" stroke-width="3" stroke-linecap="round"/>
+<!-- The face flows into a long inclined neck, without a detached nose piece. -->
+<path d="M1302 119c24 16 47 20 69 8l13 38-14 41 2 84-20 20-25-24-3-52-14 3-22-19-16-17-8-15 20-14 3-50Z" fill="#d2945c"/>
+<path d="m1341 218 29-12-1 59-17 34-16-27Z" fill="#b97745"/>
+<path d="M1291 149c-31-26-13-91 8-95 35-6 50 45 65 52 32 2 52 1 71 19 19 19 1 40-47 66l-19-16-6-36c-32-6-47-1-62-10Z" fill="#292b28"/>
+<path d="M1297 76c6 27 25 40 59 46 35 5 53 14 62 28m-93-51c10 17 28 26 54 29" stroke="#4d4d46" stroke-width="4.5" stroke-linecap="round" opacity=".9"/>
+<path d="M1365 173c12-8 24-1 19 10l-11 10-10-10Z" fill="#d2945c"/>
+<path d="M1305 153c8-4 17-3 25 2M1306 167c8 7 16 8 24 2M1300 203c7 3 14 2 21-4" stroke="#875638" stroke-width="3.3" stroke-linecap="round"/>
+<path d="m1307 284 43 24-20 32-30-43Zm44 24 28-24 27 24-17 30Z" fill="#fff0d1"/>
+<!-- Downward left forearm and pocketed right wrist preserve the distinct gesture. -->
+<path d="m1228 532 50 3c-2 50-8 98-10 148h-32Z" fill="#d2945c"/>
+<path d="M1538 536c-14 58-68 85-121 113l-31-28 29-37c41-14 59-36 65-68Z" fill="#d2945c"/>
+<path d="m1386 621 31 28 24 34h-41Z" fill="#173c63"/>
+<path d="m1212 498 66-5 4 40-70 2Zm264 7 87-15 10 44-89 3Z" fill="#fff0d1"/>
 </g>
 
-<g id="parent-with-child">
-  <!-- A three-quarter hip shift makes space for the child's seat. -->
-  <path d="M1183 104c17-17 43-13 57 3 9 11 12 25 11 39 0 6 5 11 4 15-1 5-6 7-11 7-5 14-16 23-29 25l-2 22c32 10 56 33 65 65 11 41 8 86-1 129l2 61 29 130h-215l16-137 2-61c-5-35-4-70 6-100 10-34 30-59 57-77l3-26c-13-10-20-24-19-39-8-7-7-18 1-21 3-1 7 0 10 3-1-15 4-31 15-38Z" fill="#bc8c62"/>
-  <path d="M1175 221c12 11 27 12 38-6 31 11 53 33 62 63 8 26 9 51 7 75l-40 6-6-42 4 110c-35 15-75 14-113 0l13-112c-6 13-11 30-12 47l-38-3c-1-29 4-58 17-80 15-25 32-39 68-58Z" fill="#dcb644"/>
-  <path d="M1127 422c36 14 74 15 150-13l2 61 29 130h-215l16-137Z" fill="#c69f39"/>
-  <path d="M1144 304c7-22 19-41 35-56m60 25c9 17 13 38 14 61m-116 64c29 6 57 6 86 0" stroke="#b28c31" stroke-width="2.7"/>
-  <!-- The scarf is a single flowing wrap with a face opening, not stacked head pieces. -->
-  <path fill-rule="evenodd" d="M1158 83c25-17 63-13 85 9 20 21 25 49 18 79-3 14-2 26 5 40l15 36c-28 25-72 30-104 15-14-7-24-19-30-30l18-30c7-13 8-24 2-39-15-34-20-59-9-80Zm25 21c-11 7-16 23-15 38-3-3-7-4-10-3-8 3-9 14-1 21-1 15 6 29 19 39l-3 26c12 13 28 17 40 7l2-39c13-2 24-11 29-25 5 0 10-2 11-7 1-4-4-9-4-15 1-14-2-28-11-39-14-16-40-20-57-3Z" fill="#f5ecd6"/>
-  <path d="M1167 110c9-19 32-30 51-24m-37 151c12 8 26 10 38 6" stroke="#d9cfb2" stroke-width="3"/>
-  <path d="M1219 144c5-1 10 1 13 4m-28 26c6 4 12 4 17 0" stroke="#67472f" stroke-width="2.5"/>
-  <path d="m1211 154 1 9" stroke="#926445" stroke-width="2"/>
-  <!-- Far hand rests against the child's back. -->
-  <path d="M1095 356c-6 24-2 43 12 57 12 12 27 15 40 11 8-2 11-7 8-10-2-3-9-1-17-1 10-4 13-8 10-11-4-3-12 1-18-2-5-2-7-8-5-18l4-20Z" fill="#bc8c62"/>
-  <!-- The child sits across the hip, knees bent, rather than dangling from a pasted torso. -->
-  <path d="M1129 292c13-4 26 1 32 13 3 7 4 14 2 20 5 3 5 7 2 10-3 2-6 1-8 0-4 7-10 10-16 10l-1 10c14 8 22 20 23 35l-2 35 16 32c4 9 3 15-2 18-6 3-12-2-16-9l-19-28-14 1-10 35c-3 9-8 12-13 9-5-2-5-9-3-17l9-45c-5-23-5-45 4-59l7-13 3-10c-8-6-12-14-11-23-5-5-5-12 0-15 2-1 4-1 6 1 0-8 3-15 11-18Z" fill="#d3a27c"/>
-  <path d="M1123 349c6 8 13 10 20 6 14 7 22 20 23 36l-2 32c-16 8-36 9-56 2 1-24 0-48 8-64Z" fill="#e74829"/>
-  <path d="M1117 305c-4-14 4-29 18-34 16-4 31 4 34 18 1 5 1 10-1 14-11-2-21-8-26-18-5 11-13 18-25 20Z" fill="#32332c"/>
-  <path d="M1144 311c5-1 8 1 10 4m-18 17c5 3 9 3 13 0" stroke="#926445" stroke-width="2"/>
-  <path d="M1146 362c12-7 22-15 31-25 5-6 9-7 12-4 2 3-1 8-5 13l-17 22-15 11Z" fill="#d3a27c"/>
-  <path d="M1103 475c7 2 13 1 18-3l2 11c-6 6-15 8-23 4Zm60-3c5 6 10 8 16 7l3 10c-10 2-18-1-25-9Z" fill="#304c98"/>
-  <!-- A broad continuous forearm carries the child's pelvis and returns to the shoulder. -->
-  <path d="M1247 352c10 31 9 54-4 68-17 18-48 21-83 13-12-3-20-7-27-5-8 1-13 4-13 8s6 4 12 3c-6 4-7 8-4 11 4 3 13 1 20 0 39 14 78 12 104-8 25-19 31-49 24-86Z" fill="#bc8c62"/>
-  <path d="M1160 441c28 7 51 5 69-5m-96-3 15 3" stroke="#976a47" stroke-width="2"/>
+<g id="reference-parent-with-child">
+<!-- The mustard garment and its carrying arm form the large enclosing silhouette. -->
+<path d="M1727 330C1762 321 1812 326 1845 350 1887 371 1906 407 1916 451 1928 497 1925 551 1908 583L1885 607 1912 683H1615L1628 631C1591 627 1574 607 1576 579 1578 548 1597 506 1610 476 1624 420 1661 355 1727 330Z" fill="#e8b83d"/>
+<path d="M1848 358C1819 409 1796 469 1769 523L1710 548C1759 562 1799 550 1828 521 1855 473 1876 420 1886 388Z" fill="#cb9829"/>
+<path d="M1805 541C1835 557 1860 578 1884 605L1909 683H1871C1855 625 1838 585 1805 541Z" fill="#d9a730"/>
+<!-- A single draped scarf frames the inclined face and returns over the shoulder. -->
+<path d="M1669 171C1656 150 1658 123 1673 103 1692 78 1723 68 1754 72 1791 74 1818 100 1831 133 1842 165 1837 208 1842 244L1853 296 1874 341C1833 376 1793 389 1752 384 1719 381 1691 369 1668 351L1681 307 1694 276 1686 227Z" fill="#fff0d0"/>
+<path d="M1677 112C1701 81 1735 75 1769 84 1740 87 1711 101 1695 125Z" fill="#ead6ac"/>
+<path d="M1769 86C1799 107 1816 145 1818 187 1820 219 1816 253 1829 285 1810 274 1803 244 1805 210 1808 156 1797 111 1769 86Z" fill="#e7d0a6"/>
+<path d="M1696 279C1688 311 1698 333 1727 344 1761 356 1801 337 1827 309 1808 342 1771 363 1735 360 1716 357 1699 348 1688 338Z" fill="#ead5ad"/>
+<path d="M1700 338C1728 359 1778 367 1822 346" stroke="#ddc69c" stroke-width="4" stroke-linecap="round"/>
+<!-- The rounded facial edge includes the nose and chin rather than an added wedge. -->
+<path d="M1676 161C1686 140 1706 135 1726 141 1751 147 1772 161 1785 181L1781 219C1778 237 1764 250 1746 257L1749 277C1742 291 1730 298 1717 289L1719 251C1706 247 1697 238 1694 226L1683 229C1679 230 1681 224 1684 216L1688 204 1678 187Z" fill="#efa67b"/>
+<path d="M1746 257C1736 259 1728 256 1719 251L1718 282C1731 273 1740 266 1746 257Z" fill="#d77e53"/>
+<path d="M1673 181C1678 181 1682 183 1686 186M1708 174C1717 171 1725 175 1730 179M1679 198C1684 204 1689 204 1693 200M1710 191C1717 198 1723 197 1728 191M1714 230C1720 234 1728 230 1733 222" stroke="#9e5e3c" stroke-width="3" stroke-linecap="round"/>
+<!-- The near arm reaches under the child's seat and returns into the torso. -->
+<path d="M1666 396C1642 414 1623 449 1608 481 1591 514 1579 549 1578 577 1576 605 1596 624 1630 628L1666 614C1647 594 1634 577 1633 552 1632 526 1646 497 1658 475L1691 429Z" fill="#e5b238"/>
+<!-- Child's legs and shorts lie above the carrying arm, not detached below it. -->
+<path d="M1665 579 1744 581 1763 642 1725 653 1701 618 1671 634 1637 612Z" fill="#2d4f98"/>
+<path d="M1726 648 1750 644 1759 673 1748 683H1729Z" fill="#efad80"/>
+<!-- The child leans into his parent with a bent hugging arm. -->
+<path d="M1635 410C1665 400 1688 415 1708 438 1722 452 1733 477 1735 500L1730 551 1750 575 1696 590 1626 574C1607 558 1602 533 1604 510 1606 474 1619 437 1635 410Z" fill="#ed4e25"/>
+<path d="M1640 461C1647 486 1660 501 1681 509L1689 500C1668 485 1654 470 1646 451Z" fill="#c83f23"/>
+<path d="M1673 447C1686 438 1699 443 1708 454L1729 473C1742 465 1756 454 1767 441L1775 432C1780 426 1784 430 1780 436L1774 445 1784 437C1791 432 1795 438 1789 443L1777 453 1784 451C1793 449 1793 456 1784 460L1771 465C1758 485 1746 501 1730 504 1713 502 1696 494 1684 483L1668 466Z" fill="#efad80"/>
+<!-- The small head and short neck follow the same tilted profile. -->
+<path d="M1637 361C1653 348 1674 351 1691 363L1701 385 1717 399C1722 403 1715 407 1707 407 1708 419 1701 429 1689 434L1691 445C1683 455 1668 452 1662 440L1661 426C1641 423 1627 410 1626 390Z" fill="#efad80"/>
+<path d="M1610 378C1601 360 1610 341 1628 332 1648 321 1682 323 1697 340 1708 350 1715 367 1711 383 1689 381 1674 370 1661 353 1657 374 1643 386 1627 389L1626 404C1615 401 1609 390 1610 378Z" fill="#322820"/>
+<path d="M1644 389C1633 381 1626 393 1635 401" stroke="#d79165" stroke-width="3" stroke-linecap="round"/>
+<path d="M1675 390C1681 394 1687 394 1691 389M1684 411C1690 416 1696 414 1700 409" stroke="#965c3e" stroke-width="2.5" stroke-linecap="round"/>
+<!-- One continuous forearm supports the seat while the hand softly wraps the hip. -->
+<path d="M1887 512C1903 535 1902 563 1880 578 1861 592 1835 597 1807 596L1738 590C1710 590 1688 594 1665 591L1636 585C1626 582 1625 575 1635 574L1660 576 1647 571C1637 567 1639 561 1650 563L1682 569C1691 567 1705 568 1719 570L1786 571 1796 541 1814 521Z" fill="#e3b039"/>
+<path d="M1719 570C1694 566 1680 565 1665 568L1637 569C1625 568 1620 575 1632 579L1653 583 1641 583C1631 585 1635 592 1646 592L1674 594 1719 590Z" fill="#efad80"/>
+<path d="M1745 593C1777 595 1819 603 1857 592 1872 588 1882 582 1889 573" stroke="#c79429" stroke-width="3.4" stroke-linecap="round"/>
 </g>
-</g>
-</svg>
+</g></svg>
