@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ecd9">
+  <meta name="description" content="COOK — Augmented Reality Culinary Education at Home. An illustrated story about making room for cooking in everyday life.">
+  <title>COOK — A little kitchen. A world of possibility.</title>
+  <link rel="preload" as="image" href="assets/illustrations/kitchen.webp">
+  <link rel="preload" as="image" href="assets/illustrations/sara.webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="experience" data-scene="title" aria-label="COOK animated presentation">
+    <div class="paper" aria-hidden="true"></div>
+    <header class="masthead">
+      <a class="wordmark" href="#title" aria-label="COOK, return to title">c<span class="logo-o">o</span>ok<span class="logo-dot">®</span></a>
+      <span class="masthead-note">A little kitchen. A world of possibility.</span>
+      <button class="motion-control" type="button" aria-pressed="false" aria-label="Pause ambient animation"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="pause-icon" d="M7 5v10M13 5v10"/><path class="play-icon" d="m7 4 8 6-8 6Z"/></svg><span>Pause motion</span></button>
+    </header>
+
+    <div class="canvas-wrap">
+      <div class="canvas">
+        <div class="kitchen" aria-hidden="true">
+          <div class="world">
+            <img class="kitchen-art" src="assets/illustrations/kitchen.webp" alt="" width="1586" height="992" fetchpriority="high" decoding="sync">
+          </div>
+        </div>
+        <div class="food-layer" aria-hidden="true">
+          <img class="food-art" src="assets/illustrations/salad-bowl.webp" alt="" width="1402" height="1122" decoding="async">
+        </div>
+
+        <section class="intro" aria-labelledby="cook-title">
+          <p class="eyebrow">A new recipe for learning</p>
+          <h1 id="cook-title">COOK<span class="title-spark" aria-hidden="true">✳</span></h1>
+          <p class="subtitle">Augmented Reality Culinary<br>Education at Home</p>
+          <div class="credits">
+            <span class="credits-label">Made with care by</span>
+            <p>Elizabeth Ahn <span>·</span> Brendan Giang <span>·</span> Alana McCareins<br>Gabrielle Tiu <span>·</span> Leanne Wang</p>
+          </div>
+        </section>
+
+        <!-- Finished generated artwork; only the complete asset is animated. -->
+        <div class="sara" aria-hidden="true">
+          <div class="sara-enter">
+            <img class="sara-art" src="assets/illustrations/sara.webp" alt="" width="1024" height="1536" decoding="async">
+          </div>
+        </div>
+
+        <section class="profile" aria-labelledby="sara-title" aria-hidden="true" inert>
+          <div class="profile-top"><span class="eyebrow">The heart of our story</span><span class="little-flower" aria-hidden="true">✳</span></div>
+          <h2 id="sara-title">Meet <em>Sara.</em></h2>
+          <p class="profile-intro">A full heart. A very full plate.</p>
+          <ul class="profile-facts">
+            <li><span class="fact-mark" aria-hidden="true">01</span><span><strong>29</strong> years old</span></li>
+            <li><span class="fact-mark" aria-hidden="true">02</span><span>New mother</span></li>
+            <li><span class="fact-mark" aria-hidden="true">03</span><span>Passionate about cooking</span></li>
+            <li><span class="fact-mark" aria-hidden="true">04</span><span>Wants healthier meals at home</span></li>
+            <li><span class="fact-mark" aria-hidden="true">05</span><span>Busy with work, childcare, and<br class="desktop-break"> household responsibilities</span></li>
+          </ul>
+          <div class="profile-footer"><svg viewBox="0 0 32 28" fill="none" aria-hidden="true"><path d="M16 25C-9 10 4-5 16 7 28-5 41 10 16 25Z" stroke="currentColor" stroke-width="2"/></svg><span>Good food starts with everyday people.</span></div>
+        </section>
+
+      </div>
+    </div>
+
+    <footer class="presentation-controls">
+      <div class="chapter"><span class="chapter-number">01</span><span class="chapter-line"></span><span class="chapter-name">A new recipe for learning</span></div>
+      <div class="scene-dots" role="group" aria-label="Choose scene"><button type="button" class="scene-dot active" data-go="title" aria-label="Scene 1: COOK title" aria-pressed="true"></button><button type="button" class="scene-dot" data-go="sara" aria-label="Scene 2: Meet Sara" aria-pressed="false"></button></div>
+      <button class="next-scene" type="button"><span class="next-label">Meet Sara</span><svg viewBox="0 0 32 20" aria-hidden="true"><path d="M2 10h26m-8-7 8 7-8 7"/></svg></button>
+    </footer>
+    <p class="sr-only" role="status" aria-live="polite" id="scene-status">Scene 1 of 2. COOK. Use the Meet Sara button or right arrow key to continue.</p>
+  </main>
+</body>
+</html>
