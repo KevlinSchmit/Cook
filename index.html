@@ -6,6 +6,8 @@
   <meta name="theme-color" content="#f3ecd9">
   <meta name="description" content="COOK — Augmented Reality Culinary Education at Home. An illustrated story about making room for cooking in everyday life.">
   <title>COOK — A little kitchen. A world of possibility.</title>
+  <link rel="preload" as="image" href="assets/illustrations/kitchen.webp">
+  <link rel="preload" as="image" href="assets/illustrations/sara.webp">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -20,135 +22,14 @@
 
     <div class="canvas-wrap">
       <div class="canvas">
-        <svg class="kitchen" viewBox="0 0 1600 1000" fill="none" aria-hidden="true">
-          <defs>
-            <pattern id="tiles" x="0" y="584" width="100" height="89" patternUnits="userSpaceOnUse"><path d="M0 0H100V89H0Z" fill="#efe1c4"/><path d="M0 1H100M1 0V89" stroke="#d9c9a8" stroke-width="2" opacity=".75"/><path d="M5 6H96V85" stroke="#f9f0db" stroke-width="2" opacity=".7"/></pattern>
-            <pattern id="towel-lines" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#efede0"/><path d="M0 3H16" stroke="#e26b44" stroke-width="3"/></pattern>
-            <filter id="paper-grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="3" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="grain"/><feBlend in="SourceGraphic" in2="grain" mode="multiply"/></filter>
-            <g id="leaf"><path d="M0 0C-45-9-53-48-37-68C-6-65 14-32 0 0Z" fill="currentColor"/><path d="M-1-2-30-53" stroke="#f3ecd9" stroke-width="2" opacity=".55"/></g>
-            <g id="spark"><path d="M0-16 4-4 16 0 4 4 0 16-4 4-16 0-4-4Z" fill="currentColor"/></g>
-          </defs>
-          <g class="world" filter="url(#paper-grain)">
-            <path d="M0 0H1600V1000H0Z" fill="#f3ecd9"/>
-            <path d="M0 0H365V590H0Z" fill="#eddfbf"/>
-            <path d="M365 0H382V590H365Z" fill="#e0cfaa"/>
-            <!-- An arched window, painted in cobalt. -->
-            <path d="M37 484V282C37 92 315 91 315 282V484Z" fill="#315795"/>
-            <path d="M55 467V282C55 115 297 115 297 282V467Z" fill="#aec8bf"/>
-            <path d="M64 466V285C64 126 288 126 288 285V466Z" fill="#c8d5bc"/>
-            <circle cx="240" cy="255" r="46" fill="#efb44f"/>
-            <path d="M63 443C106 389 134 370 179 403C224 436 257 382 289 386V466H63Z" fill="#8caa84"/>
-            <path d="M63 456C132 408 183 450 289 413V467H63Z" fill="#618972"/>
-            <path d="M175 135V475M49 309H302" stroke="#315795" stroke-width="13"/>
-            <path d="M23 481H329V501H23Z" fill="#315795"/>
-            <path d="M39 501H315V510H39Z" fill="#b5b095"/>
-            <!-- Herb pot on the sill. -->
-            <g class="herbs">
-              <path d="m89 471-7-113M89 427l-37-39M87 408l40-48M86 383l-20-34M90 455l48-34" stroke="#446d47" stroke-width="5" stroke-linecap="round"/>
-              <use href="#leaf" transform="translate(87 400) rotate(-45) scale(.6)" color="#547647"/>
-              <use href="#leaf" transform="translate(86 380) rotate(28) scale(.6)" color="#77864b"/>
-              <use href="#leaf" transform="translate(86 434) rotate(-70) scale(.68)" color="#315e42"/>
-              <use href="#leaf" transform="translate(93 427) rotate(75) scale(.68)" color="#66864e"/>
-              <use href="#leaf" transform="translate(88 455) rotate(-55) scale(.7)" color="#78914c"/>
-              <path d="m61 453 67-2-10 50H71Z" fill="#d96539"/>
-              <path d="M57 449h75v12H57Z" fill="#e8834c"/>
-            </g>
-            <!-- Hanging cookware and a small shelf. -->
-            <path d="M1240 145H1580" stroke="#b5a480" stroke-width="8" stroke-linecap="round"/>
-            <g class="pan pan-one">
-              <path d="M1304 149v100" stroke="#294b85" stroke-width="14" stroke-linecap="round"/>
-              <circle cx="1304" cy="142" r="8" stroke="#294b85" stroke-width="5"/>
-              <path d="M1233 315c-7-94 145-97 145 0 0 96-143 96-145 0Z" fill="#315795"/>
-              <path d="M1251 314c-5-68 108-70 108 0 0 69-107 71-108 0Z" fill="#264477"/>
-              <path d="M1266 284c12-20 40-26 59-17" stroke="#6987ae" stroke-width="6" stroke-linecap="round"/>
-            </g>
-            <g class="pan pan-two">
-              <path d="M1485 152v77" stroke="#a84e30" stroke-width="14" stroke-linecap="round"/>
-              <circle cx="1485" cy="144" r="8" stroke="#a84e30" stroke-width="5"/>
-              <ellipse cx="1485" cy="285" rx="58" ry="61" fill="#ce6840"/>
-              <ellipse cx="1485" cy="285" rx="43" ry="46" fill="#e18a4c"/>
-              <path d="M1460 273c4-12 17-20 30-19" stroke="#efb26b" stroke-width="5" stroke-linecap="round"/>
-            </g>
-            <path d="M1260 479h340v13h-340Z" fill="#bc6d42"/>
-            <path d="M1280 492v21m280-21v21" stroke="#9d5738" stroke-width="8"/>
-            <path d="M1306 478v-65q0-12 12-12h39q12 0 12 12v65Z" fill="#82926a"/>
-            <path d="M1315 402v-10h45v10" fill="#3e604a"/>
-            <path d="M1323 429h29v30h-29Z" fill="#e9e1bc"/>
-            <path d="M1400 478v-73q0-13 13-13h40q13 0 13 13v73Z" fill="#dba946"/>
-            <path d="M1406 389h53v12h-53Z" fill="#bd8537"/>
-            <path d="M1415 423h36v34h-36Z" fill="#eee5c7"/>
-            <path d="M1504 477v-51q0-10 10-10h35q10 0 10 10v51Z" fill="#d7784e"/>
-            <path d="M1510 405h40v15h-40Z" fill="#315795"/>
-            <path d="M1516 440h30v24h-30Z" fill="#eedaad"/>
-            <!-- Tile and long terracotta worktop tie both scenes together. -->
-            <path d="M0 584H1600V774H0Z" fill="url(#tiles)"/>
-            <path d="M0 763H1600V795H0Z" fill="#bd593a"/>
-            <path d="M0 763H1600V777H0Z" fill="#e7874e"/>
-            <path d="M0 795H1600V1000H0Z" fill="#315795"/>
-            <path d="M0 795H1600V807H0Z" fill="#234477"/>
-            <path d="M330 809V1000M727 809V1000M1125 809V1000" stroke="#244779" stroke-width="6"/>
-            <path d="M37 834h256v166H37Zm329 0h326v166H366Zm398 0h324v166H764Zm398 0h400v166h-400Z" stroke="#4a6ba0" stroke-width="2"/>
-            <path d="M143 849h48m309 0h48m350 0h48m385 0h48" stroke="#e9bc68" stroke-width="8" stroke-linecap="round"/>
-            <!-- Loose striped dish towel. -->
-            <path d="m966 765 116 4 18 178-31-6-19 10-29-8-31 7Z" fill="url(#towel-lines)"/>
-            <path d="m967 765 15 26h104l-4-22Z" fill="#ded7bc"/>
-            <!-- A generous chopping board and cut-paper vegetables. -->
-            <g class="vegetables">
-              <path d="M35 732q0-14 18-14h358q19 0 19 14v28H35Z" fill="#ac753f"/>
-              <path d="M35 730q0-13 18-13h358q19 0 19 13v13H35Z" fill="#d6a660"/>
-              <path d="m148 711 92-128 36 24-113 115Z" fill="#e46a31"/>
-              <path d="m165 701 20 4m2-32 17 3m4-30 17 4" stroke="#bc4929" stroke-width="4"/>
-              <path d="m243 592-2-61 14 25 12-31 8 37 28-15-33 55Z" fill="#55764a"/>
-              <path d="M56 701c-35-25-23-59 9-61-5-43 39-52 54-28 31-20 56 9 42 31 40 9 34 49 2 61Z" fill="#55784f"/>
-              <path d="m113 720-9-75m5 43-28-24m27 10 28-28" stroke="#a5ad63" stroke-width="6" stroke-linecap="round"/>
-              <path d="M291 721c-24-20-13-57 22-60 31-1 54 35 27 60Z" fill="#9a6684"/>
-              <path d="M313 663c-4-15 0-22 7-29" stroke="#6b7546" stroke-width="4"/>
-              <path d="M310 671c-12 10-19 29-13 43m18-43c-3 17-2 33 4 46" stroke="#e4bbbc" stroke-width="3"/>
-              <path d="M352 716c-21-35 34-77 61-41 17 29-12 62-35 59Z" fill="#eed385"/>
-              <path d="m357 715 48-34" stroke="#f7e7aa" stroke-width="3"/>
-              <ellipse cx="219" cy="720" rx="33" ry="26" fill="#df4d2d"/>
-              <path d="m218 697-17-12 20 4 10-11-1 16 15 7-21-2-8 9Z" fill="#4a6a42"/>
-              <path d="M202 710c-5 2-7 6-7 10" stroke="#f49056" stroke-width="5" stroke-linecap="round"/>
-              <path d="m371 747 74 2" stroke="#6a6d66" stroke-width="8" stroke-linecap="round"/>
-              <path d="m389 739 65-42-20 45-44 5Z" fill="#e9e8d5"/>
-            </g>
-            <!-- Utensil crock. -->
-            <g class="utensils">
-              <path d="m1444 650-21-99m36 101 24-101m-34 98-3-120" stroke="#b77c45" stroke-width="9" stroke-linecap="round"/>
-              <ellipse cx="1420" cy="535" rx="15" ry="25" transform="rotate(-14 1420 535)" fill="#bd874e"/>
-              <path d="m1479 563-6-31 7-19 23 6-1 22-19 25Z" fill="#d8a367"/>
-              <path d="m1485 523-2 18m11-15-4 19" stroke="#a87343" stroke-width="3"/>
-              <path d="M1438 527v-27q0-9 9-9t9 9v27Z" fill="#315795"/>
-              <path d="m1410 641 83-2-7 116-65 3Z" fill="#e0ad52"/>
-              <path d="m1427 663 3 72m13-73 1 73m13-73-2 72m15-72-4 72" stroke="#bd853e" stroke-width="3"/>
-            </g>
-            <!-- A wide, bright blue bowl with salad and a wooden spoon. -->
-            <g class="salad-bowl">
-              <path d="m1215 690-65-119" stroke="#ac6d40" stroke-width="12" stroke-linecap="round"/>
-              <ellipse cx="1146" cy="561" rx="15" ry="28" transform="rotate(-26 1146 561)" fill="#c18a4a"/>
-              <path d="M1183 694c-30-9-35-31-16-44-10-26 23-43 40-25 13-37 50-20 48 4 31-13 52 9 37 32 35 4 33 30 13 39Z" fill="#4b7653"/>
-              <path d="m1220 692-12-45m12 28 29-30" stroke="#a8b16b" stroke-width="4"/>
-              <path d="m1263 686 30-74 29 8-41 71Z" fill="#e87638"/>
-              <path d="m1297 617 6-34 7 16 14-9-8 32Z" fill="#7b8f4d"/>
-              <ellipse cx="1178" cy="685" rx="22" ry="17" fill="#d95132"/>
-              <path d="m1168 669 12-6 10 10-14-2Z" fill="#315c42"/>
-              <path d="M1132 689c10 97 170 109 196 0Z" fill="#3b899e"/>
-              <ellipse cx="1230" cy="690" rx="100" ry="11" fill="#244c6b"/>
-              <path d="M1148 700c12 60 126 84 159 4" stroke="#59a1aa" stroke-width="4"/>
-              <path d="m1166 707 5 10m10 11 6 5m10 5 8 2" stroke="#a7c7b4" stroke-width="3" stroke-linecap="round"/>
-            </g>
-            <!-- A little saucepan, always simmering. -->
-            <g class="saucepan">
-              <path d="M500 720h113l-8 41h-97Z" fill="#d96a3d"/>
-              <ellipse cx="556" cy="719" rx="57" ry="8" fill="#a24e32"/>
-              <path d="m612 727 42-7" stroke="#294b76" stroke-width="11" stroke-linecap="round"/>
-              <path d="M517 729v20" stroke="#eea06a" stroke-width="4" stroke-linecap="round"/>
-              <g class="steam" stroke="#b3a48a" stroke-width="3" stroke-linecap="round"><path d="M532 695c-18-21 18-22 0-45"/><path d="M556 686c-18-21 18-22 0-45"/><path d="M580 695c-18-21 18-22 0-45"/></g>
-            </g>
-            <use href="#spark" x="429" y="214" color="#d3a54c" transform="rotate(10 429 214)"/>
-            <use href="#spark" x="1134" y="491" color="#d3a54c" transform="scale(.65) translate(615 260)"/>
-          </g>
-        </svg>
+        <div class="kitchen" aria-hidden="true">
+          <div class="world">
+            <img class="kitchen-art" src="assets/illustrations/kitchen.webp" alt="" width="1586" height="992" fetchpriority="high" decoding="sync">
+          </div>
+        </div>
+        <div class="food-layer" aria-hidden="true">
+          <img class="food-art" src="assets/illustrations/salad-bowl.webp" alt="" width="1402" height="1122" decoding="async">
+        </div>
 
         <section class="intro" aria-labelledby="cook-title">
           <p class="eyebrow">A new recipe for learning</p>
@@ -160,56 +41,12 @@
           </div>
         </section>
 
-        <!-- Sara is a separate articulated illustration in the very same kitchen. -->
-        <svg class="sara" viewBox="0 0 1600 1000" fill="none" role="img" aria-label="Sara, a young mother with a dark hair bun and a tomato-red apron, stirring a bowl in her home kitchen">
-          <g class="sara-enter" filter="url(#paper-grain)">
-            <g class="sara-body">
-              <!-- Hair, neck, and wonderfully exaggerated sleeves. -->
-              <path d="M473 416c-28-76 12-153 95-147 86 4 128 81 87 153l-21 77-132-1Z" fill="#343d35"/>
-              <path d="M550 288c-38-12-41-56-8-69 36-16 69 8 58 43l-14 27Z" fill="#343d35"/>
-              <path d="M548 241c11-9 26-9 34 2" stroke="#596047" stroke-width="4" stroke-linecap="round"/>
-              <path d="m543 433-7 63 83 1-22-76Z" fill="#d9916f"/>
-              <path d="M539 455c28 14 48 7 64-7l-2-29-54 11Z" fill="#b66f54"/>
-              <path d="M530 480c-61-22-107 12-132 75l-44 112 92 43 26-84-11 494h270l-36-501 47 50 65-56-75-111c-25-38-70-51-117-20-24 16-57 20-85-2Z" fill="#e8b54e"/>
-              <path d="m401 555 47 23m-60 6 48 23m-60 7 48 23m-59 7 47 23m-46 30 25 11m273-152 39-26m-27 48 42-27m-29 48 43-26" stroke="#f3d389" stroke-width="9"/>
-              <!-- Soft face, simple features, a tiny smile. -->
-              <path d="M505 342c-11 25-6 62 5 83 13 26 44 44 72 36 39-10 63-55 60-99-28 4-52-24-67-44-19 22-42 32-70 24Z" fill="#e9a881"/>
-              <path d="M509 371c-21-22-36 7-16 22l15 4m129-26c22-22 31 4 14 19l-13 6" fill="#e9a881"/>
-              <path d="M534 369q7-8 14-1m39-1q8-7 15 1" stroke="#343d35" stroke-width="3" stroke-linecap="round"/>
-              <ellipse class="sara-eye" cx="541" cy="381" rx="3.4" ry="5" fill="#343d35"/>
-              <ellipse class="sara-eye" cx="595" cy="380" rx="3.4" ry="5" fill="#343d35"/>
-              <path d="m569 381-5 21 10 2" stroke="#be7154" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M554 419c10 11 22 11 32-1" stroke="#8f4d3b" stroke-width="3" stroke-linecap="round"/>
-              <ellipse cx="525" cy="406" rx="13" ry="7" fill="#dc8068" opacity=".65"/>
-              <ellipse cx="613" cy="404" rx="12" ry="7" fill="#dc8068" opacity=".65"/>
-              <circle cx="504" cy="400" r="5" fill="#f1ce75"/>
-              <path d="M507 341c26-2 48-18 65-39 24 30 49 47 71 48" stroke="#343d35" stroke-width="11" stroke-linecap="round"/>
-              <!-- Apron and its little hand-drawn flower. -->
-              <path d="m520 486-25 2-14 134-33 17-3 481h271l-16-474-43-24-28-139-22 3 14 116-121 3Z" fill="#d75f3b"/>
-              <path d="m491 495-13 135m153-137 30 136" stroke="#ef9368" stroke-width="4"/>
-              <path d="M526 771h112v71q-54 27-112 0Z" fill="#c45132"/>
-              <path d="M534 784h96" stroke="#e18c5e" stroke-width="3" stroke-dasharray="5 5"/>
-              <path d="M586 814v27m0-11-12-11m12 5 11-12" stroke="#efca83" stroke-width="3"/>
-              <path d="M586 805c-22 4-23-12-10-15-2-16 16-16 18-4 16-5 20 12 8 15 4 13-12 19-16 4Z" fill="#f1d38e"/>
-              <!-- One arm cradles the bowl, the other stirs. -->
-              <path d="m366 653-16 35c-13 28 2 49 30 58l123 27 18-35-110-42 12-24Z" fill="#e9a881"/>
-              <path d="m740 612 31 43c19 26 3 54-23 58l-103-3-2-35 89-13-25-25Z" fill="#e9a881"/>
-              <g class="sara-stir">
-                <path d="m640 701-42-122" stroke="#9e6d3d" stroke-width="11" stroke-linecap="round"/>
-                <ellipse cx="595" cy="571" rx="12" ry="23" transform="rotate(-20 595 571)" fill="#b88446"/>
-                <path d="M677 678c-13-10-28-17-41-14l-17 7c-9 4-5 14 3 13l15-3-11 11c-7 8 0 17 8 12l24-13 17 6Z" fill="#e9a881"/>
-                <path d="m632 679 17-5m-10 13 17-8" stroke="#c48263" stroke-width="2" stroke-linecap="round"/>
-              </g>
-              <path d="M478 694c20 96 159 110 195 0Z" fill="#315c8d"/>
-              <ellipse cx="576" cy="694" rx="98" ry="13" fill="#254469"/>
-              <ellipse cx="576" cy="690" rx="82" ry="8" fill="#9baf70"/>
-              <path d="m525 688 22-7 17 8m37-7 20 8" stroke="#dba555" stroke-width="7" stroke-linecap="round"/>
-              <path d="M493 710c14 45 94 73 147 18" stroke="#5f83a1" stroke-width="3"/>
-              <path d="M493 748c12-8 21-8 32-4l20 7c9 3 7 13-1 12l-21-4 17 9c8 6 3 15-5 12l-37-14Z" fill="#e9a881"/>
-              <path d="m507 754 22 6m-23 2 20 7" stroke="#c48263" stroke-width="2" stroke-linecap="round"/>
-            </g>
-          </g>
-        </svg>
+        <!-- Finished generated artwork; only the complete asset is animated. -->
+        <div class="sara" aria-hidden="true">
+          <div class="sara-enter">
+            <img class="sara-art" src="assets/illustrations/sara.webp" alt="" width="1024" height="1536" decoding="async">
+          </div>
+        </div>
 
         <section class="profile" aria-labelledby="sara-title" aria-hidden="true" inert>
           <div class="profile-top"><span class="eyebrow">The heart of our story</span><span class="little-flower" aria-hidden="true">✳</span></div>
@@ -224,7 +61,7 @@
           </ul>
           <div class="profile-footer"><svg viewBox="0 0 32 28" fill="none" aria-hidden="true"><path d="M16 25C-9 10 4-5 16 7 28-5 41 10 16 25Z" stroke="currentColor" stroke-width="2"/></svg><span>Good food starts with everyday people.</span></div>
         </section>
-        <div class="sara-caption" aria-hidden="true"><svg viewBox="0 0 100 45"><path d="M95 5Q52 5 12 32m0 0 5-14m-5 14 17 2"/></svg><span>Made with love,<br>between everything else.</span></div>
+
       </div>
     </div>
 
