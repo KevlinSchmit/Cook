@@ -64,9 +64,6 @@
       });
     });
 
-    document.querySelector('.chapter-number').textContent = String(current.sceneIndex + 1).padStart(2, '0');
-    document.querySelector('.chapter-name').textContent = current.scene === 'title'
-      ? 'Augmented reality culinary education' : 'The heart of our story';
     document.querySelector('.next-label').textContent = current.scene === 'title' ? 'Meet Sara' : '';
     next.setAttribute('aria-label', position === timeline.length - 1 ? 'Replay presentation' : 'Next narrative beat');
     previous.disabled = position === 0;

@@ -288,3 +288,7 @@
   .restaurant-bill span { font-size:12px; }
   .restaurant-bill strong { font-size:38px; }
 }
+
+/* Arrow-free navigation: only the titled "Meet Sara" button remains visible; keys and scene dots navigate. */
+.experience .previous-scene, .experience:not([data-scene="title"]) .next-scene { display:none !important; }
+.presentation-controls { justify-content:flex-end; }
