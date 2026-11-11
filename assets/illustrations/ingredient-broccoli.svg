@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 172" fill="none" role="img" aria-labelledby="title"><title id="title">A head of broccoli with a pale branching stalk</title>
+<defs><filter id="paper" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/><feColorMatrix in="grain" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
+<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><path d="M60 170c5-26 4-48-9-68l24-5c5 12 9 20 13 6l19-3c-11 21-14 43-8 70-13 4-27 4-39 0Z" fill="#a3c46f"/>
+<path d="M66 166c3-22 1-41-8-58m40 58c-3-22 0-42 7-58m-27 10c1 10 0 22-1 34" stroke="#76a04c" stroke-width="3.5"/>
+<path d="M22 96C6 92 2 70 16 60 10 40 28 24 46 30c6-18 30-24 44-12 14-12 38-6 42 14 18 0 28 22 16 36 12 14 2 34-16 32-12 12-32 10-40 0-10 10-30 10-38 0-12 8-28 6-32-4Z" fill="#3f7d45"/>
+<path d="M26 92c-2-12 6-20 16-20m12 26c0-14 10-22 22-20m16 22c2-14 14-20 26-16m-90-36c4-10 14-14 24-10m14-14c6-10 20-12 28-4m10 12c10-6 24-2 28 10" stroke="#2b5e37" stroke-width="4"/>
+<path d="M36 44c4-5 9-7 14-6m30-12c5-3 10-3 15 0m22 14c5 0 9 3 11 7M24 70c2-4 6-6 10-6" stroke="#77a957" stroke-width="4"/></g></svg>

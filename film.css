@@ -50,11 +50,6 @@
 .restaurant-bill span { display:block; font-size:1.03cqw; line-height:1.45; padding-top:.8cqw; }
 .restaurant-bill[data-reveal] { transform:translateY(-55px) rotate(9deg); }
 .restaurant-bill.is-revealed { transform:translateY(0) rotate(-4deg); }
-.ingredient-dance { position:absolute; inset:0; pointer-events:none; }
-.ingredient { position:absolute; object-fit:contain; animation:ingredient-drift 7s ease-in-out infinite; }
-.ingredient.tomato { left:43%; top:55%; width:5.5%; height:10%; }
-.ingredient.carrot { left:46%; top:43%; width:6%; height:14%; animation-delay:-2s; }
-.ingredient.onion { left:44%; top:68%; width:4.5%; height:8%; animation-delay:-4s; }
 
 /* The home recedes and the school remains just beyond the winding route. */
 [data-scene="barriers"] .scene-wash { opacity:.99; background:#eee5ce; }
@@ -147,9 +142,9 @@
 [data-scene="reveal"][data-beat="1"] .product-reveal { left:77%; top:16%; width:35%; }
 [data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:6.6cqw; letter-spacing:-.4cqw; }
 [data-scene="reveal"][data-beat="1"] .product-promise { font-size:1.8cqw; }
-@keyframes ingredient-drift { 0%,100% { transform:translateY(0) rotate(-4deg); } 50% { transform:translateY(-9px) rotate(5deg); } }
+@keyframes ingredient-drift { 0%,100% { transform:translateY(0) rotate(-4deg); } 50% { transform:translateY(-7px) rotate(4deg); } }
 @keyframes path-travel { to { stroke-dashoffset:-270; } }
-.motion-paused :is(.sara-ar-art,.ingredient,.path-dashes) { animation-play-state:paused!important; }
+.motion-paused :is(.sara-ar-art,.ingredient img,.path-dashes) { animation-play-state:paused!important; }
 @media(prefers-reduced-motion:reduce) { .film-scene,.film-scene *, .sara,.kitchen,.world,.scene-wash { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }
 /* Portrait remains usable; the presentation itself is composed for 16:9. */
 @media(max-aspect-ratio:1/1) {
@@ -166,7 +161,7 @@
   .restaurant-bill p { padding:9px 2px 12px; }
   .restaurant-bill strong { font-size:38px; letter-spacing:-2px; }
   .restaurant-bill span { font-size:10px; padding-top:7px; }
-  .ingredient-dance,.family-detail { display:none; }
+  .ingredient-dance,.family-detail { display:none!important; }
   [data-scene="barriers"] .sara { left:calc(50% - 180px); top:42%; width:101px; }
   .school-dream { left:calc(50% - 110px); top:15%; width:220px; }
   .school-path { left:calc(50% - 180px); top:26%; width:360px; height:400px; }
@@ -292,3 +287,41 @@
 /* Arrow-free navigation: only the titled "Meet Sara" button remains visible; keys and scene dots navigate. */
 .experience .previous-scene, .experience:not([data-scene="title"]) .next-scene { display:none !important; }
 .presentation-controls { justify-content:flex-end; }
+
+/* Slide 1 → 2: the title wordmark fades away rather than shrinking above Sara. */
+.intro { transition:transform 2.2s var(--ease),left 2.2s var(--ease),top 2.2s var(--ease),opacity .7s ease; }
+[data-scene="sara"] .intro { opacity:0; pointer-events:none; }
+/* No navigation buttons remain; arrow keys and scene dots navigate. */
+.experience .next-scene { display:none !important; }
+/* Smaller Sara facts. */
+@media not (max-aspect-ratio:1/1) {
+  .profile-facts li { font-size:1.45cqw; padding:.75cqw 0; gap:1.2cqw; }
+  .fact-mark { font-size:1.05cqw; padding-top:.2cqw; }
+}
+@media (max-aspect-ratio:1/1) { .profile-facts li { font-size:10px; } }
+
+/* Shared vegetables: under the copy in scene 3, then resting below the road in scene 4. */
+.ingredient-dance { position:absolute; z-index:5; inset:0; pointer-events:none; opacity:0; visibility:hidden; transition:opacity .9s ease,visibility 0s .9s; }
+[data-scene="passion"] .ingredient-dance,[data-scene="barriers"] .ingredient-dance { opacity:1; visibility:visible; transition:opacity .9s ease .2s,visibility 0s; }
+.ingredient { position:absolute; height:auto; transition:left 1.8s var(--ease),top 1.8s var(--ease),width 1.8s var(--ease); }
+.ingredient { animation:ingredient-drift 7s ease-in-out infinite; }
+.ingredient:nth-child(2n) { animation-delay:-2.3s; } .ingredient:nth-child(3n) { animation-delay:-4.6s; } .ingredient:nth-child(5n) { animation-duration:8.5s; }
+/* Scene 3 cluster beneath "Healthier meals for her family.", clear of the receipt. */
+.ingredient.carrot { left:36%; top:43%; width:4.2%; }
+.ingredient.tomato { left:41%; top:48.5%; width:5.4%; }
+.ingredient.broccoli { left:47.5%; top:44%; width:6.6%; }
+.ingredient.pepper { left:55%; top:47%; width:4.8%; }
+.ingredient.eggplant { left:35.5%; top:63%; width:8.6%; }
+.ingredient.mushroom { left:45.5%; top:62%; width:5%; }
+.ingredient.onion { left:51.5%; top:62%; width:5%; }
+.ingredient.garlic { left:57.5%; top:58.5%; width:4.2%; }
+/* Scene 4: one low row sharing a baseline beneath the road. */
+[data-scene="barriers"] .ingredient.carrot { left:26%; top:77%; width:3%; }
+[data-scene="barriers"] .ingredient.tomato { left:31%; top:78.5%; width:4%; }
+[data-scene="barriers"] .ingredient.broccoli { left:41%; top:76.5%; width:5%; }
+[data-scene="barriers"] .ingredient.pepper { left:48%; top:78%; width:4%; }
+[data-scene="barriers"] .ingredient.eggplant { left:55.5%; top:79.5%; width:6.5%; }
+[data-scene="barriers"] .ingredient.mushroom { left:70%; top:79%; width:4%; }
+[data-scene="barriers"] .ingredient.onion { left:76.5%; top:78.5%; width:4%; }
+[data-scene="barriers"] .ingredient.garlic { left:83%; top:79.5%; width:3.4%; }
+@media(prefers-reduced-motion:reduce) { .ingredient,.ingredient-dance { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }

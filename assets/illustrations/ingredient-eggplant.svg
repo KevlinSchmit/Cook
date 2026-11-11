@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 132" fill="none" role="img" aria-labelledby="title"><title id="title">A long purple eggplant with a leafy green cap</title>
+<defs><filter id="paper" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/><feColorMatrix in="grain" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
+<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><path d="M40 70c0-26 24-36 48-30 30 8 62 20 92 42 20 16 16 40-8 42-38 4-80-10-110-24-14-8-22-16-22-30Z" fill="#5b2f6e"/>
+<path d="M76 54c30 2 70 18 98 40" stroke="#8b5aa0" stroke-width="6"/>
+<path d="M80 108c26 10 58 14 86 12" stroke="#43204f" stroke-width="3.5"/>
+<path d="M30 66c6-18 26-30 46-24-6 10-10 18-6 28-10-6-16 4-12 16-14-2-26-8-28-20Z" fill="#4f8a45"/>
+<path d="M36 60C26 52 18 47 8 47" stroke="#20764e" stroke-width="7"/></g></svg>
