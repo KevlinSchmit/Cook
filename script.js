@@ -4,9 +4,11 @@
     { id: 'title', beats: 1, name: 'COOK' },
     { id: 'sara', beats: 1, name: 'Meet Sara' },
     { id: 'passion', beats: 2, name: 'Her passion never disappeared.' },
-    { id: 'barriers', beats: 6, name: 'Barriers to education' },
+    { id: 'barriers', beats: 5, name: 'Barriers to education' },
+    { id: 'question', beats: 1, name: "Why should becoming a parent mean giving up on an education you're passionate about?" },
     { id: 'population', beats: 3, name: "Sara isn't alone." },
-    { id: 'school', beats: 3, name: 'World-class culinary education' },
+    { id: 'school', beats: 2, name: 'World-class culinary education' },
+    { id: 'home', beats: 1, name: 'What if culinary school could come to your home?' },
     { id: 'reveal', beats: 2, name: 'COOK' },
     { id: 'pov', beats: 3, name: 'Through COOK glasses' },
     { id: 'demo', beats: 1, name: 'Interactive demo' },
@@ -64,7 +66,7 @@
 
     document.querySelector('.chapter-number').textContent = String(current.sceneIndex + 1).padStart(2, '0');
     document.querySelector('.chapter-name').textContent = current.scene === 'title'
-      ? 'A new recipe for learning' : 'The heart of our story';
+      ? 'Augmented reality culinary education' : 'The heart of our story';
     document.querySelector('.next-label').textContent = current.scene === 'title' ? 'Meet Sara' : '';
     next.setAttribute('aria-label', position === timeline.length - 1 ? 'Replay presentation' : 'Next narrative beat');
     previous.disabled = position === 0;

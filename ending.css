@@ -18,7 +18,7 @@
 .pov-scan { stroke-width:.7; animation:pov-scan 4s ease-in-out infinite; opacity:.65; }
 .detected-label { position:absolute; bottom:calc(100% + 1.2cqw); left:0; display:flex; align-items:center; gap:.5cqw; white-space:nowrap; padding:.72cqw 1cqw; border-radius:5cqw; font-size:1.05cqw; font-weight:500; }
 .detected-label svg { width:1.15cqw; height:1.15cqw; fill:none; stroke:#4d7864; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
-.pov-instruction { position:absolute; left:71%; top:32%; width:25%; padding:2cqw; }
+.pov-instruction { position:absolute; left:59%; top:32%; width:25%; padding:2cqw; }
 .pov-lesson-top { display:flex; align-items:center; gap:.8cqw; }
 .pov-lesson-top > svg { width:2.2cqw; height:2.2cqw; fill:none; color:#567465; }
 .pov-lesson-top h2 { font-family:inherit; font-size:1.8cqw; font-weight:600; letter-spacing:-.045cqw; line-height:1.2; }

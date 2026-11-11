@@ -44,7 +44,7 @@
 .passion-copy p { margin-top:1.5cqw; font-family:Fraunces,Georgia,serif; font-style:italic; font-size:1.65cqw; }
 .family-detail { position:absolute; width:11%; left:3%; top:62%; transform:rotate(-7deg); }
 .restaurant-bill { position:absolute; left:61%; top:44%; width:24%; transform-origin:50% 5%; }
-.restaurant-bill img { display:block; width:100%; height:auto; filter:drop-shadow(.3cqw .5cqw 0 #b0986b18); }
+.restaurant-bill img { display:block; width:100%; height:auto; filter:drop-shadow(.35cqw .7cqw 1.1cqw #3a240e80); }
 .restaurant-bill p { position:absolute; top:27%; left:18%; width:66%; padding:.7cqw .25cqw 1.2cqw; background:#f9efda; text-align:center; }
 .restaurant-bill strong { display:block; font-family:Fraunces,Georgia,serif; font-weight:700; letter-spacing:-.25cqw; font-size:4.6cqw; line-height:1.1; color:#e74829; }
 .restaurant-bill span { display:block; font-size:1.03cqw; line-height:1.45; padding-top:.8cqw; }
@@ -66,14 +66,19 @@
 .school-dream img { display:block; width:100%; }
 .obstacle { position:absolute; text-align:center; transform-origin:50% 65%; }
 .obstacle img { display:block; width:100%; height:auto; }
-.obstacle p { font-family:Fraunces,Georgia,serif; font-weight:550; font-size:1.28cqw; line-height:1.25; color:#293c48; }
 .obstacle-0 { left:26%; top:36%; width:15%; --tilt:-5deg; }
 .obstacle-1 { left:41%; top:49%; width:18%; --tilt:3deg; }
 .obstacle-2 { left:51%; top:28%; width:14%; --tilt:-4deg; }
 .obstacle-3 { left:68%; top:49%; width:16%; --tilt:5deg; }
 .obstacle[data-reveal] { transform:translateY(-35px) rotate(calc(var(--tilt) * -1)) scale(.85); }
 .obstacle.is-revealed { transform:translateY(0) rotate(var(--tilt)) scale(1); }
-.barriers-question { position:absolute; top:79%; left:23%; width:67%; font-family:Fraunces,Georgia,serif; font-size:2cqw; line-height:1.3!important; letter-spacing:-.03cqw; text-wrap:balance; text-align:center; padding:1cqw; background:#eee5cedb; border-radius:1cqw; }
+
+/* The question gets its own slide beside a large Sara. */
+[data-scene="question"] .scene-wash { opacity:1; background:#eee5ce; }
+[data-scene="question"] .kitchen { opacity:0; }
+[data-scene="question"] .sara { left:8%; top:13%; width:23.5%; opacity:1; }
+.question-scene .big-question { position:absolute; left:38%; top:48%; width:52%; transform:translateY(-50%); font-family:Fraunces,Georgia,serif; font-weight:650; font-size:5cqw; line-height:1.12; letter-spacing:-.16cqw; text-wrap:balance; }
+.big-question em { font-style:italic; color:#e74829; }
 
 /* A wider population, rendered as people and a garden of ten proportional seeds. */
 [data-scene="population"] .scene-wash { opacity:1; background:#304c98; }
@@ -113,8 +118,18 @@
 .accessibility-divide { position:absolute; left:55.5%; top:36%; width:8%; height:34%; }
 .accessibility-divide svg { width:100%; height:100%; fill:none; stroke:#c9bda0; stroke-width:3; stroke-dasharray:5 10; }
 .accessibility-copy { position:absolute; left:65%; top:31%; width:30%; font-family:Fraunces,Georgia,serif; font-size:1.75cqw; text-align:center; color:#b5472f; }
-.home-question { position:absolute; left:13%; top:82%; width:74%; font-family:Fraunces,Georgia,serif; font-size:2.55cqw; letter-spacing:-.06cqw; text-wrap:balance; text-align:center; }
-[data-scene="school"][data-beat="2"] .kitchen { box-shadow:0 0 0 .4cqw #e5bc4c24,.5cqw .7cqw 0 #263f6212; }
+
+/* The home question grows to fill its own slide. */
+[data-scene="home"] .scene-wash { opacity:1; background:#304c98; }
+[data-scene="home"] .kitchen { opacity:0; }
+[data-scene="home"] .sara { left:74%; top:42%; width:11.3%; opacity:0; }
+[data-scene="home"] .masthead { color:#f5ecd6; }
+[data-scene="home"] .scene-dot:after { border-color:#f5ecd688; }
+[data-scene="home"] .scene-dot.active:after { background:#f5ecd6; }
+.home-scene { display:grid; place-items:center; }
+.home-scene .home-question { width:80%; font-family:Fraunces,Georgia,serif; font-weight:700; font-size:9.4cqw; line-height:1.04; letter-spacing:-.4cqw; text-wrap:balance; text-align:center; color:#f5ecd6; opacity:0; transform:scale(.25); transition:transform 1.9s var(--ease),opacity 1s ease; }
+.home-scene.is-active .home-question { opacity:1; transform:scale(1); transition-delay:.25s; }
+.home-question em { font-style:italic; color:#edc455; }
 
 /* Product reveal: a quiet glasses portrait opens into Sara's kitchen. */
 [data-scene="reveal"] .scene-wash { opacity:1; background:#f8f0dc; }
@@ -159,8 +174,7 @@
   .obstacle-1 { left:calc(50% + 30px); top:41%; width:120px; }
   .obstacle-2 { left:calc(50% - 90px); top:57%; width:95px; }
   .obstacle-3 { left:calc(50% + 30px); top:56%; width:105px; }
-  .obstacle p { font-size:11px; }
-  .barriers-question { left:calc(50% - 164px); top:77%; width:328px; font-size:18px; padding:10px; }
+  .question-scene .big-question { left:calc(50% - 164px); top:13%; width:328px; transform:none; font-size:29px; letter-spacing:-.6px; }
   .population-scene > h2 { left:calc(50% - 164px); top:15%; width:328px; font-size:36px; }
   .stat-block { top:27%; width:150px; }
   .stat-care { left:calc(50% - 160px); }
@@ -177,7 +191,7 @@
   [data-scene="school"] .sara { left:calc(50% + 66px); top:52%; width:68px; }
   .accessibility-divide { left:calc(50% - 30px); top:49%; width:55px; height:160px; }
   .accessibility-copy { left:calc(50% - 110px); top:66%; width:220px; font-size:16px; }
-  .home-question { left:calc(50% - 164px); top:77%; width:328px; font-size:25px; }
+  .home-scene .home-question { width:340px; font-size:58px; letter-spacing:-2px; }
 }
 .dream-school-art { display:block; width:100%; }
 /* Final safe-area refinements from the 16:9 composition review. */
@@ -216,4 +230,20 @@
   [data-scene="reveal"][data-beat="1"] .product-reveal { left:50%; top:9%; width:340px; padding:12px 0; background:#fff3dcde; border-radius:14px; }
   [data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:52px; letter-spacing:-3px; }
   [data-scene="reveal"][data-beat="1"] .product-promise { font-size:17px; margin-top:9px!important; }
+}
+
+/* Title: darker wordmark, one-line subtitle, larger names. */
+.intro { top:22%; width:76%; }
+.intro h1 { color:#c2301a; }
+.subtitle { font-size:2.5cqw; line-height:1.3; white-space:nowrap; margin-top:1.7cqw; }
+.credits { margin-top:2.3cqw; }
+.credits p { font-size:1.55cqw; line-height:1.7; margin:0; }
+.credits p span { padding:0 .55cqw; }
+[data-scene="title"] .chapter-line { display:none; }
+@media(max-aspect-ratio:1/1) {
+  .intro { top:25%; width:calc(100vw - 24px); }
+  .subtitle { font-size:min(17px,4.25vw); margin-top:22px; }
+  .credits { margin-top:30px; }
+  .credits p { font-size:min(14px,3.5vw); line-height:1.9; }
+  .credits p span { padding:0 3px; }
 }
