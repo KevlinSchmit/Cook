@@ -140,7 +140,7 @@
 .product-reveal { position:absolute; z-index:3; left:50%; top:12%; width:76%; text-align:center; transform:translateX(-50%); transition:left 1.6s var(--ease),top 1.6s var(--ease),width 1.6s var(--ease); }
 .product-reveal h2 { color:#e74829; font-family:Fraunces,Georgia,serif; font-weight:850; letter-spacing:-.6cqw; font-size:8.7cqw; line-height:1; transition:font-size 1.6s var(--ease),letter-spacing 1.6s var(--ease); }
 .product-promise { font-family:Fraunces,Georgia,serif; font-weight:450; font-size:2.05cqw; letter-spacing:-.045cqw; margin-top:1.3cqw!important; line-height:1.35!important; text-wrap:balance; transition:font-size 1.6s var(--ease); }
-.glasses-hero { position:absolute; z-index:4; left:50%; top:60%; width:72%; opacity:1; transform:translate(-50%,-50%) rotate(-3deg); transition:left 1.5s var(--ease),top 1.5s var(--ease),width 1.5s var(--ease),transform 1.5s var(--ease),opacity .55s ease; }
+.glasses-hero { position:absolute; z-index:4; left:50%; top:60%; width:72%; opacity:1; transform:translate(-50%,-50%); transition:left 1.5s var(--ease),top 1.5s var(--ease),width 1.5s var(--ease),transform 1.5s var(--ease),opacity .55s ease; }
 .glasses-hero img { display:block; width:100%; height:auto; }
 [data-scene="reveal"][data-beat="1"] .reveal-cooking { opacity:1; clip-path:circle(130% at 35.3% 30.7%); transform:scale(1); transition-delay:.12s,.12s,.12s; }
 [data-scene="reveal"][data-beat="1"] .glasses-hero { left:35.3%; top:30.7%; width:12%; opacity:0; transform:translate(-50%,-50%); transition-delay:0s,0s,0s,0s,.55s; }
