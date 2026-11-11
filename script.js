@@ -8,14 +8,11 @@
     { id: 'population', beats: 3, name: "Sara isn't alone." },
     { id: 'school', beats: 3, name: 'World-class culinary education' },
     { id: 'reveal', beats: 2, name: 'COOK' },
-    { id: 'features', beats: 5, name: 'COOK features' }
-  ];
-  const features = [
-    'Structured Culinary Curriculum',
-    'AI Ingredient Recognition',
-    'Real-Time Technique Feedback',
-    'Hands-Free AR Guidance',
-    'Personalized Home Kitchen Learning'
+    { id: 'pov', beats: 3, name: 'Through COOK glasses' },
+    { id: 'demo', beats: 1, name: 'Interactive demo' },
+    { id: 'limitations', beats: 2, name: 'Evaluate with your own senses' },
+    { id: 'return', beats: 3, name: 'Remember Sara?' },
+    { id: 'closing', beats: 3, name: 'Education should fit your life.' }
   ];
   const timeline = scenes.flatMap((scene, sceneIndex) =>
     Array.from({ length: scene.beats }, (_, beat) => ({ scene: scene.id, sceneIndex, beat }))
@@ -28,14 +25,10 @@
   const dots = [...document.querySelectorAll('.scene-dot')];
   const panels = [...document.querySelectorAll('[data-scene-panel]')];
   const status = document.querySelector('#scene-status');
-  const featureSystem = document.querySelector('.feature-system');
-  const featureTitle = document.querySelector('.feature-title');
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let position = 0;
-  let headingAnimation;
 
   // A single persistent document and kitchen; arrows change narrative beats,
-  // including each accumulating obstacle and each of the five capabilities.
+  // including the ingredient scan, human evaluation, and final brand sequence.
   function render(nextPosition, announce = true) {
     const bounded = Math.max(0, Math.min(timeline.length - 1, nextPosition));
     const old = timeline[position];
@@ -55,7 +48,7 @@
     intro.inert = current.sceneIndex >= 2;
     profile.setAttribute('aria-hidden', String(current.scene !== 'sara'));
     profile.inert = current.scene !== 'sara';
-    document.querySelector('.sara').classList.toggle('wearing-ar', current.scene === 'features' || (current.scene === 'reveal' && current.beat === 1));
+    document.querySelector('.sara').classList.toggle('wearing-ar', current.scene === 'reveal' && current.beat === 1);
 
     panels.forEach(panel => {
       const active = panel.dataset.scenePanel === current.scene;
@@ -83,32 +76,13 @@
       else dot.removeAttribute('aria-current');
     });
 
-    if (current.scene === 'features') {
-      const newTitle = features[current.beat];
-      const titleChanged = featureTitle.textContent !== newTitle;
-      featureTitle.textContent = newTitle;
-      featureSystem.dataset.feature = String(current.beat);
-      document.querySelectorAll('.feature-visual').forEach(visual => {
-        const selected = Number(visual.dataset.visual) === current.beat;
-        visual.classList.toggle('is-current', selected);
-        visual.setAttribute('aria-hidden', String(!selected));
-        visual.inert = !selected;
-      });
-      if (titleChanged && !reducedMotion.matches) {
-        headingAnimation?.cancel();
-        headingAnimation = featureTitle.animate([
-          { clipPath: 'inset(0 100% 0 0)', transform: 'translateX(18px)' },
-          { clipPath: 'inset(0 0 0 0)', transform: 'translateX(0)' }
-        ], { duration: 750, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'none' });
-      }
-    }
     if (changed && old.scene !== current.scene) {
       // Re-entering a scene always restores its initial visual conditions;
       // reversing never depends on an unfinished timeout or a running video.
       experience.dataset.previousScene = old.scene;
     }
     if (announce) {
-      status.textContent = `Scene ${current.sceneIndex + 1} of 8. ${current.scene === 'features' ? features[current.beat] : scenes[current.sceneIndex].name}. Narrative beat ${current.beat + 1} of ${scenes[current.sceneIndex].beats}.`;
+      status.textContent = `Scene ${current.sceneIndex + 1} of ${scenes.length}. ${scenes[current.sceneIndex].name}. Narrative beat ${current.beat + 1} of ${scenes[current.sceneIndex].beats}.`;
     }
   }
 
@@ -149,13 +123,16 @@
     motion.setAttribute('aria-label', paused ? 'Resume ambient animation' : 'Pause ambient animation');
     motion.querySelector('span').textContent = paused ? 'Resume motion' : 'Pause motion';
   });
-  document.querySelectorAll('.lesson-tile').forEach(tile => tile.addEventListener('click', () => {
-    document.querySelectorAll('.lesson-tile').forEach(other => {
-      const selected = other === tile;
-      other.classList.toggle('is-selected', selected);
-      other.setAttribute('aria-pressed', String(selected));
-    });
-  }));
+  document.querySelectorAll('.taste-rating').forEach(rating => {
+    rating.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+      const score = Number(button.dataset.score);
+      rating.querySelectorAll('button').forEach(other => {
+        other.setAttribute('aria-pressed', String(other === button));
+        other.classList.toggle('is-filled', Number(other.dataset.score) <= score);
+      });
+      rating.closest('.sense-panel').querySelector('.score-announcement').textContent = `${rating.getAttribute('aria-label')}: ${score} of 5.`;
+    }));
+  });
   document.querySelectorAll('.stat-garden svg').forEach((leaf, index) => leaf.style.setProperty('--order', String(index % 10)));
 
   // A small deterministic API supports presentation integrations and browser QA.

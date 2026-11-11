@@ -132,151 +132,10 @@
 [data-scene="reveal"][data-beat="1"] .product-reveal { left:77%; top:16%; width:35%; }
 [data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:6.6cqw; letter-spacing:-.4cqw; }
 [data-scene="reveal"][data-beat="1"] .product-promise { font-size:1.8cqw; }
-.reveal-guidance { position:absolute; z-index:2; inset:0; pointer-events:none; }
-.ar-hint { position:absolute; display:flex; align-items:center; gap:.8cqw; padding:1.15cqw 1.4cqw; color:#234f45; border:1px solid #9cb9a4; background:#fffcefdf; box-shadow:0 .5cqw 2cqw #244d3b0d; border-radius:.85cqw; backdrop-filter:blur(6px); opacity:0; transform:translateY(12px); transition:opacity .8s ease,transform 1s var(--ease); }
-.ar-hint svg { width:2.1cqw; height:2.1cqw; flex-shrink:0; fill:none; }
-.ar-hint p { font-size:1.15cqw; line-height:1.4; }
-.reveal-lesson { left:63%; top:48%; }
-.reveal-feedback { left:65%; top:61%; }
-.reveal-tomato-target { position:absolute; left:55.6%; top:75.6%; width:8.6%; height:14%; stroke:#d8f8c6; stroke-width:1.9; opacity:0; transition:opacity .7s ease; filter:drop-shadow(0 1px 2px #25403155); }
-.target-scan { stroke-width:1; opacity:.55; animation:reveal-scan 4s ease-in-out infinite; }
-.reveal-guidance.is-revealed .reveal-lesson { opacity:1; transform:translateY(0); transition-delay:1.25s; }
-.reveal-guidance.is-revealed .reveal-feedback { opacity:1; transform:translateY(0); transition-delay:1.8s; }
-.reveal-guidance.is-revealed .reveal-tomato-target { opacity:1; transition-delay:1.55s; }
-@keyframes reveal-scan { 0%,100% { transform:translateY(-22px); } 50% { transform:translateY(22px); } }
-.motion-paused .target-scan { animation-play-state:paused!important; }
-
-/* Capabilities share one field of view. The artwork remains at the counter. */
-[data-scene="features"] .scene-wash { opacity:.9; background:#eff0d9; }
-[data-scene="features"] .kitchen { opacity:.52; }
-[data-scene="features"] .world { transform:translate(-35px,0) scale(1.045); }
-[data-scene="features"] .sara { left:8%; top:27%; width:23.4%; opacity:1; }
-.feature-title { position:absolute; top:16%; left:48%; width:43%; min-height:2.2em; font-size:3.2cqw!important; line-height:1.1!important; }
-
 @keyframes ingredient-drift { 0%,100% { transform:translateY(0) rotate(-4deg); } 50% { transform:translateY(-9px) rotate(5deg); } }
 @keyframes path-travel { to { stroke-dashoffset:-270; } }
 .motion-paused :is(.sara-ar-art,.ingredient,.path-dashes) { animation-play-state:paused!important; }
 @media(prefers-reduced-motion:reduce) { .film-scene,.film-scene *, .sara,.kitchen,.world,.scene-wash { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }
-/* One transparent instrument changes its contents, rather than opening five pages. */
-.feature-system {
-  position:absolute; left:48%; top:29%; width:43%; height:45%;
-  color:#304c98; isolation:isolate; border:1px solid #e0ead7c9;
-  border-radius:2.5cqw .9cqw 2.5cqw .9cqw;
-  background:linear-gradient(140deg,#fff9e8ed,#edf2dcdf 65%,#dcead7d9);
-  box-shadow:0 1.8cqw 4cqw #26463814,inset 0 0 0 1px #ffffff73;
-  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
-  transform-origin:40% 55%; transition:transform 1.2s var(--ease),border-radius 1.2s var(--ease),background 1.2s;
-}
-.feature-system[data-feature="1"] { border-radius:1cqw 2.7cqw 1cqw 2.7cqw; }
-.feature-system[data-feature="2"] { border-radius:2cqw; }
-.feature-system[data-feature="3"] { border-radius:3.5cqw 1cqw 3.5cqw 1cqw; }
-.feature-system[data-feature="4"] { border-radius:1cqw 1cqw 3cqw 1cqw; }
-.feature-viewport { position:absolute; z-index:4; inset:1.25cqw; pointer-events:none; }
-.feature-viewport span { position:absolute; width:1.25cqw; height:1.25cqw; border-color:#8aafa0; border-style:solid; border-width:0; opacity:.8; }
-.feature-viewport span:nth-child(1) { top:0; left:0; border-top-width:1px; border-left-width:1px; }
-.feature-viewport span:nth-child(2) { top:0; right:0; border-top-width:1px; border-right-width:1px; }
-.feature-viewport span:nth-child(3) { bottom:0; left:0; border-bottom-width:1px; border-left-width:1px; }
-.feature-viewport span:nth-child(4) { bottom:0; right:0; border-bottom-width:1px; border-right-width:1px; }
-.feature-visual { position:absolute; inset:12% 11%; opacity:0; visibility:hidden; pointer-events:none; transform:translate(1.8cqw,.7cqw) scale(.92) rotate(1.5deg); transform-origin:50% 60%; filter:blur(4px); transition:opacity .65s ease,transform 1.2s var(--ease),filter .8s ease,visibility 0s .8s; }
-.feature-visual.is-current { opacity:1; visibility:visible; pointer-events:auto; transform:translate(0,0) scale(1) rotate(0); filter:blur(0); transition-delay:.25s,.15s,.15s,0s; }
-
-/* Curriculum — tactile lesson cards with functional selection and progress. */
-.curriculum-visual { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:1.1cqw; }
-.lesson-tile { position:relative; appearance:none; display:grid; place-items:center; padding:.65cqw; border:1px solid #cedbc0; border-radius:.85cqw; background:#fff9e8cf; color:#304c98; box-shadow:0 .2cqw .6cqw #26463804; transition:transform .35s var(--ease),background .35s,color .35s,border-color .35s; }
-.lesson-tile svg { width:4.2cqw; height:4.2cqw; fill:none; pointer-events:none; }
-.lesson-tile:nth-child(2n) { background:#edf0dce8; }
-.lesson-tile:nth-child(3n) { color:#557c54; }
-.lesson-tile:hover { transform:translateY(-.3cqw); border-color:#7aab96; background:#fffff3; }
-.lesson-tile[aria-pressed="true"] { background:#304c98; color:#f5ecd6; border-color:#304c98; transform:translateY(-.2cqw); box-shadow:0 .4cqw 1cqw #304c9824; }
-.lesson-tile:focus-visible { outline:2px solid #e74829; outline-offset:4px; }
-.lesson-progress { position:absolute; bottom:11%; left:20%; width:60%; height:3px; background:#afc6b34d; border-radius:4px; overflow:hidden; }
-.lesson-progress::after { content:""; display:block; height:100%; width:0; background:#93bfa3; border-radius:inherit; transition:width .8s var(--ease); }
-.lesson-tile[aria-pressed="true"] .lesson-progress::after { width:100%; }
-.lesson-0 .lesson-progress::after { width:72%; }
-.lesson-1 .lesson-progress::after { width:38%; }
-.lesson-2 .lesson-progress::after { width:16%; }
-
-/* Recognition — objects stay organic; only their tracking brackets are precise. */
-.recognition-visual { inset:14% 9%; overflow:hidden; }
-.recognized { position:absolute; top:16%; width:30%; height:69%; }
-.recognized img { display:block; width:100%; height:100%; object-fit:contain; }
-.recognized > svg { position:absolute; inset:0; width:100%; height:100%; fill:none; stroke:#6f9b82; stroke-width:1; opacity:.8; }
-.ingredient-one { left:0; transform:rotate(-5deg); }
-.ingredient-two { left:35%; top:7%; height:79%; transform:rotate(7deg); }
-.ingredient-three { right:0; transform:rotate(-4deg); }
-.recognition-scan { position:absolute; z-index:2; top:18%; left:0; width:100%; height:1px; background:#7cb99f; box-shadow:0 0 .6cqw #7cb99f80,0 .7cqw 1.5cqw #a2d2ae4d; opacity:0; }
-.recognition-scan::before { content:""; position:absolute; left:0; right:0; bottom:1px; height:2cqw; background:linear-gradient(transparent,#9bc7aa24); }
-.recognition-visual.is-current .recognition-scan { animation:feature-scan 5.6s ease-in-out infinite; }
-.recognition-visual.is-current .recognized > svg { animation:feature-lock 5.6s ease-in-out infinite; }
-.recognition-visual.is-current .ingredient-two > svg { animation-delay:.35s; }
-.recognition-visual.is-current .ingredient-three > svg { animation-delay:.65s; }
-
-/* Technique — the measured path, the cutting motion, then a quiet confirmation. */
-.technique-visual { inset:12% 9%; }
-.technique-board { position:absolute; inset:0; overflow:hidden; border:1px solid #d7dfc7; border-radius:1.5cqw; background:#f8eed9a6; }
-.technique-board::before { content:""; position:absolute; left:13%; bottom:15%; width:53%; height:1px; background:#c6b98a; transform:rotate(-8deg); }
-.technique-board > img { position:absolute; left:8%; top:13%; width:38%; height:74%; object-fit:contain; transform:rotate(35deg); }
-.technique-knife { position:absolute; left:43%; top:5%; width:31%; height:55%; color:#304c98; fill:none; transform-origin:35% 80%; }
-.technique-trace { position:absolute; left:17%; bottom:11%; width:68%; height:61%; fill:none; stroke:#6fa384; stroke-width:1.8; stroke-dasharray:4 5; opacity:.8; }
-.technique-check { position:absolute; right:8%; bottom:12%; width:15%; height:25%; padding:.55cqw; border:1px solid #9abc9a; border-radius:50%; background:#f7fae9e8; color:#4c855e; fill:none; }
-.technique-visual.is-current .technique-knife { animation:feature-technique 5.8s ease-in-out infinite; }
-.technique-visual.is-current .technique-trace { animation:feature-trace 5.8s ease-in-out infinite; }
-.technique-visual.is-current .technique-check { animation:feature-confirm 5.8s ease-in-out infinite; }
-
-/* Hands-free — a generous field of view and a compact sequence of picture cues. */
-.handsfree-visual { display:flex; align-items:center; flex-direction:column; justify-content:center; }
-.guidance-glasses { width:49%; height:42%; margin-top:-4%; margin-bottom:1%; color:#304c98; fill:none; overflow:visible; }
-.guidance-step { display:flex; align-items:center; justify-content:space-between; width:84%; height:28%; padding:0 1cqw; }
-.guidance-step svg { width:3.3cqw; height:3.3cqw; fill:none; color:#5b8866; }
-.guidance-step i { display:block; flex:1; height:1px; background:#a6b99a; margin:0 .85cqw; }
-.guidance-progress { display:flex; width:48%; height:3px; gap:.4cqw; margin-top:6%; }
-.guidance-progress span { display:block; flex:1; height:100%; background:#afc4aa66; border-radius:2px; }
-.guidance-progress span:first-child { background:#78a98d; }
-.handsfree-visual.is-current .guidance-progress span { animation:feature-progress 8s ease-in-out infinite; }
-.handsfree-visual.is-current .guidance-progress span:nth-child(2) { animation-delay:1s; }
-.handsfree-visual.is-current .guidance-progress span:nth-child(3) { animation-delay:2s; }
-.handsfree-visual.is-current .guidance-progress span:nth-child(4) { animation-delay:3s; }
-
-/* Personalization — the actual recurring kitchen, overlaid with matched equipment. */
-.personalized-visual { inset:13% 10%; overflow:hidden; border-radius:1.3cqw; background:#f5ecd6; border:1px solid #d8dec5; }
-.personal-home { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:.89; }
-.equipment-signal { position:absolute; display:grid; place-items:center; width:17%; height:26%; border:1px solid #91bca0; border-radius:1cqw; background:#f9f8e8de; box-shadow:0 .2cqw 1cqw #2e4c381a; color:#304c98; }
-.equipment-signal svg { width:74%; height:74%; fill:none; }
-.signal-one { left:59%; top:51%; }
-.signal-two { left:12%; top:53%; }
-.equipment-match { position:absolute; top:9%; right:7%; width:13%; height:22%; padding:.3cqw; border:1px solid #94bd96; border-radius:50%; color:#50845c; background:#ffffedeb; fill:none; }
-.personalized-visual.is-current .equipment-signal { animation:feature-equipment 5.2s ease-in-out infinite; }
-.personalized-visual.is-current .signal-two { animation-delay:1.1s; }
-.personalized-visual.is-current .equipment-match { animation:feature-confirm 5.2s ease-in-out infinite; }
-
-@keyframes feature-scan { 0%,10% { opacity:0; transform:translateY(0); } 18% { opacity:.9; } 65% { opacity:.9; transform:translateY(13cqw); } 78%,100% { opacity:0; transform:translateY(13cqw); } }
-@keyframes feature-lock { 0%,15% { opacity:.25; } 35%,80% { opacity:1; } 100% { opacity:.25; } }
-@keyframes feature-technique { 0%,100% { transform:translateY(0) rotate(-5deg); } 24% { transform:translateY(-.7cqw) rotate(4deg); } 32% { transform:translateY(.4cqw) rotate(-8deg); } 46%,83% { transform:translateY(0) rotate(-5deg); } }
-@keyframes feature-trace { 0%,16% { opacity:.15; stroke-dashoffset:24; } 48%,80% { opacity:.9; stroke-dashoffset:0; } 100% { opacity:.15; } }
-@keyframes feature-confirm { 0%,28% { opacity:.1; transform:scale(.8); } 48%,85% { opacity:1; transform:scale(1); } 100% { opacity:.1; transform:scale(.8); } }
-@keyframes feature-progress { 0%,18% { background:#adc2a86b; } 38%,75% { background:#78a98d; } 100% { background:#adc2a86b; } }
-@keyframes feature-equipment { 0%,100% { box-shadow:0 0 0 0 #91bca000; } 45% { box-shadow:0 0 0 .6cqw #91bca026; border-color:#76a78b; } }
-.motion-paused :is(.recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match) { animation-play-state:paused!important; }
-@media(prefers-reduced-motion:reduce) {
-  .feature-visual { transition:none; filter:none; }
-  .recognition-scan,.recognized > svg,.technique-knife,.technique-trace,.technique-check,.guidance-progress span,.equipment-signal,.equipment-match { animation:none!important; }
-  .technique-check,.equipment-match { opacity:1; transform:none; }
-}
-@media(max-aspect-ratio:1/1) {
-  .feature-system { left:calc(50% - 164px); top:38%; width:328px; height:285px; border-radius:22px 10px 30px 10px; }
-  .feature-visual { inset:12% 10%; }
-  .curriculum-visual { gap:12px; }
-  .lesson-tile { border-radius:10px; }
-  .lesson-tile svg { width:46px; height:46px; }
-  .feature-viewport { inset:15px; }
-  .feature-viewport span { width:15px; height:15px; }
-  .technique-board { border-radius:17px; }
-  .technique-check { padding:5px; }
-  .guidance-step svg { width:35px; height:35px; }
-  .guidance-step i { margin:0 10px; }
-  .guidance-progress { gap:5px; }
-  .equipment-signal { border-radius:12px; }
-}
 /* Portrait remains usable; the presentation itself is composed for 16:9. */
 @media(max-aspect-ratio:1/1) {
   .film-active .scene-dots { left:50%; gap:0; }
@@ -319,8 +178,6 @@
   .accessibility-divide { left:calc(50% - 30px); top:49%; width:55px; height:160px; }
   .accessibility-copy { left:calc(50% - 110px); top:66%; width:220px; font-size:16px; }
   .home-question { left:calc(50% - 164px); top:77%; width:328px; font-size:25px; }
-  .feature-title { left:calc(50% - 164px); top:16%; width:328px; font-size:31px!important; text-align:center; }
-  [data-scene="features"] .sara { left:calc(50% - 47.5px); top:73%; width:95px; }
 }
 .dream-school-art { display:block; width:100%; }
 /* Final safe-area refinements from the 16:9 composition review. */
@@ -346,7 +203,7 @@
   [data-scene="school"] .sara { top:52%; }
 }
 
-/* Portrait framing keeps the product and both cooking hints legible. */
+/* Portrait framing keeps the product and Sara visible. */
 @media(max-aspect-ratio:1/1) {
   .product-reveal { left:50%; top:19%; width:340px; }
   .product-reveal h2 { font-size:92px; letter-spacing:-7px; }
@@ -359,14 +216,4 @@
   [data-scene="reveal"][data-beat="1"] .product-reveal { left:50%; top:9%; width:340px; padding:12px 0; background:#fff3dcde; border-radius:14px; }
   [data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:52px; letter-spacing:-3px; }
   [data-scene="reveal"][data-beat="1"] .product-promise { font-size:17px; margin-top:9px!important; }
-  .ar-hint { gap:9px; padding:11px 13px; border-radius:9px; }
-  .ar-hint svg { width:23px; height:23px; }
-  .ar-hint p { font-size:12px; }
-  .reveal-lesson { left:calc(50% - 169px); top:75%; }
-  .reveal-feedback { left:calc(50% - 89px); top:83%; }
-  .reveal-tomato-target { left:calc(50% + 87px); top:64%; width:70px; height:65px; }
-}
-@media(prefers-reduced-motion:reduce) {
-  .reveal-cooking,.glasses-hero,.product-reveal,.product-reveal h2,.product-promise,.ar-hint,.reveal-tomato-target { transition:none!important; }
-  .target-scan { animation:none!important; }
 }
