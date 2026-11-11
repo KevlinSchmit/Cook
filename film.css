@@ -42,7 +42,6 @@
 .passion-copy { position:absolute; left:51%; top:20%; width:40%; }
 .passion-copy h2 { font-size:3.8cqw; color:#e74829; max-width:36cqw; }
 .passion-copy p { margin-top:1.5cqw; font-family:Fraunces,Georgia,serif; font-style:italic; font-size:1.65cqw; }
-.family-detail { position:absolute; width:11%; left:3%; top:62%; transform:rotate(-7deg); }
 .restaurant-bill { position:absolute; left:61%; top:44%; width:24%; transform-origin:50% 5%; }
 .restaurant-bill img { display:block; width:100%; height:auto; filter:drop-shadow(.35cqw .7cqw 1.1cqw #3a240e80); }
 .restaurant-bill p { position:absolute; top:27%; left:18%; width:66%; padding:.7cqw .25cqw 1.2cqw; background:#f9efda; text-align:center; }
@@ -161,7 +160,7 @@
   .restaurant-bill p { padding:9px 2px 12px; }
   .restaurant-bill strong { font-size:38px; letter-spacing:-2px; }
   .restaurant-bill span { font-size:10px; padding-top:7px; }
-  .ingredient-dance,.family-detail { display:none!important; }
+  .ingredient-dance { display:none!important; }
   [data-scene="barriers"] .sara { left:calc(50% - 180px); top:42%; width:101px; }
   .school-dream { left:calc(50% - 110px); top:15%; width:220px; }
   .school-path { left:calc(50% - 180px); top:26%; width:360px; height:400px; }
@@ -300,9 +299,9 @@
 }
 @media (max-aspect-ratio:1/1) { .profile-facts li { font-size:10px; } }
 
-/* Shared vegetables: under the copy in scene 3, then resting below the road in scene 4. */
+/* Vegetables under the copy in scene 3. */
 .ingredient-dance { position:absolute; z-index:5; inset:0; pointer-events:none; opacity:0; visibility:hidden; transition:opacity .9s ease,visibility 0s .9s; }
-[data-scene="passion"] .ingredient-dance,[data-scene="barriers"] .ingredient-dance { opacity:1; visibility:visible; transition:opacity .9s ease .2s,visibility 0s; }
+[data-scene="passion"] .ingredient-dance { opacity:1; visibility:visible; transition:opacity .9s ease .2s,visibility 0s; }
 .ingredient { position:absolute; height:auto; transition:left 1.8s var(--ease),top 1.8s var(--ease),width 1.8s var(--ease); }
 .ingredient { animation:ingredient-drift 7s ease-in-out infinite; }
 .ingredient:nth-child(2n) { animation-delay:-2.3s; } .ingredient:nth-child(3n) { animation-delay:-4.6s; } .ingredient:nth-child(5n) { animation-duration:8.5s; }
@@ -315,13 +314,4 @@
 .ingredient.mushroom { left:45.5%; top:62%; width:5%; }
 .ingredient.onion { left:51.5%; top:62%; width:5%; }
 .ingredient.garlic { left:57.5%; top:58.5%; width:4.2%; }
-/* Scene 4: one low row sharing a baseline beneath the road. */
-[data-scene="barriers"] .ingredient.carrot { left:26%; top:77%; width:3%; }
-[data-scene="barriers"] .ingredient.tomato { left:31%; top:78.5%; width:4%; }
-[data-scene="barriers"] .ingredient.broccoli { left:41%; top:76.5%; width:5%; }
-[data-scene="barriers"] .ingredient.pepper { left:48%; top:78%; width:4%; }
-[data-scene="barriers"] .ingredient.eggplant { left:55.5%; top:79.5%; width:6.5%; }
-[data-scene="barriers"] .ingredient.mushroom { left:70%; top:79%; width:4%; }
-[data-scene="barriers"] .ingredient.onion { left:76.5%; top:78.5%; width:4%; }
-[data-scene="barriers"] .ingredient.garlic { left:83%; top:79.5%; width:3.4%; }
 @media(prefers-reduced-motion:reduce) { .ingredient,.ingredient-dance { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }
