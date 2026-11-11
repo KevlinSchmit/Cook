@@ -142,3 +142,13 @@
   .pov-scene,.pov-world,.finished-dish,.return-world,.closing-panorama,.closing-principle,.learning-connections,.closing-brand,.sense-panel { transition:none!important; }
   .pov-scan,.pov-progress span { animation:none!important; }
 }
+
+/* Second review round: clearer hierarchy lines and panels pulled toward the centre. */
+.learning-connections { stroke:#4f6f45; stroke-width:3.5; stroke-dasharray:10 9; }
+.learning-connections .connection-arrows { fill:#4f6f45; stroke:none; }
+[data-scene="closing"][data-beat="1"] .learning-connections { opacity:1; }
+@media not (max-aspect-ratio:1/1) {
+  .sense-panel { width:20.5%; }
+  .sense-flavor { left:11%; }
+  .sense-texture,.sense-seasoning { left:68.5%; }
+}

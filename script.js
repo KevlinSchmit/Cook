@@ -4,7 +4,7 @@
     { id: 'title', beats: 1, name: 'COOK' },
     { id: 'sara', beats: 1, name: 'Meet Sara' },
     { id: 'passion', beats: 2, name: 'Her passion never disappeared.' },
-    { id: 'barriers', beats: 5, name: 'Barriers to education' },
+    { id: 'barriers', beats: 6, name: 'Barriers to education' },
     { id: 'question', beats: 1, name: "Why should becoming a parent mean giving up on an education you're passionate about?" },
     { id: 'population', beats: 3, name: "Sara isn't alone." },
     { id: 'school', beats: 2, name: 'World-class culinary education' },

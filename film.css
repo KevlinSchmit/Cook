@@ -247,3 +247,44 @@
   .credits p { font-size:min(14px,3.5vw); line-height:1.9; }
   .credits p span { padding:0 3px; }
 }
+
+/* Second review round. Desktop composition only; portrait keeps its own framing. */
+.title-spark { color:var(--orange); }
+.restaurant-bill img { filter:drop-shadow(.35cqw .7cqw 1.1cqw #3a240e80); }
+.restaurant-bill p { top:22.5%; bottom:30%; left:19%; width:62%; padding:0; background:none; display:flex; flex-direction:column; justify-content:space-between; }
+.restaurant-bill span { padding:0; font-weight:700; font-size:1.75cqw; line-height:1.25; text-wrap:balance; }
+.restaurant-bill strong { font-size:5.7cqw; line-height:1; }
+/* The road is drawn segment by segment, then each stop fades in. */
+.path-underlay { stroke:#d5c498; }
+.path-dashes { stroke:#a48d62; }
+#road-reveal path { fill:none; stroke:#fff; stroke-width:44; }
+.film-scene .school-path [data-reveal] { opacity:1; transform:none; stroke-dasharray:1; stroke-dashoffset:1; transition:stroke-dashoffset 1s ease-in-out; }
+.film-scene .school-path [data-reveal].is-revealed { stroke-dashoffset:0; }
+.barriers-scene :is(.obstacle,.school-dream).is-revealed { transition-delay:.85s; }
+[data-scene="barriers"] .sara { z-index:6; }
+@media not (max-aspect-ratio:1/1) {
+  .profile { left:45.5%; top:16%; width:48.5%; padding:2.3cqw 3cqw 1.5cqw; }
+  .profile-top .eyebrow { font-size:.75cqw; }
+  .profile h2 { font-size:5.8cqw; letter-spacing:-.28cqw; margin:.5cqw 0 1.3cqw; }
+  .profile-facts li { font-size:1.95cqw; line-height:1.3; padding:.9cqw 0; gap:1.5cqw; }
+  .fact-mark { font-size:1.3cqw; padding-top:.35cqw; color:var(--orange); }
+  .restaurant-bill { left:60%; top:35%; width:27%; }
+  .obstacle-0 { left:24.5%; top:35.4%; width:13%; }
+  .obstacle-1 { left:37.5%; top:52.7%; width:15%; }
+  .obstacle-2 { left:51%; top:27.3%; width:12%; }
+  .obstacle-3 { left:62.5%; top:54.4%; width:13%; }
+  .school-dream { left:69%; top:19.5%; width:26%; }
+  .school-scene > h2 { left:10%; top:12%; width:80%; text-align:center; font-size:3.6cqw; }
+  .professional-kitchen { left:9.5%; top:31%; width:34%; }
+  .accessibility-divide { left:47%; top:24%; width:6%; height:60%; }
+  .accessibility-divide svg { stroke:#b9a986; stroke-width:4; stroke-dasharray:9 12; }
+  [data-scene="school"] .kitchen { left:58%; top:37%; width:34%; height:34%; }
+  [data-scene="school"] .sara,[data-scene="home"] .sara { left:67.4%; top:37%; width:13.25%; }
+  .accessibility-copy { left:58%; top:29%; width:34%; font-size:2.1cqw; }
+  [data-scene="reveal"][data-beat="1"] .product-reveal { left:71%; }
+}
+@media(max-aspect-ratio:1/1) {
+  .school-path { display:none; }
+  .restaurant-bill span { font-size:12px; }
+  .restaurant-bill strong { font-size:38px; }
+}
