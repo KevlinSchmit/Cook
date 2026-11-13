@@ -152,3 +152,18 @@
   .sense-flavor { left:11%; }
   .sense-texture,.sense-seasoning { left:68.5%; }
 }
+
+/* Remy lettering replaces every COOK wordmark: traced vector, colour #fa8d8d, used unaltered. */
+.remy-logo { display:block; width:auto; max-width:none; margin:0 auto; }
+.wordmark .remy-logo { height:40px; margin:0; }
+.intro h1 { display:block; transform:none; padding:0; letter-spacing:0; }
+.intro h1 .remy-logo { height:15.5cqw; }
+.product-reveal h2 { letter-spacing:0 !important; }
+.product-reveal h2 .remy-logo { height:1.45em; }
+.closing-brand h2 { letter-spacing:0 !important; padding:0; }
+.closing-brand h2 .remy-logo { height:1.2em; }
+@media(max-aspect-ratio:1/1) {
+  .intro h1 .remy-logo { height:min(140px,36vw); }
+  .wordmark .remy-logo { height:32px; }
+  .product-reveal h2 .remy-logo { height:1.05em; }
+}

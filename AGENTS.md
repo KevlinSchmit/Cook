@@ -1,4 +1,6 @@
-# COOK presentation workflow
+# Remy (formerly COOK) presentation workflow
+
+The brand is now **Remy**: every former COOK wordmark (masthead, title, reveal, closing) uses `assets/illustrations/remy-logo.svg`, a vector trace of the user's supplied lettering in #fa8d8d, unaltered. Visible text and accessible names say Remy; the file name `COOK.html` and `window.COOK` API stay for compatibility. The user rejected the global palette remap; keep the original colours.
 
 The user moved the presentation to `main`. Work from the current `origin/main` and push completed, validated updates to `main`; do not continue on `slide-deck`.
 
@@ -44,7 +46,7 @@ The user requested close vector reconstructions of three additional supplied ima
 
 ## Glasses-first product reveal
 
-Scene 7 has exactly two manually reversible states. State 0 shows only `cook-glasses.svg` (1040 × 450, matte-black AR frames with a tiny camera) on a quiet cream field, plus “COOK” and “Your kitchen. Your culinary school.” Hide the shared kitchen, Sara, and all floating hints in this state.
+Scene 7 has exactly two manually reversible states. State 0 shows only `cook-glasses.svg` (1040 × 450, matte-black AR frames with a tiny camera) on a quiet cream field, plus the Remy logo and “Your kitchen. Your culinary school.” Hide the shared kitchen, Sara, and all floating hints in this state.
 
 State 1 draws the glasses toward Sara's face as `cook-ar-kitchen.png` (1672 × 941) opens into view. This preserves Sara's bun, cream blouse and red apron while showing black camera glasses and a natural tomato-cutting gesture. The latest user request removes the “LESSON 01: Knife Skills” and “Keep your fingertips tucked in” boxes from this scene; the old `reveal-guidance` layer is gone. Do not restore the older AR/AI description. Keep the cooking art and glasses independent for reversible cinematic transforms and iris transitions. The final iris radius must cover every image corner.
 
@@ -56,4 +58,4 @@ Scene 9 (`demo`) is a plain white background with only “for demo” centered. 
 
 Scene 11 (`return`) uses `sara-return.png`: the same smiling Sara holding her black glasses in a brighter kitchen, homemade dishes on the counter, and her baby safely eating from its own bowl. Reveal exactly: “Remember Sara?”, “Now she's learning on her own terms.”, and “New skills. New recipes. New possibilities.”
 
-Scene 12 (`closing`) uses `learning-world.png` to expand into three ordinary home kitchens, then connects and gathers the illustrated world into a clean cinematic brand composition. Its exact copy is “Education should fit your life.”, “COOK”, and “Redefining where and how learning happens.” Preserve the smooth manual/reversible sequence and reduced-motion behavior.
+Scene 12 (`closing`) uses `learning-world.png` to expand into three ordinary home kitchens, then connects and gathers the illustrated world into a clean cinematic brand composition. Its exact copy is “Education should fit your life.”, the Remy logo, and “Redefining where and how learning happens.” Preserve the smooth manual/reversible sequence and reduced-motion behavior.
