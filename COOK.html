@@ -886,6 +886,8 @@
   panel(6, 22, 2.4, 24, 4, -6, -Math.PI / 2.6);         // right softbox
   panel(60, 10, 0.25, 0, -18, 0, 0, -Math.PI / 2);      // warm floor bounce
   panel(30, 6, 0.9, 0, 6, -26);                       // back panel
+  panel(52, 26, 0.16, 0, 2, 26);                      // broad front fill: grey sheen on the face
+  panel(46, 2.6, 6, 0, 13, 23);                       // crisp strip: highlight along the brow bevel
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(studio, 0.02).texture;
 
@@ -899,7 +901,7 @@
   });
   const metal = new THREE.MeshStandardMaterial({ color: 0x55565a, roughness: 0.28, metalness: 1, envMapIntensity: 1.1 });
   const lensGlass = new THREE.MeshPhysicalMaterial({
-    color: 0xf3f6f5, roughness: 0.04, metalness: 0, transparent: true, opacity: 0.1,
+    color: 0xf3f6f5, roughness: 0.03, metalness: 0, transparent: true, opacity: 0.05,
     clearcoat: 1, clearcoatRoughness: 0.02, envMapIntensity: 1.6, side: THREE.DoubleSide, depthWrite: false
   });
   const padMaterial = new THREE.MeshPhysicalMaterial({
@@ -910,13 +912,6 @@
   const glasses = new THREE.Group();
   scene.add(glasses);
 
-  const curve = 0;                            // flat front: large faces cannot bend cleanly
-  const bend = geometry => {
-    const p = geometry.attributes.position;
-    for (let i = 0; i < p.count; i += 1) p.setZ(i, p.getZ(i) - curve * p.getX(i) * p.getX(i));
-    geometry.computeVertexNormals();
-    return geometry;
-  };
   const closed = (points, mirror = false) => {
     const pts = points.map(([x, y]) => new THREE.Vector2(mirror ? -x : x, y));
     if (mirror) pts.reverse();
@@ -925,67 +920,120 @@
     shape.splineThru([...pts.slice(1), pts[0]]);
     return shape;
   };
+  // Outlines traced from the straight-on product photo (pixels), converted to millimetres:
+  // 1160 px across the frame = 142 mm, centred on the bridge.
+  const MM = 142 / 1160, CX = 815, CY = 520;
+  const mm = list => list.map(([x, y]) => [(x - CX) * MM, (CY - y) * MM]);
 
-  // Front silhouette: a soft, slightly upswept rectangular frame with a keyhole bridge.
-  const outerRight = [[0, 21], [20, 22.5], [44, 23.5], [62, 22.5], [69.5, 18], [71, 9], [69.8, -4], [66.5, -16], [60, -21.5], [46, -24], [30, -23], [19, -19], [13.5, -11], [10, -2.5], [5.5, 2.5]];
-  const outer = [...outerRight, [0, 4], ...outerRight.slice(1).reverse().map(([x, y]) => [-x, y])];
-  const lens = [[14.5, 13.6], [28, 15.4], [46, 16], [60, 14.6], [63.6, 8.6], [63.2, -3], [60.2, -11.8], [53.5, -16.6], [40, -17.8], [26.5, -16.4], [18.5, -11.6], [15, -3.2]];
-  const frontShape = closed(outer);
-  frontShape.holes.push(closed(lens), closed(lens, true));
+  // Rounded polygon: each vertex [x, y, radius] becomes a tangent quadratic fillet, which keeps
+  // every rim edge continuous and polished (no spline overshoot at corners).
+  const roundPoly = (verts, mirror = false) => {
+    let v = verts.map(([x, y, r]) => [(mirror ? -(x - CX) : x - CX) * MM, (CY - y) * MM, r * MM]);
+    if (mirror) v = v.reverse();
+    const n = v.length, shape = new THREE.Shape();
+    const towards = (p, q, d) => { const dx = q[0] - p[0], dy = q[1] - p[1], l = Math.hypot(dx, dy) || 1; return [p[0] + dx / l * d, p[1] + dy / l * d]; };
+    const corner = i => {
+      const p = v[i], a = v[(i - 1 + n) % n], b = v[(i + 1) % n];
+      const d = Math.min(p[2], Math.hypot(a[0] - p[0], a[1] - p[1]) / 2, Math.hypot(b[0] - p[0], b[1] - p[1]) / 2);
+      return [towards(p, a, d), p, towards(p, b, d)];
+    };
+    const first = corner(0);
+    shape.moveTo(first[2][0], first[2][1]);
+    for (let i = 1; i <= n; i += 1) {
+      const [enter, ctrl, exit] = corner(i % n);
+      shape.lineTo(enter[0], enter[1]);
+      shape.quadraticCurveTo(ctrl[0], ctrl[1], exit[0], exit[1]);
+    }
+    return shape;
+  };
+
+  // Front, traced from the straight-on photo: wide brow dipping slightly at the bridge, end
+  // pieces that flare out for the camera, outer edges sweeping in to soft lower corners, and a
+  // keyhole nose opening whose inner rims widen towards the cheeks.
+  const half = [[815, 386, 70], [950, 350, 220], [1372, 350, 30], [1397, 386, 14], [1395, 452, 26], [1364, 522, 70], [1351, 689, 70], [902, 698, 60], [859, 500, 40]];
+  const outerVerts = [...half, [815, 466, 42], ...half.slice(1).reverse().map(([x, y, r]) => [2 * CX - x, y, r])];
+  const lensVerts = [[904, 412, 56], [1110, 398, 900], [1318, 406, 60], [1304, 666, 118], [930, 664, 104]];
+  const frontShape = roundPoly(outerVerts);
+  frontShape.holes.push(roundPoly(lensVerts), roundPoly(lensVerts, true));
   const frontGeometry = new THREE.ExtrudeGeometry(frontShape, {
-    depth: 4.2, bevelEnabled: true, bevelThickness: 1.7, bevelSize: 1.55, bevelSegments: 6, curveSegments: 72
+    depth: 4.0, bevelEnabled: true, bevelThickness: 2.4, bevelSize: 2.3, bevelSegments: 10, curveSegments: 14
   });
-  frontGeometry.translate(0, 0, -2.1);
-  const front = new THREE.Mesh(bend(frontGeometry), acetate);
-  glasses.add(front);
+  frontGeometry.translate(0, 0, -2.0);
+  glasses.add(new THREE.Mesh(frontGeometry, acetate));
+  const frontZ = 2.0 + 2.4;                     // polished front face
+  const backZ = -2.0 - 2.4;
 
-  // Clear lenses seated inside the rims.
+  // Lenses: thin clear glass seated mid-rim; only reflections give them away.
   [false, true].forEach(mirror => {
-    const g = new THREE.ShapeGeometry(closed(lens, mirror), 64);
-    g.translate(0, 0, 0.2);
-    glasses.add(new THREE.Mesh(bend(g), lensGlass));
+    const pane = new THREE.Mesh(new THREE.ShapeGeometry(roundPoly(lensVerts, mirror), 12), lensGlass);
+    pane.position.z = 0;
+    glasses.add(pane);
   });
 
-  // Nose pads behind the bridge.
+  // Integrated acetate nose pads that slope back from the inner rims.
+  const padShape = closed([[0, 4.4], [2.2, 3.4], [2.7, -1.5], [1.9, -5.8], [0, -7], [-1.2, -4.6], [-1.4, 0.6], [-0.8, 3.6]]);
+  const padGeometry = new THREE.ExtrudeGeometry(padShape, { depth: 2.2, bevelEnabled: true, bevelThickness: 0.9, bevelSize: 0.8, bevelSegments: 5, curveSegments: 8 });
   [-1, 1].forEach(side => {
-    const pad = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 24), padMaterial);
-    pad.scale.set(2.6, 6.2, 1.4);
-    pad.position.set(side * 10.8, -9, -6.2);
-    pad.rotation.set(0.15, side * 0.45, side * -0.32);
+    const pad = new THREE.Mesh(padGeometry, acetate);
+    pad.position.set(side * 8.9, -3.5, backZ - 1.4);
+    pad.rotation.set(-0.12, side * -0.55, side * 0.08);
+    pad.scale.x = side;
     glasses.add(pad);
   });
 
-  // Camera lens and capture LED at the upper outer corners.
-  const zAt = x => 2.1 + 1.2 - curve * x * x;
-  [[-1, 2.2], [1, 1.5]].forEach(([side, size]) => {
-    const x = side * 66.6, y = 16.4;
-    const ring = new THREE.Mesh(new THREE.TorusGeometry(size, 0.42, 16, 48), metal);
-    const lensDot = new THREE.Mesh(new THREE.CircleGeometry(size, 40), cameraGlass);
-    [ring, lensDot].forEach(mesh => {
-      mesh.position.set(x, y, zAt(x) + (mesh === ring ? 0.05 : 0));
-      mesh.rotation.y = Math.atan(2 * curve * x);
-      glasses.add(mesh);
-    });
+  // Camera (left) and capture LED (right): recessed rings in the end pieces.
+  const darkMetal = new THREE.MeshStandardMaterial({ color: 0x2a2b2e, roughness: 0.3, metalness: 1, envMapIntensity: 1.2 });
+  [[-1, 2.15], [1, 1.75]].forEach(([side, r]) => {
+    const x = side * (1362 - CX) * MM, y = (CY - 420) * MM;
+    const bezel = new THREE.Mesh(new THREE.CylinderGeometry(r + 0.55, r + 0.75, 0.8, 48), darkMetal);
+    bezel.rotation.x = Math.PI / 2; bezel.position.set(x, y, frontZ + 0.1);
+    const glass = new THREE.Mesh(new THREE.CylinderGeometry(r, r, 0.9, 48), cameraGlass);
+    glass.rotation.x = Math.PI / 2; glass.position.set(x, y, frontZ + 0.25);
+    const iris = new THREE.Mesh(new THREE.CircleGeometry(r * 0.42, 32), new THREE.MeshPhysicalMaterial({ color: 0x1b2230, roughness: 0.05, clearcoat: 1, envMapIntensity: 2.5 }));
+    iris.position.set(x, y, frontZ + 0.72);
+    glasses.add(bezel, glass, iris);
   });
 
-  // Temples: thick acetate arms with a long taper and an ear hook.
-  const templeProfile = closed([[0, 7.2], [40, 6.6], [90, 5.4], [118, 4.6], [134, 1], [146, -10], [152, -22], [149.5, -26.5], [144.5, -24], [138.5, -12], [128, -3.4], [104, -2.6], [60, -3.6], [16, -5.3], [0, -6.2]]);
+  // Temples traced from the three-quarter view: tall at the hinge, a long taper with a
+  // softly scooped lower edge, then a rounded drop into the ear tip.
+  const templeProfile = closed([[0, 7.6], [30, 7.1], [70, 5.9], [104, 4.8], [120, 3.6], [131, 0.4], [139, -6], [146, -15], [150, -22], [149, -26.4], [145.2, -27.4], [141.4, -24.2], [136.5, -14], [129.4, -6.2], [119, -2], [100, -1.2], [78, -2.4], [54, -4.4], [30, -6.4], [10, -7.3], [0, -7.4]]);
   const templeGeometry = new THREE.ExtrudeGeometry(templeProfile, {
-    depth: 3.4, bevelEnabled: true, bevelThickness: 1.1, bevelSize: 1.1, bevelSegments: 5, curveSegments: 80
+    depth: 3.6, bevelEnabled: true, bevelThickness: 1.2, bevelSize: 1.1, bevelSegments: 7, curveSegments: 8
   });
-  templeGeometry.translate(0, 0, -1.7);
-  templeGeometry.rotateY(Math.PI / 2);        // profile runs back along -z
-  const hingeX = 68.6, hingeZ = -curve * hingeX * hingeX - 2.6;
+  templeGeometry.translate(0, 0, -1.8);
+  templeGeometry.rotateY(Math.PI / 2);          // profile runs back along -z
+  const endX = (1394 - CX) * MM;                // outer edge of the end pieces
+  const templeY = (CY - 400) * MM;
   [-1, 1].forEach(side => {
     const arm = new THREE.Group();
-    const temple = new THREE.Mesh(templeGeometry, acetate);
-    temple.position.set(side * -0.4, 9.2, 0);
-    arm.add(temple);
-    const hinge = new THREE.Mesh(new THREE.BoxGeometry(1.6, 6, 5), metal);
-    hinge.position.set(side * -1.6, 9.6, 3.2);
+    arm.add(new THREE.Mesh(templeGeometry, acetate));
+    // Hinge housing: the end piece wraps back to meet the temple.
+    const housingShape = closed([[0, 8.4], [5, 8.6], [8.6, 7], [9, -6.6], [5, -8], [0, -8]]);
+    const housing = new THREE.Mesh(new THREE.ExtrudeGeometry(housingShape, { depth: 4.2, bevelEnabled: true, bevelThickness: 0.9, bevelSize: 0.9, bevelSegments: 6, curveSegments: 8 }), acetate);
+    housing.geometry.translate(0, 0, -2.1); housing.geometry.rotateY(Math.PI / 2);
+    housing.position.set(0, 0, 3.2);
+    arm.add(housing);
+    // Parting line where the housing meets the temple, plus a silver hinge glint inside.
+    const seam = new THREE.Mesh(new THREE.BoxGeometry(6.4, 13.4, 0.35), new THREE.MeshStandardMaterial({ color: 0x000000, roughness: 0.6 }));
+    seam.position.set(0, -0.2, -6.2);
+    arm.add(seam);
+    const hinge = new THREE.Mesh(new THREE.CylinderGeometry(0.9, 0.9, 7, 24), metal);
+    hinge.position.set(side * -2.9, 0, 2.6);
     arm.add(hinge);
-    arm.position.set(side * hingeX, 0, hingeZ);
-    arm.rotation.y = side * 0.07;             // slight splay, as when worn
+    // Speaker slot on the inner face, above the ear.
+    const slot = new THREE.Mesh(new THREE.CapsuleGeometry(0.55, 7, 6, 16), new THREE.MeshStandardMaterial({ color: 0x1c1c1e, roughness: 0.8 }));
+    slot.rotation.x = Math.PI / 2;
+    slot.position.set(side * -2.96, 1.6, -96);
+    arm.add(slot);
+    if (side === 1) {
+      // Capture button along the top of the right temple.
+      const button = new THREE.Mesh(new THREE.CapsuleGeometry(0.7, 6, 6, 16), darkMetal);
+      button.rotation.x = Math.PI / 2;
+      button.position.set(0, 7.75, -16);
+      arm.add(button);
+    }
+    arm.position.set(side * (endX - 3), templeY, backZ - 1.4);
+    arm.rotation.y = side * 0.055;              // slight splay, as when worn
     glasses.add(arm);
   });
 
@@ -1008,6 +1056,8 @@
   new ResizeObserver(resize).observe(host);
   resize();
 
+  // holdAngle (radians) pins the turntable for deterministic screenshots; null resumes spinning.
+  const api = window.COOK_GLASSES = { renderer, scene, camera, pivot, holdAngle: null };
   const experience = document.querySelector('.experience');
   const turn = Math.PI * 2 / 9;               // one full revolution every nine seconds
   let angle = -0.6, last = performance.now();
@@ -1022,13 +1072,13 @@
       } else {
         angle += turn * dt;
       }
-      pivot.rotation.y = angle;
+      pivot.rotation.y = Number.isFinite(api.holdAngle) ? api.holdAngle : angle;
       renderer.render(scene, camera);
     }
     requestAnimationFrame(frame);
   };
   requestAnimationFrame(frame);
-  window.COOK_GLASSES = { renderer, scene, camera, pivot };
+
 })();
 
 </script>
