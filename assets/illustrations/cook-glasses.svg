@@ -1,49 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1040 450" fill="none" role="img" aria-labelledby="glasses-title">
-  <title id="glasses-title">COOK matte black AR glasses with a discreet built-in camera</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 450" fill="none" role="img" aria-labelledby="glasses-title">
+  <title id="glasses-title">Remy glossy black camera glasses with clear lenses</title>
   <defs>
-    <linearGradient id="frame" x1="520" y1="176" x2="520" y2="376" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2a2e2c"/><stop offset=".38" stop-color="#121615"/><stop offset="1" stop-color="#080b0b"/>
-    </linearGradient>
-    <linearGradient id="temple" x1="520" y1="70" x2="520" y2="200" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#343835"/><stop offset=".5" stop-color="#171b19"/><stop offset="1" stop-color="#080b0a"/>
-    </linearGradient>
-    <linearGradient id="lens" x1="200" y1="204" x2="330" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7baba1" stop-opacity=".2"/><stop offset=".45" stop-color="#d6e4da" stop-opacity=".08"/><stop offset="1" stop-color="#5f8e87" stop-opacity=".22"/>
-    </linearGradient>
-    <linearGradient id="lens-light" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#fff" stop-opacity=".34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="camera">
-      <stop stop-color="#182a33"/><stop offset=".32" stop-color="#536c72"/><stop offset=".55" stop-color="#0b1419"/><stop offset=".8" stop-color="#253a40"/><stop offset="1" stop-color="#060b0d"/>
-    </radialGradient>
-    <filter id="product-shadow" x="-15%" y="-150%" width="130%" height="400%"><feGaussianBlur stdDeviation="11"/></filter>
-    <path id="lens-shape" d="M200 216Q200 204 214 204H456Q470 204 469 218L462 298Q458 343 410 346L266 350Q220 350 213 306Z"/>
-    <clipPath id="lens-clip"><use xlink:href="#lens-shape" href="#lens-shape"/></clipPath>
-    <!-- One half of the level, symmetric frame; the other half is its mirror image. -->
-    <g id="half">
-      <!-- The temple recedes straight back from its hinge and ends in a rounded ear tip. -->
-      <path d="M175 200 233 96Q241 82 258 84L306 90Q320 93 318 106 315 119 301 118L266 114Q257 113 252 121L207 202Z" fill="url(#temple)"/>
-      <path d="M190 190 243 100Q248 93 258 94L304 100" stroke="#858c85" stroke-opacity=".28" stroke-width="2" stroke-linecap="round"/>
-      <!-- Rim and half of the keyhole bridge. -->
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M174 202Q174 180 198 180H466Q482 180 492 190 506 198 520 198V226Q504 226 494 240L485 302Q478 366 414 369L262 373Q198 373 188 310ZM200 216Q200 204 214 204H456Q470 204 469 218L462 298Q458 343 410 346L266 350Q220 350 213 306Z" fill="url(#frame)"/>
-      <use xlink:href="#lens-shape" href="#lens-shape" fill="url(#lens)"/>
-      <!-- Soft highlights explain the frame thickness without outlining every edge. -->
-      <path d="M196 190H464Q478 190 488 198" stroke="#6e7771" stroke-width="2.7" stroke-linecap="round" opacity=".55"/>
-      <path d="M232 356Q246 364 266 363L408 359" stroke="#6e7771" stroke-width="1.6" stroke-linecap="round" opacity=".33"/>
-      <path d="M182 214 193 300" stroke="#d6e0d9" stroke-width="1.3" stroke-linecap="round" opacity=".23"/>
-      <!-- Small nose pad behind the bridge. -->
-      <path d="M486 246Q492 244 492 252L487 286Q485 294 480 290 477 286 478 280L482 252Q483 247 486 246Z" fill="#303632"/>
+    <linearGradient id="acetate" x1="814" y1="345" x2="814" y2="696" gradientUnits="userSpaceOnUse"><stop stop-color="#3b3b3b"/><stop offset=".35" stop-color="#202020"/><stop offset="1" stop-color="#101010"/></linearGradient>
+    <linearGradient id="lens" x1="900" y1="378" x2="1300" y2="673" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".12"/><stop offset=".6" stop-color="#fff" stop-opacity=".02"/><stop offset="1" stop-color="#8b9494" stop-opacity=".08"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-200%" width="150%" height="500%"><feGaussianBlur stdDeviation="8"/></filter>
+    <g id="left-temple">
+      <path d="M254 388C280 352 313 350 337 366C392 400 453 478 472 536C480 559 465 572 455 556C436 518 406 468 373 429C346 399 316 380 296 399Z" fill="#252525"/>
+      <path d="M302 370C348 379 417 452 451 527" stroke="#7d7d7d" stroke-opacity=".4" stroke-width="3"/>
     </g>
+    <g id="module"><circle r="19" fill="#0b0b0c"/><circle r="15.5" stroke="#454648" stroke-width="2"/><circle r="12" fill="#0a0d10"/><path d="M-9-5 6 0" stroke="#849196" stroke-width="3" opacity=".3"/></g>
   </defs>
-  <!-- Transparent studio shadow, with no backdrop or surrounding card. -->
-  <ellipse cx="520" cy="402" rx="330" ry="13" fill="#17201c" opacity=".14" filter="url(#product-shadow)"/>
-  <use xlink:href="#half" href="#half"/>
-  <use xlink:href="#half" href="#half" transform="translate(1040 0) scale(-1 1)"/>
-  <!-- The light falls the same way across both clear lenses. -->
-  <path d="M200 204H360L262 350H200Z" fill="url(#lens-light)" clip-path="url(#lens-clip)"/>
-  <g transform="translate(1040 0) scale(-1 1)"><path d="M469 204H309L407 350H469Z" transform="translate(-60 0)" fill="url(#lens-light)" opacity=".5" clip-path="url(#lens-clip)"/></g>
-  <!-- The discreet camera is flush with the outside corner; there is no display or ornament. -->
-  <circle cx="850" cy="196" r="10" fill="#0a0e0d"/>
-  <circle cx="850" cy="196" r="7" fill="url(#camera)"/>
-  <path d="m846 193 3-1" stroke="#b0d6ce" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
+  <ellipse cx="520" cy="407" rx="310" ry="9" fill="#252322" opacity=".15" filter="url(#shadow)"/>
+  <g transform="translate(-106.78 -150.4) scale(.77)">
+    <use href="#left-temple"/><use href="#left-temple" transform="translate(1628 0) scale(-1 1)"/>
+    <path d="M 814 399 C 855 399 875 394 905 380 C 957 351 1007 346 1118 346 C 1225 346 1300 353 1376 375 C 1390 378 1395 383 1395 397 L 1394 438 C 1394 455 1386 460 1372 465 C 1352 472 1343 501 1332 536 C 1315 591 1301 642 1272 670 C 1247 695 1188 695 1105 696 C 1033 696 981 693 953 679 C 923 663 909 615 895 570 C 881 526 862 493 862 477 C 862 460 848 458 814 458  C 780 458 766 460 766 477 C 766 493 747 526 733 570 C 719 615 705 663 675 679 C 647 693 595 696 523 696 C 440 695 381 695 356 670 C 327 642 313 591 296 536 C 285 501 276 472 256 465 C 242 460 234 455 234 438 L 233 397 C 233 383 238 378 252 375 C 328 353 403 346 510 346 C 621 346 671 351 723 380 C 753 394 773 399 814 399 Z M 1115 378 C 1201 378 1261 380 1287 403 C 1309 422 1307 457 1303 490 C 1298 538 1286 592 1263 632 C 1243 667 1197 671 1110 673 C 1041 675 990 672 964 658 C 938 644 922 596 912 550 C 903 508 897 474 901 448 C 906 411 937 392 978 384 C 1011 378 1070 378 1115 378 Z M 513 378 C 427 378 367 380 341 403 C 319 422 321 457 325 490 C 330 538 342 592 365 632 C 385 667 431 671 518 673 C 587 675 638 672 664 658 C 690 644 706 596 716 550 C 725 508 731 474 727 448 C 722 411 691 392 650 384 C 617 378 558 378 513 378 Z" fill="url(#acetate)" fill-rule="evenodd" stroke="#454545" stroke-width="2.5"/>
+    <path d="M 1115 378 C 1201 378 1261 380 1287 403 C 1309 422 1307 457 1303 490 C 1298 538 1286 592 1263 632 C 1243 667 1197 671 1110 673 C 1041 675 990 672 964 658 C 938 644 922 596 912 550 C 903 508 897 474 901 448 C 906 411 937 392 978 384 C 1011 378 1070 378 1115 378 Z M 513 378 C 427 378 367 380 341 403 C 319 422 321 457 325 490 C 330 538 342 592 365 632 C 385 667 431 671 518 673 C 587 675 638 672 664 658 C 690 644 706 596 716 550 C 725 508 731 474 727 448 C 722 411 691 392 650 384 C 617 378 558 378 513 378 Z" fill="url(#lens)"/>
+    <path d="M768 478C761 497 751 522 749 541C750 552 758 550 762 539L781 485Z" fill="#242424"/>
+    <path d="M860 478C867 497 877 522 879 541C878 552 870 550 866 539L847 485Z" fill="#242424"/>
+    <path d="M248 380C361 344 591 339 680 371C743 397 766 406 814 405C862 406 885 397 948 371C1037 339 1267 344 1380 380" stroke="#aaa" stroke-opacity=".36" stroke-width="4"/>
+    <path d="M382 669C422 688 601 692 657 675M971 675C1027 692 1206 688 1246 669" stroke="#888" stroke-opacity=".3" stroke-width="2"/>
+    <use href="#module" x="275" y="423"/><use href="#module" x="1353" y="423"/>
+    <path d="M248 366 265 363 265 369 248 372Z" fill="#29292a" stroke="#777" stroke-width="1"/>
+  </g>
 </svg>

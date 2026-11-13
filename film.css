@@ -319,5 +319,5 @@
 /* Spinning 3D glasses (glasses3d.js); the SVG remains only as a no-WebGL fallback. */
 .glasses-hero { aspect-ratio:1040/450; }
 .glasses-hero.has-webgl img { visibility:hidden; }
-.glasses-canvas { position:absolute; inset:-8% -4%; width:108%; height:116%; display:block; }
+.glasses-canvas { position:absolute; inset:0; width:100%; height:100%; display:block; }
 .glasses-hero.has-webgl::after { content:''; position:absolute; left:18%; right:18%; bottom:-2%; height:9%; border-radius:50%; background:radial-gradient(closest-side,#3b2c1a33,#3b2c1a00); z-index:-1; }
