@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 172" fill="none" role="img" aria-labelledby="title"><title id="title">A glossy yellow bell pepper with a curled green stem</title>
 <defs><filter id="paper" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/><feColorMatrix in="grain" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
-<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><path d="M30 52C16 66 14 104 24 132c8 24 28 32 42 24 6 8 18 10 26 2 16 8 34-6 40-30 8-30 4-62-12-76-12-10-28-6-36-2-8-6-22-8-32-2-8-4-16-2-22 4Z" fill="#f2b632"/>
-<path d="M66 60c-6 32-6 66 0 96m26-100c6 36 4 72 0 102" stroke="#d48e1f" stroke-width="4"/>
-<path d="M38 72c-6 20-6 40-2 56m70-60c4 14 5 30 3 44" stroke="#fbe08a" stroke-width="5"/>
-<path d="M58 50c8-12 34-12 42 0-10 6-30 6-42 0Z" fill="#477744"/>
-<path d="M79 46c-1-14 5-26 18-32" stroke="#20764e" stroke-width="8"/></g></svg>
+<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><path d="M30 52C16 66 14 104 24 132c8 24 28 32 42 24 6 8 18 10 26 2 16 8 34-6 40-30 8-30 4-62-12-76-12-10-28-6-36-2-8-6-22-8-32-2-8-4-16-2-22 4Z" fill="#e67c6f"/>
+<path d="M66 60c-6 32-6 66 0 96m26-100c6 36 4 72 0 102" stroke="#df5d49" stroke-width="4"/>
+<path d="M38 72c-6 20-6 40-2 56m70-60c4 14 5 30 3 44" stroke="#ec9895" stroke-width="5"/>
+<path d="M58 50c8-12 34-12 42 0-10 6-30 6-42 0Z" fill="#5e5e5e"/>
+<path d="M79 46c-1-14 5-26 18-32" stroke="#4b4b4b" stroke-width="8"/></g></svg>

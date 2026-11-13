@@ -1,6 +1,6 @@
 /* The film is one persistent stage. The kitchen and Sara travel between scenes. */
 .icon-library { position:absolute; pointer-events:none; }
-.scene-wash { position:absolute; z-index:1; inset:0; opacity:0; background:#f5ecd6; transition:background 1.7s ease,opacity 1.7s ease; pointer-events:none; }
+.scene-wash { position:absolute; z-index:1; inset:0; opacity:0; background:#f5d7d6; transition:background 1.7s ease,opacity 1.7s ease; pointer-events:none; }
 .kitchen { z-index:0; left:0; top:0; right:auto; bottom:auto; width:100%; height:100%; overflow:hidden; transition:left 2.2s var(--ease),top 2.2s var(--ease),width 2.2s var(--ease),height 2.2s var(--ease),border-radius 2s var(--ease),opacity 1.6s ease; }
 .sara { transition:left 2.1s var(--ease),top 2.1s var(--ease),width 2.1s var(--ease),opacity 1.5s ease,transform 2s var(--ease); }
 .sara-ar-art { position:absolute; inset:0; display:block; width:100%; height:auto; opacity:0; transform-origin:50% 85%; animation:sara-breathe 7s ease-in-out infinite; transition:opacity 1.2s ease; }
@@ -13,18 +13,18 @@
 .film-active .motion-control span,.film-active .next-label { display:none; }
 .film-active .masthead { border-color:transparent; }
 .film-active .masthead::before { opacity:0; }
-.film-active .masthead { color:#304c98; }
+.film-active .masthead { color:#3955a2; }
 .film-active .sara-enter { opacity:1; transform:translate(0,0); transition-delay:0s; }
-.film-active .presentation-controls { background:none; color:#304c98; }
+.film-active .presentation-controls { background:none; color:#3955a2; }
 .previous-scene { display:none; }
-.film-active .previous-scene { position:absolute; display:grid; place-items:center; left:4%; bottom:23px; width:48px; height:48px; border:1px solid #304c9855; border-radius:50%; background:#f5ecd6e3; color:#304c98; transition:transform .3s,background .3s; }
+.film-active .previous-scene { position:absolute; display:grid; place-items:center; left:4%; bottom:23px; width:48px; height:48px; border:1px solid #3955a255; border-radius:50%; background:#f5d7d6e3; color:#3955a2; transition:transform .3s,background .3s; }
 .previous-scene svg { width:25px; height:18px; }
-.film-active .next-scene { width:48px; height:48px; padding:0; justify-content:center; border:1px solid #304c9855; background:#f5ecd6e3; }
+.film-active .next-scene { width:48px; height:48px; padding:0; justify-content:center; border:1px solid #3955a255; background:#f5d7d6e3; }
 .film-active .next-scene svg { width:25px; }
 .next-scene svg,[data-scene="sara"] .next-scene svg { transform:none; }
-.film-active .previous-scene:hover { transform:translateX(-3px); background:#fffae9; }
-.film-active .scene-dot:after { border-color:#304c9877; }
-.film-active .scene-dot.active:after { background:#304c98; }
+.film-active .previous-scene:hover { transform:translateX(-3px); background:#fcedec; }
+.film-active .scene-dot:after { border-color:#3955a277; }
+.film-active .scene-dot.active:after { background:#3955a2; }
 .film-scene { position:absolute; z-index:5; inset:0; opacity:0; visibility:hidden; pointer-events:none; transform:scale(1.035); transform-origin:50% 60%; transition:opacity .9s ease,transform 1.8s var(--ease),visibility 0s .9s; }
 .film-scene.is-active { opacity:1; visibility:visible; pointer-events:auto; transform:scale(1); transition-delay:.15s,0s,0s; }
 .film-scene h2 { font-family:Fraunces,Georgia,serif; font-size:3.8cqw; font-weight:650; letter-spacing:-.12cqw; line-height:1.13; margin:0; text-wrap:balance; }
@@ -40,22 +40,22 @@
 [data-scene="passion"] .world { transform:translate(-28px,0) scale(1.055); }
 [data-scene="passion"] .sara { left:12%; top:22%; width:25.8%; opacity:1; }
 .passion-copy { position:absolute; left:51%; top:20%; width:40%; }
-.passion-copy h2 { font-size:3.8cqw; color:#e74829; max-width:36cqw; }
+.passion-copy h2 { font-size:3.8cqw; color:#dc603a; max-width:36cqw; }
 .passion-copy p { margin-top:1.5cqw; font-family:Fraunces,Georgia,serif; font-style:italic; font-size:1.65cqw; }
 .restaurant-bill { position:absolute; left:61%; top:44%; width:24%; transform-origin:50% 5%; }
-.restaurant-bill img { display:block; width:100%; height:auto; filter:drop-shadow(.35cqw .7cqw 1.1cqw #3a240e80); }
-.restaurant-bill p { position:absolute; top:27%; left:18%; width:66%; padding:.7cqw .25cqw 1.2cqw; background:#f9efda; text-align:center; }
-.restaurant-bill strong { display:block; font-family:Fraunces,Georgia,serif; font-weight:700; letter-spacing:-.25cqw; font-size:4.6cqw; line-height:1.1; color:#e74829; }
+.restaurant-bill img { display:block; width:100%; height:auto; filter:drop-shadow(.35cqw .7cqw 1.1cqw #2c1f1c80); }
+.restaurant-bill p { position:absolute; top:27%; left:18%; width:66%; padding:.7cqw .25cqw 1.2cqw; background:#f9dbda; text-align:center; }
+.restaurant-bill strong { display:block; font-family:Fraunces,Georgia,serif; font-weight:700; letter-spacing:-.25cqw; font-size:4.6cqw; line-height:1.1; color:#dc603a; }
 .restaurant-bill span { display:block; font-size:1.03cqw; line-height:1.45; padding-top:.8cqw; }
 .restaurant-bill[data-reveal] { transform:translateY(-55px) rotate(9deg); }
 .restaurant-bill.is-revealed { transform:translateY(0) rotate(-4deg); }
 
 /* The home recedes and the school remains just beyond the winding route. */
-[data-scene="barriers"] .scene-wash { opacity:.99; background:#eee5ce; }
+[data-scene="barriers"] .scene-wash { opacity:.99; background:#ebc6c5; }
 [data-scene="barriers"] .sara { left:5%; top:41%; width:18.5%; opacity:1; }
 .school-path { position:absolute; inset:0; width:100%; height:100%; fill:none; }
-.path-underlay { stroke:#ded1ad; stroke-width:26; stroke-linecap:round; }
-.path-dashes { stroke:#b9a57c; stroke-width:3; stroke-dasharray:12 15; animation:path-travel 22s linear infinite; }
+.path-underlay { stroke:#dba8a7; stroke-width:26; stroke-linecap:round; }
+.path-dashes { stroke:#c69a95; stroke-width:3; stroke-dasharray:12 15; animation:path-travel 22s linear infinite; }
 .school-dream { position:absolute; left:66%; top:16%; width:29%; transform:none; }
 .school-dream img { display:block; width:100%; }
 .obstacle { position:absolute; text-align:center; transform-origin:50% 65%; }
@@ -68,32 +68,32 @@
 .obstacle.is-revealed { transform:translateY(0) rotate(var(--tilt)) scale(1); }
 
 /* The question gets its own slide beside a large Sara. */
-[data-scene="question"] .scene-wash { opacity:1; background:#eee5ce; }
+[data-scene="question"] .scene-wash { opacity:1; background:#ebc6c5; }
 [data-scene="question"] .kitchen { opacity:0; }
 [data-scene="question"] .sara { left:8%; top:13%; width:23.5%; opacity:1; }
 .question-scene .big-question { position:absolute; left:38%; top:48%; width:52%; transform:translateY(-50%); font-family:Fraunces,Georgia,serif; font-weight:650; font-size:5cqw; line-height:1.12; letter-spacing:-.16cqw; text-wrap:balance; }
-.big-question em { font-style:italic; color:#e74829; }
+.big-question em { font-style:italic; color:#dc603a; }
 
 /* A wider population, rendered as people and a garden of ten proportional seeds. */
-[data-scene="population"] .scene-wash { opacity:1; background:#304c98; }
+[data-scene="population"] .scene-wash { opacity:1; background:#3955a2; }
 [data-scene="population"] .kitchen { opacity:0; }
 [data-scene="population"] .sara { left:8%; top:43%; width:16.1%; opacity:0; transform:scale(.85); }
-[data-scene="population"] .masthead { color:#f5ecd6; }
-[data-scene="population"] .scene-dot:after { border-color:#f5ecd688; }
-[data-scene="population"] .scene-dot.active:after { background:#f5ecd6; }
-.population-scene { color:#f5ecd6; }
+[data-scene="population"] .masthead { color:#f5d7d6; }
+[data-scene="population"] .scene-dot:after { border-color:#f5d7d688; }
+[data-scene="population"] .scene-dot.active:after { background:#f5d7d6; }
+.population-scene { color:#f5d7d6; }
 .population-scene > h2 { position:absolute; left:10%; top:13%; width:80%; text-align:center; font-size:4.6cqw; }
 .stat-block { position:absolute; top:28%; width:32%; }
 .stat-care { left:12%; }
 .stat-remote { left:56%; }
-.stat-value { display:block; font-family:Fraunces,Georgia,serif; font-size:6.3cqw; font-weight:650; line-height:1; letter-spacing:-.35cqw; color:#edc455; }
+.stat-value { display:block; font-family:Fraunces,Georgia,serif; font-size:6.3cqw; font-weight:650; line-height:1; letter-spacing:-.35cqw; color:#e8877f; }
 .stat-block p { font-size:1.35cqw; max-width:31cqw; line-height:1.38; margin-top:1.2cqw; }
 .stat-garden { display:flex; gap:.35cqw; width:100%; margin-top:.8cqw; height:3cqw; align-items:flex-end; }
 .stat-garden svg { width:2.4cqw; height:3cqw; flex:0 0 auto; overflow:visible; }
-.stat-garden .filled { fill:#efc94e; stroke:#efc94e; stroke-width:1; }
-.stat-garden .unfilled { fill:transparent; stroke:#f5ecd66b; stroke-width:1.5; }
-.stat-garden .seed-vein { fill:none; stroke:#304c98; stroke-width:1.5; }
-.stat-garden .unfilled .seed-vein { stroke:#f5ecd655; }
+.stat-garden .filled { fill:#e88881; stroke:#e88881; stroke-width:1; }
+.stat-garden .unfilled { fill:transparent; stroke:#f5d7d66b; stroke-width:1.5; }
+.stat-garden .seed-vein { fill:none; stroke:#3955a2; stroke-width:1.5; }
+.stat-garden .unfilled .seed-vein { stroke:#f5d7d655; }
 .stat-block .stat-garden svg { transform-origin:50% 100%; transform:scaleY(.2) rotate(-10deg); transition:transform 1s var(--ease); }
 .stat-block.is-revealed .stat-garden svg { transform:scaleY(1) rotate(0); }
 .stat-block.is-revealed .stat-garden svg:nth-child(2n) { transition-delay:.12s; }
@@ -103,36 +103,36 @@
 .population-scene.is-active .community-art { opacity:1; transform:translateX(0) scale(1); transition-delay:.25s; }
 
 /* The large institution and the modest home occupy the same world at different scales. */
-[data-scene="school"] .scene-wash { opacity:1; background:#f5ecd6; }
-[data-scene="school"] .kitchen { left:66%; top:42%; width:29%; height:29%; border-radius:1.1cqw; opacity:1; z-index:2; box-shadow:.5cqw .7cqw 0 #263f6212; }
+[data-scene="school"] .scene-wash { opacity:1; background:#f5d7d6; }
+[data-scene="school"] .kitchen { left:66%; top:42%; width:29%; height:29%; border-radius:1.1cqw; opacity:1; z-index:2; box-shadow:.5cqw .7cqw 0 #28396712; }
 [data-scene="school"] .world { transform:none; }
 [data-scene="school"] .sara { left:74%; top:46%; width:11.3%; opacity:1; }
 .school-scene > h2 { position:absolute; top:14%; left:6%; width:49%; font-size:3.3cqw; }
 .professional-kitchen { position:absolute; left:5%; top:21%; width:43%; height:auto; }
 .accessibility-divide { position:absolute; left:55.5%; top:36%; width:8%; height:34%; }
-.accessibility-divide svg { width:100%; height:100%; fill:none; stroke:#c9bda0; stroke-width:3; stroke-dasharray:5 10; }
-.accessibility-copy { position:absolute; left:65%; top:31%; width:30%; font-family:Fraunces,Georgia,serif; font-size:1.75cqw; text-align:center; color:#b5472f; }
+.accessibility-divide svg { width:100%; height:100%; fill:none; stroke:#cda9a7; stroke-width:3; stroke-dasharray:5 10; }
+.accessibility-copy { position:absolute; left:65%; top:31%; width:30%; font-family:Fraunces,Georgia,serif; font-size:1.75cqw; text-align:center; color:#c25432; }
 
 /* The home question grows to fill its own slide. */
-[data-scene="home"] .scene-wash { opacity:1; background:#304c98; }
+[data-scene="home"] .scene-wash { opacity:1; background:#3955a2; }
 [data-scene="home"] .kitchen { opacity:0; }
 [data-scene="home"] .sara { left:74%; top:42%; width:11.3%; opacity:0; }
-[data-scene="home"] .masthead { color:#f5ecd6; }
-[data-scene="home"] .scene-dot:after { border-color:#f5ecd688; }
-[data-scene="home"] .scene-dot.active:after { background:#f5ecd6; }
+[data-scene="home"] .masthead { color:#f5d7d6; }
+[data-scene="home"] .scene-dot:after { border-color:#f5d7d688; }
+[data-scene="home"] .scene-dot.active:after { background:#f5d7d6; }
 .home-scene { display:grid; place-items:center; }
-.home-scene .home-question { width:80%; font-family:Fraunces,Georgia,serif; font-weight:700; font-size:9.4cqw; line-height:1.04; letter-spacing:-.4cqw; text-wrap:balance; text-align:center; color:#f5ecd6; opacity:0; transform:scale(.25); transition:transform 1.9s var(--ease),opacity 1s ease; }
+.home-scene .home-question { width:80%; font-family:Fraunces,Georgia,serif; font-weight:700; font-size:9.4cqw; line-height:1.04; letter-spacing:-.4cqw; text-wrap:balance; text-align:center; color:#f5d7d6; opacity:0; transform:scale(.25); transition:transform 1.9s var(--ease),opacity 1s ease; }
 .home-scene.is-active .home-question { opacity:1; transform:scale(1); transition-delay:.25s; }
-.home-question em { font-style:italic; color:#edc455; }
+.home-question em { font-style:italic; color:#e8877f; }
 
 /* Product reveal: a quiet glasses portrait opens into Sara's kitchen. */
-[data-scene="reveal"] .scene-wash { opacity:1; background:#f8f0dc; }
+[data-scene="reveal"] .scene-wash { opacity:1; background:#f8dddc; }
 [data-scene="reveal"] .kitchen,[data-scene="reveal"] .sara { opacity:0; }
 .reveal-scene { overflow:hidden; }
 .reveal-cooking { position:absolute; z-index:0; inset:0; opacity:0; transform:scale(1.06); clip-path:circle(0% at 35.3% 30.7%); transition:opacity .8s ease,clip-path 1.8s var(--ease),transform 2s var(--ease); }
 .reveal-cooking img { display:block; width:100%; height:100%; object-fit:cover; }
 .product-reveal { position:absolute; z-index:3; left:50%; top:12%; width:76%; text-align:center; transform:translateX(-50%); transition:left 1.6s var(--ease),top 1.6s var(--ease),width 1.6s var(--ease); }
-.product-reveal h2 { color:#e74829; font-family:Fraunces,Georgia,serif; font-weight:850; letter-spacing:-.6cqw; font-size:8.7cqw; line-height:1; transition:font-size 1.6s var(--ease),letter-spacing 1.6s var(--ease); }
+.product-reveal h2 { color:#dc603a; font-family:Fraunces,Georgia,serif; font-weight:850; letter-spacing:-.6cqw; font-size:8.7cqw; line-height:1; transition:font-size 1.6s var(--ease),letter-spacing 1.6s var(--ease); }
 .product-promise { font-family:Fraunces,Georgia,serif; font-weight:450; font-size:2.05cqw; letter-spacing:-.045cqw; margin-top:1.3cqw!important; line-height:1.35!important; text-wrap:balance; transition:font-size 1.6s var(--ease); }
 .glasses-hero { position:absolute; z-index:4; left:50%; top:60%; width:72%; opacity:1; transform:translate(-50%,-50%); transition:left 1.5s var(--ease),top 1.5s var(--ease),width 1.5s var(--ease),transform 1.5s var(--ease),opacity .55s ease; }
 .glasses-hero img { display:block; width:100%; height:auto; }
@@ -221,14 +221,14 @@
   .reveal-cooking img { object-position:38% center; }
   [data-scene="reveal"][data-beat="1"] .reveal-cooking { clip-path:circle(130% at 40% 38%); }
   [data-scene="reveal"][data-beat="1"] .glasses-hero { left:50%; top:31%; width:65px; }
-  [data-scene="reveal"][data-beat="1"] .product-reveal { left:50%; top:9%; width:340px; padding:12px 0; background:#fff3dcde; border-radius:14px; }
+  [data-scene="reveal"][data-beat="1"] .product-reveal { left:50%; top:9%; width:340px; padding:12px 0; background:#fae2e1de; border-radius:14px; }
   [data-scene="reveal"][data-beat="1"] .product-reveal h2 { font-size:52px; letter-spacing:-3px; }
   [data-scene="reveal"][data-beat="1"] .product-promise { font-size:17px; margin-top:9px!important; }
 }
 
 /* Title: darker wordmark, one-line subtitle, larger names. */
 .intro { top:22%; width:76%; }
-.intro h1 { color:#c2301a; }
+.intro h1 { color:#cb4b24; }
 .subtitle { font-size:2.5cqw; line-height:1.3; white-space:nowrap; margin-top:1.7cqw; }
 .credits { margin-top:2.3cqw; }
 .credits p { font-size:1.55cqw; line-height:1.7; margin:0; }
@@ -244,14 +244,14 @@
 
 /* Second review round. Desktop composition only; portrait keeps its own framing. */
 .title-spark { color:var(--orange); }
-.restaurant-bill img { filter:drop-shadow(.35cqw .7cqw 1.1cqw #3a240e80); }
+.restaurant-bill img { filter:drop-shadow(.35cqw .7cqw 1.1cqw #2c1f1c80); }
 .restaurant-bill p { top:22.5%; bottom:30%; left:19%; width:62%; padding:0; background:none; display:flex; flex-direction:column; justify-content:space-between; }
 .restaurant-bill span { padding:0; font-weight:700; font-size:1.75cqw; line-height:1.25; text-wrap:balance; }
 .restaurant-bill strong { font-size:5.7cqw; line-height:1; }
 /* The road is drawn segment by segment, then each stop fades in. */
-.path-underlay { stroke:#d5c498; }
-.path-dashes { stroke:#a48d62; }
-#road-reveal path { fill:none; stroke:#fff; stroke-width:44; }
+.path-underlay { stroke:#d8a19f; }
+.path-dashes { stroke:#b98c86; }
+#road-reveal path { fill:none; stroke:#ffffff; stroke-width:44; }
 .film-scene .school-path [data-reveal] { opacity:1; transform:none; stroke-dasharray:1; stroke-dashoffset:1; transition:stroke-dashoffset 1s ease-in-out; }
 .film-scene .school-path [data-reveal].is-revealed { stroke-dashoffset:0; }
 .barriers-scene :is(.obstacle,.school-dream).is-revealed { transition-delay:.85s; }
@@ -271,7 +271,7 @@
   .school-scene > h2 { left:10%; top:12%; width:80%; text-align:center; font-size:3.6cqw; }
   .professional-kitchen { left:9.5%; top:31%; width:34%; }
   .accessibility-divide { left:47%; top:24%; width:6%; height:60%; }
-  .accessibility-divide svg { stroke:#b9a986; stroke-width:4; stroke-dasharray:9 12; }
+  .accessibility-divide svg { stroke:#c6a09c; stroke-width:4; stroke-dasharray:9 12; }
   [data-scene="school"] .kitchen { left:58%; top:37%; width:34%; height:34%; }
   [data-scene="school"] .sara,[data-scene="home"] .sara { left:67.4%; top:37%; width:13.25%; }
   .accessibility-copy { left:58%; top:29%; width:34%; font-size:2.1cqw; }

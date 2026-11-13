@@ -1,147 +1,147 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1443 1090" fill="none" role="img" aria-labelledby="school-title"><title id="school-title">Two chefs preparing vegetables and stirring a yellow pot beneath a cobalt kitchen arch</title><defs><filter id="school-gouache" x="-1%" y="-1%" width="102%" height="102%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".69" numOctaves="3" stitchTiles="stitch" seed="27" result="noise"/><feColorMatrix in="noise" type="saturate" values="0" result="mono"/><feComponentTransfer in="mono" result="grain"><feFuncA type="linear" slope=".2"/></feComponentTransfer><feComposite in="grain" in2="SourceGraphic" operator="in" result="paint"/><feBlend in="SourceGraphic" in2="paint" mode="soft-light"/></filter></defs><g filter="url(#school-gouache)"><!-- Reference-coordinate vector reconstruction: 1443 by 1090. -->
 <!-- The blue arch has the same low, wide crown and heavy upright legs. -->
-<path d="M66 1033 72 490C74 247 315 99 711 94 1119 91 1348 242 1364 481L1378 1033Z" fill="#2d519f"/>
-<path d="M128 1007 133 492C136 284 356 141 714 141 1077 134 1295 278 1301 489L1315 1007Z" fill="#fbefd2"/>
-<path d="M158 817 164 514C166 295 386 174 717 170 1050 163 1267 297 1278 507L1282 821Z" fill="#eee4c7"/>
-<path d="M211 788 212 576C211 394 419 294 715 296 1001 282 1199 391 1217 572L1216 789Z" fill="#b6c9b8"/>
-<path d="M329 184C367 168 410 154 453 147L437 155C399 164 363 177 337 191Z" fill="#24488e" opacity=".65"/>
+<path d="M66 1033 72 490C74 247 315 99 711 94 1119 91 1348 242 1364 481L1378 1033Z" fill="#3a56a4"/>
+<path d="M128 1007 133 492C136 284 356 141 714 141 1077 134 1295 278 1301 489L1315 1007Z" fill="#f8d7d5"/>
+<path d="M158 817 164 514C166 295 386 174 717 170 1050 163 1267 297 1278 507L1282 821Z" fill="#e9b9b8"/>
+<path d="M211 788 212 576C211 394 419 294 715 296 1001 282 1199 391 1217 572L1216 789Z" fill="#c0c0c0"/>
+<path d="M329 184C367 168 410 154 453 147L437 155C399 164 363 177 337 191Z" fill="#344d94" opacity=".65"/>
 <!-- The extractor and single rail are the three broad planes in the source. -->
-<path d="m647 249 152-1-1 158-152-2Z" fill="#789592"/>
-<path d="m644 405 156 1 103 86c-109 15-259 15-370 1Z" fill="#e7e8d0"/>
-<path d="M531 492c117 8 252 7 373-1l-3 17c-46 14-310 13-360 2-7-5-10-11-10-18Z" fill="#5a7c7b"/>
-<path d="M539 493c83 3 184 3 278-1l-6 17c-100 7-218 6-270 1Z" fill="#4c7177"/>
-<path d="m635 450 171 1m-197 18 222 1" stroke="#b2c4b7" stroke-width="6" stroke-linecap="round"/>
-<path d="M249 534c296-3 630-3 932-3" stroke="#2e5963" stroke-width="9" stroke-linecap="round"/>
-<path d="m1155 540 2 110" stroke="#345ca7" stroke-width="12" stroke-linecap="round"/>
-<path d="m1157 546 .1 .1" stroke="#7390bc" stroke-width="4" stroke-linecap="round"/>
+<path d="m647 249 152-1-1 158-152-2Z" fill="#829578"/>
+<path d="m644 405 156 1 103 86c-109 15-259 15-370 1Z" fill="#e3c6c5"/>
+<path d="M531 492c117 8 252 7 373-1l-3 17c-46 14-310 13-360 2-7-5-10-11-10-18Z" fill="#5a7c6a"/>
+<path d="M539 493c83 3 184 3 278-1l-6 17c-100 7-218 6-270 1Z" fill="#4e5a7a"/>
+<path d="m635 450 171 1m-197 18 222 1" stroke="#bbbbbb" stroke-width="6" stroke-linecap="round"/>
+<path d="M249 534c296-3 630-3 932-3" stroke="#303e67" stroke-width="9" stroke-linecap="round"/>
+<path d="m1155 540 2 110" stroke="#3c5aab" stroke-width="12" stroke-linecap="round"/>
+<path d="m1157 546 .1 .1" stroke="#687db7" stroke-width="4" stroke-linecap="round"/>
 <!-- Only the single vermilion pan shown in the reference hangs at center. -->
-<path d="M662 546c-1-15 20-16 19 0v66c28 4 45 24 44 50-1 31-23 53-53 52-30-1-54-22-53-51 0-27 17-45 43-51Z" fill="#ef4921"/>
-<path d="M647 643c19-19 54-10 59 15 7 28-18 48-42 39-23-8-32-37-17-54Z" fill="#d93a19"/>
-<path d="M652 648c18-13 42-3 46 15 2 9 0 17-6 23" stroke="#cf3619" stroke-width="3" stroke-linecap="round"/>
-<path d="M639 641c-11 8-14 18-11 29" stroke="#f96a37" stroke-width="6" stroke-linecap="round"/>
-<path d="m672 547 .1 .1" stroke="#9e371e" stroke-width="7" stroke-linecap="round"/>
+<path d="M662 546c-1-15 20-16 19 0v66c28 4 45 24 44 50-1 31-23 53-53 52-30-1-54-22-53-51 0-27 17-45 43-51Z" fill="#dc603a"/>
+<path d="M647 643c19-19 54-10 59 15 7 28-18 48-42 39-23-8-32-37-17-54Z" fill="#d95027"/>
+<path d="M652 648c18-13 42-3 46 15 2 9 0 17-6 23" stroke="#d34e25" stroke-width="3" stroke-linecap="round"/>
+<path d="M639 641c-11 8-14 18-11 29" stroke="#e76e47" stroke-width="6" stroke-linecap="round"/>
+<path d="m672 547 .1 .1" stroke="#b34422" stroke-width="7" stroke-linecap="round"/>
 
 <g id="chef-at-board">
 <!-- The jacket is designed as one full shoulder-to-cuff and waist silhouette. -->
-<path d="M391 503C334 509 281 540 246 580 218 611 200 653 201 688 201 716 218 737 245 741L292 744 299 784 550 785 549 750C576 739 595 722 600 702 607 671 587 632 565 601 535 560 492 532 451 522 445 546 433 552 420 548 407 544 397 531 391 503Z" fill="#fff0d1"/>
+<path d="M391 503C334 509 281 540 246 580 218 611 200 653 201 688 201 716 218 737 245 741L292 744 299 784 550 785 549 750C576 739 595 722 600 702 607 671 587 632 565 601 535 560 492 532 451 522 445 546 433 552 420 548 407 544 397 531 391 503Z" fill="#f8d9d8"/>
 <!-- Broad, gently curving cloth folds follow the source's rolled sleeves. -->
-<path d="M342 536C300 555 268 595 239 648L246 651C278 597 310 561 348 535Z" fill="#decca4"/>
-<path d="M350 608C323 644 307 678 306 711L316 714C315 674 331 640 350 608ZM497 588C502 622 507 648 519 671L529 659C514 631 503 602 497 588Z" fill="#ead8af"/>
-<path d="M237 653C258 643 283 651 301 673M522 645C541 635 567 642 580 655" stroke="#e3d0a7" stroke-width="5" stroke-linecap="round"/>
-<path d="M452 523C452 547 434 563 412 575L408 721" stroke="#baa77d" stroke-width="5" stroke-linecap="round"/>
-<path d="m438 599 .1 .1m-2 40 .1 .1m-2 33 .1 .1m-2 36 .1 .1" stroke="#2d5092" stroke-width="9" stroke-linecap="round"/>
+<path d="M342 536C300 555 268 595 239 648L246 651C278 597 310 561 348 535Z" fill="#dda3a1"/>
+<path d="M350 608C323 644 307 678 306 711L316 714C315 674 331 640 350 608ZM497 588C502 622 507 648 519 671L529 659C514 631 503 602 497 588Z" fill="#e6a3a1"/>
+<path d="M237 653C258 643 283 651 301 673M522 645C541 635 567 642 580 655" stroke="#e1a2a0" stroke-width="5" stroke-linecap="round"/>
+<path d="M452 523C452 547 434 563 412 575L408 721" stroke="#c89b96" stroke-width="5" stroke-linecap="round"/>
+<path d="m438 599 .1 .1m-2 40 .1 .1m-2 33 .1 .1m-2 36 .1 .1" stroke="#37529d" stroke-width="9" stroke-linecap="round"/>
 <!-- Head and inclined neck form one continuous skin contour. -->
 <path d="M438 400C457 387 479 380 494 388 501 405 503 419 515 432L528 447C532 454 518 454 510 452L502 450C504 474 499 492 484 498 474 503 460 494 448 490L456 512 447 550C416 553 391 532 388 505L399 468C385 461 388 435 401 423 408 409 428 408 438 400Z" fill="#ffb17f"/>
-<path d="M448 490c6 4 10 6 15 7l-9 24Z" fill="#cf7950"/>
+<path d="M448 490c6 4 10 6 15 7l-9 24Z" fill="#cf6f52"/>
 <!-- Dark curls stay behind the ear and the gathered hat band. -->
-<path d="M399 404c-16-6-25 6-21 21-11 6-9 22 1 26-8 15 6 27 21 18l13-21c16-1 23-17 15-27l10-23Z" fill="#2b2c23"/>
+<path d="M399 404c-16-6-25 6-21 21-11 6-9 22 1 26-8 15 6 27 21 18l13-21c16-1 23-17 15-27l10-23Z" fill="#2a2625"/>
 <path d="M407 424c-13-8-24 5-19 18 4 13 15 15 25 7l9-12c-1-6-8-11-15-13Z" fill="#ffb17f"/>
-<path d="M406 434c-7-4-8 6-2 10" stroke="#e98e5b" stroke-width="4" stroke-linecap="round"/>
-<path d="M469 404c6-8 13-8 19-3m-12 24c5-7 11-6 16 0M475 459c6 9 12 12 18 8" stroke="#33352a" stroke-width="4" stroke-linecap="round"/>
+<path d="M406 434c-7-4-8 6-2 10" stroke="#e2795b" stroke-width="4" stroke-linecap="round"/>
+<path d="M469 404c6-8 13-8 19-3m-12 24c5-7 11-6 16 0M475 459c6 9 12 12 18 8" stroke="#332c2c" stroke-width="4" stroke-linecap="round"/>
 <!-- Tilted toque: the large irregular crown and diagonal band are traced together. -->
-<path d="M326 276C338 255 366 246 390 255 394 233 409 216 434 216 456 198 485 211 497 225 522 214 542 236 538 258 540 282 523 312 506 333L493 342 394 374C369 375 353 363 347 348 325 351 309 334 314 314 307 298 314 284 326 276Z" fill="#fff3d7"/>
-<path d="M390 368C423 355 457 344 492 337L501 390 399 413Z" fill="#fff2d6"/>
-<path d="M395 370C427 359 459 348 493 343" stroke="#ecd8ad" stroke-width="4"/>
-<path d="M358 316C382 316 399 338 407 358M395 284C414 291 422 323 424 348M453 249C472 265 466 304 461 335M506 270C485 287 477 309 474 330" stroke="#ecd6aa" stroke-width="5" stroke-linecap="round"/>
-<path d="M432 223C454 229 461 246 461 259" stroke="#f8e6c3" stroke-width="6" stroke-linecap="round"/>
+<path d="M326 276C338 255 366 246 390 255 394 233 409 216 434 216 456 198 485 211 497 225 522 214 542 236 538 258 540 282 523 312 506 333L493 342 394 374C369 375 353 363 347 348 325 351 309 334 314 314 307 298 314 284 326 276Z" fill="#f9dedd"/>
+<path d="M390 368C423 355 457 344 492 337L501 390 399 413Z" fill="#f9dddc"/>
+<path d="M395 370C427 359 459 348 493 343" stroke="#e9a19f" stroke-width="4"/>
+<path d="M358 316C382 316 399 338 407 358M395 284C414 291 422 323 424 348M453 249C472 265 466 304 461 335M506 270C485 287 477 309 474 330" stroke="#e9a09d" stroke-width="5" stroke-linecap="round"/>
+<path d="M432 223C454 229 461 246 461 259" stroke="#f3bdbb" stroke-width="6" stroke-linecap="round"/>
 </g>
 
 <!-- Right cook: one tilted head/neck, a rounded green jersey, and a draped apron. -->
 <g id="reference-right-cook-back">
   <!-- The full jersey silhouette supplies the continuous shoulder and elbow axes. -->
-  <path d="M949 497C921 501 894 518 873 541 845 568 822 598 809 625 801 643 804 660 816 671 829 683 846 683 865 674L901 660 907 782 1158 782 1165 749C1184 732 1188 713 1181 688L1167 621C1158 575 1134 544 1100 523 1082 511 1062 503 1043 497 1010 511 977 506 949 497Z" fill="#187747"/>
+  <path d="M949 497C921 501 894 518 873 541 845 568 822 598 809 625 801 643 804 660 816 671 829 683 846 683 865 674L901 660 907 782 1158 782 1165 749C1184 732 1188 713 1181 688L1167 621C1158 575 1134 544 1100 523 1082 511 1062 503 1043 497 1010 511 977 506 949 497Z" fill="#484848"/>
   <!-- Curved folds are confined to the actual turn of the cloth. -->
-  <path d="M917 536C895 553 875 574 861 594 847 612 840 631 840 651 833 662 822 667 815 666 825 681 845 683 865 674L901 660C888 625 896 580 917 536Z" fill="#105d39"/>
-  <path d="M1116 545C1143 584 1152 622 1153 660 1154 684 1147 702 1132 716L1158 750C1179 734 1188 714 1181 688L1167 621C1157 584 1140 560 1116 545Z" fill="#105d39"/>
-  <path d="M913 570C900 590 894 614 896 637M831 605C845 597 858 600 870 608M1111 587C1119 610 1127 634 1132 658M1113 690C1128 676 1141 676 1154 685" stroke="#0f633a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M917 536C895 553 875 574 861 594 847 612 840 631 840 651 833 662 822 667 815 666 825 681 845 683 865 674L901 660C888 625 896 580 917 536Z" fill="#363636"/>
+  <path d="M1116 545C1143 584 1152 622 1153 660 1154 684 1147 702 1132 716L1158 750C1179 734 1188 714 1181 688L1167 621C1157 584 1140 560 1116 545Z" fill="#363636"/>
+  <path d="M913 570C900 590 894 614 896 637M831 605C845 597 858 600 870 608M1111 587C1119 610 1127 634 1132 658M1113 690C1128 676 1141 676 1154 685" stroke="#393939" stroke-width="5" stroke-linecap="round"/>
   <!-- Hair follows the skull and curls only at the uncovered front edge. -->
-  <path d="M968 330C951 323 936 336 934 350 933 365 942 379 956 383L961 366C966 361 971 355 975 348 993 371 1017 383 1042 388 1052 394 1054 402 1048 412L1041 443C1067 446 1085 425 1089 400 1095 374 1083 347 1061 334 1035 319 992 318 968 330Z" fill="#27291f"/>
-  <path d="M945 341C939 351 944 363 951 367M953 335C946 346 950 355 957 359M999 352C1011 367 1023 374 1038 377" stroke="#51513b" stroke-width="2.8" stroke-linecap="round" opacity=".8"/>
+  <path d="M968 330C951 323 936 336 934 350 933 365 942 379 956 383L961 366C966 361 971 355 975 348 993 371 1017 383 1042 388 1052 394 1054 402 1048 412L1041 443C1067 446 1085 425 1089 400 1095 374 1083 347 1061 334 1035 319 992 318 968 330Z" fill="#262222"/>
+  <path d="M945 341C939 351 944 363 951 367M953 335C946 346 950 355 957 359M999 352C1011 367 1023 374 1038 377" stroke="#624848" stroke-width="2.8" stroke-linecap="round" opacity=".8"/>
   <!-- Face and neck share their outline; the left-facing nose belongs to the contour. -->
-  <path d="M976 347C965 362 959 379 949 394L934 411C928 416 929 420 935 422 943 425 952 421 961 419 959 435 963 451 974 459 985 466 997 462 1009 452L1005 484C1004 496 1019 508 1032 509 1040 508 1047 502 1045 494L1041 443C1052 436 1061 424 1065 409 1068 397 1061 386 1050 387 1022 385 994 369 976 347Z" fill="#d98d53"/>
-  <path d="M1009 452C1001 460 994 462 987 462 991 470 997 473 1007 475Z" fill="#a95f32"/>
-  <path d="M1048 391C1055 383 1065 386 1065 397 1065 407 1057 414 1048 412" fill="#d98d53"/>
-  <path d="M1050 398C1052 392 1059 392 1059 398L1055 403" stroke="#b76b3b" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M970 378C976 372 984 376 989 381M966 397C972 390 979 391 983 397" stroke="#27291f" stroke-width="4.3" stroke-linecap="round"/>
-  <path d="M966 432C973 442 980 436 984 430" stroke="#27291f" stroke-width="3.7" stroke-linecap="round"/>
-  <path d="M948 418C953 417 957 415 959 413" stroke="#bc6e3b" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M976 347C965 362 959 379 949 394L934 411C928 416 929 420 935 422 943 425 952 421 961 419 959 435 963 451 974 459 985 466 997 462 1009 452L1005 484C1004 496 1019 508 1032 509 1040 508 1047 502 1045 494L1041 443C1052 436 1061 424 1065 409 1068 397 1061 386 1050 387 1022 385 994 369 976 347Z" fill="#d97252"/>
+  <path d="M1009 452C1001 460 994 462 987 462 991 470 997 473 1007 475Z" fill="#b85536"/>
+  <path d="M1048 391C1055 383 1065 386 1065 397 1065 407 1057 414 1048 412" fill="#d97252"/>
+  <path d="M1050 398C1052 392 1059 392 1059 398L1055 403" stroke="#c15d3f" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M970 378C976 372 984 376 989 381M966 397C972 390 979 391 983 397" stroke="#262222" stroke-width="4.3" stroke-linecap="round"/>
+  <path d="M966 432C973 442 980 436 984 430" stroke="#262222" stroke-width="3.7" stroke-linecap="round"/>
+  <path d="M948 418C953 417 957 415 959 413" stroke="#c35f40" stroke-width="2.6" stroke-linecap="round"/>
   <!-- Low rounded neckline seats the neck in the same cloth silhouette. -->
-  <path d="M986 510C1003 528 1027 527 1045 511" stroke="#105d39" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M986 510C1003 528 1027 527 1045 511" stroke="#363636" stroke-width="3.5" stroke-linecap="round"/>
   <!-- The cap is one gathered fabric contour, tilted with the head. -->
-  <path d="M965 341C970 308 984 281 1008 270 1036 256 1063 263 1083 282 1104 301 1108 340 1094 376 1058 357 1010 341 965 341Z" fill="#fff0ce"/>
-  <path d="M989 326C991 308 999 291 1014 281M1017 332C1019 311 1027 291 1037 279M1049 342C1053 324 1060 307 1059 291M1080 355C1083 337 1081 317 1078 308" stroke="#e9d5aa" stroke-width="5.2" stroke-linecap="round"/>
-  <path d="M973 332C1018 333 1058 348 1098 366L1094 376C1053 357 1010 342 965 341Z" fill="#fae7bf" opacity=".6"/>
+  <path d="M965 341C970 308 984 281 1008 270 1036 256 1063 263 1083 282 1104 301 1108 340 1094 376 1058 357 1010 341 965 341Z" fill="#f8d7d5"/>
+  <path d="M989 326C991 308 999 291 1014 281M1017 332C1019 311 1027 291 1037 279M1049 342C1053 324 1060 307 1059 291M1080 355C1083 337 1081 317 1078 308" stroke="#e6a19f" stroke-width="5.2" stroke-linecap="round"/>
+  <path d="M973 332C1018 333 1058 348 1098 366L1094 376C1053 357 1010 342 965 341Z" fill="#f5c8ba" opacity=".6"/>
   <!-- The apron straps bend over the shoulders, then into one continuous skirt. -->
-  <path d="M949 500 971 499 955 582C986 591 1023 592 1055 591L1077 506 1094 512C1088 551 1082 590 1082 626 1084 681 1090 733 1100 782L907 782C912 720 920 649 928 600 934 563 943 526 949 500Z" fill="#fff0ce"/>
-  <path d="M1069 598C1068 648 1057 687 1036 710 1019 728 1002 734 981 738 1027 735 1065 715 1078 675 1083 651 1081 626 1082 610Z" fill="#e9d5aa"/>
-  <path d="M927 686C928 721 929 752 933 782L907 782C911 742 916 710 921 689Z" fill="#f4dfb6"/>
-  <path d="M944 598C979 609 1018 609 1056 604M1068 625C1065 658 1056 684 1041 705" stroke="#ecdab5" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M949 500 971 499 955 582C986 591 1023 592 1055 591L1077 506 1094 512C1088 551 1082 590 1082 626 1084 681 1090 733 1100 782L907 782C912 720 920 649 928 600 934 563 943 526 949 500Z" fill="#f8d7d5"/>
+  <path d="M1069 598C1068 648 1057 687 1036 710 1019 728 1002 734 981 738 1027 735 1065 715 1078 675 1083 651 1081 626 1082 610Z" fill="#e6a19f"/>
+  <path d="M927 686C928 721 929 752 933 782L907 782C911 742 916 710 921 689Z" fill="#efa5a2"/>
+  <path d="M944 598C979 609 1018 609 1056 604M1068 625C1065 658 1056 684 1041 705" stroke="#e8a6a4" stroke-width="2.6" stroke-linecap="round"/>
 </g>
 
 <!-- Commercial island: the same receding top plane, front drawers and oven. -->
-<path d="m216 782 1008 1 54 45c-319 13-713 14-1112-1Z" fill="#d6dfd0"/>
-<path d="M184 847c358 6 732 5 1083-2l-14 139c-1 15-8 22-22 23-339 2-673 1-1017-1-12 0-18-6-19-18Z" fill="#a6bdb0"/>
-<path d="M166 827c359 10 735 10 1113 1l-3 16c-345 17-741 15-1107 6Z" fill="#64888a"/>
-<path d="M172 829c195 4 398 7 591 4l-19 15c-197 8-383 7-575 2Z" fill="#527a80" opacity=".45"/>
-<path d="m703 867 1 129" stroke="#6c938b" stroke-width="5" stroke-linecap="round"/>
-<path d="M771 880c126-3 271-3 407-1 15 0 22 6 22 18l-1 65c0 12-7 18-21 18-135 2-273 2-408 0-12 0-18-5-18-17v-66c0-11 7-17 19-17Z" fill="#779b90"/>
-<path d="M792 895C915 894 1044 894 1157 894Q1165 894 1165 902L1165 953Q1165 959 1157 959L792 961Q784 961 784 953L784 903Q784 895 792 895Z" fill="#30549c"/>
-<path d="M812 913L867 914M896 914L950 914M981 914L1035 915M1065 914L1119 914" stroke="#b3c8bd" stroke-width="5" stroke-linecap="round"/>
-<path d="m272 895 49 0m101 0 47 0m102 0 47 0" stroke="#294e96" stroke-width="12" stroke-linecap="round"/>
-<path d="m260 915 63 1m87 1 61 1m87-1 60 1" stroke="#7ba093" stroke-width="5" stroke-linecap="round"/>
-<path d="m230 1032 36-1-8 29c-2 8-8 8-17 7l-12-3Zm944 0h35l-5 30c-1 9-14 8-20 3Z" fill="#2d519f"/>
+<path d="m216 782 1008 1 54 45c-319 13-713 14-1112-1Z" fill="#d8d8d8"/>
+<path d="M184 847c358 6 732 5 1083-2l-14 139c-1 15-8 22-22 23-339 2-673 1-1017-1-12 0-18-6-19-18Z" fill="#b2b2b2"/>
+<path d="M166 827c359 10 735 10 1113 1l-3 16c-345 17-741 15-1107 6Z" fill="#647b8a"/>
+<path d="M172 829c195 4 398 7 591 4l-19 15c-197 8-383 7-575 2Z" fill="#536082" opacity=".45"/>
+<path d="m703 867 1 129" stroke="#85807a" stroke-width="5" stroke-linecap="round"/>
+<path d="M771 880c126-3 271-3 407-1 15 0 22 6 22 18l-1 65c0 12-7 18-21 18-135 2-273 2-408 0-12 0-18-5-18-17v-66c0-11 7-17 19-17Z" fill="#898989"/>
+<path d="M792 895C915 894 1044 894 1157 894Q1165 894 1165 902L1165 953Q1165 959 1157 959L792 961Q784 961 784 953L784 903Q784 895 792 895Z" fill="#3a56a4"/>
+<path d="M812 913L867 914M896 914L950 914M981 914L1035 915M1065 914L1119 914" stroke="#bebebe" stroke-width="5" stroke-linecap="round"/>
+<path d="m272 895 49 0m101 0 47 0m102 0 47 0" stroke="#37529d" stroke-width="12" stroke-linecap="round"/>
+<path d="m260 915 63 1m87 1 61 1m87-1 60 1" stroke="#8e8e8e" stroke-width="5" stroke-linecap="round"/>
+<path d="m230 1032 36-1-8 29c-2 8-8 8-17 7l-12-3Zm944 0h35l-5 30c-1 9-14 8-20 3Z" fill="#3a56a4"/>
 <!-- The board, tomato, knife and three pale yellow slices follow the source. -->
-<path d="M330 777c94-4 202-4 303 1l29 18c7 5 3 17-5 20-115 3-230 3-349 1-8-1-12-10-6-16Z" fill="#c48530"/>
-<path d="m334 776 295 1 29 19c-115 6-227 6-353 2Z" fill="#e2a54b"/>
-<path d="m339 789 112 1m18 0 33-1" stroke="#bb7d2d" stroke-width="5" stroke-linecap="round"/>
-<path d="M371 750c-2-17 23-23 39-10 22-13 49-1 45 22-3 22-23 35-43 32-23-1-40-19-41-44Z" fill="#e4451d"/>
-<path d="M382 763c11 15 33 19 48 9" stroke="#f7632c" stroke-width="7" stroke-linecap="round"/>
-<path d="m392 746-9-15 20 9 5-18 13 17 22-9-9 17 24 6-28 1-12 14-6-14-26 7Z" fill="#267448"/>
-<path d="M506 781c18-18 48-34 68-34 5 8-35 36-61 44Z" fill="#efc741"/>
-<path d="M516 788c22-20 45-32 61-34-12 17-34 28-56 35Z" fill="#f9e79b"/>
-<path d="M546 787c28-25 59-37 75-34 3 11-31 34-64 42Z" fill="#f4d45a"/>
-<path d="M554 788c25-19 46-30 60-31-13 17-33 27-55 34Z" fill="#fff0aa"/>
-<path d="M592 785c17-7 31-11 43-8l9 12c-20 2-37 0-52-4Z" fill="#c2bd51"/>
+<path d="M330 777c94-4 202-4 303 1l29 18c7 5 3 17-5 20-115 3-230 3-349 1-8-1-12-10-6-16Z" fill="#d25f49"/>
+<path d="m334 776 295 1 29 19c-115 6-227 6-353 2Z" fill="#e3735f"/>
+<path d="m339 789 112 1m18 0 33-1" stroke="#d15840" stroke-width="5" stroke-linecap="round"/>
+<path d="M371 750c-2-17 23-23 39-10 22-13 49-1 45 22-3 22-23 35-43 32-23-1-40-19-41-44Z" fill="#db5830"/>
+<path d="M382 763c11 15 33 19 48 9" stroke="#df6945" stroke-width="7" stroke-linecap="round"/>
+<path d="m392 746-9-15 20 9 5-18 13 17 22-9-9 17 24 6-28 1-12 14-6-14-26 7Z" fill="#4d4d4d"/>
+<path d="M506 781c18-18 48-34 68-34 5 8-35 36-61 44Z" fill="#e7857e"/>
+<path d="M516 788c22-20 45-32 61-34-12 17-34 28-56 35Z" fill="#ec9d9a"/>
+<path d="M546 787c28-25 59-37 75-34 3 11-31 34-64 42Z" fill="#e98d88"/>
+<path d="M554 788c25-19 46-30 60-31-13 17-33 27-55 34Z" fill="#eda3a0"/>
+<path d="M592 785c17-7 31-11 43-8l9 12c-20 2-37 0-52-4Z" fill="#d48683"/>
 <!-- The blade rests against the cutting plane, and the dark handle meets the grip. -->
-<path d="M478 745c-18 21-42 39-65 52 17 6 40-1 59-15l23-28Z" fill="#e1e8dd"/>
-<path d="M481 744c6-14 14-23 22-28l12 13-21 27Z" fill="#263532"/>
-<path d="M425 793c21-10 42-24 57-40" stroke="#f5f2db" stroke-width="3" stroke-linecap="round"/>
+<path d="M478 745c-18 21-42 39-65 52 17 6 40-1 59-15l23-28Z" fill="#e2e2e2"/>
+<path d="M481 744c6-14 14-23 22-28l12 13-21 27Z" fill="#2f2e2c"/>
+<path d="M425 793c21-10 42-24 57-40" stroke="#f5dcdb" stroke-width="3" stroke-linecap="round"/>
 <!-- Yellow stockpot and blue loop handles: open rim and short rounded wall. -->
-<path d="M779 726c-29-9-49-2-47 9 1 11 20 17 49 16m204-20c29-10 53-6 54 4 0 11-20 17-57 20" stroke="#2b4c92" stroke-width="12" stroke-linecap="round"/>
-<path d="M776 725c63-20 145-22 211-2l-13 72c-1 11-7 16-19 19-49 10-108 8-155-4-8-2-12-8-13-17Z" fill="#f3c333"/>
-<path d="M956 735c-5 35-16 59-39 80 15-1 27-3 38-5 12-3 17-7 19-17l12-65Z" fill="#edb82a"/>
-<path d="M776 723c49-25 161-28 212-2 3 12-29 21-72 24-49 4-121-1-139-13Z" fill="#182f3b"/>
-<path d="M801 723c43-10 111-10 163 0-37 10-119 9-163 0Z" fill="#ddc976"/>
-<path d="m801 750 5 31" stroke="#fff0aa" stroke-width="7" stroke-linecap="round"/>
+<path d="M779 726c-29-9-49-2-47 9 1 11 20 17 49 16m204-20c29-10 53-6 54 4 0 11-20 17-57 20" stroke="#37529c" stroke-width="12" stroke-linecap="round"/>
+<path d="M776 725c63-20 145-22 211-2l-13 72c-1 11-7 16-19 19-49 10-108 8-155-4-8-2-12-8-13-17Z" fill="#e78179"/>
+<path d="M956 735c-5 35-16 59-39 80 15-1 27-3 38-5 12-3 17-7 19-17l12-65Z" fill="#e57b71"/>
+<path d="M776 723c49-25 161-28 212-2 3 12-29 21-72 24-49 4-121-1-139-13Z" fill="#202533"/>
+<path d="M801 723c43-10 111-10 163 0-37 10-119 9-163 0Z" fill="#e49490"/>
+<path d="m801 750 5 31" stroke="#eda3a0" stroke-width="7" stroke-linecap="round"/>
 <!-- A spoon enters the soup behind the front lip. -->
-<path d="M926 674c1-8 10-8 10 0l-2 45c13 6 13 19 2 21-15 3-27-5-21-15l9-8Z" fill="#c99742"/>
-<path d="M925 723c-6 1-9 5-6 9 5 3 13 3 17-1 1-4-5-8-11-8Z" fill="#b17c32"/>
-<path d="M778 731c57 17 142 18 208-3l-2 7c-67 20-153 18-207 3Z" fill="#193340"/>
+<path d="M926 674c1-8 10-8 10 0l-2 45c13 6 13 19 2 21-15 3-27-5-21-15l9-8Z" fill="#d37467"/>
+<path d="M925 723c-6 1-9 5-6 9 5 3 13 3 17-1 1-4-5-8-11-8Z" fill="#cc5d49"/>
+<path d="M778 731c57 17 142 18 208-3l-2 7c-67 20-153 18-207 3Z" fill="#212738"/>
 <!-- Three wooden tools in the red crock occupy the far right corner. -->
-<path d="m1172 748-12-72m29 72 10-73m6 73 24-58" stroke="#daa24b" stroke-width="7" stroke-linecap="round"/>
-<path d="M1156 646c-15-3-14 22-5 39l13 18c11-18 10-36 3-49-3-6-6-8-11-8Zm45-7c-18-1-23 25-11 44l7 13c17-14 20-35 12-49-2-5-5-8-8-8Zm29 24c-12 0-21 18-19 34l4 13c16-10 28-28 26-39-2-6-6-8-11-8Z" fill="#dda34c"/>
-<path d="m1158 659 2 24m40-29-4 29m34-8-9 20" stroke="#c08b3e" stroke-width="3" stroke-linecap="round"/>
-<path d="M1153 743c21 5 47 4 72-2l-11 66c-1 7-8 10-27 10-17 0-27-3-29-10Z" fill="#e74720"/>
-<path d="M1153 743c15 10 48 12 72-2" stroke="#b93819" stroke-width="4"/>
-<path d="m1163 759 5 31" stroke="#fb7440" stroke-width="5" stroke-linecap="round"/>
+<path d="m1172 748-12-72m29 72 10-73m6 73 24-58" stroke="#df7462" stroke-width="7" stroke-linecap="round"/>
+<path d="M1156 646c-15-3-14 22-5 39l13 18c11-18 10-36 3-49-3-6-6-8-11-8Zm45-7c-18-1-23 25-11 44l7 13c17-14 20-35 12-49-2-5-5-8-8-8Zm29 24c-12 0-21 18-19 34l4 13c16-10 28-28 26-39-2-6-6-8-11-8Z" fill="#e17360"/>
+<path d="m1158 659 2 24m40-29-4 29m34-8-9 20" stroke="#ca6d5c" stroke-width="3" stroke-linecap="round"/>
+<path d="M1153 743c21 5 47 4 72-2l-11 66c-1 7-8 10-27 10-17 0-27-3-29-10Z" fill="#db5b34"/>
+<path d="M1153 743c15 10 48 12 72-2" stroke="#c54923" stroke-width="4"/>
+<path d="m1163 759 5 31" stroke="#f17548" stroke-width="5" stroke-linecap="round"/>
 
 <!-- Forearm, wrist, palm and tomato-stabilizing fingers share one skin contour. -->
 <path d="M245 690C229 699 223 716 230 736 242 759 276 768 307 764L365 753C375 752 381 750 385 748L393 761C396 768 402 765 400 758L393 741 402 750C407 759 411 772 417 770 422 768 416 756 411 747L423 761C428 769 435 767 435 760 436 752 427 738 415 729 400 713 382 715 367 721 334 710 308 697 285 690 269 684 257 684 245 690Z" fill="#ffac7b"/>
-<path d="M245 697C230 711 231 736 249 750 237 744 230 740 227 731 223 719 230 703 245 697Z" fill="#f18e5e"/>
-<path d="M386 736c10 6 17 14 22 24m-9-28c10 8 17 17 23 29" stroke="#ef9566" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M245 697C230 711 231 736 249 750 237 744 230 740 227 731 223 719 230 703 245 697Z" fill="#e88161"/>
+<path d="M386 736c10 6 17 14 22 24m-9-28c10 8 17 17 23 29" stroke="#e47b66" stroke-width="2.4" stroke-linecap="round"/>
 <!-- The knife hand folds over the handle with relaxed curled fingers. -->
 <path d="M548 665C568 673 572 692 558 708L541 723C546 740 539 756 527 762 522 766 518 763 521 757L527 742 520 751C516 765 508 767 507 758L510 740 503 754C499 765 493 763 495 753L500 729 488 743C481 748 475 742 479 736L490 716C500 705 509 700 517 696L517 682C521 667 534 661 548 665Z" fill="#ffac7b"/>
-<path d="M548 665c18 9 24 25 10 43l-17 15c22-7 37-25 28-43-4-8-12-14-21-15Z" fill="#eb8b5d"/>
-<path d="m514 721-4 17m16-12-5 17m14-14-6 16" stroke="#ef9566" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M548 665c18 9 24 25 10 43l-17 15c22-7 37-25 28-43-4-8-12-14-21-15Z" fill="#e27a5d"/>
+<path d="m514 721-4 17m16-12-5 17m14-14-6 16" stroke="#e47b66" stroke-width="2.6" stroke-linecap="round"/>
 
 <g id="reference-right-cook-hands">
   <!-- An exposed inward elbow flows through the forearm into the spoon grip. -->
-  <path d="M844 618C831 619 820 628 822 642 823 655 834 664 849 665 862 666 876 659 891 652L898 650C896 663 900 677 907 678 910 678 910 668 909 660L912 660 914 681C915 688 921 690 923 684L922 663 925 664 928 686C930 693 936 692 937 685L934 664 937 664 941 686C943 694 949 690 948 682L944 657C941 645 930 636 916 632L878 624C864 618 853 615 844 618Z" fill="#d98d53"/>
-  <path d="M823 641C827 656 839 664 852 661L889 647C868 651 847 646 836 635Z" fill="#e89b5b"/>
-  <path d="M907 651 908 674M924 653 925 677M936 658 939 678" stroke="#a95e32" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M844 618C831 619 820 628 822 642 823 655 834 664 849 665 862 666 876 659 891 652L898 650C896 663 900 677 907 678 910 678 910 668 909 660L912 660 914 681C915 688 921 690 923 684L922 663 925 664 928 686C930 693 936 692 937 685L934 664 937 664 941 686C943 694 949 690 948 682L944 657C941 645 930 636 916 632L878 624C864 618 853 615 844 618Z" fill="#d97252"/>
+  <path d="M823 641C827 656 839 664 852 661L889 647C868 651 847 646 836 635Z" fill="#e2795a"/>
+  <path d="M907 651 908 674M924 653 925 677M936 658 939 678" stroke="#b85536" stroke-width="2.8" stroke-linecap="round"/>
   <!-- The other forearm turns back from the elbow and closes around the pot loop. -->
-  <path d="M1115 706C1128 699 1140 707 1145 720 1152 738 1140 751 1122 758 1107 765 1084 768 1064 766L1053 772C1045 779 1035 783 1023 783 1015 784 1008 781 1009 776 1009 772 1017 771 1023 769L1032 765 1019 768C1011 771 1004 769 1005 764 1006 760 1016 758 1024 754L1010 754C1001 754 995 750 998 745 1000 740 1013 741 1023 742L1021 738C1013 735 1010 729 1015 725 1021 720 1036 725 1047 731L1062 741C1078 745 1092 743 1101 734 1108 726 1108 712 1115 706Z" fill="#d98d53"/>
-  <path d="M1130 709C1147 724 1142 741 1128 748 1113 756 1093 760 1075 760L1051 765C1089 769 1118 765 1135 754 1154 741 1152 718 1130 709Z" fill="#c57943" opacity=".72"/>
-  <path d="M1038 748C1031 752 1024 754 1017 755M1040 758C1033 763 1026 765 1019 767M1044 767C1037 773 1029 776 1020 776" stroke="#aa5e32" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M1115 706C1128 699 1140 707 1145 720 1152 738 1140 751 1122 758 1107 765 1084 768 1064 766L1053 772C1045 779 1035 783 1023 783 1015 784 1008 781 1009 776 1009 772 1017 771 1023 769L1032 765 1019 768C1011 771 1004 769 1005 764 1006 760 1016 758 1024 754L1010 754C1001 754 995 750 998 745 1000 740 1013 741 1023 742L1021 738C1013 735 1010 729 1015 725 1021 720 1036 725 1047 731L1062 741C1078 745 1092 743 1101 734 1108 726 1108 712 1115 706Z" fill="#d97252"/>
+  <path d="M1130 709C1147 724 1142 741 1128 748 1113 756 1093 760 1075 760L1051 765C1089 769 1118 765 1135 754 1154 741 1152 718 1130 709Z" fill="#c76649" opacity=".72"/>
+  <path d="M1038 748C1031 752 1024 754 1017 755M1040 758C1033 763 1026 765 1019 767M1044 767C1037 773 1029 776 1020 776" stroke="#b95536" stroke-width="2.8" stroke-linecap="round"/>
 </g>
 </g></svg>

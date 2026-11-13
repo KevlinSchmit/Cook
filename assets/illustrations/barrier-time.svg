@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">An enamel alarm clock with a softly rounded case and integrated feet</title><defs><filter id="grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="27" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer result="g"><feFuncA type="linear" slope=".12"/></feComponentTransfer><feComposite in="g" in2="SourceGraphic" operator="in" result="p"/><feBlend in="SourceGraphic" in2="p" mode="soft-light"/></filter></defs><g filter="url(#grain)">
 <!-- The bells are cupped metal with folded lips and a short bridge to the case. -->
-<path d="M75 77c-14-4-26-15-25-23 1-9 15-17 27-15 12 2 23 16 24 26Z" fill="#e74829"/>
-<path d="M50 54c18 12 31 16 51 11l-4 10c-20 6-34-1-46-13Z" fill="#c13d2c"/>
-<path d="M204 64c0-16 12-29 25-28 11 1 23 11 24 20-2 11-15 19-28 23Z" fill="#e74829"/>
-<path d="M205 64c19 5 34 1 48-8l-2 11c-13 10-29 15-45 8Z" fill="#c13d2c"/>
-<path d="m91 72 12 16m105-16-11 16" stroke="#222725" stroke-width="5" stroke-linecap="round"/>
-<path d="M133 62c3-19 26-21 34-3" stroke="#222725" stroke-width="6" stroke-linecap="round"/>
+<path d="M75 77c-14-4-26-15-25-23 1-9 15-17 27-15 12 2 23 16 24 26Z" fill="#dc603a"/>
+<path d="M50 54c18 12 31 16 51 11l-4 10c-20 6-34-1-46-13Z" fill="#cd542f"/>
+<path d="M204 64c0-16 12-29 25-28 11 1 23 11 24 20-2 11-15 19-28 23Z" fill="#dc603a"/>
+<path d="M205 64c19 5 34 1 48-8l-2 11c-13 10-29 15-45 8Z" fill="#cd542f"/>
+<path d="m91 72 12 16m105-16-11 16" stroke="#232625" stroke-width="5" stroke-linecap="round"/>
+<path d="M133 62c3-19 26-21 34-3" stroke="#232625" stroke-width="6" stroke-linecap="round"/>
 <!-- The case and feet are designed as one silhouette rather than separate geometric legs. -->
-<path d="M148 66c58-1 101 42 102 98 1 34-14 61-36 79l11 23c2 7-9 13-14 7l-17-17c-27 12-59 13-88 2l-15 18c-5 5-16 0-14-7l9-23c-26-18-42-49-42-82 0-55 47-98 104-98Z" fill="#304c98"/>
-<path d="M147 80c50-1 88 36 89 85 1 49-38 88-87 88-48 1-88-39-88-87 0-48 38-86 86-86Z" fill="#e5dbbd"/>
-<path d="M148 90c43 0 77 32 78 75 0 44-34 78-77 79-43 0-78-35-78-77 0-43 34-77 77-77Z" fill="#f5ecd6"/>
-<path d="m148 104 1 13m36-4-6 11m32 16-12 5m16 29-13-1m-2 36-10-8m-29 25-2-13m-36 10 6-12m-34-11 12-7m-26-25 13 1m-1-34 10 8m20-28 5 12" stroke="#222725" stroke-width="3" stroke-linecap="round"/>
-<path d="M148 165 114 125m34 40 38 25" stroke="#e74829" stroke-width="5" stroke-linecap="round"/>
-<path d="m148 165-22 36" stroke="#222725" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M149 158c10-1 12 12 2 15-11 2-14-13-2-15Z" fill="#222725"/>
-<path d="M92 108c11-10 25-16 40-17" stroke="#f8f0d9" stroke-width="3" stroke-linecap="round"/>
+<path d="M148 66c58-1 101 42 102 98 1 34-14 61-36 79l11 23c2 7-9 13-14 7l-17-17c-27 12-59 13-88 2l-15 18c-5 5-16 0-14-7l9-23c-26-18-42-49-42-82 0-55 47-98 104-98Z" fill="#3955a2"/>
+<path d="M147 80c50-1 88 36 89 85 1 49-38 88-87 88-48 1-88-39-88-87 0-48 38-86 86-86Z" fill="#deaeac"/>
+<path d="M148 90c43 0 77 32 78 75 0 44-34 78-77 79-43 0-78-35-78-77 0-43 34-77 77-77Z" fill="#f5d7d6"/>
+<path d="m148 104 1 13m36-4-6 11m32 16-12 5m16 29-13-1m-2 36-10-8m-29 25-2-13m-36 10 6-12m-34-11 12-7m-26-25 13 1m-1-34 10 8m20-28 5 12" stroke="#232625" stroke-width="3" stroke-linecap="round"/>
+<path d="M148 165 114 125m34 40 38 25" stroke="#dc603a" stroke-width="5" stroke-linecap="round"/>
+<path d="m148 165-22 36" stroke="#232625" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M149 158c10-1 12 12 2 15-11 2-14-13-2-15Z" fill="#232625"/>
+<path d="M92 108c11-10 25-16 40-17" stroke="#f8dad9" stroke-width="3" stroke-linecap="round"/>
 </g></svg>

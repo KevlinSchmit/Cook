@@ -1,77 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 185 849 1667" fill="none" role="img" aria-labelledby="title"><title id="title">Sara stirring a blue bowl, faithfully reconstructed from the supplied full-figure reference</title><defs><filter id="sara-paint" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="28" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter><linearGradient id="skin" x1="260" y1="750" x2="650" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#ffb982"/><stop offset=".52" stop-color="#ffb47c"/><stop offset="1" stop-color="#ffb780"/></linearGradient><linearGradient id="apron" x1="180" y1="1100" x2="640" y2="1300" gradientUnits="userSpaceOnUse"><stop stop-color="#f44816"/><stop offset=".5" stop-color="#ff5019"/><stop offset="1" stop-color="#eb3f12"/></linearGradient><linearGradient id="bowl" x1="250" y1="1200" x2="600" y2="1230" gradientUnits="userSpaceOnUse"><stop stop-color="#318da1"/><stop offset="1" stop-color="#26778d"/></linearGradient><clipPath id="apron-clip"><path d="M242 736 301 723C321 777 333 824 343 881L485 881C492 827 505 774 520 726L573 745C556 801 545 847 541 892L555 1083C585 1319 618 1720 694 1852H111C157 1620 186 1284 216 1140L251 910C247 846 251 791 242 736Z"/></clipPath></defs><g id="sara-reference-pose" filter="url(#sara-paint)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 185 849 1667" fill="none" role="img" aria-labelledby="title"><title id="title">Sara stirring a blue bowl, faithfully reconstructed from the supplied full-figure reference</title><defs><filter id="sara-paint" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="28" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter><linearGradient id="skin" x1="260" y1="750" x2="650" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#ffb982"/><stop offset=".52" stop-color="#ffb47c"/><stop offset="1" stop-color="#ffb780"/></linearGradient><linearGradient id="apron" x1="180" y1="1100" x2="640" y2="1300" gradientUnits="userSpaceOnUse"><stop stop-color="#dc5d36"/><stop offset=".5" stop-color="#dd643f"/><stop offset="1" stop-color="#da562e"/></linearGradient><linearGradient id="bowl" x1="250" y1="1200" x2="600" y2="1230" gradientUnits="userSpaceOnUse"><stop stop-color="#435996"/><stop offset="1" stop-color="#394e87"/></linearGradient><clipPath id="apron-clip"><path d="M242 736 301 723C321 777 333 824 343 881L485 881C492 827 505 774 520 726L573 745C556 801 545 847 541 892L555 1083C585 1319 618 1720 694 1852H111C157 1620 186 1284 216 1140L251 910C247 846 251 791 242 736Z"/></clipPath></defs><g id="sara-reference-pose" filter="url(#sara-paint)">
 <!-- Reference image 2, drawn in its original 849 × 1852 coordinate system.
      The viewBox removes only the unillustrated white margin above the bun. -->
 <!-- The complete blouse wraps the shoulder, sleeve and chest contour. -->
-<path d="M335 710C307 722 268 725 241 735 210 745 193 758 181 776 155 813 128 863 106 912L137 941 199 946 222 990 591 991 611 956 657 951 703 914C675 853 655 804 626 779 610 761 591 750 572 744L475 710C456 730 433 747 411 756 383 743 356 724 335 710Z" fill="#faecd4"/>
-<path d="M216 778C235 807 242 831 240 860L226 932 246 938C258 880 249 826 216 778ZM585 783C579 830 576 867 588 902L602 925C591 881 588 841 585 783Z" fill="#e5cfaa"/>
-<path d="M327 711C351 733 383 752 411 765M491 714C468 736 439 754 418 763" stroke="#d6bc94" stroke-width="4" stroke-linecap="round"/>
+<path d="M335 710C307 722 268 725 241 735 210 745 193 758 181 776 155 813 128 863 106 912L137 941 199 946 222 990 591 991 611 956 657 951 703 914C675 853 655 804 626 779 610 761 591 750 572 744L475 710C456 730 433 747 411 756 383 743 356 724 335 710Z" fill="#f8d7d6"/>
+<path d="M216 778C235 807 242 831 240 860L226 932 246 938C258 880 249 826 216 778ZM585 783C579 830 576 867 588 902L602 925C591 881 588 841 585 783Z" fill="#e19e9c"/>
+<path d="M327 711C351 733 383 752 411 765M491 714C468 736 439 754 418 763" stroke="#d59491" stroke-width="4" stroke-linecap="round"/>
 <!-- Apron straps and skirt are a single designed cloth silhouette. -->
 <path d="M242 736 301 723C321 777 333 824 343 881L485 881C492 827 505 774 520 726L573 745C556 801 545 847 541 892L555 1083C585 1319 618 1720 694 1852H111C157 1620 186 1284 216 1140L251 910C247 846 251 791 242 736Z" fill="url(#apron)"/>
-<path d="M261 755C283 801 301 843 309 877L325 881C318 831 300 782 284 749Z" fill="#ff6326" opacity=".65"/>
-<path d="M544 747C526 791 516 834 509 879L520 881C527 838 543 791 554 751Z" fill="#e84214"/>
-<g clip-path="url(#apron-clip)"><path d="M219 1290C183 1468 145 1749 111 1852H165C194 1624 222 1421 252 1310ZM559 1274C587 1436 617 1691 637 1852H694C657 1652 622 1411 587 1260Z" fill="#cb3613" opacity=".38"/>
-<path d="M231 1246C310 1328 458 1372 567 1292L583 1325C500 1382 270 1367 220 1289Z" fill="#d73813" opacity=".68"/>
+<path d="M261 755C283 801 301 843 309 877L325 881C318 831 300 782 284 749Z" fill="#e06a45" opacity=".65"/>
+<path d="M544 747C526 791 516 834 509 879L520 881C527 838 543 791 554 751Z" fill="#da552d"/>
+<g clip-path="url(#apron-clip)"><path d="M219 1290C183 1468 145 1749 111 1852H165C194 1624 222 1421 252 1310ZM559 1274C587 1436 617 1691 637 1852H694C657 1652 622 1411 587 1260Z" fill="#cc4b24" opacity=".38"/>
+<path d="M231 1246C310 1328 458 1372 567 1292L583 1325C500 1382 270 1367 220 1289Z" fill="#d44e25" opacity=".68"/>
 </g>
 <!-- The inset pocket follows the apron plane. -->
-<path d="M318 1439C374 1448 438 1447 479 1433L491 1576C437 1606 365 1603 315 1577Z" fill="#faecd2"/>
-<path d="M336 1460C374 1469 433 1468 469 1458" stroke="#e5532a" stroke-width="6" stroke-linecap="round"/>
-<path d="M405 1531C387 1531 372 1517 369 1503 390 1504 402 1514 405 1531ZM406 1523C415 1511 427 1505 441 1504 435 1518 422 1527 406 1523Z" fill="#6d935e"/>
-<path d="M405 1550L404 1508" stroke="#6d935e" stroke-width="4" stroke-linecap="round"/>
+<path d="M318 1439C374 1448 438 1447 479 1433L491 1576C437 1606 365 1603 315 1577Z" fill="#f7d6d4"/>
+<path d="M336 1460C374 1469 433 1468 469 1458" stroke="#dc5f39" stroke-width="6" stroke-linecap="round"/>
+<path d="M405 1531C387 1531 372 1517 369 1503 390 1504 402 1514 405 1531ZM406 1523C415 1511 427 1505 441 1504 435 1518 422 1527 406 1523Z" fill="#787878"/>
+<path d="M405 1550L404 1508" stroke="#787878" stroke-width="4" stroke-linecap="round"/>
 <!-- Hair behind the face and neck: gathered lower volume, not separate discs. -->
-<path d="M394 475C443 458 506 476 548 515 590 548 605 595 579 637 559 669 516 683 470 676L416 663C374 670 351 650 353 618L358 543Z" fill="#252b25"/>
-<path d="M544 520C579 565 591 600 565 639" stroke="#41473b" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+<path d="M394 475C443 458 506 476 548 515 590 548 605 595 579 637 559 669 516 683 470 676L416 663C374 670 351 650 353 618L358 543Z" fill="#262a26"/>
+<path d="M544 520C579 565 591 600 565 639" stroke="#41433f" stroke-width="8" stroke-linecap="round" opacity=".35"/>
 <!-- Face and neck are one continuous contour, following the supplied profile. -->
 <path d="M340 407C357 459 391 497 439 518 445 502 464 497 473 511 485 530 472 551 456 556L443 557C437 599 436 632 443 663 447 682 458 697 474 710L411 757 335 712C351 700 360 682 365 663L369 633C343 640 320 627 307 609 298 595 292 579 291 562L255 567 281 528C285 520 286 509 287 499 298 460 315 430 340 407Z" fill="url(#skin)"/>
-<path d="M369 633C383 632 396 625 406 614 400 641 386 666 365 676L365 663Z" fill="#e98b50"/>
-<path d="M281 529 295 575 255 567Z" fill="#e89458"/>
+<path d="M369 633C383 632 396 625 406 614 400 641 386 666 365 676L365 663Z" fill="#e17554"/>
+<path d="M281 529 295 575 255 567Z" fill="#e27858"/>
 <path d="M263 557 272 540" stroke="#ffd5a6" stroke-width="4" stroke-linecap="round" opacity=".7"/>
 <!-- Main sweep of hair, sitting against the forehead and the near ear. -->
-<path d="M286 503C243 480 231 441 249 401 268 351 322 321 372 315 420 300 470 309 510 333 553 353 582 390 586 437 589 469 570 498 544 510 512 527 477 525 439 518 391 497 357 459 340 407 315 428 298 460 286 503Z" fill="#252b25"/>
-<path d="M424 299C414 269 425 239 447 222 473 198 512 205 541 217 578 230 592 260 581 293 575 319 556 340 537 351L492 335C462 321 444 309 424 299Z" fill="#252b25"/>
-<path d="M455 269C476 236 516 231 535 267 541 279 538 296 535 307 545 281 535 252 514 244 490 235 468 246 455 269Z" fill="#60634b"/>
-<path d="M275 438C283 389 309 368 342 350 306 358 277 385 275 438Z" fill="#65674f" opacity=".8"/>
-<path d="M390 442C445 483 505 481 541 442 551 426 549 408 542 393 563 430 550 457 531 468 488 496 427 477 390 442Z" fill="#555b45"/>
+<path d="M286 503C243 480 231 441 249 401 268 351 322 321 372 315 420 300 470 309 510 333 553 353 582 390 586 437 589 469 570 498 544 510 512 527 477 525 439 518 391 497 357 459 340 407 315 428 298 460 286 503Z" fill="#262a26"/>
+<path d="M424 299C414 269 425 239 447 222 473 198 512 205 541 217 578 230 592 260 581 293 575 319 556 340 537 351L492 335C462 321 444 309 424 299Z" fill="#262a26"/>
+<path d="M455 269C476 236 516 231 535 267 541 279 538 296 535 307 545 281 535 252 514 244 490 235 468 246 455 269Z" fill="#806261"/>
+<path d="M275 438C283 389 309 368 342 350 306 358 277 385 275 438Z" fill="#8e6e6d" opacity=".8"/>
+<path d="M390 442C445 483 505 481 541 442 551 426 549 408 542 393 563 430 550 457 531 468 488 496 427 477 390 442Z" fill="#644d4c"/>
 <!-- Ear, eyebrow, eyelid and smile retain the reference's exact expression. -->
 <path d="M439 518C445 502 464 497 473 511 485 530 472 551 456 556L445 549Z" fill="#ffb77e"/>
-<path d="M448 536C445 526 453 517 462 519 470 522 457 528 456 534L453 543" stroke="#e98d52" stroke-width="5" stroke-linecap="round"/>
-<path d="M328 484C343 476 358 475 372 482" stroke="#3b4031" stroke-width="4.8" stroke-linecap="round"/>
-<path d="M326 514C337 525 351 527 363 514M330 519 326 522M340 524 339 528M352 523 355 527M361 517 365 519" stroke="#3b4031" stroke-width="3.2" stroke-linecap="round"/>
-<path d="M307 598C319 604 333 596 339 586" stroke="#d65c30" stroke-width="4.6" stroke-linecap="round"/>
+<path d="M448 536C445 526 453 517 462 519 470 522 457 528 456 534L453 543" stroke="#e17655" stroke-width="5" stroke-linecap="round"/>
+<path d="M328 484C343 476 358 475 372 482" stroke="#3e3333" stroke-width="4.8" stroke-linecap="round"/>
+<path d="M326 514C337 525 351 527 363 514M330 519 326 522M340 524 339 528M352 523 355 527M361 517 365 519" stroke="#3e3333" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M307 598C319 604 333 596 339 586" stroke="#d75c37" stroke-width="4.6" stroke-linecap="round"/>
 <path d="M364 543C369 532 383 528 394 536 407 546 401 558 389 563 375 567 360 557 364 543Z" fill="#ffa56e" opacity=".75"/>
-<path d="M447 556C430 557 429 578 444 584 459 590 471 569 456 559 453 556 450 556 447 556Z" fill="#e5b92e"/>
+<path d="M447 556C430 557 429 578 444 584 459 590 471 569 456 559 453 556 450 556 447 556Z" fill="#e67c75"/>
 <!-- The wide pottery bowl sits inside the supporting arm. -->
-<path d="M212 1127C241 1091 578 1095 622 1119 646 1131 621 1155 577 1171 453 1204 261 1192 212 1143Z" fill="#225666"/>
-<path d="M229 1130C291 1109 553 1110 607 1129 573 1162 305 1173 229 1130Z" fill="#3c6e6f"/>
+<path d="M212 1127C241 1091 578 1095 622 1119 646 1131 621 1155 577 1171 453 1204 261 1192 212 1143Z" fill="#283864"/>
+<path d="M229 1130C291 1109 553 1110 607 1129 573 1162 305 1173 229 1130Z" fill="#41696a"/>
 <!-- Broad greens and produce sit behind the rim in the same source positions. -->
-<path d="M214 1139C200 1118 193 1099 207 1080 195 1056 208 1037 227 1037 214 1014 231 992 247 1004 255 984 276 987 285 1010 303 995 329 1000 340 1013 360 1002 379 1022 363 1038 391 1040 396 1059 383 1073 402 1095 411 1132 412 1147L260 1158Z" fill="#27764d"/>
-<path d="M274 1142C267 1104 271 1060 286 1029M275 1104 250 1083M275 1074 315 1045" stroke="#b4ca8c" stroke-width="4.3" stroke-linecap="round"/>
-<path d="M237 1087C218 1084 215 1071 222 1058 228 1047 240 1047 250 1057L267 1073C253 1067 245 1073 237 1087Z" fill="#236b49"/>
-<path d="M309 1115C301 1070 319 1038 354 1046 376 1035 401 1055 408 1083 421 1119 406 1163 369 1164 335 1169 308 1148 309 1115Z" fill="#e84720"/>
-<path d="M325 1074C342 1059 362 1058 377 1066 388 1080 382 1103 366 1108 343 1115 319 1095 325 1074Z" fill="#f35923"/>
-<path d="m352 1067-17-17 20 6 7-22 8 22 23-5-17 16 7 17-18-10-15 13 3-17-19 1Z" fill="#24704b"/>
-<path d="M445 1150C440 1119 472 1098 474 1070 486 1096 507 1123 532 1141 546 1166 517 1173 493 1170Z" fill="#bf91b3"/>
-<path d="M475 1080C478 1103 451 1125 465 1146 472 1158 483 1161 493 1162M482 1092C486 1111 504 1134 514 1145 518 1156 510 1160 502 1163M479 1104C468 1123 470 1141 488 1153" stroke="#f9e5d5" stroke-width="5.2" stroke-linecap="round"/>
-<path d="M531 1152C529 1122 551 1102 571 1102 582 1096 594 1097 602 1117L608 1141Z" fill="#ef8b20"/>
-<path d="m595 1110-2-17 11 9 9-18 3 19 10-5-6 13Z" fill="#518b51"/>
-<path d="m551 1121 14 8m9-18 13 8" stroke="#df6f19" stroke-width="3" stroke-linecap="round"/>
+<path d="M214 1139C200 1118 193 1099 207 1080 195 1056 208 1037 227 1037 214 1014 231 992 247 1004 255 984 276 987 285 1010 303 995 329 1000 340 1013 360 1002 379 1022 363 1038 391 1040 396 1059 383 1073 402 1095 411 1132 412 1147L260 1158Z" fill="#4e4e4e"/>
+<path d="M274 1142C267 1104 271 1060 286 1029M275 1104 250 1083M275 1074 315 1045" stroke="#b0a1a0" stroke-width="4.3" stroke-linecap="round"/>
+<path d="M237 1087C218 1084 215 1071 222 1058 228 1047 240 1047 250 1057L267 1073C253 1067 245 1073 237 1087Z" fill="#474747"/>
+<path d="M309 1115C301 1070 319 1038 354 1046 376 1035 401 1055 408 1083 421 1119 406 1163 369 1164 335 1169 308 1148 309 1115Z" fill="#db5c35"/>
+<path d="M325 1074C342 1059 362 1058 377 1066 388 1080 382 1103 366 1108 343 1115 319 1095 325 1074Z" fill="#dd633e"/>
+<path d="m352 1067-17-17 20 6 7-22 8 22 23-5-17 16 7 17-18-10-15 13 3-17-19 1Z" fill="#4a4a4a"/>
+<path d="M445 1150C440 1119 472 1098 474 1070 486 1096 507 1123 532 1141 546 1166 517 1173 493 1170Z" fill="#c69e9c"/>
+<path d="M475 1080C478 1103 451 1125 465 1146 472 1158 483 1161 493 1162M482 1092C486 1111 504 1134 514 1145 518 1156 510 1160 502 1163M479 1104C468 1123 470 1141 488 1153" stroke="#f8d7d6" stroke-width="5.2" stroke-linecap="round"/>
+<path d="M531 1152C529 1122 551 1102 571 1102 582 1096 594 1097 602 1117L608 1141Z" fill="#dd6040"/>
+<path d="m595 1110-2-17 11 9 9-18 3 19 10-5-6 13Z" fill="#6e6e6e"/>
+<path d="m551 1121 14 8m9-18 13 8" stroke="#d9532a" stroke-width="3" stroke-linecap="round"/>
 <!-- One continuous long wooden spoon passes through the gripping fingers. -->
-<path d="M520 939C531 928 544 934 543 946L426 1144C435 1161 434 1179 411 1180 387 1182 382 1167 386 1153 389 1141 400 1135 405 1134Z" fill="#b38d45"/>
-<path d="M414 1145C396 1148 389 1162 400 1169" stroke="#c39e58" stroke-width="5" stroke-linecap="round"/>
+<path d="M520 939C531 928 544 934 543 946L426 1144C435 1161 434 1179 411 1180 387 1182 382 1167 386 1153 389 1141 400 1135 405 1134Z" fill="#c97b72"/>
+<path d="M414 1145C396 1148 389 1162 400 1169" stroke="#d0847b" stroke-width="5" stroke-linecap="round"/>
 <path d="M211 1141C242 1257 334 1327 420 1320 510 1313 587 1248 630 1138 521 1187 335 1198 211 1141Z" fill="url(#bowl)"/>
-<path d="M211 1138C324 1190 611 1185 631 1130L630 1145C500 1199 336 1204 215 1155Z" fill="#225e70"/>
-<path d="M233 1161C326 1200 513 1200 605 1150M240 1182C261 1225 286 1248 318 1265" stroke="#65a6b0" stroke-width="3.5" stroke-linecap="round" opacity=".65"/>
+<path d="M211 1138C324 1190 611 1185 631 1130L630 1145C500 1199 336 1204 215 1155Z" fill="#2c3e6e"/>
+<path d="M233 1161C326 1200 513 1200 605 1150M240 1182C261 1225 286 1248 318 1265" stroke="#6478af" stroke-width="3.5" stroke-linecap="round" opacity=".65"/>
 <!-- The stirring arm continues through the palm and curled fingers. -->
 <path d="M611 968 669 940C691 974 715 1008 730 1032 742 1053 734 1066 688 1075 640 1083 606 1075 569 1068L534 1061C516 1069 468 1058 466 1038 462 1025 470 1010 483 1003 466 987 475 974 490 969 494 952 509 949 524 957L546 973C558 984 565 999 570 1012L633 1001C645 997 657 994 670 994 649 979 629 974 611 968Z" fill="url(#skin)"/>
-<path d="m612 970 29 40c10-7 20-12 29-16l-18-36Z" fill="#ed985e"/>
-<path d="M481 980C491 977 507 982 519 987M471 1001C482 994 497 1000 508 1005M469 1023C483 1015 498 1020 509 1025M528 1010 526 1019" stroke="#d78247" stroke-width="4.2" stroke-linecap="round"/>
+<path d="m612 970 29 40c10-7 20-12 29-16l-18-36Z" fill="#e37a5f"/>
+<path d="M481 980C491 977 507 982 519 987M471 1001C482 994 497 1000 508 1005M469 1023C483 1015 498 1020 509 1025M528 1010 526 1019" stroke="#d76a49" stroke-width="4.2" stroke-linecap="round"/>
 <!-- The near arm supports the bowl; no separate hand symbol is attached. -->
 <path d="M137 934C119 985 100 1040 95 1080 92 1123 111 1151 140 1200 178 1248 214 1279 260 1307 296 1330 332 1350 378 1342L449 1328C465 1324 463 1311 451 1305L401 1286 414 1277C427 1269 427 1258 414 1250 395 1241 384 1244 368 1246 327 1236 292 1208 271 1186 237 1157 215 1131 202 1105 190 1081 187 1064 200 1015L218 972Z" fill="url(#skin)"/>
-<path d="M168 1064C187 1071 197 1089 205 1115L194 1091Z" fill="#dc7d44"/>
-<path d="M372 1290C393 1307 406 1314 427 1316M375 1323C395 1333 434 1336 451 1322" stroke="#d77b45" stroke-width="4.2" stroke-linecap="round"/>
-<path d="M407 1256c7-6 14-2 11 2-3 4-9 4-11-2Zm37 47c9-4 16-1 13 3-4 4-10 4-13-3Z" fill="#ffdfb9"/>
+<path d="M168 1064C187 1071 197 1089 205 1115L194 1091Z" fill="#dc6946"/>
+<path d="M372 1290C393 1307 406 1314 427 1316M375 1323C395 1333 434 1336 451 1322" stroke="#d86947" stroke-width="4.2" stroke-linecap="round"/>
+<path d="M407 1256c7-6 14-2 11 2-3 4-9 4-11-2Zm37 47c9-4 16-1 13 3-4 4-10 4-13-3Z" fill="#ffdeb9"/>
 <!-- Rolled sleeve edges finish the exact shoulder-to-arm joins. -->
-<path d="m121 880 115 57-1 40-129-65Z" fill="#fff1d9"/>
-<path d="m121 880 115 57" stroke="#ee562a" stroke-width="7"/>
-<path d="m590 945 97-59 16 28-112 63Z" fill="#fff1d9"/>
-<path d="m590 945 97-59" stroke="#ee562a" stroke-width="7"/>
+<path d="m121 880 115 57-1 40-129-65Z" fill="#f9e0df"/>
+<path d="m121 880 115 57" stroke="#dd643f" stroke-width="7"/>
+<path d="m590 945 97-59 16 28-112 63Z" fill="#f9e0df"/>
+<path d="m590 945 97-59" stroke="#dd643f" stroke-width="7"/>
 </g></svg>

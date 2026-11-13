@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="none" role="img" aria-labelledby="title"><title id="title">A brown cap mushroom with a cream stem</title>
 <defs><filter id="paper" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="23" stitchTiles="stitch" result="grain"/><feColorMatrix in="grain" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" result="ink"/><feBlend in="SourceGraphic" in2="ink" mode="soft-light"/></filter></defs>
-<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><path d="M50 74c-2 22-6 42-4 54 14 6 38 6 50 0 0-16-4-34-6-54Z" fill="#f4e5cf"/>
-<path d="M84 82c2 18 4 34 4 44" stroke="#d3bfa0" stroke-width="3.5"/>
-<path d="M10 78c-2-34 30-62 62-62 34 0 62 28 58 62-18 8-98 8-120 0Z" fill="#a8603a"/>
-<path d="M18 78c22 12 84 12 104 0-18 4-86 4-104 0Z" fill="#e0c49a"/>
-<path d="M30 50c10-16 26-24 42-26" stroke="#c98458" stroke-width="5"/>
-<path d="M92 44c5-1 9 1 10 5-4 2-8 1-10-5Zm-30 6c4-2 8-1 9 3-3 2-7 1-9-3Z" fill="#c98458"/><path d="M26 76c8-26 26-44 52-50" stroke="#8d4a2a" stroke-width="2.5" opacity=".5"/></g></svg>
+<g filter="url(#paper)" stroke-linecap="round" stroke-linejoin="round"><path d="M50 74c-2 22-6 42-4 54 14 6 38 6 50 0 0-16-4-34-6-54Z" fill="#f3cdcb"/>
+<path d="M84 82c2 18 4 34 4 44" stroke="#d09c9a" stroke-width="3.5"/>
+<path d="M10 78c-2-34 30-62 62-62 34 0 62 28 58 62-18 8-98 8-120 0Z" fill="#b55a3e"/>
+<path d="M18 78c22 12 84 12 104 0-18 4-86 4-104 0Z" fill="#dd9390"/>
+<path d="M30 50c10-16 26-24 42-26" stroke="#c97359" stroke-width="5"/>
+<path d="M92 44c5-1 9 1 10 5-4 2-8 1-10-5Zm-30 6c4-2 8-1 9 3-3 2-7 1-9-3Z" fill="#c97359"/><path d="M26 76c8-26 26-44 52-50" stroke="#a04a30" stroke-width="2.5" opacity=".5"/></g></svg>
