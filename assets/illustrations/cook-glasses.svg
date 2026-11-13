@@ -2,19 +2,19 @@
   <title id="glasses-title">COOK matte black AR glasses with a discreet built-in camera</title>
   <defs>
     <linearGradient id="frame" x1="520" y1="176" x2="520" y2="376" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2a2e2c"/><stop offset=".38" stop-color="#141414"/><stop offset="1" stop-color="#0a0a0a"/>
+      <stop stop-color="#2a2e2c"/><stop offset=".38" stop-color="#121615"/><stop offset="1" stop-color="#080b0b"/>
     </linearGradient>
     <linearGradient id="temple" x1="520" y1="70" x2="520" y2="200" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#343835"/><stop offset=".5" stop-color="#181a19"/><stop offset="1" stop-color="#0a0a0a"/>
+      <stop stop-color="#343835"/><stop offset=".5" stop-color="#171b19"/><stop offset="1" stop-color="#080b0a"/>
     </linearGradient>
     <linearGradient id="lens" x1="200" y1="204" x2="330" y2="350" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#97938f" stop-opacity=".2"/><stop offset=".45" stop-color="#dddddd" stop-opacity=".08"/><stop offset="1" stop-color="#7e816c" stop-opacity=".22"/>
+      <stop stop-color="#7baba1" stop-opacity=".2"/><stop offset=".45" stop-color="#d6e4da" stop-opacity=".08"/><stop offset="1" stop-color="#5f8e87" stop-opacity=".22"/>
     </linearGradient>
     <linearGradient id="lens-light" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#ffffff" stop-opacity=".34"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <stop stop-color="#fff" stop-opacity=".34"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="camera">
-      <stop stop-color="#20232b"/><stop offset=".32" stop-color="#576078"/><stop offset=".55" stop-color="#121212"/><stop offset=".8" stop-color="#282e3d"/><stop offset="1" stop-color="#0a0a0a"/>
+      <stop stop-color="#182a33"/><stop offset=".32" stop-color="#536c72"/><stop offset=".55" stop-color="#0b1419"/><stop offset=".8" stop-color="#253a40"/><stop offset="1" stop-color="#060b0d"/>
     </radialGradient>
     <filter id="product-shadow" x="-15%" y="-150%" width="130%" height="400%"><feGaussianBlur stdDeviation="11"/></filter>
     <path id="lens-shape" d="M200 216Q200 204 214 204H456Q470 204 469 218L462 298Q458 343 410 346L266 350Q220 350 213 306Z"/>
@@ -30,20 +30,20 @@
       <!-- Soft highlights explain the frame thickness without outlining every edge. -->
       <path d="M196 190H464Q478 190 488 198" stroke="#6e7771" stroke-width="2.7" stroke-linecap="round" opacity=".55"/>
       <path d="M232 356Q246 364 266 363L408 359" stroke="#6e7771" stroke-width="1.6" stroke-linecap="round" opacity=".33"/>
-      <path d="M182 214 193 300" stroke="#dbdbdb" stroke-width="1.3" stroke-linecap="round" opacity=".23"/>
+      <path d="M182 214 193 300" stroke="#d6e0d9" stroke-width="1.3" stroke-linecap="round" opacity=".23"/>
       <!-- Small nose pad behind the bridge. -->
       <path d="M486 246Q492 244 492 252L487 286Q485 294 480 290 477 286 478 280L482 252Q483 247 486 246Z" fill="#303632"/>
     </g>
   </defs>
   <!-- Transparent studio shadow, with no backdrop or surrounding card. -->
-  <ellipse cx="520" cy="402" rx="330" ry="13" fill="#1c1c1c" opacity=".14" filter="url(#product-shadow)"/>
+  <ellipse cx="520" cy="402" rx="330" ry="13" fill="#17201c" opacity=".14" filter="url(#product-shadow)"/>
   <use xlink:href="#half" href="#half"/>
   <use xlink:href="#half" href="#half" transform="translate(1040 0) scale(-1 1)"/>
   <!-- The light falls the same way across both clear lenses. -->
   <path d="M200 204H360L262 350H200Z" fill="url(#lens-light)" clip-path="url(#lens-clip)"/>
   <g transform="translate(1040 0) scale(-1 1)"><path d="M469 204H309L407 350H469Z" transform="translate(-60 0)" fill="url(#lens-light)" opacity=".5" clip-path="url(#lens-clip)"/></g>
   <!-- The discreet camera is flush with the outside corner; there is no display or ornament. -->
-  <circle cx="850" cy="196" r="10" fill="#0c0c0c"/>
+  <circle cx="850" cy="196" r="10" fill="#0a0e0d"/>
   <circle cx="850" cy="196" r="7" fill="url(#camera)"/>
-  <path d="m846 193 3-1" stroke="#c5c3c1" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
+  <path d="m846 193 3-1" stroke="#b0d6ce" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
 </svg>

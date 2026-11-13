@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500" fill="none" role="img" aria-labelledby="title"><title id="title">A gently curled restaurant bill with a folded lower edge</title><defs><filter id="grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="27" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer result="g"><feFuncA type="linear" slope=".12"/></feComponentTransfer><feComposite in="g" in2="SourceGraphic" operator="in" result="p"/><feBlend in="SourceGraphic" in2="p" mode="soft-light"/></filter></defs><g filter="url(#grain)">
 <!-- Printed paper is one quiet, bowed surface; the center is reserved for the live statistic. -->
-<path d="M53 24c80-7 214-4 309 4-6 85-7 168-2 255 3 65 5 122-2 169l-22-8-21 13-22-10-23 13-22-10-22 13-22-11-22 11-23-12-22 10-22-12-22 10-23-11-20 7C54 365 53 290 50 211c-3-72-4-135 3-187Z" fill="#f9dbda"/>
-<path d="M53 25c-5 71-1 143 2 210 2 76 2 143 7 207l13-3c-10-107-5-230-9-337-1-26 0-51 1-78Z" fill="#ddaead"/>
-<path d="M92 72c64-1 139 2 221 7m-221 17 171 5" stroke="#3955a2" stroke-width="5" stroke-linecap="round"/>
-<path d="M89 361c69-1 144 1 226 6m-227 16 223 7" stroke="#dc603a" stroke-width="4" stroke-linecap="round"/>
-<path d="m94 407 57 2m14 1 41 1m16 1 83 3" stroke="#c1a29e" stroke-width="2.7" stroke-linecap="round"/>
-<path d="M331 438c9 3 17 7 27 14 4-33 2-58 0-82-1 31-10 51-27 68Z" fill="#dcabaa"/>
+<path d="M53 24c80-7 214-4 309 4-6 85-7 168-2 255 3 65 5 122-2 169l-22-8-21 13-22-10-23 13-22-10-22 13-22-11-22 11-23-12-22 10-22-12-22 10-23-11-20 7C54 365 53 290 50 211c-3-72-4-135 3-187Z" fill="#f9efda"/>
+<path d="M53 25c-5 71-1 143 2 210 2 76 2 143 7 207l13-3c-10-107-5-230-9-337-1-26 0-51 1-78Z" fill="#e3d8bc"/>
+<path d="M92 72c64-1 139 2 221 7m-221 17 171 5" stroke="#304c98" stroke-width="5" stroke-linecap="round"/>
+<path d="M89 361c69-1 144 1 226 6m-227 16 223 7" stroke="#e74829" stroke-width="4" stroke-linecap="round"/>
+<path d="m94 407 57 2m14 1 41 1m16 1 83 3" stroke="#b7a98e" stroke-width="2.7" stroke-linecap="round"/>
+<path d="M331 438c9 3 17 7 27 14 4-33 2-58 0-82-1 31-10 51-27 68Z" fill="#e1d4b5"/>
 </g></svg>

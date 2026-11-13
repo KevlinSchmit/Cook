@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">A softly sewn rabbit beside a small nursery bag</title><defs><filter id="grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="27" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer result="g"><feFuncA type="linear" slope=".12"/></feComponentTransfer><feComposite in="g" in2="SourceGraphic" operator="in" result="p"/><feBlend in="SourceGraphic" in2="p" mode="soft-light"/></filter></defs><g filter="url(#grain)">
 <!-- The plush outer contour runs continuously through the bent ear, cheek, belly, and feet. -->
-<path d="M96 130c-19-30-24-72-9-89 8-9 17-3 23 10 8 17 11 39 13 57 4-23 17-56 33-55 20 2 9 39-13 72 20 8 33 25 31 45-1 16-10 28-21 35 23 18 30 41 17 53-8 8-25 8-37 3-17 6-35 6-51-1-11 7-27 4-32-4-8-13 1-31 20-48-16-10-25-24-22-41 4-19 23-32 48-37Z" fill="#e7847b"/>
-<path d="M94 51c-5 12-2 40 10 66-1-29-4-53-10-66Zm59 13c-9 5-19 27-22 44 14-18 22-34 22-44Z" fill="#e17a62"/>
-<path d="M81 150c19-14 49-10 64 5 18 18 6 45-17 47-28 6-56-16-57-33 0-7 3-14 10-19Z" fill="#ea908c"/>
-<path d="M91 166c-7-2-8 8-2 9 5 1 7-7 2-9Zm41 0c-6-2-8 7-3 9 5 1 8-7 3-9Z" fill="#232625"/>
-<path d="M105 180c5-4 10-4 14-1 2 4-2 8-7 8-4 0-7-3-7-7Z" fill="#ad5e46"/>
-<path d="m112 187v6m0 0c-6 6-12 6-17 1m17-1c5 6 11 5 15 0" stroke="#ad5e46" stroke-width="2.3" stroke-linecap="round"/>
+<path d="M96 130c-19-30-24-72-9-89 8-9 17-3 23 10 8 17 11 39 13 57 4-23 17-56 33-55 20 2 9 39-13 72 20 8 33 25 31 45-1 16-10 28-21 35 23 18 30 41 17 53-8 8-25 8-37 3-17 6-35 6-51-1-11 7-27 4-32-4-8-13 1-31 20-48-16-10-25-24-22-41 4-19 23-32 48-37Z" fill="#e8bd50"/>
+<path d="M94 51c-5 12-2 40 10 66-1-29-4-53-10-66Zm59 13c-9 5-19 27-22 44 14-18 22-34 22-44Z" fill="#e2a467"/>
+<path d="M81 150c19-14 49-10 64 5 18 18 6 45-17 47-28 6-56-16-57-33 0-7 3-14 10-19Z" fill="#f0d07c"/>
+<path d="M91 166c-7-2-8 8-2 9 5 1 7-7 2-9Zm41 0c-6-2-8 7-3 9 5 1 8-7 3-9Z" fill="#222725"/>
+<path d="M105 180c5-4 10-4 14-1 2 4-2 8-7 8-4 0-7-3-7-7Z" fill="#a16841"/>
+<path d="m112 187v6m0 0c-6 6-12 6-17 1m17-1c5 6 11 5 15 0" stroke="#a16841" stroke-width="2.3" stroke-linecap="round"/>
 <!-- A loose scarf bends with the neck and falls naturally onto the belly. -->
-<path d="M70 202c22 11 59 15 84 2l5 12c-24 16-64 15-91-1Z" fill="#dc603a"/>
-<path d="m108 224 21 2 8 25-23-4Z" fill="#d1532c"/>
-<path d="M72 233c3-8 10-11 17-6m48 1c7-5 14-2 17 5" stroke="#de796e" stroke-width="3" stroke-linecap="round"/>
+<path d="M70 202c22 11 59 15 84 2l5 12c-24 16-64 15-91-1Z" fill="#e74829"/>
+<path d="m108 224 21 2 8 25-23-4Z" fill="#c53e2a"/>
+<path d="M72 233c3-8 10-11 17-6m48 1c7-5 14-2 17 5" stroke="#d4a342" stroke-width="3" stroke-linecap="round"/>
 <!-- The nursery bag has a continuous gusseted body and properly attached handles. -->
-<path d="M188 172c-1-24 7-42 22-42 17 0 24 19 25 41" stroke="#3955a2" stroke-width="8" stroke-linecap="round"/>
-<path d="M171 169c18-7 54-8 76-2l13 76c-14 16-72 17-96 3Z" fill="#3955a2"/>
-<path d="M247 167c8 19 14 47 13 76l-11 6-10-75Z" fill="#2e4583"/>
-<path d="M177 179c16-4 41-5 57-1m-56 10c15-4 39-5 55-2" stroke="#7b8bb5" stroke-width="2" stroke-linecap="round"/>
-<path d="M182 204c13-3 34-2 45 1l2 28c-12 4-34 4-47 0Z" fill="#f5d7d6"/>
-<path d="m188 214 33 1m-31 8 27 1" stroke="#dc603a" stroke-width="3" stroke-linecap="round"/>
+<path d="M188 172c-1-24 7-42 22-42 17 0 24 19 25 41" stroke="#304c98" stroke-width="8" stroke-linecap="round"/>
+<path d="M171 169c18-7 54-8 76-2l13 76c-14 16-72 17-96 3Z" fill="#304c98"/>
+<path d="M247 167c8 19 14 47 13 76l-11 6-10-75Z" fill="#233e7d"/>
+<path d="M177 179c16-4 41-5 57-1m-56 10c15-4 39-5 55-2" stroke="#8ca6bf" stroke-width="2" stroke-linecap="round"/>
+<path d="M182 204c13-3 34-2 45 1l2 28c-12 4-34 4-47 0Z" fill="#f5ecd6"/>
+<path d="m188 214 33 1m-31 8 27 1" stroke="#e74829" stroke-width="3" stroke-linecap="round"/>
 </g></svg>

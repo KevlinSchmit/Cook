@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" role="img" aria-labelledby="title"><title id="title">Softly curled tuition papers and an engraved gold coin</title><defs><filter id="grain" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".74" numOctaves="3" seed="27" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer result="g"><feFuncA type="linear" slope=".12"/></feComponentTransfer><feComposite in="g" in2="SourceGraphic" operator="in" result="p"/><feBlend in="SourceGraphic" in2="p" mode="soft-light"/></filter></defs><g filter="url(#grain)">
 <!-- The rear sheet bows behind the front page, with the same shallow paper perspective. -->
-<path d="M76 45c39-6 91-4 127 1l8 172c-37 7-90 8-133 4Z" fill="#3955a2"/>
-<path d="M83 52c34-5 79-4 116 0l7 161c-38 6-78 7-122 3Z" fill="#f5d7d6"/>
+<path d="M76 45c39-6 91-4 127 1l8 172c-37 7-90 8-133 4Z" fill="#304c98"/>
+<path d="M83 52c34-5 79-4 116 0l7 161c-38 6-78 7-122 3Z" fill="#f5ecd6"/>
 <!-- One unbroken outline carries the curled corner, page face, and turned foot. -->
-<path d="M48 67c44-5 106-2 148 5-1 35 1 96 6 153l-22 6c-42 2-89-1-124-7-3-54-8-110-8-157Z" fill="#dc603a"/>
-<path d="M56 75c37-3 91-1 130 5 0 38 1 91 8 139-45 4-86 2-130-4-2-49-7-98-8-140Z" fill="#f8dbda"/>
-<path d="M56 75c2 37 5 77 7 115-5-39-12-77-11-115Z" fill="#d7a9a7"/>
-<path d="M77 101c28-1 64 0 91 3m-89 18 82 4m-80 14 57 3" stroke="#3955a2" stroke-width="4.5" stroke-linecap="round"/>
-<path d="m84 169 51 3m-50 12 67 4m-66 12 41 2" stroke="#be9994" stroke-width="3" stroke-linecap="round"/>
-<path d="M174 202c9 7 14 10 20 17l-1-32c-4 10-11 15-19 15Z" fill="#daacaa"/>
+<path d="M48 67c44-5 106-2 148 5-1 35 1 96 6 153l-22 6c-42 2-89-1-124-7-3-54-8-110-8-157Z" fill="#e74829"/>
+<path d="M56 75c37-3 91-1 130 5 0 38 1 91 8 139-45 4-86 2-130-4-2-49-7-98-8-140Z" fill="#f9efd9"/>
+<path d="M56 75c2 37 5 77 7 115-5-39-12-77-11-115Z" fill="#d9caab"/>
+<path d="M77 101c28-1 64 0 91 3m-89 18 82 4m-80 14 57 3" stroke="#304c98" stroke-width="4.5" stroke-linecap="round"/>
+<path d="m84 169 51 3m-50 12 67 4m-66 12 41 2" stroke="#b9a78b" stroke-width="3" stroke-linecap="round"/>
+<path d="M174 202c9 7 14 10 20 17l-1-32c-4 10-11 15-19 15Z" fill="#ded0b3"/>
 <!-- The coin's weight and eccentric rim are expressed by a continuous struck-metal contour. -->
-<path d="M207 170c33-3 58 21 58 50 1 31-22 54-51 56-30 2-54-22-56-51-3-29 19-53 49-55Z" fill="#d56f64"/>
-<path d="M207 166c30-3 54 18 56 46 2 29-18 52-48 54-30 2-53-19-54-47-2-29 18-51 46-53Z" fill="#e7847b"/>
-<path d="M208 177c23-2 42 14 44 36 1 23-14 41-37 42-23 2-41-15-43-37-1-22 14-39 36-41Z" stroke="#eb9693" stroke-width="3"/>
-<path d="M230 195c-15-8-31-3-30 8 1 11 30 8 31 20 1 12-17 19-31 11m17-47-4 57" stroke="#d06d62" stroke-width="4" stroke-linecap="round"/>
+<path d="M207 170c33-3 58 21 58 50 1 31-22 54-51 56-30 2-54-22-56-51-3-29 19-53 49-55Z" fill="#bb8d32"/>
+<path d="M207 166c30-3 54 18 56 46 2 29-18 52-48 54-30 2-53-19-54-47-2-29 18-51 46-53Z" fill="#e8bd50"/>
+<path d="M208 177c23-2 42 14 44 36 1 23-14 41-37 42-23 2-41-15-43-37-1-22 14-39 36-41Z" stroke="#f6dc87" stroke-width="3"/>
+<path d="M230 195c-15-8-31-3-30 8 1 11 30 8 31 20 1 12-17 19-31 11m17-47-4 57" stroke="#a88132" stroke-width="4" stroke-linecap="round"/>
 </g></svg>
