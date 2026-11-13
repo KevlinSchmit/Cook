@@ -1,6 +1,6 @@
 # Remy (formerly COOK) presentation workflow
 
-The brand is now **Remy**: every former COOK wordmark (masthead, title, reveal, closing) uses `assets/illustrations/remy-logo.svg`, a vector trace of the user's supplied lettering inlined once as the `#remy-wordmark` SVG symbol (CSS masks fail on file://) and filled `var(--orange)` (#e74829), the same orange as “Sara.”, in every location including the slide-1 title. Visible text and accessible names say Remy; the file name `COOK.html` and `window.COOK` API stay for compatibility. The user rejected the global palette remap; keep the original colours.
+The brand is now **Remy**: every former COOK wordmark (masthead, title, reveal, closing) uses `assets/illustrations/remy-logo.svg`, a vector trace of the user's supplied lettering inlined once as the `#remy-wordmark` SVG symbol (CSS masks fail on file://) and filled `var(--orange)` (#e74829), the same orange as “Sara.”, in every location including the slide-1 title. The masthead lockup pairs the logo with `remy-mouse.svg` (the user's mouse mascot in a toque and black camera glasses, redrawn in the deck's flat-colour, paper-grain style) and stays visible at the top of every slide. Visible text and accessible names say Remy; the file name `COOK.html` and `window.COOK` API stay for compatibility. The user rejected the global palette remap; keep the original colours.
 
 The user moved the presentation to `main`. Work from the current `origin/main` and push completed, validated updates to `main`; do not continue on `slide-deck`.
 
