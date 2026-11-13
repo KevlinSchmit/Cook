@@ -27,7 +27,9 @@ def export():
     html = html.replace('  <script src="script.js" defer></script>\n', '')
     html = re.sub(r'src="(assets/[^"]+)"',
                   lambda match: f'src="{data_uri(match[1])}"', html)
-    script = (ROOT / 'script.js').read_text().replace('</script', '<\\/script')
+    html = html.replace('  <script src="assets/vendor/three.min.js" defer></script>\n', '')
+    html = html.replace('  <script src="glasses3d.js" defer></script>\n', '')
+    script = '\n'.join((ROOT / name).read_text() for name in ['script.js', 'assets/vendor/three.min.js', 'glasses3d.js']).replace('</script', '<\\/script')
     license_text = (ROOT / 'assets/OFL.txt').read_text()
     html = html.replace('</body>', '<script>\n' + script + '\n</script>\n<!-- Bundled font license:\n' + license_text + '\n-->\n</body>')
     output = ROOT / 'COOK.html'

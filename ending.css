@@ -153,16 +153,15 @@
   .sense-texture,.sense-seasoning { left:68.5%; }
 }
 
-/* Remy lettering replaces every COOK wordmark. The traced shape is a mask painted with the
-   same CSS orange as "Sara." so the colour is identical everywhere. */
-.remy-logo { display:inline-block; vertical-align:top; aspect-ratio:429/203; width:auto; background-color:var(--orange);
-  -webkit-mask:url("assets/illustrations/remy-logo.svg") center/contain no-repeat; mask:url("assets/illustrations/remy-logo.svg") center/contain no-repeat; }
+/* Remy lettering replaces every COOK wordmark: one inline SVG symbol (traced from the supplied
+   logo) filled with the same CSS orange as "Sara." so the colour is identical everywhere. */
+.remy-logo { display:inline-block; vertical-align:top; aspect-ratio:429/203; width:auto; fill:var(--orange); overflow:visible; }
 .wordmark { line-height:0; }
 .wordmark .remy-logo { height:40px; }
 .intro h1 { display:block; transform:none; padding:0; letter-spacing:0; line-height:0; }
 .intro h1 .remy-logo { height:15.5cqw; }
 .product-reveal h2 { letter-spacing:0 !important; }
-.product-reveal h2 .remy-logo { height:1.45em; }
+.product-reveal h2 .remy-logo { height:1.2em; }
 .closing-brand h2 { letter-spacing:0 !important; padding:0; }
 .closing-brand h2 .remy-logo { height:1.2em; }
 @media(max-aspect-ratio:1/1) {
