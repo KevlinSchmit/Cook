@@ -153,7 +153,7 @@
   .sense-texture,.sense-seasoning { left:68.5%; }
 }
 
-/* Remy lettering replaces every COOK wordmark: traced vector, colour #fa8d8d, used unaltered. */
+/* Remy lettering replaces every COOK wordmark: traced vector in the former COOK oranges (#c2301a title, #e74829 elsewhere). */
 .remy-logo { display:block; width:auto; max-width:none; margin:0 auto; }
 .wordmark .remy-logo { height:40px; margin:0; }
 .intro h1 { display:block; transform:none; padding:0; letter-spacing:0; }

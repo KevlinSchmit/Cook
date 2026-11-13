@@ -1,6 +1,6 @@
 # Remy (formerly COOK) presentation workflow
 
-The brand is now **Remy**: every former COOK wordmark (masthead, title, reveal, closing) uses `assets/illustrations/remy-logo.svg`, a vector trace of the user's supplied lettering in #fa8d8d, unaltered. Visible text and accessible names say Remy; the file name `COOK.html` and `window.COOK` API stay for compatibility. The user rejected the global palette remap; keep the original colours.
+The brand is now **Remy**: every former COOK wordmark (masthead, title, reveal, closing) uses `assets/illustrations/remy-logo.svg`, a vector trace of the user's supplied lettering, coloured with the oranges COOK used: #c2301a for the slide-1 title (`remy-logo-title.svg`) and #e74829 elsewhere. Visible text and accessible names say Remy; the file name `COOK.html` and `window.COOK` API stay for compatibility. The user rejected the global palette remap; keep the original colours.
 
 The user moved the presentation to `main`. Work from the current `origin/main` and push completed, validated updates to `main`; do not continue on `slide-deck`.
 
