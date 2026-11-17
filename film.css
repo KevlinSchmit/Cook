@@ -23,8 +23,6 @@
 .film-active .next-scene svg { width:25px; }
 .next-scene svg,[data-scene="sara"] .next-scene svg { transform:none; }
 .film-active .previous-scene:hover { transform:translateX(-3px); background:#fffae9; }
-.film-active .scene-dot:after { border-color:#304c9877; }
-.film-active .scene-dot.active:after { background:#304c98; }
 .film-scene { position:absolute; z-index:5; inset:0; opacity:0; visibility:hidden; pointer-events:none; transform:scale(1.035); transform-origin:50% 60%; transition:opacity .9s ease,transform 1.8s var(--ease),visibility 0s .9s; }
 .film-scene.is-active { opacity:1; visibility:visible; pointer-events:auto; transform:scale(1); transition-delay:.15s,0s,0s; }
 .film-scene h2 { font-family:Fraunces,Georgia,serif; font-size:3.8cqw; font-weight:650; letter-spacing:-.12cqw; line-height:1.13; margin:0; text-wrap:balance; }
@@ -79,8 +77,6 @@
 [data-scene="population"] .kitchen { opacity:0; }
 [data-scene="population"] .sara { left:8%; top:43%; width:16.1%; opacity:0; transform:scale(.85); }
 [data-scene="population"] .masthead { color:#f5ecd6; }
-[data-scene="population"] .scene-dot:after { border-color:#f5ecd688; }
-[data-scene="population"] .scene-dot.active:after { background:#f5ecd6; }
 .population-scene { color:#f5ecd6; }
 .population-scene > h2 { position:absolute; left:10%; top:13%; width:80%; text-align:center; font-size:4.6cqw; }
 .stat-block { position:absolute; top:28%; width:32%; }
@@ -118,8 +114,6 @@
 [data-scene="home"] .kitchen { opacity:0; }
 [data-scene="home"] .sara { left:74%; top:42%; width:11.3%; opacity:0; }
 [data-scene="home"] .masthead { color:#f5ecd6; }
-[data-scene="home"] .scene-dot:after { border-color:#f5ecd688; }
-[data-scene="home"] .scene-dot.active:after { background:#f5ecd6; }
 .home-scene { display:grid; place-items:center; }
 .home-scene .home-question { width:80%; font-family:Fraunces,Georgia,serif; font-weight:700; font-size:9.4cqw; line-height:1.04; letter-spacing:-.4cqw; text-wrap:balance; text-align:center; color:#f5ecd6; opacity:0; transform:scale(.25); transition:transform 1.9s var(--ease),opacity 1s ease; }
 .home-scene.is-active .home-question { opacity:1; transform:scale(1); transition-delay:.25s; }
@@ -147,11 +141,8 @@
 @media(prefers-reduced-motion:reduce) { .film-scene,.film-scene *, .sara,.kitchen,.world,.scene-wash { transition-duration:.01ms!important; transition-delay:0ms!important; animation:none!important; } }
 /* Portrait remains usable; the presentation itself is composed for 16:9. */
 @media(max-aspect-ratio:1/1) {
-  .film-active .scene-dots { left:50%; gap:0; }
-  .scene-dot { width:27px; }
   .film-active .previous-scene { left:6%; width:40px; height:40px; bottom:20px; }
   .film-active .next-scene { width:40px; height:40px; }
-  .film-active .scene-dots { bottom:20px; }
   .film-active .sara { left:calc(50% - 121px); top:38%; width:206px; }
   .passion-copy { left:calc(50% - 164px); top:16%; width:328px; }
   .passion-copy h2 { max-width:none; font-size:34px; }
@@ -283,14 +274,14 @@
   .restaurant-bill strong { font-size:38px; }
 }
 
-/* Arrow-free navigation: only the titled "Meet Sara" button remains visible; keys and scene dots navigate. */
+/* Arrow-free navigation: only the titled "Meet Sara" button remains visible; the arrow keys navigate. */
 .experience .previous-scene, .experience:not([data-scene="title"]) .next-scene { display:none !important; }
 .presentation-controls { justify-content:flex-end; }
 
 /* Slide 1 → 2: the title wordmark fades away rather than shrinking above Sara. */
 .intro { transition:transform 2.2s var(--ease),left 2.2s var(--ease),top 2.2s var(--ease),opacity .7s ease; }
 [data-scene="sara"] .intro { opacity:0; pointer-events:none; }
-/* No navigation buttons remain; arrow keys and scene dots navigate. */
+/* No navigation buttons remain; the arrow keys navigate. */
 .experience .next-scene { display:none !important; }
 /* Smaller Sara facts. */
 @media not (max-aspect-ratio:1/1) {

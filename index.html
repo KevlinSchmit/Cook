@@ -110,9 +110,12 @@
         <section class="film-scene pov-scene" data-scene-panel="pov" aria-hidden="true" inert>
           <div class="pov-world" aria-hidden="true"><img src="assets/illustrations/cook-pov.png" width="1672" height="941" alt=""></div>
           <div class="pov-detection" data-reveal="1"><svg class="pov-target" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M2 24V8q0-6 6-6h16m52 0h16q6 0 6 6v16m0 52v16q0 6-6 6H76m-52 0H8q-6 0-6-6V76"/><path class="pov-scan" d="M7 50h86"/></svg><div class="detected-label vision-glass"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Tomato Detected</span></div></div>
-          <aside class="pov-instruction vision-glass" data-reveal="2" aria-label="Hands-free cooking instruction"><div class="pov-lesson-top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-knife"/></svg><h2>Knife Skills</h2></div><p class="pov-step">Step 2 of 5</p><p class="pov-action">Slice the tomato into even pieces</p><div class="pov-progress" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="2"><span></span><span></span><span></span><span></span><span></span></div></aside>
+          <aside class="pov-instruction vision-glass" data-reveal="1" aria-label="Hands-free cooking instruction"><div class="pov-lesson-top"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#i-knife"/></svg><h2>Knife Skills</h2></div><p class="pov-step">Step 2 of 5</p><p class="pov-action">Slice the tomato into even pieces</p><div class="pov-progress" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="2"><span></span><span></span><span></span><span></span><span></span></div></aside>
         </section>
-        <section class="film-scene demo-scene" data-scene-panel="demo" aria-hidden="true" inert><p>for demo</p></section>
+        <section class="film-scene demo-scene" data-scene-panel="demo" aria-label="Remy app demo" aria-hidden="true" inert>
+          <video class="demo-clip" data-clip="0" src="assets/demo/step-by-step.mp4" preload="auto" playsinline aria-label="The coach guides the flat base and plank steps of a carrot dice"></video>
+          <video class="demo-clip" data-clip="1" src="assets/demo/checkpoint.mp4" preload="auto" playsinline aria-label="The app photographs the carrot dice and grades size and uniformity"></video>
+        </section>
         <section class="film-scene limitations-scene" data-scene-panel="limitations" aria-hidden="true" inert>
           <p class="senses-instruction">Evaluate flavor, texture, and seasoning yourself.</p>
           <img class="finished-dish" src="assets/illustrations/finished-dish.png" width="1322" height="1190" alt="An illustrated plate of salmon, rice and colorful vegetables">
@@ -137,9 +140,30 @@
 
     <footer class="presentation-controls">
       <button class="previous-scene" type="button" aria-label="Previous narrative beat"></button>
-      <div class="scene-dots" role="group" aria-label="Choose scene"><button type="button" class="scene-dot active" data-go="title" aria-label="Scene 1" aria-pressed="true"></button><button type="button" class="scene-dot" data-go="sara" aria-label="Scene 2" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="passion" aria-label="Scene 3" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="barriers" aria-label="Scene 4" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="question" aria-label="Scene 5" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="population" aria-label="Scene 6" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="school" aria-label="Scene 7" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="home" aria-label="Scene 8" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="reveal" aria-label="Scene 9" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="pov" aria-label="Scene 10" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="demo" aria-label="Scene 11" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="limitations" aria-label="Scene 12" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="return" aria-label="Scene 13" aria-pressed="false"></button><button type="button" class="scene-dot" data-go="closing" aria-label="Scene 14" aria-pressed="false"></button></div>
       <button class="next-scene" type="button"><span class="next-label"></span></button>
     </footer>
+    <aside class="script-panel" aria-label="Speaker script" inert>
+      <div class="script-head">
+        <h2 class="script-scene"></h2>
+        <p class="script-speaker"></p>
+        <button class="script-close" type="button" aria-label="Close speaker script"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button>
+      </div>
+      <div class="script-text"></div>
+    </aside>
+    <template id="speaker-script">
+      <section data-scene="reveal" data-speaker="Brendan">
+        <p data-beat="0">That’s why we created Remy. We’re bringing world class culinary education to your kitchen, on your time, and for a fraction of the cost, through a pair of AR glasses.</p>
+        <p data-beat="1">We built a prototype with an iPhone app and this mount on my head. Remy sees what you see. It walks you through every step, watching what you do,</p>
+      </section>
+      <section data-scene="pov" data-speaker="Brendan">
+        <p data-beat="0">and with the latest advancements in AI voice models,</p>
+        <p data-beat="1">gives you live feedback. It can even catch and correct your mistakes before you hurt yourself.</p>
+      </section>
+      <section data-scene="demo" data-speaker="Brendan">
+        <p data-beat="0">Here, Remy is teaching her how to dice carrots, one step at a time.</p>
+        <p data-beat="1">After she’s done, Remy takes a picture and grades it based on size and uniformity.</p>
+      </section>
+    </template>
     <p class="sr-only" role="status" aria-live="polite" id="scene-status">Scene 1 of 14. Remy. Use the right arrow key to advance and the left arrow key to reverse.</p>
   </main>
 </body>

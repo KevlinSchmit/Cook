@@ -1,9 +1,6 @@
 /* New scenes continue on the same stage; the wearer sees the physical kitchen. */
 [data-scene="pov"] .scene-wash,[data-scene="demo"] .scene-wash,[data-scene="limitations"] .scene-wash,[data-scene="return"] .scene-wash,[data-scene="closing"] .scene-wash { opacity:1; background:#f8f0dc; }
 :is([data-scene="pov"],[data-scene="demo"],[data-scene="limitations"],[data-scene="return"],[data-scene="closing"]) :is(.kitchen,.sara) { opacity:0; }
-.scene-dot { width:27px; }
-.scene-dot:after { left:10px; }
-.scene-dot.active:after { left:5px; }
 
 /* A soft material, with restrained highlights and no fabricated display bezel. */
 .vision-glass { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; color:#26352f; border:1px solid #ffffffb3; border-radius:1.65cqw; background:linear-gradient(145deg,#fffffff0,#ffffff94 54%,#f5fff17a); box-shadow:0 1.2cqw 3cqw #40261519,inset 0 1px 0 #ffffffed,inset 0 -1px 0 #ffffff38; backdrop-filter:blur(24px) saturate(140%); -webkit-backdrop-filter:blur(24px) saturate(140%); }
@@ -27,16 +24,18 @@
 .pov-progress { display:flex; gap:.35cqw; margin-top:2cqw; }
 .pov-progress span { height:.25cqw; flex:1; border-radius:10px; background:#51655825; }
 .pov-progress span:nth-child(-n+2) { background:#527664; transform-origin:left; }
-.pov-instruction.is-revealed .pov-progress span:nth-child(-n+2) { animation:lesson-progress 1.1s var(--ease) both; }
+.pov-instruction.is-revealed .pov-progress span:nth-child(-n+2) { animation:lesson-progress 1.1s var(--ease) .9s both; }
+.pov-instruction.is-revealed { transition-delay:.7s; }
 @keyframes pov-scan { 0%,100% { transform:translateY(-28px); opacity:.3; } 50% { transform:translateY(28px); opacity:.75; } }
 @keyframes lesson-progress { from { transform:scaleX(0); } to { transform:scaleX(1); } }
 
-/* The demo space is intentionally empty. */
-[data-scene="demo"],[data-scene="demo"] .scene-wash,.demo-scene { background:#fff; }
+/* Each demo beat shows one recorded clip, full bleed. */
+[data-scene="demo"],[data-scene="demo"] .scene-wash,.demo-scene { background:#111; }
 [data-scene="demo"] .paper { opacity:0; }
 [data-scene="demo"] .masthead { visibility:hidden; }
-.demo-scene { display:grid; place-items:center; transform:none; }
-.demo-scene p { font-family:Arial,sans-serif; font-size:2.8cqw; font-weight:400; color:#252525; }
+.demo-scene { transform:none; }
+.demo-clip { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; opacity:0; transition:opacity .3s ease-out; }
+.demo-clip.is-playing { opacity:1; }
 
 /* The plate remains physical; flavor, texture and seasoning need human judgment. */
 .senses-instruction { position:absolute; left:17%; top:13%; width:66%; font-family:Fraunces,Georgia,serif; font-size:2.8cqw; font-weight:500; text-align:center; text-wrap:balance; }
@@ -91,10 +90,6 @@
 
 /* The film remains composed for 16:9; portrait has an intentional readable framing. */
 @media(max-aspect-ratio:1/1) {
-  .scene-dots,.film-active .scene-dots { left:50%; gap:0; bottom:20px; }
-  .scene-dot { width:18px; }
-  .scene-dot:after { width:5px; height:5px; left:6px; top:17px; }
-  .scene-dot.active:after { width:12px; left:3px; }
   .chapter,.next-label { display:none; }
   .next-scene { width:40px; height:40px; padding:0; margin-left:auto; justify-content:center; }
   .next-scene svg { width:23px; }
@@ -112,7 +107,6 @@
   .pov-action { font-size:18px; margin-top:11px!important; }
   .pov-progress { gap:5px; margin-top:21px; }
   .pov-progress span { height:3px; }
-  .demo-scene p { font-size:30px; }
   .senses-instruction { left:calc(50% - 170px); top:12%; width:340px; font-size:23px; }
   .finished-dish { left:calc(50% - 130px); top:21%; width:260px; }
   .sense-panel { width:162px; padding:14px; border-radius:17px; }

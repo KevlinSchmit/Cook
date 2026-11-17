@@ -22,11 +22,13 @@ No build, dependencies, external fonts, or credentials are needed. The presentat
 
 - Use **← / →**, **Page Up / Page Down**, or **Space** to navigate individual story beats.
 - **Home** returns to the title; **End** jumps to the closing brand composition.
-- Twelve scene indicators jump to the start of each scene. The icon buttons reverse/advance one beat; the final next button replays the presentation.
+- **F** enters or leaves full screen. **Escape** also leaves full screen.
+- **N** opens or closes the speaker script at the bottom of the screen; **Escape** closes it. The panel names the scene and its speaker, and the paragraph for the current click is darker than the rest. The script appears on the same screen as the slides, so open it on your laptop before you mirror the display.
+- The icon buttons reverse/advance one beat; the final next button replays the presentation.
 - The motion control pauses ambient movement. The experience respects reduced-motion preferences.
 - The self-evaluation scene has checkboxes and 1–5 scores for flavor, texture, and seasoning. These are the presenter's own assessments, not AI-generated grades.
 
-The composition is optimized for 16:9 presentation. All 30 beats are reversible and remain within one document:
+The composition is optimized for 16:9 presentation. All 31 beats are reversible and remain within one document:
 
 | Scene | Manual beats |
 | --- | --- |
@@ -37,8 +39,8 @@ The composition is optimized for 16:9 presentation. All 30 beats are reversible 
 | The bigger problem | 3, including proportional 50% and 70% illustrations |
 | Traditional culinary education | 3, from school to home |
 | Introducing COOK | 2, from black AR glasses alone to Sara wearing them in her kitchen |
-| Through COOK glasses | 3, from the user's hands to tomato detection and a guided knife-skills step |
-| Demo placeholder | 1, a white screen with “for demo” |
+| Through Remy glasses | 2, from the user's hands to tomato detection with a guided knife-skills step |
+| App demo | 2, one recorded clip per click: step-by-step guidance, then the checkpoint grade |
 | Limitations and solutions | 2, from the finished dish to sensory self-evaluation |
 | Returning to Sara | 3, with her new skills, meals, and family moment |
 | Final closing | 3, from different home kitchens into the COOK brand composition |
@@ -46,6 +48,10 @@ The composition is optimized for 16:9 presentation. All 30 beats are reversible 
 The first seven scenes retain their established narrative, with the requested removal of page 7's lesson and fingertip boxes. The former capability scene has been replaced. Page 8 shows “Tomato Detected”, then a visionOS-inspired frosted-glass panel with “Knife Skills”, “Step 2 of 5”, and “Slice the tomato into even pieces”. Its progress indicator shows 2/5. Scene 4's tuition icon and text still wait for the first click. The figures and percentages are supplied presentation content, not a live data feed.
 
 Future changes belong on `main` and should be committed and pushed after validation, as requested by the project owner.
+
+## Speaker script
+
+The script lives in `index.html`, inside `<template id="speaker-script">`. Each `<section>` has the scene ID in `data-scene` (see the scene IDs in `AGENTS.md`) and the presenter in `data-speaker`. Each `<p>` is one paragraph, and `data-beat` is the click (counting from 0 within the scene) where that paragraph starts. To add a teammate's part, add a `<section>` for each of their scenes, then run `python scripts/export_html.py`.
 
 ## Typography
 

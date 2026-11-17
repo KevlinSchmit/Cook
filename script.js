@@ -10,8 +10,8 @@
     { id: 'school', beats: 2, name: 'World-class culinary education' },
     { id: 'home', beats: 1, name: 'What if culinary school could come to your home?' },
     { id: 'reveal', beats: 2, name: 'Remy' },
-    { id: 'pov', beats: 3, name: 'Through Remy glasses' },
-    { id: 'demo', beats: 1, name: 'Interactive demo' },
+    { id: 'pov', beats: 2, name: 'Through Remy glasses' },
+    { id: 'demo', beats: 2, name: 'Interactive demo' },
     { id: 'limitations', beats: 2, name: 'Evaluate with your own senses' },
     { id: 'return', beats: 3, name: 'Remember Sara?' },
     { id: 'closing', beats: 3, name: 'Education should fit your life.' }
@@ -24,10 +24,62 @@
   const next = document.querySelector('.next-scene');
   const previous = document.querySelector('.previous-scene');
   const motion = document.querySelector('.motion-control');
-  const dots = [...document.querySelectorAll('.scene-dot')];
   const panels = [...document.querySelectorAll('[data-scene-panel]')];
   const status = document.querySelector('#scene-status');
+  const scriptPanel = document.querySelector('.script-panel');
+  const scriptText = scriptPanel.querySelector('.script-text');
+  const scriptSections = new Map(
+    [...document.querySelector('#speaker-script').content.querySelectorAll('section')].map(section => [section.dataset.scene, section])
+  );
+  const demoClips = [...document.querySelectorAll('.demo-clip')];
   let position = 0;
+
+  // Sound needs a user gesture; if the browser refuses, the clip still plays silently.
+  function playClipFromStart(clip) {
+    clip.currentTime = 0;
+    clip.muted = false;
+    clip.play().catch(error => {
+      if (error.name !== 'NotAllowedError') return;
+      clip.muted = true;
+      clip.play().catch(() => {});
+    });
+  }
+
+  function syncDemoClips(current, changed) {
+    demoClips.forEach(clip => {
+      const active = current.scene === 'demo' && Number(clip.dataset.clip) === current.beat;
+      clip.classList.toggle('is-playing', active);
+      if (!active) clip.pause();
+      else if (changed) playClipFromStart(clip);
+    });
+  }
+
+  function emptyScriptNote() {
+    const note = document.createElement('p');
+    note.className = 'script-empty';
+    note.textContent = 'No script for this scene yet.';
+    return note;
+  }
+
+  // The paragraph for the latest beat that has one stays current until the next cue.
+  function cueBeat(paragraphs, beat) {
+    return Math.max(0, ...paragraphs.map(paragraph => Number(paragraph.dataset.beat)).filter(cue => cue <= beat));
+  }
+
+  function renderScript(current) {
+    const section = scriptSections.get(current.scene);
+    const paragraphs = section ? [...section.querySelectorAll('p')].map(paragraph => paragraph.cloneNode(true)) : [];
+    const cue = cueBeat(paragraphs, current.beat);
+    paragraphs.forEach(paragraph => paragraph.classList.toggle('is-current', Number(paragraph.dataset.beat) === cue));
+    scriptPanel.querySelector('.script-scene').textContent = scenes[current.sceneIndex].name;
+    scriptPanel.querySelector('.script-speaker').textContent = section ? `${section.dataset.speaker} presents` : '';
+    scriptText.replaceChildren(...(paragraphs.length ? paragraphs : [emptyScriptNote()]));
+  }
+
+  function toggleScript(open = !scriptPanel.classList.contains('is-open')) {
+    scriptPanel.classList.toggle('is-open', open);
+    scriptPanel.inert = !open;
+  }
 
   // A single persistent document and kitchen; arrows change narrative beats,
   // including the ingredient scan, human evaluation, and final brand sequence.
@@ -66,19 +118,14 @@
 
     next.setAttribute('aria-label', position === timeline.length - 1 ? 'Replay presentation' : 'Next narrative beat');
     previous.disabled = position === 0;
-    dots.forEach(dot => {
-      const active = dot.dataset.go === current.scene;
-      dot.classList.toggle('active', active);
-      dot.setAttribute('aria-pressed', String(active));
-      if (active) dot.setAttribute('aria-current', 'step');
-      else dot.removeAttribute('aria-current');
-    });
 
     if (changed && old.scene !== current.scene) {
       // Re-entering a scene always restores its initial visual conditions;
       // reversing never depends on an unfinished timeout or a running video.
       experience.dataset.previousScene = old.scene;
     }
+    renderScript(current);
+    syncDemoClips(current, changed);
     if (announce) {
       status.textContent = `Scene ${current.sceneIndex + 1} of ${scenes.length}. ${scenes[current.sceneIndex].name}. Narrative beat ${current.beat + 1} of ${scenes[current.sceneIndex].beats}.`;
     }
@@ -97,20 +144,40 @@
 
   next.addEventListener('click', () => position === timeline.length - 1 ? render(0) : advance());
   previous.addEventListener('click', reverse);
-  dots.forEach(dot => dot.addEventListener('click', () => goTo(dot.dataset.go)));
   document.querySelector('.wordmark').addEventListener('click', event => {
     event.preventDefault(); goTo('title');
   });
+  function toggleFullscreen() {
+    const root = document.documentElement;
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    } else {
+      (root.requestFullscreen || root.webkitRequestFullscreen).call(root);
+    }
+  }
+
+  scriptPanel.querySelector('.script-close').addEventListener('click', () => toggleScript(false));
+  const keyActions = {
+    ArrowRight: advance,
+    PageDown: advance,
+    ArrowLeft: reverse,
+    PageUp: reverse,
+    Home: () => render(0),
+    End: () => render(timeline.length - 1),
+    n: () => toggleScript(),
+    N: () => toggleScript(),
+    f: toggleFullscreen,
+    F: toggleFullscreen,
+    Escape: () => toggleScript(false)
+  };
+  function isTypingTarget(event) {
+    return event.altKey || event.ctrlKey || event.metaKey || event.target.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName);
+  }
   document.addEventListener('keydown', event => {
-    if (event.altKey || event.ctrlKey || event.metaKey || event.target.isContentEditable || /INPUT|TEXTAREA|SELECT/.test(event.target.tagName)) return;
-    if (event.key === 'ArrowRight' || event.key === 'PageDown') {
-      event.preventDefault(); advance();
-    } else if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
-      event.preventDefault(); reverse();
-    } else if (event.key === 'Home') {
-      event.preventDefault(); render(0);
-    } else if (event.key === 'End') {
-      event.preventDefault(); render(timeline.length - 1);
+    if (isTypingTarget(event)) return;
+    const action = keyActions[event.key];
+    if (action) {
+      event.preventDefault(); action();
     } else if (event.code === 'Space' && !event.target.closest('button,a')) {
       event.preventDefault(); advance();
     }
